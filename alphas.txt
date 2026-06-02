@@ -1,0 +1,5 @@
+rank(volume)
+rank(ts_rank(volume,20))
+rank(close/ts_mean(close,20))
+rank(returns)
+rank(ts_zscore(volume,63))

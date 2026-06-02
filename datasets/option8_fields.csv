@@ -1,0 +1,65 @@
+dataset,field_id,type,description,coverage,alphaCount,userCount
+option8,historical_volatility_10,MATRIX,Historical close-to-close volatility for approximately 10 calendar days,0.9808,2737,1200
+option8,historical_volatility_120,MATRIX,Historical close-to-close volatility for approximately 120 calendar days,0.98,4457,2161
+option8,historical_volatility_150,MATRIX,Historical close-to-close volatility for approximately 150 calendar days,0.9798,2362,1050
+option8,historical_volatility_180,MATRIX,Historical close-to-close volatility for approximately 180 calendar days,0.9796,4665,2130
+option8,historical_volatility_20,MATRIX,Historical close-to-close volatility for approximately 20 calendar days,0.9807,1774,880
+option8,historical_volatility_30,MATRIX,Historical close-to-close volatility for approximately 30 calendar days,0.9807,1864,940
+option8,historical_volatility_60,MATRIX,Historical close-to-close volatility for approximately 60 calendar days,0.9805,2715,1186
+option8,historical_volatility_90,MATRIX,Historical close-to-close volatility for approximately 90 calendar days,0.9803,2047,927
+option8,implied_volatility_call_10,MATRIX,Implied volatility of the at-the-money call for the stock with an expiration 10 calendar days from the measurement date,0.9729,4802,2392
+option8,implied_volatility_call_1080,MATRIX,Implied volatility of the at-the-money call for the stock with an expiration 1080 calendar days from the measurement date,0.9729,8856,3733
+option8,implied_volatility_call_120,MATRIX,Implied volatility of the at-the-money call for the stock with an expiration 120 calendar days from the measurement date,0.9729,13514,6731
+option8,implied_volatility_call_150,MATRIX,Implied volatility of the at-the-money call for the stock with an expiration 150 calendar days from the measurement date,0.9729,5685,2712
+option8,implied_volatility_call_180,MATRIX,Implied volatility of the at-the-money call for the stock with an expiration 180 calendar days from the measurement date,0.9729,7637,3912
+option8,implied_volatility_call_20,MATRIX,Implied volatility of the at-the-money call for the stock with an expiration 20 calendar days from the measurement date,0.9729,2371,1194
+option8,implied_volatility_call_270,MATRIX,Implied volatility of the at-the-money call for the stock with an expiration 270 calendar days from the measurement date,0.9729,14480,9737
+option8,implied_volatility_call_30,MATRIX,Implied volatility of the at-the-money call for the stock with an expiration 30 calendar days from the measurement date,0.9729,4991,2229
+option8,implied_volatility_call_360,MATRIX,Implied volatility of the at-the-money call for the stock with an expiration 360 calendar days from the measurement date,0.9729,4172,2086
+option8,implied_volatility_call_60,MATRIX,Implied volatility of the at-the-money call for the stock with an expiration 60 calendar days from the measurement date,0.9729,7617,3830
+option8,implied_volatility_call_720,MATRIX,Implied volatility of the at-the-money call for the stock with an expiration 720 calendar days from the measurement date,0.9729,3483,1796
+option8,implied_volatility_call_90,MATRIX,Implied volatility of the at-the-money call for the stock with an expiration 90 calendar days from the measurement date,0.9729,4703,1946
+option8,implied_volatility_mean_10,MATRIX,The average of IvCall10 and IvPut10,0.9688,7273,2998
+option8,implied_volatility_mean_1080,MATRIX,The average of IvCall1080 and IvPut1080,0.9688,1233,675
+option8,implied_volatility_mean_120,MATRIX,The average of IvCall120 and IvPut120,0.9688,3884,2371
+option8,implied_volatility_mean_150,MATRIX,The average of IvCall150 and IvPut150,0.9688,2070,1177
+option8,implied_volatility_mean_180,MATRIX,The average of IvCall180 and IvPut180,0.9688,2547,1515
+option8,implied_volatility_mean_20,MATRIX,The average of IvCall20 and IvPut20,0.9688,1319,636
+option8,implied_volatility_mean_270,MATRIX,The average of IvCall270 and IvPut270,0.9688,1137,722
+option8,implied_volatility_mean_30,MATRIX,The average of IvCall30 and IvPut30,0.9688,1758,988
+option8,implied_volatility_mean_360,MATRIX,The average of IvCall360 and IvPut360,0.9688,1372,856
+option8,implied_volatility_mean_60,MATRIX,The average of IvCall60 and IvPut60,0.9688,1863,1152
+option8,implied_volatility_mean_720,MATRIX,The average of IvCall720 and IvPut720,0.9688,1152,730
+option8,implied_volatility_mean_90,MATRIX,The average of IvCall90 and IvPut90,0.9688,1966,1190
+option8,implied_volatility_mean_skew_10,MATRIX,Skew steepness for the implied volatility duration of 10 calendar days by subtracting the mean implied volatility of the call and put options with strikes at 110% of the money from the mean implied volatility of the call and put options with strikes at 90% of the money,0.9508,793,430
+option8,implied_volatility_mean_skew_1080,MATRIX,Skew steepness for the implied volatility duration of 1080 calendar days by subtracting the mean implied volatility of the call and put options with strikes at 110% of the money from the mean implied volatility of the call and put options with strikes at 90% of the money,0.9508,1392,817
+option8,implied_volatility_mean_skew_120,MATRIX,Skew steepness for the implied volatility duration of 120 calendar days by subtracting the mean implied volatility of the call and put options with strikes at 110% of the money from the mean implied volatility of the call and put options with strikes at 90% of the money,0.9508,976,654
+option8,implied_volatility_mean_skew_150,MATRIX,Skew steepness for the implied volatility duration of 150 calendar days by subtracting the mean implied volatility of the call and put options with strikes at 110% of the money from the mean implied volatility of the call and put options with strikes at 90% of the money,0.9508,911,609
+option8,implied_volatility_mean_skew_180,MATRIX,Skew steepness for the implied volatility duration of 180 calendar days by subtracting the mean implied volatility of the call and put options with strikes at 110% of the money from the mean implied volatility of the call and put options with strikes at 90% of the money,0.9508,1202,796
+option8,implied_volatility_mean_skew_20,MATRIX,Skew steepness for the implied volatility duration of 20 calendar days by subtracting the mean implied volatility of the call and put options with strikes at 110% of the money from implied volatility of the call and put options with strikes at 90% of the money,0.9508,733,490
+option8,implied_volatility_mean_skew_270,MATRIX,Skew steepness for the implied volatility duration of 270 calendar days by subtracting the mean implied volatility of the call and put options with strikes at 110% of the money from the mean implied volatility of the call and put options with strikes at 90% of the money,0.9508,1143,801
+option8,implied_volatility_mean_skew_30,MATRIX,Skew steepness for the implied volatility duration of 30 calendar days by subtracting the mean implied volatility of the call and put options with strikes at 110% of the money from the mean implied volatility of the call and put options with strikes at 90% of the money,0.9508,985,654
+option8,implied_volatility_mean_skew_360,MATRIX,Skew steepness for the implied volatility duration of 360 calendar days by subtracting the mean implied volatility of the call and put options with strikes at 110% of the money from the mean implied volatility of the call and put options with strikes at 90% of the money,0.9508,1569,962
+option8,implied_volatility_mean_skew_60,MATRIX,Skew steepness for the implied volatility duration of 60 calendar days by subtracting the mean implied volatility of the call and put options with strikes at 110% of the money from the mean implied volatility of the call and put options with strikes at 90% of the money,0.9508,1093,507
+option8,implied_volatility_mean_skew_720,MATRIX,Skew steepness for the implied volatility duration of 720 calendar days by subtracting the mean implied volatility of the call and put options with strikes at 110% of the money from the mean implied volatility of the call and put options with strikes at 90% of the money,0.9508,1146,769
+option8,implied_volatility_mean_skew_90,MATRIX,Skew steepness for the implied volatility duration of 90 calendar days by subtracting the mean implied volatility of the call and put options with strikes at 110% of the money from the mean implied volatility of the call and put options with strikes at 90% of the money,0.9508,1516,1064
+option8,implied_volatility_put_10,MATRIX,"At-the-money implied volatility of put options with 10 calendar days to expiration, annualized decimal",0.9727,2936,1337
+option8,implied_volatility_put_1080,MATRIX,"At-the-money implied volatility of put options with 1080 calendar days to expiration, annualized decimal",0.9727,2387,1297
+option8,implied_volatility_put_120,MATRIX,"At-the-money implied volatility of put options with 120 calendar days to expiration, annualized decimal",0.9727,7676,3687
+option8,implied_volatility_put_150,MATRIX,"At-the-money implied volatility of put options with 150 calendar days to expiration, annualized decimal",0.9727,4835,2335
+option8,implied_volatility_put_180,MATRIX,"At-the-money implied volatility of put options with 180 calendar days to expiration, annualized decimal",0.9727,6626,3648
+option8,implied_volatility_put_20,MATRIX,"At-the-money implied volatility of put options with 20 calendar days to expiration, annualized decimal",0.9727,1848,933
+option8,implied_volatility_put_270,MATRIX,Implied volatility of the at-the-money put for the stock with an expiration 270 calendar days from the measurement date,0.9727,13895,9626
+option8,implied_volatility_put_30,MATRIX,Implied volatility of the at-the-money put for the stock with an expiration 30 calendar days from the measurement date,0.9727,3952,1819
+option8,implied_volatility_put_360,MATRIX,Implied volatility of the at-the-money put for the stock with an expiration 360 calendar days from the measurement date,0.9727,3154,1654
+option8,implied_volatility_put_60,MATRIX,Implied volatility of the at-the-money put for the stock with an expiration 60 calendar days from the measurement date,0.9727,5229,2976
+option8,implied_volatility_put_720,MATRIX,Implied volatility of the at-the-money put for the stock with an expiration 720 calendar days from the measurement date,0.9727,2618,1594
+option8,implied_volatility_put_90,MATRIX,Implied volatility of the at-the-money put for the stock with an expiration 90 calendar days from the measurement date,0.9727,4386,2038
+option8,parkinson_volatility_10,MATRIX,Historical Parkinson volatility for approximately 10 calendar days,0.9808,1813,770
+option8,parkinson_volatility_120,MATRIX,Historical Parkinson volatility for approximately 120 calendar days,0.9801,4849,2680
+option8,parkinson_volatility_150,MATRIX,Historical Parkinson volatility for approximately 150 calendar days,0.9798,1869,794
+option8,parkinson_volatility_180,MATRIX,Historical Parkinson volatility for approximately 180 calendar days,0.9796,3015,1502
+option8,parkinson_volatility_20,MATRIX,Historical volatility using the Parkinson high–low estimator over approximately the past 20 calendar days,0.9807,1777,723
+option8,parkinson_volatility_30,MATRIX,Historical volatility using the Parkinson high–low estimator over approximately the past 30 calendar days,0.9807,1638,687
+option8,parkinson_volatility_60,MATRIX,Historical volatility using the Parkinson high–low estimator over approximately the past 60 calendar days,0.9805,1775,766
+option8,parkinson_volatility_90,MATRIX,Historical volatility using the Parkinson high–low estimator over approximately the past 90 calendar days,0.9803,1901,934

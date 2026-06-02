@@ -1,0 +1,5 @@
+dataset,field_id,type,description,coverage,alphaCount,userCount
+socialmedia8,snt_social_value,MATRIX,Z-score of sentiment,1.0,5331,2497
+socialmedia8,snt_social_value_fast_d1,MATRIX,Z-score of sentiment,0.9998,140,101
+socialmedia8,snt_social_volume,MATRIX,Normalized tweet volume,1.0,5181,2205
+socialmedia8,snt_social_volume_fast_d1,MATRIX,Normalized tweet volume,0.9998,143,121

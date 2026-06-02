@@ -1,0 +1,5 @@
+rank(est_eps/ts_mean(est_eps,126))
+rank(ts_rank(anl4_netdebt_flag,252)-ts_rank(anl4_netprofit_flag,252))
+rank(ts_zscore(anl4_cff_flag,126)-ts_zscore(est_eps,126))
+rank(ts_zscore(anl4_netprofit_flag,126)-ts_zscore(est_eps,126))
+rank(anl4_netdebt_flag/anl4_ebit_value)

@@ -1,0 +1,25 @@
+dataset,field_id,type,description,coverage,alphaCount,userCount
+model16,analyst_revision_rank_derivative,MATRIX,Daily-indicator variant of momentum capturing recent price moves and analyst estimate revisions,1.0,699,447
+model16,cashflow_efficiency_rank_derivative,MATRIX,Ranks stocks by their ability to generate cash flows and operational profitability,1.0,355,247
+model16,composite_factor_score_derivative,MATRIX,Momentum score based on analyst revisions; intraday variant,1.0,379,269
+model16,earnings_certainty_rank_derivative,MATRIX,Measures the sustainability and certainty of earnings quality,1.0,361,226
+model16,fscore_bfl_growth,MATRIX,"Growth composite estimating expected medium-term growth potential (e.g., revenues, earnings); higher is better (0–100)",0.3807,31,24
+model16,fscore_bfl_momentum,MATRIX,Composite momentum measure reflecting recent price dynamics and analyst estimate revisions to identify improving or deteriorating names,0.3774,52,32
+model16,fscore_bfl_profitability,MATRIX,Profitability composite ranking firms by ability to generate cash flows and operational efficiency; higher is better (0–100),0.3797,50,24
+model16,fscore_bfl_quality,MATRIX,"Composite measuring earnings quality, stability, and balance-sheet resilience",0.3828,67,48
+model16,fscore_bfl_surface,MATRIX,Static composite “style surface” score aggregating the five primary style scores; larger surface implies higher rank,0.374,30,28
+model16,fscore_bfl_surface_accel,MATRIX,Acceleration (derivative) of the pentagon surface score relative to the previous month,0.3726,83,55
+model16,fscore_bfl_total,MATRIX,Blended composite M-Score combining the static pentagon surface score and its acceleration into an overarching rating,0.3726,21,16
+model16,fscore_bfl_value,MATRIX,Valuation composite indicating how under- or overpriced a stock is versus common valuation measures; higher is better (cheaper) (0–100),0.3808,110,84
+model16,fscore_growth,MATRIX,Composite measuring the stock’s expected medium-term growth potential,0.2987,300,146
+model16,fscore_momentum,MATRIX,Composite momentum metric focused on recent analyst estimate revisions to identify stocks experiencing upward or downward revisions,0.2973,546,315
+model16,fscore_profitability,MATRIX,Composite ranking stocks by their ability to generate cash flows and operational profitability,0.2981,351,209
+model16,fscore_quality,MATRIX,Composite measuring the sustainability and certainty of earnings,0.2993,1568,795
+model16,fscore_surface,MATRIX,"Static overall “style surface” score combining Value, Growth, Profitability, Momentum, and Quality; larger surface implies higher rank",0.2957,453,175
+model16,fscore_surface_accel,MATRIX,"Acceleration (derivative) of the pentagon surface score, indicating whether the overall style surface is rising or falling versus the previous month",0.2946,233,106
+model16,fscore_total,MATRIX,Final blended score that combines the static pentagon surface score with its acceleration,0.2946,362,151
+model16,fscore_value,MATRIX,"Composite assessing whether the stock is under- or overpriced using standard valuation measures (e.g., multiples)",0.2981,497,292
+model16,growth_potential_rank_derivative,MATRIX,Composite growth score qualifying the stock’s expected medium‑term growth potential,1.0,240,177
+model16,multi_factor_acceleration_score_derivative,MATRIX,Change in the acceleration of multi-factor score compared to previous period.,1.0,243,186
+model16,multi_factor_static_score_derivative,MATRIX,Change in static multi-factor score compared to previous period.,1.0,172,130
+model16,relative_valuation_rank_derivative,MATRIX,Assesses whether the stock is under or overpriced based on standard valuation multiples indicator variant,1.0,229,148

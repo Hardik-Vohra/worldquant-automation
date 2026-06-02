@@ -1,0 +1,1325 @@
+dataset,field_id,type,description,coverage,alphaCount,userCount
+analyst4,actual_cashflow_per_share_value_quarterly,MATRIX,Cash Flow Per Share - actual value for the quarter,0.4684,400,285
+analyst4,actual_dividend_value_quarterly,MATRIX,Dividend - Actual value for the quarter,0.612,110,88
+analyst4,actual_eps_value_quarterly,MATRIX,Earnings Per Share (Income Statement/Per Share) (Actual),1.0,810,447
+analyst4,actual_sales_value_annual,MATRIX,Sales - Actual Value,0.9943,316,240
+analyst4,actual_sales_value_quarterly,MATRIX,Sales - Value in financial services income statement (in millions),1.0,421,276
+analyst4,actuals_reporting_currency,VECTOR,Home currency of instrument,0.9876,268,129
+analyst4,actuals_value_currency_code,MATRIX,Pricing Currency where the security trades,1.0,4274,3003
+analyst4,adj_net_income_avg,MATRIX,"Average adjusted net profit, excluding non-recurring items, for the period.",0.8557,64,43
+analyst4,adj_net_income_median,MATRIX,"Median adjusted net profit, excluding non-recurring items, for the period.",0.8557,24,21
+analyst4,adj_net_income_stddev,MATRIX,"Standard deviation of adjusted net profit estimates, excluding non-recurring items.",0.5597,19,19
+analyst4,anl4_adjusted_netincome_ft,MATRIX,Adjusted net income - forecast type (revision/new/...),0.8706,51888,26336
+analyst4,anl4_ads1detailafv110_bk,VECTOR,Broker name (int),0.688,192,99
+analyst4,anl4_ads1detailafv110_estvalue,VECTOR,Estimation value,0.6878,160,86
+analyst4,anl4_ads1detailafv110_person,VECTOR,Broker Id,0.688,853,350
+analyst4,anl4_ads1detailafv110_prevval,VECTOR,The Previous Estimation of Financial Item,0.6856,126,69
+analyst4,anl4_ads1detailqfv110_bk,VECTOR,Broker name (int),0.6295,586,238
+analyst4,anl4_ads1detailqfv110_estvalue,VECTOR,Estimation value,0.6292,132,63
+analyst4,anl4_ads1detailqfv110_person,VECTOR,Broker Id,0.6295,329,305
+analyst4,anl4_ads1detailqfv110_prevval,VECTOR,The previous estimation of financial item,0.6268,361,161
+analyst4,anl4_adxqfv110_down,VECTOR,Number of lower estimations,0.6979,1036,889
+analyst4,anl4_adxqfv110_high,VECTOR,The highest estimation,0.6979,114,84
+analyst4,anl4_adxqfv110_low,VECTOR,The lowest estimation,0.6979,592,534
+analyst4,anl4_adxqfv110_mean,VECTOR,Mean of estimations,0.6979,115,94
+analyst4,anl4_adxqfv110_median,VECTOR,Median of estimations,0.6979,119,95
+analyst4,anl4_adxqfv110_numest,VECTOR,The number of forecasts counted in aggregation,0.6979,1516,1118
+analyst4,anl4_adxqfv110_pu,VECTOR,The number of upper estimations,0.6979,4883,2626
+analyst4,anl4_ady_down,VECTOR,Number of lower estimations,0.7196,133,101
+analyst4,anl4_ady_high,VECTOR,The highest estimation,0.7196,83,58
+analyst4,anl4_ady_low,VECTOR,The lowest estimation,0.7196,92,53
+analyst4,anl4_ady_mean,VECTOR,Mean of estimations,0.7196,49,38
+analyst4,anl4_ady_median,VECTOR,Median of estimations,0.7196,42,33
+analyst4,anl4_ady_numest,VECTOR,The number of forecasts counted in aggregation,0.7196,1024,754
+analyst4,anl4_ady_pu,VECTOR,The number of upper estimations,0.7196,5677,2266
+analyst4,anl4_af_cfps_value,MATRIX,Cash Flow Per Share - Actual Value,0.6156,137,106
+analyst4,anl4_af_div_value,MATRIX,Dividend - Actual value,0.758,409,339
+analyst4,anl4_af_eps_value,MATRIX,Earnings Per Share - Actual Value,0.9956,824,665
+analyst4,anl4_afv4_actual,VECTOR,Announced financial data,0.9199,90,59
+analyst4,anl4_afv4_cfps_high,MATRIX,Cash Flow Per Share - The highest estimation for the annual forecast,0.6751,79,68
+analyst4,anl4_afv4_cfps_low,MATRIX,Cash Flow Per Share - The lowest estimation for the upcoming fiscal year,0.6751,131,106
+analyst4,anl4_afv4_cfps_mean,MATRIX,Cash Flow Per Share - average of estimations for the annual frequency,0.6751,139,103
+analyst4,anl4_afv4_cfps_median,MATRIX,Cash Flow Per Share - Median value among forecasts for the annual frequency,0.6751,345,294
+analyst4,anl4_afv4_cfps_number,MATRIX,Cash Flow Per Share - number of estimations for annual frequency,0.6751,218,179
+analyst4,anl4_afv4_div_high,MATRIX,Dividend per share - The highest estimation for the annual forecast.,0.8232,49,46
+analyst4,anl4_afv4_div_low,MATRIX,Dividend - The lowest estimation for the annual forecast,0.8232,60,52
+analyst4,anl4_afv4_div_mean,MATRIX,Dividend per share - average of estimations for annual frequency,0.8232,64,61
+analyst4,anl4_afv4_div_median,MATRIX,Dividend per share - Median value among forecasts,0.8232,68,47
+analyst4,anl4_afv4_div_number,MATRIX,Number of estimations for Dividend per share - annually,0.8232,90,82
+analyst4,anl4_afv4_div_std,MATRIX,Dividend per share - standard deviation of estimations,0.3948,31,28
+analyst4,anl4_afv4_dts_spe,MATRIX,Earnings per share - standard deviation of estimations,0.691,196,163
+analyst4,anl4_afv4_eps_high,MATRIX,Earnings per share - The highest estimation,1.0,1020,694
+analyst4,anl4_afv4_eps_low,MATRIX,Earnings per share - The lowest estimation for annual frequency,1.0,607,457
+analyst4,anl4_afv4_eps_mean,MATRIX,Earnings per share - mean of estimations for annual frequency,1.0,1313,662
+analyst4,anl4_afv4_eps_number,MATRIX,Earnings per share - number of estimations for annual frequency,1.0,561,361
+analyst4,anl4_afv4_maxguidance,VECTOR,Max guidance value,0.6994,325,202
+analyst4,anl4_afv4_median_eps,MATRIX,Earnings per share - median of estimations,1.0,644,439
+analyst4,anl4_afv4_minguidance,VECTOR,Min guidance value,0.6994,135,119
+analyst4,anl4_bac1actualqfv110_actual,VECTOR,Announced financial data,0.647,145,113
+analyst4,anl4_bac1actualqfv110_item,VECTOR,Financial item,0.6641,165,128
+analyst4,anl4_bac1conafv110_item,VECTOR,Financial item,0.7343,160,147
+analyst4,anl4_bac1conltv110_item,VECTOR,Financial item,0.7004,35,28
+analyst4,anl4_bac1conqfv110_item,VECTOR,Financial item,0.7262,116,90
+analyst4,anl4_bac1conrecv110_item,VECTOR,Financial item,0.6243,148,85
+analyst4,anl4_bac1detailafv110_item,VECTOR,Financial item,0.7154,657,566
+analyst4,anl4_bac1detaillt_item,VECTOR,Financial item,0.6827,4106,2405
+analyst4,anl4_bac1detailqfv110_item,VECTOR,Financial item,0.6876,185,69
+analyst4,anl4_bac1detailrec_item,VECTOR,Financial item,0.7128,2880,1290
+analyst4,anl4_basicafv4_actual,VECTOR,Announced financial data for the annual period.,0.915,50,42
+analyst4,anl4_basicconafv110_down,VECTOR,Number of lower estimations,0.7343,165,75
+analyst4,anl4_basicconafv110_high,VECTOR,The highest estimation,0.7343,44,33
+analyst4,anl4_basicconafv110_low,VECTOR,The lowest estimation,0.7343,54,40
+analyst4,anl4_basicconafv110_mean,VECTOR,Mean of estimations,0.7343,55,37
+analyst4,anl4_basicconafv110_median,VECTOR,Median of estimations,0.7343,37,26
+analyst4,anl4_basicconafv110_numest,VECTOR,The number of forecasts counted in aggregation,0.7343,707,551
+analyst4,anl4_basicconafv110_pu,VECTOR,The number of upper estimations,0.7343,2118,1277
+analyst4,anl4_basicconltv110_down,VECTOR,Number of lower estimations,0.7004,132,81
+analyst4,anl4_basicconltv110_high,VECTOR,The highest estimation,0.7004,135,67
+analyst4,anl4_basicconltv110_low,VECTOR,The lowest estimation,0.7004,64,49
+analyst4,anl4_basicconltv110_mean,VECTOR,Mean of estimations,0.7004,88,62
+analyst4,anl4_basicconltv110_median,VECTOR,Median of estimations,0.7004,131,83
+analyst4,anl4_basicconltv110_numest,VECTOR,The number of forecasts counted in aggregation,0.7004,1719,1319
+analyst4,anl4_basicconltv110_pu,VECTOR,The number of upper estimations,0.7004,1262,926
+analyst4,anl4_basicconqfv110_down,VECTOR,Number of lower estimations,0.7262,1296,1176
+analyst4,anl4_basicconqfv110_high,VECTOR,The highest estimation,0.7262,94,79
+analyst4,anl4_basicconqfv110_low,VECTOR,The lowest estimation,0.7262,58,33
+analyst4,anl4_basicconqfv110_mean,VECTOR,Mean of estimations,0.7262,1309,1218
+analyst4,anl4_basicconqfv110_median,VECTOR,Median of estimations,0.7262,101,73
+analyst4,anl4_basicconqfv110_numest,VECTOR,The number of forecasts counted in aggregation,0.7262,1469,1151
+analyst4,anl4_basicconqfv110_pu,VECTOR,The number of upper estimations,0.7262,3857,2295
+analyst4,anl4_basicdetaillt_bk,VECTOR,Broker name (int),0.6827,102,61
+analyst4,anl4_basicdetaillt_estvalue,VECTOR,Estimation value,0.6818,107,57
+analyst4,anl4_basicdetaillt_person,VECTOR,Broker Id,0.6827,142,92
+analyst4,anl4_basicdetaillt_prevval,VECTOR,The Previous Estimation of Financial Item,0.677,136,76
+analyst4,anl4_basicdetailqfv110_bk,VECTOR,Broker name (int),0.6876,45,35
+analyst4,anl4_basicdetailqfv110_estvalue,VECTOR,Estimation value,0.6873,43,32
+analyst4,anl4_basicdetailqfv110_person,VECTOR,Broker Id,0.6876,44,35
+analyst4,anl4_basicdetailqfv110_prevval,VECTOR,The previous estimation of financial item,0.6847,74,44
+analyst4,anl4_basicdetailrec_bk,VECTOR,Broker name (int),0.7128,92,59
+analyst4,anl4_basicdetailrec_person,VECTOR,Broker Id,0.7128,84,57
+analyst4,anl4_basicdetailrec_ratingvalue,VECTOR,Score on the given instrument,0.7104,536,323
+analyst4,anl4_basicqfv4_actual,VECTOR,Announced financial data,0.9972,43,40
+analyst4,anl4_basicqfv4_maxguidance,VECTOR,Max guidance value,0.4814,845,793
+analyst4,anl4_basicqfv4_minguidance,VECTOR,Min guidance value,0.4814,747,685
+analyst4,anl4_baz1v110_bk,VECTOR,Broker name (int),0.7154,81,39
+analyst4,anl4_baz1v110_estvalue,VECTOR,Estimation value,0.7152,70,47
+analyst4,anl4_baz1v110_person,VECTOR,Broker Id,0.7154,636,537
+analyst4,anl4_baz1v110_prevval,VECTOR,The previous estimation of financial item,0.7134,41,30
+analyst4,anl4_buy,VECTOR,The number of recommendations to long the instrument,0.6243,593,417
+analyst4,anl4_bvps_flag,MATRIX,Book value per share - forecast type (revision/new/...),0.8223,17862,7928
+analyst4,anl4_bvps_high,MATRIX,"Book value - the highest estimation, per share",0.6499,1142,572
+analyst4,anl4_bvps_low,MATRIX,"Book value - the lowest estimation, per share",0.6499,1608,1066
+analyst4,anl4_bvps_mean,MATRIX,Book value per share - average of estimations,0.6499,1098,515
+analyst4,anl4_bvps_median,MATRIX,Book value per share - Median value among forecasts,0.6499,993,504
+analyst4,anl4_bvps_number,MATRIX,Book value per share - number of estimations,0.6499,2303,1952
+analyst4,anl4_bvps_value,MATRIX,Book value per share - announced financial value,0.5245,588,323
+analyst4,anl4_capex_flag,MATRIX,Capital Expenditures - forecast type (revision/new/...),0.8506,7258,3633
+analyst4,anl4_capex_high,MATRIX,Capital Expenditures - The highest estimation,0.6173,8457,1538
+analyst4,anl4_capex_low,MATRIX,Capital Expenditures - The lowest estimation,0.6173,7535,1626
+analyst4,anl4_capex_mean,MATRIX,Capital Expenditures - mean of estimations,0.6173,847,301
+analyst4,anl4_capex_number,MATRIX,Capital Expenditures - number of estimations,0.6173,1394,1199
+analyst4,anl4_capex_std,MATRIX,Capital Expenditures - standard deviation of estimations,0.2569,3104,1075
+analyst4,anl4_capex_value,MATRIX,Capital Expenditures - announced financial value,0.6592,6549,1786
+analyst4,anl4_cff_flag,MATRIX,Cash Flow From Financing Activities - forecast type (revision/new/...),0.8244,8781,6175
+analyst4,anl4_cff_high,MATRIX,Cash Flow From Financing - The highest of forecasted values,0.59,2142,937
+analyst4,anl4_cff_low,MATRIX,Cash Flow From Financing - The lowest estimation,0.59,5037,1314
+analyst4,anl4_cff_mean,MATRIX,Cash Flow From Financing - mean of estimations,0.59,258,128
+analyst4,anl4_cff_median,MATRIX,Cash Flow From Financing Activities - Median value among forecasts,0.59,334,137
+analyst4,anl4_cff_number,MATRIX,Cash Flow From Financing - number of estimations,0.59,653,505
+analyst4,anl4_cff_value,MATRIX,Cash Flow From Financing - announced financial value,0.4781,618,412
+analyst4,anl4_cfi_flag,MATRIX,Cash Flow From Investing - forecast type (revision/new/...),0.8287,5427,4035
+analyst4,anl4_cfi_high,MATRIX,Cash Flow From Investing - The highest estimation,0.5849,1464,874
+analyst4,anl4_cfi_low,MATRIX,Cash Flow From Investing - The lowest estimation,0.5849,3060,1116
+analyst4,anl4_cfi_mean,MATRIX,Cash Flow From Investing - mean of estimations,0.5849,241,138
+analyst4,anl4_cfi_median,MATRIX,Cash Flow From Investing - median of estimations,0.5849,426,301
+analyst4,anl4_cfi_number,MATRIX,Cash Flow From Investing - number of estimations,0.5849,302,159
+analyst4,anl4_cfi_value,MATRIX,Cash Flow From Investing - announced financial value,0.4859,2086,1000
+analyst4,anl4_cfo_flag,MATRIX,Cash Flow From Operations - forecast type (revision/new/...),0.8269,5022,3800
+analyst4,anl4_cfo_high,MATRIX,Cash Flow From Operations - The highest value among forecasts,0.6232,2278,1114
+analyst4,anl4_cfo_low,MATRIX,Cash Flow From Operations - The lowest estimation,0.6232,6985,1471
+analyst4,anl4_cfo_mean,MATRIX,Cash Flow From Operations - mean of estimations,0.6232,350,178
+analyst4,anl4_cfo_median,MATRIX,Cash Flow From Operations - median of estimations,0.6232,2489,1091
+analyst4,anl4_cfo_number,MATRIX,Cash Flow From Operations - number of estimations,0.6232,1067,833
+analyst4,anl4_cfo_value,MATRIX,Cash Flow From Operations - announced financial value,0.5809,7089,1908
+analyst4,anl4_cuo1actualqfv110_actual,VECTOR,Announced financial data,0.6345,543,486
+analyst4,anl4_cuo1actualqfv110_item,VECTOR,Financial item,0.6473,235,193
+analyst4,anl4_cuo1conafv110_item,VECTOR,Financial item,0.7196,199,169
+analyst4,anl4_cuo1conqfv110_item,VECTOR,Financial item,0.6979,1091,855
+analyst4,anl4_cuo1detailafv110_item,VECTOR,Financial item,0.688,3926,1798
+analyst4,anl4_cuo1detailqfv110_item,VECTOR,Financial item,0.6295,2855,1599
+analyst4,anl4_cuo1guidaf_item,VECTOR,Financial item,0.2961,28,24
+analyst4,anl4_cuo1guidaf_maxguidance,VECTOR,Max guidance value,0.2938,44,42
+analyst4,anl4_cuo1guidaf_minguidance,VECTOR,Minimum guidance value,0.2952,75,68
+analyst4,anl4_dei2laf_item,VECTOR,Financial item,0.4928,1197,915
+analyst4,anl4_dei2lqfv110_item,VECTOR,Financial item,0.4304,2884,1865
+analyst4,anl4_dei3lafv110_item,VECTOR,Financial item,0.5416,740,611
+analyst4,anl4_dei3lltv110_item,VECTOR,Financial item,0.4737,4047,2234
+analyst4,anl4_dei3lqfv110_item,VECTOR,Financial item,0.513,412,369
+analyst4,anl4_dei3lrec_item,VECTOR,Financial item,0.5489,446,380
+analyst4,anl4_detailltv4_est,VECTOR,Long term estimation value,1.0,23,19
+analyst4,anl4_detailltv4_preest,VECTOR,The previous estimation of financial item,1.0,30,19
+analyst4,anl4_detailltv4v104_est,VECTOR,Estimation value,0.7943,89,60
+analyst4,anl4_detailltv4v104_preest,VECTOR,The previous estimation of financial item,0.7911,94,65
+analyst4,anl4_detailrecv4_est,VECTOR,Estimation value for recommendation detail,1.0,66,51
+analyst4,anl4_detailrecv4v104_est,VECTOR,Estimation value,0.7885,1001,662
+analyst4,anl4_dez1afv4_est,VECTOR,Estimation value,0.967,242,170
+analyst4,anl4_dez1afv4_preest,VECTOR,The previous estimation of finanicial item,0.967,76,49
+analyst4,anl4_dez1basicafv4_est,VECTOR,Estimation value,1.0,26,20
+analyst4,anl4_dez1basicafv4_preest,VECTOR,The previous estimation of finanicial item,1.0,14,14
+analyst4,anl4_dez1basicafv4v104_est,VECTOR,Estimation value,0.8076,121,94
+analyst4,anl4_dez1basicafv4v104_preest,VECTOR,The previous estimation of financial item,0.806,56,39
+analyst4,anl4_dez1basicqfv4_est,VECTOR,Estimation value,1.0,32,30
+analyst4,anl4_dez1basicqfv4_preest,VECTOR,The previous estimation of finanicial item,1.0,10,9
+analyst4,anl4_dez1basicqfv4v104_est,VECTOR,Estimation value,0.7891,680,564
+analyst4,anl4_dez1basicqfv4v104_preest,VECTOR,The previous estimation of financial item,0.7865,304,259
+analyst4,anl4_dez1qfv4_est,VECTOR,Estimation value,0.964,975,787
+analyst4,anl4_dez1qfv4_preest,VECTOR,The previous estimation of finanicial item,0.964,518,419
+analyst4,anl4_dez1safv4_est,VECTOR,Estimation value,0.4317,45,22
+analyst4,anl4_dez1safv4_preest,VECTOR,The previous estimation of finanicial item,0.4122,43,28
+analyst4,anl4_dts_ptp,MATRIX,Pretax income - std of estimations,0.505,872,703
+analyst4,anl4_dts_rspe,MATRIX,Reported Earnings per share - standard deviation of estimations,0.4773,4516,2988
+analyst4,anl4_eaz1laf_bk,VECTOR,Broker name (int),0.4928,702,649
+analyst4,anl4_eaz1laf_estvalue,VECTOR,Estimation value,0.4801,27,25
+analyst4,anl4_eaz1laf_person,VECTOR,Broker Id,0.4928,587,534
+analyst4,anl4_eaz1laf_prevval,VECTOR,The previous estimation of financial item,0.4771,41,34
+analyst4,anl4_eaz1lqfv110_bk,VECTOR,Broker name (int),0.4304,191,174
+analyst4,anl4_eaz1lqfv110_estvalue,VECTOR,Estimation value,0.4151,32,25
+analyst4,anl4_eaz1lqfv110_person,VECTOR,Broker Id,0.4304,291,250
+analyst4,anl4_eaz1lqfv110_prevval,VECTOR,The previous estimation of financial item,0.4117,19,16
+analyst4,anl4_eaz2lafv110_bk,VECTOR,Broker name (int),0.5416,747,662
+analyst4,anl4_eaz2lafv110_estvalue,VECTOR,Estimation value,0.5282,46,29
+analyst4,anl4_eaz2lafv110_person,VECTOR,Broker Id,0.5416,69,58
+analyst4,anl4_eaz2lafv110_prevval,VECTOR,The previous estimation of financial item,0.5248,23,19
+analyst4,anl4_eaz2lltv110_bk,VECTOR,Broker name (int),0.4737,783,678
+analyst4,anl4_eaz2lltv110_estvalue,VECTOR,Estimation value,0.46,39,34
+analyst4,anl4_eaz2lltv110_person,VECTOR,Broker Id,0.4737,955,795
+analyst4,anl4_eaz2lltv110_prevval,VECTOR,The previous estimation of financial item,0.4544,78,47
+analyst4,anl4_eaz2lqfv110_bk,VECTOR,Broker name (int),0.513,164,152
+analyst4,anl4_eaz2lqfv110_estvalue,VECTOR,Estimation value,0.4984,145,132
+analyst4,anl4_eaz2lqfv110_person,VECTOR,Broker Id,0.513,184,161
+analyst4,anl4_eaz2lqfv110_prevval,VECTOR,The previous estimation of financial item,0.4948,157,139
+analyst4,anl4_eaz2lrec_bk,VECTOR,Broker name (int),0.5489,435,362
+analyst4,anl4_eaz2lrec_person,VECTOR,Broker Id,0.5489,1518,1056
+analyst4,anl4_eaz2lrec_ratingvalue,VECTOR,Score on the given instrument,0.5327,5668,2645
+analyst4,anl4_ebit_high,MATRIX,Earnings before interest and taxes - The highest estimation,0.7097,3358,1285
+analyst4,anl4_ebit_low,MATRIX,Earnings before interest and taxes - The lowest estimation,0.7097,3918,1213
+analyst4,anl4_ebit_mean,MATRIX,Earnings before interest and taxes - mean of estimations,0.7097,714,380
+analyst4,anl4_ebit_median,MATRIX,Earnings before interest and taxes - median of estimations,0.7097,1952,999
+analyst4,anl4_ebit_number,MATRIX,Earnings before interest and taxes - number of estimations,0.7097,3584,2698
+analyst4,anl4_ebit_std,MATRIX,Earnings before interest and taxes - standard deviation of estimations,0.4695,1896,1104
+analyst4,anl4_ebit_value,MATRIX,Earnings before interest and taxes - announced financial value,0.9483,16610,3637
+analyst4,anl4_ebitda_flag,MATRIX,"Earnings before interest, taxes, depreciation and amortization - forecast type (revision/new/...)",0.8633,4464,2944
+analyst4,anl4_ebitda_high,MATRIX,"Earnings before interest, taxes, depreciation, and amortization - the highest estimation",0.5831,5154,1343
+analyst4,anl4_ebitda_low,MATRIX,"Earnings before interest, taxes, depreciation and amortization - The lowest estimation",0.5831,6459,1362
+analyst4,anl4_ebitda_mean,MATRIX,"Earnings before interest, taxes, depreciation and amortization - mean of estimations",0.5831,388,192
+analyst4,anl4_ebitda_number,MATRIX,"Earnings before interest, taxes, depreciation and amortization - number of estimations",0.5831,488,282
+analyst4,anl4_ebitda_std,MATRIX,"Earnings before interest, taxes, depreciation, and amortization - standard deviation of estimations",0.3585,592,500
+analyst4,anl4_ebitda_value,MATRIX,"Earnings before interest, taxes, depreciation and amortization - announced financial value",0.8133,15153,2392
+analyst4,anl4_epsa_flag,MATRIX,Earnings per share adjusted by excluding extraordinary items and stock option expenses - forecast type (revision/new/...),1.0,872,409
+analyst4,anl4_epsr_flag,MATRIX,"GAAP Earnings - estimation type (revision/new/...), per share",0.8742,15123,7360
+analyst4,anl4_epsr_high,MATRIX,GAAP Earnings per share - The highest estimation,0.7153,2575,1252
+analyst4,anl4_epsr_low,MATRIX,GAAP Earnings per share - The lowest estimation,0.7153,5019,1466
+analyst4,anl4_epsr_mean,MATRIX,GAAP Earnings per share - mean of estimations,0.7153,1133,560
+analyst4,anl4_epsr_number,MATRIX,GAAP Earnings per share - number of estimations,0.7153,6353,4514
+analyst4,anl4_epsr_value,MATRIX,GAAP Earnings per share - announced financial value,0.9904,1864,1010
+analyst4,anl4_fcf_flag,MATRIX,Free cash flow - forecast type (revision/new/...),0.859,4228,2993
+analyst4,anl4_fcf_high,MATRIX,"Free cash flow - aggregation on estimations, max",0.5545,1141,718
+analyst4,anl4_fcf_low,MATRIX,Free Cash Flow - The lowest estimation,0.5545,3401,1112
+analyst4,anl4_fcf_mean,MATRIX,Free Cash Flow - mean of estimations,0.5545,308,173
+analyst4,anl4_fcf_median,MATRIX,"Free cash flow - aggregation on estimations, 50th percentile",0.5545,1325,808
+analyst4,anl4_fcf_number,MATRIX,Free Cash Flow - number of estimations,0.5545,474,377
+analyst4,anl4_fcf_value,MATRIX,Free cash flow- announced financial value,0.5288,1929,1051
+analyst4,anl4_fcfps_flag,MATRIX,Free cash flow per share - forecast type (revision/new/...),0.8947,1605,1094
+analyst4,anl4_fcfps_high,MATRIX,Free Cash Flow Per Share - the highest estimation,0.4393,248,153
+analyst4,anl4_fcfps_low,MATRIX,Free Cash Flow Per Share - the lowest estimation,0.4393,515,421
+analyst4,anl4_fcfps_mean,MATRIX,Free cash flow per share - mean of estimations,0.4393,239,160
+analyst4,anl4_fcfps_median,MATRIX,"Free cash flow - summary on estimations, 50th-percentile, per share",0.4393,221,158
+analyst4,anl4_fcfps_number,MATRIX,Free Cash Flow per Share - number of estimations,0.4393,5796,4033
+analyst4,anl4_ffo_flag,MATRIX,Funds from Operation - forecast type (revision/new/...),1.0,6302,1734
+analyst4,anl4_flag_erbfintax,MATRIX,Earnings before interest and taxes - forecast type (revision/new/...),0.8184,12623,6909
+analyst4,anl4_fs_actual_1qf_v4_nd_bvps_value,MATRIX,Announced book value per share,0.5107,1,1
+analyst4,anl4_fs_actual_1qf_v4_nd_capex_value,MATRIX,Announced value of capital expenditures,0.6419,54,52
+analyst4,anl4_fs_actual_1qf_v4_nd_cff_value,MATRIX,Announced value of cash flow from financing,0.4655,2,2
+analyst4,anl4_fs_actual_1qf_v4_nd_cfi_value,MATRIX,Cash Flow From Investing - announced financial value,0.4731,3,3
+analyst4,anl4_fs_actual_1qf_v4_nd_cfo_value,MATRIX,Announced cash flow from operations,0.5657,24,21
+analyst4,anl4_fs_actual_1qf_v4_nd_ebit_value,MATRIX,Announced value of earnings before interest and taxes (EBIT),0.9235,137,113
+analyst4,anl4_fs_actual_1qf_v4_nd_ebitda_value,MATRIX,"Announced earnings before interest, taxes, depreciation, and amortization",0.7919,34,34
+analyst4,anl4_fs_actual_1qf_v4_nd_epsr_value,MATRIX,GAAP Earnings per share - announced financial value,0.9644,3,3
+analyst4,anl4_fs_actual_1qf_v4_nd_fcf_value,MATRIX,Announced value of free cash flow,0.515,68,59
+analyst4,anl4_fs_actual_1qf_v4_nd_fcfps_value,MATRIX,Free cash flow per share - announced financial value,0.3422,2,2
+analyst4,anl4_fs_actual_1qf_v4_nd_grossincome_value,MATRIX,Announced value of gross income,0.6772,33,32
+analyst4,anl4_fs_actual_1qf_v4_nd_netdebt_value,MATRIX,Announced value of net debt,0.3781,41,33
+analyst4,anl4_fs_actual_1qf_v4_nd_netprofit_value,MATRIX,Announced net profit,0.9851,22,22
+analyst4,anl4_fs_actual_1qf_v4_nd_netprofita_value,MATRIX,Announced value of adjusted net income,0.9068,62,56
+analyst4,anl4_fs_actual_1qf_v4_nd_ptp_value,MATRIX,Announced value of pretax income,0.9184,128,106
+analyst4,anl4_fs_actual_1qf_v4_nd_ptpr_value,MATRIX,Announced value of reported pretax income,0.409,12,11
+analyst4,anl4_fs_actual_1qf_v4_nd_rd_exp_value,MATRIX,Announced value of research and development expense,0.3697,0,0
+analyst4,anl4_fs_actual_1qf_v4_nd_sga_value,MATRIX,"Actual value for selling, general and administrative expense",0.6001,16,14
+analyst4,anl4_fs_actual_1qf_v4_nd_sh_equity_value,MATRIX,Announced value of shareholders' equity,0.6769,2,2
+analyst4,anl4_fs_actual_1qf_v4_nd_totassets_value,MATRIX,Actual value for total assets,0.6316,8,4
+analyst4,anl4_fs_actual_1qf_v4_nd_totgw_value,MATRIX,Announced financial value for total goodwill,0.3663,2,1
+analyst4,anl4_fs_actual_af_v4_nd_actual,VECTOR,Reported actual value for the financial item,0.8958,0,0
+analyst4,anl4_fs_actual_af_v4_nd_currency,VECTOR,Home currency of the instrument in which the actual value is reported,0.9618,7,7
+analyst4,anl4_fs_actual_basic_af_v4_nd_actual,VECTOR,Reported actual value of the financial item for the annual period,0.891,0,0
+analyst4,anl4_fs_actual_basic_qf_v4_nd_actual,VECTOR,Reported actual value for the item,0.9711,4,4
+analyst4,anl4_fs_actual_qf_v4_nd_actual,VECTOR,Reported actual value for the specified item,0.9665,2,1
+analyst4,anl4_fs_actuals_advanced_af_nd_bvps_value,MATRIX,Book value per share actual value,0.7285,3,3
+analyst4,anl4_fs_actuals_advanced_af_nd_capex_value,MATRIX,Capital expenditures total value,0.7327,0,0
+analyst4,anl4_fs_actuals_advanced_af_nd_cff_value,MATRIX,Cash flow from financing value,0.6263,2,2
+analyst4,anl4_fs_actuals_advanced_af_nd_cfi_value,MATRIX,Cash flow from investing value,0.6311,2,2
+analyst4,anl4_fs_actuals_advanced_af_nd_cfo_value,MATRIX,Cash flow from operations value for the annual period,0.695,1,1
+analyst4,anl4_fs_actuals_advanced_af_nd_currency,MATRIX,Pricing currency in which the security trades,1.0,312,264
+analyst4,anl4_fs_actuals_advanced_af_nd_ebit_value,MATRIX,Earnings before interest and taxes (EBIT) actual value,0.9031,30,28
+analyst4,anl4_fs_actuals_advanced_af_nd_ebitda_value,MATRIX,EBITDA actual value for the annual period,0.8036,0,0
+analyst4,anl4_fs_actuals_advanced_af_nd_epsr_value,MATRIX,Reported earnings per share actual value,0.9319,18,18
+analyst4,anl4_fs_actuals_advanced_af_nd_fcf_value,MATRIX,Free cash flow actual value for the annual period,0.6644,5,5
+analyst4,anl4_fs_actuals_advanced_af_nd_fcfps_value,MATRIX,Free cash flow per share actual value for the annual period,0.4784,57,52
+analyst4,anl4_fs_actuals_advanced_af_nd_grossincome_value,MATRIX,Gross income actual value on an annual basis,0.6863,3,2
+analyst4,anl4_fs_actuals_advanced_af_nd_netdebt_value,MATRIX,Net debt actual value for the annual period,0.667,40,39
+analyst4,anl4_fs_actuals_advanced_af_nd_netprofit_value,MATRIX,Net profit announced financial value for annual data,0.9473,45,44
+analyst4,anl4_fs_actuals_advanced_af_nd_netprofita_value,MATRIX,Adjusted net income announced actual value for annual frequency,0.8895,48,36
+analyst4,anl4_fs_actuals_advanced_af_nd_ptp_value,MATRIX,Pretax profit actual value for the annual period,0.9159,29,25
+analyst4,anl4_fs_actuals_advanced_af_nd_ptpr_value,MATRIX,Reported pretax income (PTPR) actual value for the annual fiscal period,0.5438,1,1
+analyst4,anl4_fs_actuals_advanced_af_nd_rd_exp_value,MATRIX,Research and Development expense actual value for the annual period,0.3667,3,3
+analyst4,anl4_fs_actuals_advanced_af_nd_sga_value,MATRIX,"Selling, General and Administrative expense actual value",0.618,2,1
+analyst4,anl4_fs_actuals_advanced_af_nd_sh_equity_value,MATRIX,Shareholders' equity total actual value,0.8247,3,2
+analyst4,anl4_fs_actuals_advanced_af_nd_totassets_value,MATRIX,Total assets actual value,0.7825,2,2
+analyst4,anl4_fs_actuals_advanced_af_nd_totgw_value,MATRIX,Total goodwill value,0.5147,0,0
+analyst4,anl4_fs_actuals_advanced_qf_nd_bvps_value,MATRIX,"Book value per share, actual value",0.5107,2,2
+analyst4,anl4_fs_actuals_advanced_qf_nd_capex_value,MATRIX,"Total capital expenditures from cash flow/investing, in millions",0.6419,44,40
+analyst4,anl4_fs_actuals_advanced_qf_nd_cff_value,MATRIX,Cash flow from financing value,0.4655,0,0
+analyst4,anl4_fs_actuals_advanced_qf_nd_cfi_value,MATRIX,Cash flow from investing value,0.4731,1,1
+analyst4,anl4_fs_actuals_advanced_qf_nd_cfo_value,MATRIX,Cash flow from operations value,0.5657,21,20
+analyst4,anl4_fs_actuals_advanced_qf_nd_ebit_value,MATRIX,Earnings before interest and taxes actual value for the quarter,0.9235,69,60
+analyst4,anl4_fs_actuals_advanced_qf_nd_ebitda_value,MATRIX,Actual EBITDA for the quarter,0.7919,54,52
+analyst4,anl4_fs_actuals_advanced_qf_nd_eps_nongaap_value,MATRIX,Non-GAAP earnings per share actual value,0.7769,11,10
+analyst4,anl4_fs_actuals_advanced_qf_nd_epsr_value,MATRIX,"Reported earnings per share, actual value",0.9642,5,4
+analyst4,anl4_fs_actuals_advanced_qf_nd_fcf_value,MATRIX,Actual free cash flow for the quarter,0.5149,76,62
+analyst4,anl4_fs_actuals_advanced_qf_nd_fcfps_value,MATRIX,Free cash flow per share announced financial value,0.3422,0,0
+analyst4,anl4_fs_actuals_advanced_qf_nd_grossincome_value,MATRIX,Gross income actual value for the quarter,0.6772,25,25
+analyst4,anl4_fs_actuals_advanced_qf_nd_netdebt_value,MATRIX,Net debt value for the quarter,0.3781,48,40
+analyst4,anl4_fs_actuals_advanced_qf_nd_netprofit_value,MATRIX,"Net profit, actual value for the quarter",0.985,7,5
+analyst4,anl4_fs_actuals_advanced_qf_nd_netprofita_value,MATRIX,Adjusted net income announced financial value,0.9068,47,45
+analyst4,anl4_fs_actuals_advanced_qf_nd_ptp_value,MATRIX,Pretax profit actual value for the quarter,0.9184,136,116
+analyst4,anl4_fs_actuals_advanced_qf_nd_ptpr_value,MATRIX,Actual reported pretax income for the quarter,0.4089,7,7
+analyst4,anl4_fs_actuals_advanced_qf_nd_rd_exp_value,MATRIX,Research and development expense (income statement) value in millions,0.3697,2,2
+analyst4,anl4_fs_actuals_advanced_qf_nd_sga_value,MATRIX,"Selling, general and administrative expense value",0.6001,23,19
+analyst4,anl4_fs_actuals_advanced_qf_nd_sh_equity_value,MATRIX,"Total shareholders' equity, actual value",0.6769,0,0
+analyst4,anl4_fs_actuals_advanced_qf_nd_totassets_value,MATRIX,Actual total assets for the quarter,0.6316,4,4
+analyst4,anl4_fs_actuals_advanced_qf_nd_totgw_value,MATRIX,Actual total goodwill value in millions,0.3662,0,0
+analyst4,anl4_fs_actuals_basic_af_nd_cfps_value,MATRIX,Cash Flow Per Share actual value for the annual period,0.5994,0,0
+analyst4,anl4_fs_actuals_basic_af_nd_div_value,MATRIX,Dividend actual value for the annual period,0.7381,49,45
+analyst4,anl4_fs_actuals_basic_af_nd_eps_value,MATRIX,Earnings Per Share actual value for the annual period,0.9695,19,16
+analyst4,anl4_fs_actuals_basic_af_nd_sales_value,MATRIX,Sales/Revenue actual value for the annual period,0.9683,0,0
+analyst4,anl4_fs_actuals_basic_qf_nd_cfps_value,MATRIX,Actual cash flow per share for the quarter,0.4562,2,2
+analyst4,anl4_fs_actuals_basic_qf_nd_div_value,MATRIX,Dividend per share - announced financial value,0.596,1,1
+analyst4,anl4_fs_actuals_basic_qf_nd_eps_value,MATRIX,Actual earnings per share for the quarter,0.9868,44,43
+analyst4,anl4_fs_actuals_basic_qf_nd_sales_value,MATRIX,"Actual sales/revenue for the quarter, expressed in millions of the stated currency",0.9858,5,5
+analyst4,anl4_fs_basic_splt_v4_nd_div_estimate,VECTOR,Analyst’s estimated dividend per share for the specified fiscal period,0.4541,0,0
+analyst4,anl4_fs_basic_splt_v4_nd_div_previosestimate,VECTOR,Previous dividend per share estimate value prior to the latest revision,0.4472,1,1
+analyst4,anl4_fs_basic_splt_v4_nd_eps_estimate,VECTOR,Analyst’s estimated earnings per share for the specified fiscal period,0.9682,0,0
+analyst4,anl4_fs_basic_splt_v4_nd_eps_previosestimate,VECTOR,Previous earnings per share estimate value prior to the latest revision,0.9627,2,1
+analyst4,anl4_fs_basic_splt_v4_nd_sales_estimate,VECTOR,Analyst’s estimated sales/revenue for the specified fiscal period,0.967,1,1
+analyst4,anl4_fs_basic_splt_v4_nd_sales_previosestimate,VECTOR,Previous sales estimate value prior to the latest revision,0.9609,1,1
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_bvps_high,MATRIX,Book Value Per Share High Estimate,0.4056,1,1
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_bvps_low,MATRIX,Book Value Per Share Low Estimate,0.4056,1,1
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_bvps_mean,MATRIX,Book Value Per Share Mean Estimate,0.4056,4,4
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_bvps_median,MATRIX,Book Value Per Share Median Estimate,0.4056,0,0
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_bvps_number,MATRIX,Number of Book Value Per Share Estimates,0.4056,137,118
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_capex_high,MATRIX,Capital Expenditure High Estimate,0.6442,3,3
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_capex_low,MATRIX,Capital Expenditure Low Estimate,0.6442,6,6
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_capex_mean,MATRIX,Capital Expenditure Mean Estimate,0.6442,2,2
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_capex_median,MATRIX,Capital Expenditure Median Estimate,0.6442,1,1
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_capex_number,MATRIX,Number of Capital Expenditure Estimates,0.6442,3,3
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_cff_high,MATRIX,Cash Flow from Financing High Estimate,0.5374,0,0
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_cff_low,MATRIX,Cash Flow from Financing Low Estimate,0.5374,0,0
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_cff_mean,MATRIX,Cash Flow from Financing Mean Estimate,0.5374,0,0
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_cff_median,MATRIX,Cash Flow from Financing Median Estimate,0.5374,1,1
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_cff_number,MATRIX,Number of Cash Flow from Financing Estimates,0.5374,0,0
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_cfi_high,MATRIX,Cash Flow from Investing High Estimate,0.5442,1,1
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_cfi_low,MATRIX,Cash Flow from Investing Low Estimate,0.5442,0,0
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_cfi_mean,MATRIX,Cash Flow from Investing Mean Estimate,0.5442,3,3
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_cfi_median,MATRIX,Cash Flow from Investing Median Estimate,0.5442,1,1
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_cfi_number,MATRIX,Number of Cash Flow from Investing Estimates,0.5442,0,0
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_cfo_high,MATRIX,Cash Flow from Operations High Estimate,0.6195,4,2
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_cfo_low,MATRIX,Cash Flow from Operations Low Estimate,0.6195,2,2
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_cfo_mean,MATRIX,Cash Flow from Operations Mean Estimate,0.6195,1,1
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_cfo_median,MATRIX,Cash Flow from Operations Median Estimate,0.6195,1,1
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_cfo_number,MATRIX,Number of Cash Flow from Operations Estimates,0.6195,29,28
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_cfo_std,MATRIX,Standard Deviation of Cash Flow from Operations Estimates,0.2734,46,36
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_ebit_high,MATRIX,High EBIT estimate,0.9061,1,1
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_ebit_low,MATRIX,Low EBIT estimate,0.9061,1,1
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_ebit_mean,MATRIX,Mean of analyst estimates for EBIT,0.9061,14,12
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_ebit_median,MATRIX,Median of EBIT (earnings before interest and taxes) estimates,0.9061,0,0
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_ebit_number,MATRIX,Number of EBIT estimates,0.9061,67,61
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_ebit_std,MATRIX,Standard deviation of analyst estimates for EBIT,0.6271,63,38
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_ebitda_high,MATRIX,High EBITDA estimate,0.7649,0,0
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_ebitda_low,MATRIX,Lowest estimate of EBITDA,0.7649,1,1
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_ebitda_mean,MATRIX,Mean of analyst estimates for EBITDA,0.7649,6,5
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_ebitda_median,MATRIX,Median of EBITDA estimates,0.7649,2,1
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_ebitda_number,MATRIX,Number of analyst estimates for EBITDA,0.7649,0,0
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_ebitda_std,MATRIX,Standard deviation of analyst estimates for EBITDA,0.4948,1,1
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_epsr_high,MATRIX,High estimated EPS growth rate,0.8623,2,2
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_epsr_low,MATRIX,Lowest analyst estimate for GAAP EPS (reported EPS),0.8623,1,1
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_epsr_mean,MATRIX,Mean estimated EPS growth rate,0.8623,30,24
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_epsr_median,MATRIX,Median of analyst estimates for GAAP EPS (reported EPS),0.8623,24,22
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_epsr_number,MATRIX,Number of EPS growth rate estimates,0.8623,463,391
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_fcf_high,MATRIX,Highest analyst estimate for free cash flow,0.5519,4,4
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_fcf_low,MATRIX,Free Cash Flow - lowest estimate,0.5519,2,2
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_fcf_mean,MATRIX,Mean of analyst estimates for free cash flow,0.5519,5,4
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_fcf_median,MATRIX,Free Cash Flow - median (50th percentile) estimate,0.5519,6,6
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_fcf_number,MATRIX,Number of analyst estimates for free cash flow,0.5519,17,16
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_fcfps_high,MATRIX,Highest analyst estimate for free cash flow per share,0.3782,3,3
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_fcfps_low,MATRIX,Free Cash Flow per Share - lowest estimate,0.3782,47,36
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_fcfps_mean,MATRIX,Mean of analyst estimates for free cash flow per share,0.3782,21,18
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_fcfps_median,MATRIX,Median (50th percentile) of analyst estimates for free cash flow per share,0.3782,5,4
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_fcfps_number,MATRIX,Number of analyst estimates for free cash flow per share,0.3782,110,96
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_grossincome_high,MATRIX,Gross Income - highest estimate,0.6803,0,0
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_grossincome_low,MATRIX,Lowest analyst estimate for gross income,0.6803,0,0
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_grossincome_mean,MATRIX,Mean of analyst estimates for gross income,0.6803,0,0
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_grossincome_median,MATRIX,Median (50th percentile) of analyst estimates for gross income,0.6803,2,2
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_grossincome_number,MATRIX,Number of analyst estimates for gross income,0.6803,2,2
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_grossincome_std,MATRIX,Standard deviation of analyst estimates for gross income,0.4421,149,128
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_netdebt_high,MATRIX,Net debt highest analyst estimate,0.3728,0,0
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_netdebt_low,MATRIX,Lowest estimate of net debt,0.3728,0,0
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_netdebt_mean,MATRIX,Mean of analyst estimates for Net Debt,0.3728,0,0
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_netdebt_median,MATRIX,Median of Net Debt estimates,0.3728,1,1
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_netdebt_number,MATRIX,Net debt - number of contributing analyst estimates,0.3728,1,1
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_netprofit_high,MATRIX,Net Profit — highest estimate,0.9409,1,1
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_netprofit_low,MATRIX,Net profit - lowest analyst estimate,0.9409,0,0
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_netprofit_mean,MATRIX,Net profit mean of analyst estimates,0.9409,3,3
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_netprofit_median,MATRIX,Median of analyst estimates for net profit,0.9409,2,2
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_netprofit_number,MATRIX,Net Profit - number of analyst estimates,0.9409,488,396
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_netprofit_std,MATRIX,Net Profit - standard deviation of estimates,0.6943,20,18
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_netprofita_high,MATRIX,"Highest estimate of Adjusted Net Income (Net Profit, Adjusted)",0.8557,3,3
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_netprofita_low,MATRIX,Adjusted net income – lowest analyst estimate,0.8557,3,3
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_netprofita_mean,MATRIX,Mean of analyst estimates for adjusted net income,0.8557,2,2
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_netprofita_median,MATRIX,"Median of Adjusted Net Income (Net Profit, Adjusted) estimates",0.8557,3,2
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_netprofita_number,MATRIX,Number of adjusted net income (Net Profit Attributable) estimates,0.8557,93,88
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_netprofita_std,MATRIX,Standard deviation of analyst estimates for adjusted net income,0.5597,0,0
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_ptp_high,MATRIX,Highest analyst estimate for pretax income,0.9083,2,2
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_ptp_low,MATRIX,Lowest estimate of pretax income,0.9083,0,0
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_ptp_mean,MATRIX,Mean of Pre-tax Income estimates,0.9083,4,4
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_ptp_median,MATRIX,Median of Pre-tax Income estimates,0.9083,4,4
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_ptp_number,MATRIX,Pre-tax income number of contributing estimates,0.9083,184,171
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_ptp_std,MATRIX,Pre-tax income standard deviation of estimates,0.643,11,11
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_ptpr_high,MATRIX,Highest estimate of Reported Pretax Income,0.4519,1,1
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_ptpr_low,MATRIX,Lowest estimate of reported pretax income,0.4519,0,0
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_ptpr_mean,MATRIX,Reported pretax income - mean of estimations,0.4519,0,0
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_ptpr_median,MATRIX,Median estimate of Reported Pretax Income,0.4519,0,0
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_ptpr_number,MATRIX,Number of analyst estimates for reported pretax income,0.4519,32,29
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_rd_exp_high,MATRIX,Research and Development Expense — highest estimate,0.3709,0,0
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_rd_exp_low,MATRIX,Lowest analyst estimate for Research and Development expenditure,0.3709,0,0
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_rd_exp_mean,MATRIX,Mean of research and development expense estimates,0.3709,122,108
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_rd_exp_median,MATRIX,Median of Research and Development Expense estimates,0.3709,0,0
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_rd_exp_number,MATRIX,Number of analyst estimates for research and development expense,0.3709,3,3
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_sga_high,MATRIX,"Highest analyst estimate for Selling, General and Administrative expenses",0.5475,1,1
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_sga_low,MATRIX,"Lowest analyst estimate for Selling, General and Administrative expenses",0.5475,7,6
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_sga_mean,MATRIX,"Mean of analysts' estimates for Selling, General and Administrative expenses",0.5475,0,0
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_sga_median,MATRIX,"Median of analyst estimates for selling, general and administrative expense",0.5475,1,1
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_sga_number,MATRIX,"Number of Selling, General and Administrative Expense estimates",0.5475,0,0
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_sh_equity_high,MATRIX,Shareholders' Equity highest analyst estimate,0.7264,3,3
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_sh_equity_low,MATRIX,Shareholders' Equity lowest analyst estimate,0.7264,9,7
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_sh_equity_mean,MATRIX,Mean of analyst estimates for shareholders' equity,0.7264,1,1
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_sh_equity_median,MATRIX,Shareholders' Equity - median estimate,0.7264,0,0
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_sh_equity_number,MATRIX,Number of Shareholders' Equity estimates,0.7264,5,5
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_totassets_high,MATRIX,Total Assets - The highest estimation,0.7048,0,0
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_totassets_low,MATRIX,Total Assets - lowest estimate,0.7048,2,2
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_totassets_mean,MATRIX,Mean (average) of total assets estimates,0.7048,3,3
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_totassets_median,MATRIX,Median of total assets estimates,0.7048,0,0
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_totassets_number,MATRIX,Total Assets - number of estimations,0.7048,2,2
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_totgw_high,MATRIX,Total Goodwill - The highest estimation,0.435,0,0
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_totgw_low,MATRIX,Lowest estimate of total goodwill,0.435,0,0
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_totgw_mean,MATRIX,Mean of analyst estimates for total goodwill,0.435,0,0
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_totgw_median,MATRIX,Total Goodwill - median of estimations,0.435,0,0
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_totgw_number,MATRIX,Number of contributing estimates for total goodwill,0.435,1,1
+analyst4,anl4_fs_detail_estimate_basic_af_v4_nd_currency,VECTOR,Currency code in which the estimate is reported,0.9945,0,0
+analyst4,anl4_fs_detail_estimate_basic_af_v4_nd_estimate,VECTOR,Current estimate value reported by the broker/analyst for the item and period,0.9899,0,0
+analyst4,anl4_fs_detail_estimate_basic_af_v4_nd_previosestimate,VECTOR,Previous estimate value from the same broker/analyst prior to this revision,0.9862,2,1
+analyst4,anl4_fs_detail_estimate_basic_qf_v4_nd_currency,VECTOR,Currency code in which the estimate is reported,0.9917,0,0
+analyst4,anl4_fs_detail_estimate_basic_qf_v4_nd_estimate,VECTOR,Estimated value,0.9872,1,1
+analyst4,anl4_fs_detail_estimate_basic_qf_v4_nd_previosestimate,VECTOR,Previous estimate value before the current revision,0.9827,2,2
+analyst4,anl4_fs_detail_estimate_saf_v4_nd_estimate,VECTOR,Estimated value for the financial item,0.4204,0,0
+analyst4,anl4_fs_detail_estimate_saf_v4_nd_previosestimate,VECTOR,Previous estimate value for the same item,0.4014,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_bvps_high,MATRIX,Highest analyst estimate of book value per share for the annual period,0.6613,3,3
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_bvps_low,MATRIX,Lowest analyst estimate of book value per share for the annual period,0.6613,2,2
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_bvps_mean,MATRIX,Mean of analyst estimates of book value per share for the annual period,0.6613,2,2
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_bvps_median,MATRIX,Median of analyst estimates of book value per share for the annual period,0.6613,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_bvps_number,MATRIX,Number of analyst estimates of book value per share for the annual period,0.6613,6,6
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_bvps_std,MATRIX,Standard deviation of analyst estimates of book value per share for the annual period,0.3031,1,1
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_capex_high,MATRIX,Highest analyst estimate of Capital Expenditures for the upcoming fiscal year,0.7769,2,1
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_capex_low,MATRIX,Lowest analyst estimate of Capital Expenditures for the upcoming annual fiscal period,0.7769,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_capex_mean,MATRIX,Mean of analyst estimates for Capital Expenditures for the annual forecast,0.7769,10,1
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_capex_median,MATRIX,Median of analyst estimates for Capital Expenditures for the annual forecast,0.7769,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_capex_number,MATRIX,Number of analyst estimates for Capital Expenditures on an annual basis,0.7769,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_capex_std,MATRIX,Standard deviation of analyst estimates for Capital Expenditures on an annual basis,0.4176,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_cff_high,MATRIX,Highest analyst forecast for annual cash flow from financing,0.6905,1,1
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_cff_low,MATRIX,Lowest analyst forecast for annual cash flow from financing,0.6905,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_cff_mean,MATRIX,Mean of analyst estimates for annual cash flow from financing,0.6905,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_cff_median,MATRIX,Median of analyst forecasts for annual cash flow from financing,0.6905,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_cff_number,MATRIX,Number of analyst estimates for annual cash flow from financing,0.6905,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_cff_std,MATRIX,Standard deviation of analyst estimates for annual cash flow from financing,0.3173,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_cfi_high,MATRIX,Highest analyst forecast for annual cash flow from investing,0.692,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_cfi_low,MATRIX,Lowest analyst forecast for annual cash flow from investing,0.692,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_cfi_mean,MATRIX,Mean of analyst estimates for annual cash flow from investing,0.692,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_cfi_median,MATRIX,Median of analyst forecasts for annual cash flow from investing,0.692,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_cfi_number,MATRIX,Number of analyst estimates for annual cash flow from investing,0.692,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_cfi_std,MATRIX,Standard deviation of analyst estimates for annual cash flow from investing,0.3331,1,1
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_cfo_high,MATRIX,"Cash Flow from Operations, highest estimate",0.7505,1,1
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_cfo_low,MATRIX,"Cash Flow from Operations, lowest estimate",0.7505,3,3
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_cfo_mean,MATRIX,"Cash Flow from Operations, mean estimate",0.7505,16,3
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_cfo_median,MATRIX,"Cash Flow from Operations, median estimate",0.7505,1,1
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_cfo_number,MATRIX,"Cash Flow from Operations, number of estimates",0.7505,2,1
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_cfo_std,MATRIX,"Cash Flow from Operations, standard deviation of estimates",0.4019,3,1
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_ebit_high,MATRIX,Highest analyst annual estimate for EBIT,0.9326,42,35
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_ebit_low,MATRIX,Lowest analyst annual estimate for EBIT,0.9326,41,34
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_ebit_mean,MATRIX,Consensus mean of analyst annual estimates for EBIT,0.9326,17,11
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_ebit_median,MATRIX,Median of analyst annual estimates for EBIT,0.9326,1,1
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_ebit_number,MATRIX,Number of contributing analyst annual estimates for EBIT,0.9326,4,2
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_ebit_std,MATRIX,Standard deviation of analyst annual estimates for EBIT,0.6206,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_ebitda_high,MATRIX,Highest analyst annual estimate for EBITDA,0.8021,2,2
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_ebitda_low,MATRIX,Lowest analyst annual estimate for EBITDA,0.8021,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_ebitda_mean,MATRIX,Consensus mean of analyst annual estimates for EBITDA,0.8021,6,5
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_ebitda_median,MATRIX,Median of analyst annual estimates for EBITDA,0.8021,5,4
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_ebitda_number,MATRIX,Number of contributing analyst annual estimates for EBITDA,0.8021,1,1
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_ebitda_std,MATRIX,Standard deviation of analyst annual estimates for EBITDA,0.4953,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_epsr_high,MATRIX,Highest analyst estimate of reported (GAAP) earnings per share for the annual period,0.9088,32,29
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_epsr_low,MATRIX,Lowest analyst estimate of reported (GAAP) earnings per share for the annual period,0.9088,29,26
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_epsr_mean,MATRIX,Mean of analyst estimates of reported (GAAP) earnings per share for the annual period,0.9088,32,29
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_epsr_median,MATRIX,Median of analyst estimates of reported (GAAP) earnings per share for the annual period,0.9088,32,29
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_epsr_number,MATRIX,Number of analyst estimates of reported (GAAP) earnings per share for the annual period,0.9088,61,52
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_epsr_std,MATRIX,Standard deviation of analyst estimates of reported (GAAP) earnings per share for the annual period,0.5844,22,22
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_fcf_high,MATRIX,Highest analyst forecast for annual free cash flow,0.6984,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_fcf_low,MATRIX,Lowest analyst forecast for annual free cash flow,0.6984,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_fcf_mean,MATRIX,Mean of analyst estimates for annual free cash flow,0.6984,4,4
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_fcf_median,MATRIX,Median of analyst forecasts for annual free cash flow,0.6984,2,2
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_fcf_number,MATRIX,Number of analyst estimates for annual free cash flow,0.6984,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_fcf_std,MATRIX,Standard deviation of analyst estimates for annual free cash flow,0.3575,1,1
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_fcfps_high,MATRIX,Highest analyst forecast for annual free cash flow per share,0.5224,1,1
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_fcfps_low,MATRIX,Lowest analyst forecast for annual free cash flow per share,0.5224,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_fcfps_mean,MATRIX,Mean of analyst estimates for annual free cash flow per share,0.5224,1,1
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_fcfps_median,MATRIX,Median of analyst forecasts for annual free cash flow per share,0.5224,2,2
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_fcfps_number,MATRIX,Number of analyst estimates for annual free cash flow per share,0.5224,7,6
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_grossincome_high,MATRIX,Highest analyst annual estimate for Gross Income,0.7442,2,2
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_grossincome_low,MATRIX,Lowest analyst annual estimate for Gross Income,0.7442,8,8
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_grossincome_mean,MATRIX,Consensus mean of analyst annual estimates for Gross Income,0.7442,8,3
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_grossincome_median,MATRIX,Median of analyst annual estimates for Gross Income,0.7442,1,1
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_grossincome_number,MATRIX,Number of contributing analyst annual estimates for Gross Income,0.7442,2,2
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_grossincome_std,MATRIX,Standard deviation of analyst annual estimates for Gross Income,0.4513,1,1
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_netdebt_high,MATRIX,Highest analyst annual estimate for Net Debt,0.6041,1,1
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_netdebt_low,MATRIX,Lowest analyst annual estimate for Net Debt,0.6041,4,3
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_netdebt_mean,MATRIX,Consensus mean of analyst annual estimates for Net Debt,0.6041,2,2
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_netdebt_median,MATRIX,Median of analyst annual estimates for Net Debt,0.6041,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_netdebt_number,MATRIX,Number of contributing analyst annual estimates for Net Debt,0.6041,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_netprofit_high,MATRIX,"Net Profit, highest estimate",0.9588,4,3
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_netprofit_low,MATRIX,"Net Profit, lowest estimate",0.9588,6,4
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_netprofit_mean,MATRIX,"Net Profit, mean estimate",0.9588,21,11
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_netprofit_median,MATRIX,"Net Profit, median estimate",0.9588,1,1
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_netprofit_number,MATRIX,"Net Profit, number of estimates",0.9588,37,32
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_netprofit_std,MATRIX,"Net Profit, standard deviation of estimates",0.6637,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_netprofita_high,MATRIX,"Net Profit Attributable, highest estimate",0.901,4,3
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_netprofita_low,MATRIX,"Net Profit Attributable, lowest estimate",0.901,2,2
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_netprofita_mean,MATRIX,"Net Profit Attributable, mean estimate",0.901,4,3
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_netprofita_median,MATRIX,"Net Profit Attributable, median estimate",0.901,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_netprofita_number,MATRIX,"Net Profit Attributable, number of estimates",0.901,16,15
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_netprofita_std,MATRIX,"Net Profit Attributable, standard deviation of estimates",0.5569,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_ptp_high,MATRIX,"Pretax income, highest analyst estimate",0.9355,14,7
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_ptp_low,MATRIX,"Pretax income, lowest analyst estimate",0.9355,70,57
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_ptp_mean,MATRIX,"Pretax income, mean of analyst estimates",0.9355,19,11
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_ptp_median,MATRIX,"Pretax income, median of analyst estimates",0.9355,3,2
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_ptp_number,MATRIX,"Pretax income, number of analyst estimates",0.9355,16,13
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_ptp_std,MATRIX,"Pretax income, standard deviation of analyst estimates",0.6338,4,2
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_ptpr_high,MATRIX,Highest analyst estimate for annual reported pretax income,0.5126,7,7
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_ptpr_low,MATRIX,Lowest analyst estimate for annual reported pretax income,0.5126,1,1
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_ptpr_mean,MATRIX,Consensus mean of analysts’ annual reported pretax income forecasts,0.5126,2,2
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_ptpr_median,MATRIX,Median of analysts’ annual reported pretax income forecasts,0.5126,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_ptpr_number,MATRIX,Number of contributing analyst estimates for annual reported pretax income,0.5126,1,1
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_rd_exp_high,MATRIX,Highest individual analyst estimate for Research and Development expense for the annual forecast period,0.3936,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_rd_exp_low,MATRIX,Lowest individual analyst estimate for Research and Development expense for the annual forecast period,0.3936,16,15
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_rd_exp_mean,MATRIX,Mean of analyst estimates for Research and Development expense for the annual forecast period,0.3936,3,2
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_rd_exp_median,MATRIX,Median of analyst estimates for Research and Development expense for the annual forecast period,0.3936,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_rd_exp_number,MATRIX,Number of contributing analyst estimates for Research and Development expense for the annual forecast period,0.3936,10,10
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_sga_high,MATRIX,"Highest individual analyst estimate for Selling, General and Administrative expenses for the annual forecast period",0.6144,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_sga_low,MATRIX,"Lowest individual analyst estimate for Selling, General and Administrative expenses for the annual forecast period",0.6144,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_sga_mean,MATRIX,"Mean of analyst estimates for Selling, General and Administrative expenses for the annual forecast period",0.6144,2,1
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_sga_median,MATRIX,"Median of analyst estimates for Selling, General and Administrative expenses for the annual forecast period",0.6144,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_sga_number,MATRIX,"Number of contributing analyst estimates for Selling, General and Administrative expenses for the annual forecast period",0.6144,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_sh_equity_high,MATRIX,Highest analyst annual estimate for Shareholders' Equity,0.8724,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_sh_equity_low,MATRIX,Lowest analyst annual estimate for Shareholders' Equity,0.8724,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_sh_equity_mean,MATRIX,Consensus mean of analyst annual estimates for Shareholders' Equity,0.8724,1,1
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_sh_equity_median,MATRIX,Median of analyst annual estimates for Shareholders' Equity,0.8724,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_sh_equity_number,MATRIX,Number of contributing analyst annual estimates for Shareholders' Equity,0.8724,1,1
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_sh_equity_std,MATRIX,Standard deviation of analyst annual estimates for Shareholders' Equity,0.4848,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_tbvps_high,MATRIX,Highest analyst estimate of tangible book value per share for the annual period,0.264,1,1
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_tbvps_low,MATRIX,Lowest analyst estimate of tangible book value per share for the annual period,0.264,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_tbvps_mean,MATRIX,Mean of analyst estimates of tangible book value per share for the annual period,0.264,1,1
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_tbvps_median,MATRIX,Median of analyst estimates of tangible book value per share for the annual period,0.264,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_tbvps_number,MATRIX,Number of analyst estimates of tangible book value per share for the annual period,0.264,156,148
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_totassets_high,MATRIX,Highest individual analyst estimate for Total Assets for the annual forecast period,0.8504,1,1
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_totassets_low,MATRIX,Lowest individual analyst estimate for Total Assets for the annual forecast period,0.8504,1,1
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_totassets_mean,MATRIX,Mean of analyst estimates for Total Assets for the annual forecast period,0.8504,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_totassets_median,MATRIX,Median of analyst estimates for Total Assets for the annual forecast period,0.8504,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_totassets_number,MATRIX,Number of contributing analyst estimates for Total Assets for the annual forecast period,0.8504,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_totassets_std,MATRIX,Standard deviation of analyst estimates for Total Assets for the annual forecast period,0.4564,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_totgw_high,MATRIX,Highest analyst estimate for Total Goodwill for the annual forecast period,0.5736,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_totgw_low,MATRIX,Lowest analyst estimate for Total Goodwill for the annual forecast period,0.5736,0,0
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_totgw_mean,MATRIX,Mean of analyst estimates for Total Goodwill for the annual forecast period,0.5736,1,1
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_totgw_median,MATRIX,Median of analyst estimates for Total Goodwill for the annual forecast period,0.5736,1,1
+analyst4,anl4_fs_detail_estimates_advanced_af_nd_totgw_number,MATRIX,Number of analyst estimates for Total Goodwill for the annual forecast period,0.5736,0,0
+analyst4,anl4_fs_detail_estimates_basic_af_v4_nd_cfps_high,MATRIX,Cash Flow Per Share (CFPS) highest analyst estimate for the annual forecast,0.6574,0,0
+analyst4,anl4_fs_detail_estimates_basic_af_v4_nd_cfps_low,MATRIX,Cash Flow Per Share (CFPS) lowest analyst estimate for the upcoming fiscal year,0.6574,1,1
+analyst4,anl4_fs_detail_estimates_basic_af_v4_nd_cfps_mean,MATRIX,Cash Flow Per Share (CFPS) consensus mean of analyst estimates for the annual period,0.6574,0,0
+analyst4,anl4_fs_detail_estimates_basic_af_v4_nd_cfps_median,MATRIX,Cash Flow Per Share (CFPS) median of analyst estimates for the annual period,0.6574,19,19
+analyst4,anl4_fs_detail_estimates_basic_af_v4_nd_cfps_number,MATRIX,Cash Flow Per Share (CFPS) number of contributing analyst estimates for the annual period,0.6574,4,4
+analyst4,anl4_fs_detail_estimates_basic_af_v4_nd_currency,MATRIX,Home currency of the instrument,1.0,83,71
+analyst4,anl4_fs_detail_estimates_basic_af_v4_nd_div_high,MATRIX,Dividend per share highest analyst estimate for the annual forecast,0.8016,0,0
+analyst4,anl4_fs_detail_estimates_basic_af_v4_nd_div_low,MATRIX,Dividend per share lowest analyst estimate for the annual forecast,0.8016,0,0
+analyst4,anl4_fs_detail_estimates_basic_af_v4_nd_div_mean,MATRIX,Dividend per share consensus mean of analyst estimates for the annual period,0.8016,1,1
+analyst4,anl4_fs_detail_estimates_basic_af_v4_nd_div_median,MATRIX,Dividend per share median of analyst estimates for the annual period,0.8016,0,0
+analyst4,anl4_fs_detail_estimates_basic_af_v4_nd_div_number,MATRIX,Dividend per share number of contributing analyst estimates for the annual period,0.8016,0,0
+analyst4,anl4_fs_detail_estimates_basic_af_v4_nd_div_std,MATRIX,Dividend per share standard deviation of analyst estimates,0.3844,0,0
+analyst4,anl4_fs_detail_estimates_basic_af_v4_nd_eps_high,MATRIX,Earnings per share (EPS) highest analyst estimate for the annual period,0.9918,17,16
+analyst4,anl4_fs_detail_estimates_basic_af_v4_nd_eps_low,MATRIX,Earnings per share (EPS) lowest analyst estimate for the annual period,0.9918,14,14
+analyst4,anl4_fs_detail_estimates_basic_af_v4_nd_eps_mean,MATRIX,Earnings per share (EPS) consensus mean of analyst estimates for the annual period,0.9918,21,10
+analyst4,anl4_fs_detail_estimates_basic_af_v4_nd_eps_median,MATRIX,Earnings per share (EPS) median of analyst estimates for the annual period,0.9918,10,8
+analyst4,anl4_fs_detail_estimates_basic_af_v4_nd_eps_number,MATRIX,Earnings per share (EPS) number of contributing analyst estimates for the annual period,0.9918,8,8
+analyst4,anl4_fs_detail_estimates_basic_af_v4_nd_eps_std,MATRIX,Earnings per share (EPS) standard deviation of analyst estimates,0.6729,1,1
+analyst4,anl4_fs_detail_estimates_basic_af_v4_nd_sales_high,MATRIX,Sales/Revenue highest analyst estimate for the annual period,0.9917,1,1
+analyst4,anl4_fs_detail_estimates_basic_af_v4_nd_sales_low,MATRIX,Sales/Revenue lowest analyst estimate for the annual period,0.9917,1,1
+analyst4,anl4_fs_detail_estimates_basic_af_v4_nd_sales_mean,MATRIX,Sales/Revenue consensus mean of analyst estimates for the annual period,0.9917,3,3
+analyst4,anl4_fs_detail_estimates_basic_af_v4_nd_sales_median,MATRIX,Sales/Revenue median of analyst estimates for the annual period,0.9917,1,1
+analyst4,anl4_fs_detail_estimates_basic_af_v4_nd_sales_number,MATRIX,Sales/Revenue number of contributing analyst estimates for the annual period,0.9917,5,5
+analyst4,anl4_fs_detail_estimates_basic_af_v4_nd_sales_std,MATRIX,Sales/Revenue standard deviation of analyst estimates,0.6614,3,3
+analyst4,anl4_fs_detail_estimates_basic_qf_delay1_v4_nd_cfps_high,MATRIX,Highest Cash Flow Per Share estimate (delay 1 quarter),0.3873,0,0
+analyst4,anl4_fs_detail_estimates_basic_qf_delay1_v4_nd_cfps_low,MATRIX,Lowest Cash Flow Per Share estimate (delay 1 quarter),0.3873,1,1
+analyst4,anl4_fs_detail_estimates_basic_qf_delay1_v4_nd_cfps_mean,MATRIX,Average of Cash Flow Per Share estimates (delay 1 quarter),0.3873,1,1
+analyst4,anl4_fs_detail_estimates_basic_qf_delay1_v4_nd_cfps_median,MATRIX,Median Cash Flow Per Share estimate,0.3873,0,0
+analyst4,anl4_fs_detail_estimates_basic_qf_delay1_v4_nd_cfps_number,MATRIX,Number of Cash Flow Per Share estimates (delay 1 quarter),0.3873,0,0
+analyst4,anl4_fs_detail_estimates_basic_qf_delay1_v4_nd_div_high,MATRIX,Highest Dividend per share estimate (delay 1 quarter),0.599,3,3
+analyst4,anl4_fs_detail_estimates_basic_qf_delay1_v4_nd_div_low,MATRIX,Lowest Dividend per share estimate (delay 1 quarter),0.599,9,9
+analyst4,anl4_fs_detail_estimates_basic_qf_delay1_v4_nd_div_mean,MATRIX,Average Dividend per share estimate (delay 1 quarter),0.599,0,0
+analyst4,anl4_fs_detail_estimates_basic_qf_delay1_v4_nd_div_median,MATRIX,Median Dividend per share estimate,0.599,0,0
+analyst4,anl4_fs_detail_estimates_basic_qf_delay1_v4_nd_div_number,MATRIX,Number of Dividend per share estimates (delay 1 quarter),0.599,0,0
+analyst4,anl4_fs_detail_estimates_basic_qf_delay1_v4_nd_div_std,MATRIX,Standard deviation of Dividend per share estimates,0.267,0,0
+analyst4,anl4_fs_detail_estimates_basic_qf_delay1_v4_nd_eps_high,MATRIX,Highest Earnings Per Share estimate,0.9844,2,2
+analyst4,anl4_fs_detail_estimates_basic_qf_delay1_v4_nd_eps_low,MATRIX,Lowest Earnings Per Share estimate,0.9844,1,1
+analyst4,anl4_fs_detail_estimates_basic_qf_delay1_v4_nd_eps_mean,MATRIX,Mean Earnings Per Share estimate,0.9844,6,6
+analyst4,anl4_fs_detail_estimates_basic_qf_delay1_v4_nd_eps_median,MATRIX,Median Earnings Per Share estimate,0.9844,0,0
+analyst4,anl4_fs_detail_estimates_basic_qf_delay1_v4_nd_eps_number,MATRIX,Number of Earnings Per Share estimates,0.9844,103,90
+analyst4,anl4_fs_detail_estimates_basic_qf_delay1_v4_nd_eps_std,MATRIX,Standard deviation of Earnings Per Share estimates,0.7048,88,57
+analyst4,anl4_fs_detail_estimates_basic_qf_delay1_v4_nd_sales_high,MATRIX,Highest Sales estimate,0.9852,1,1
+analyst4,anl4_fs_detail_estimates_basic_qf_delay1_v4_nd_sales_low,MATRIX,Lowest Sales estimate,0.9852,0,0
+analyst4,anl4_fs_detail_estimates_basic_qf_delay1_v4_nd_sales_mean,MATRIX,Mean Sales estimate (delay 1 quarter),0.9852,0,0
+analyst4,anl4_fs_detail_estimates_basic_qf_delay1_v4_nd_sales_median,MATRIX,Median Sales estimate,0.9852,0,0
+analyst4,anl4_fs_detail_estimates_basic_qf_delay1_v4_nd_sales_number,MATRIX,Number of Sales estimates,0.9852,389,313
+analyst4,anl4_fs_detail_estimates_basic_qf_delay1_v4_nd_sales_std,MATRIX,Standard deviation of Sales estimates,0.7069,22,17
+analyst4,anl4_fs_detail_estimates_basic_qf_v4_nd_cfps_high,MATRIX,Cash Flow Per Share - highest estimation,0.3873,0,0
+analyst4,anl4_fs_detail_estimates_basic_qf_v4_nd_cfps_low,MATRIX,Cash Flow Per Share - lowest estimation,0.3873,0,0
+analyst4,anl4_fs_detail_estimates_basic_qf_v4_nd_cfps_mean,MATRIX,Cash Flow Per Share - average of estimations,0.3873,0,0
+analyst4,anl4_fs_detail_estimates_basic_qf_v4_nd_cfps_median,MATRIX,Cash Flow Per Share - median of estimations,0.3873,0,0
+analyst4,anl4_fs_detail_estimates_basic_qf_v4_nd_cfps_number,MATRIX,Cash Flow Per Share - number of estimations,0.3873,0,0
+analyst4,anl4_fs_detail_estimates_basic_qf_v4_nd_div_high,MATRIX,Dividend per share - highest estimation,0.599,5,5
+analyst4,anl4_fs_detail_estimates_basic_qf_v4_nd_div_low,MATRIX,Dividend per share - lowest estimation,0.599,21,20
+analyst4,anl4_fs_detail_estimates_basic_qf_v4_nd_div_mean,MATRIX,Dividend per share - average of estimations,0.599,0,0
+analyst4,anl4_fs_detail_estimates_basic_qf_v4_nd_div_median,MATRIX,Dividend per share - median of estimations,0.599,0,0
+analyst4,anl4_fs_detail_estimates_basic_qf_v4_nd_div_number,MATRIX,Dividend per share - number of estimations,0.599,0,0
+analyst4,anl4_fs_detail_estimates_basic_qf_v4_nd_div_std,MATRIX,Dividend per share - standard deviation of estimations,0.267,2,2
+analyst4,anl4_fs_detail_estimates_basic_qf_v4_nd_eps_high,MATRIX,Earnings per share - highest estimation,0.9844,2,2
+analyst4,anl4_fs_detail_estimates_basic_qf_v4_nd_eps_low,MATRIX,Earnings per share - lowest estimation,0.9844,1,1
+analyst4,anl4_fs_detail_estimates_basic_qf_v4_nd_eps_mean,MATRIX,Earnings per share - mean of estimations,0.9844,3,3
+analyst4,anl4_fs_detail_estimates_basic_qf_v4_nd_eps_median,MATRIX,Earnings per share - 50th percentile (median) of estimations,0.9844,4,4
+analyst4,anl4_fs_detail_estimates_basic_qf_v4_nd_eps_number,MATRIX,Earnings per share - number of estimations,0.9844,75,73
+analyst4,anl4_fs_detail_estimates_basic_qf_v4_nd_eps_std,MATRIX,Earnings per share - standard deviation of estimations,0.7048,57,39
+analyst4,anl4_fs_detail_estimates_basic_qf_v4_nd_sales_high,MATRIX,Sales - the highest estimation,0.9852,1,1
+analyst4,anl4_fs_detail_estimates_basic_qf_v4_nd_sales_low,MATRIX,Sales - the lowest estimation,0.9852,0,0
+analyst4,anl4_fs_detail_estimates_basic_qf_v4_nd_sales_mean,MATRIX,Sales - mean of estimations,0.9852,3,3
+analyst4,anl4_fs_detail_estimates_basic_qf_v4_nd_sales_median,MATRIX,Sales - median of estimations,0.9852,0,0
+analyst4,anl4_fs_detail_estimates_basic_qf_v4_nd_sales_number,MATRIX,Sales - number of estimations,0.9852,320,268
+analyst4,anl4_fs_detail_estimates_basic_qf_v4_nd_sales_std,MATRIX,Standard deviation of Sales estimations,0.7069,26,19
+analyst4,anl4_fs_detail_lt_v4_nd_estimate,VECTOR,Current estimate value reported by the analyst,0.9834,0,0
+analyst4,anl4_fs_detail_lt_v4_nd_previosestimate,VECTOR,Previous estimate value prior to the latest revision,0.9791,0,0
+analyst4,anl4_fs_detail_rec_v4_nd_estimate,VECTOR,Recommendation value/rating provided by the broker/analyst,0.9797,7,3
+analyst4,anl4_fs_guidance_af_v4_nd_estimate,VECTOR,Point guidance estimate value for the item,0.6811,1,1
+analyst4,anl4_fs_guidance_af_v4_nd_maxguidance,VECTOR,Maximum value of the company’s annual guidance range for the item,0.6811,0,0
+analyst4,anl4_fs_guidance_af_v4_nd_minguidance,VECTOR,Minimum value of the company’s annual guidance range for the item,0.6811,0,0
+analyst4,anl4_fs_guidance_basic_af_v4_nd_estimate,VECTOR,Point estimate for the company’s basic annual financial guidance,0.5694,28,27
+analyst4,anl4_fs_guidance_basic_af_v4_nd_maxguidance,VECTOR,Maximum value of the company’s annual guidance range for the item,0.5694,5,5
+analyst4,anl4_fs_guidance_basic_af_v4_nd_minguidance,VECTOR,Minimum value of the company’s annual guidance range for the item,0.5694,8,8
+analyst4,anl4_fs_guidance_basic_qf_v4_nd_estimate,VECTOR,Point estimate value for the guidance item,0.4688,23,20
+analyst4,anl4_fs_guidance_basic_qf_v4_nd_maxguidance,VECTOR,Maximum guidance value for the item,0.4688,5,4
+analyst4,anl4_fs_guidance_basic_qf_v4_nd_minguidance,VECTOR,Minimum guidance value for the item,0.4688,9,8
+analyst4,anl4_fs_guidance_qf_v4_nd_currency,VECTOR,Currency code in which the guidance is reported,0.4722,2,2
+analyst4,anl4_fs_guidance_qf_v4_nd_estimate,VECTOR,Point guidance estimate value,0.4722,5,5
+analyst4,anl4_fs_guidance_qf_v4_nd_maxguidance,VECTOR,Maximum value of the guidance range for the item,0.4722,12,11
+analyst4,anl4_fs_guidance_qf_v4_nd_minguidance,VECTOR,Minimum value of the guidance range for the item,0.4722,12,10
+analyst4,anl4_fs_guidances_advanced_af_nd_bvps_maxguidance,MATRIX,Book value per share - maximum guidance value for the annual period,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_af_nd_bvps_minguidance,MATRIX,Minimum annual guidance value for Book Value Per Share,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_af_nd_capex_maxguidance,MATRIX,Maximum guidance value for capital expenditures on an annual basis,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_af_nd_capex_minguidance,MATRIX,Minimum guidance value for capital expenditures on an annual basis,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_af_nd_capex_value,MATRIX,Capital expenditures - total guidance value for the annual period,0.3493,0,0
+analyst4,anl4_fs_guidances_advanced_af_nd_cff_maxguidance,MATRIX,Maximum annual guidance value for Cash Flow From Financing,1.0,2,1
+analyst4,anl4_fs_guidances_advanced_af_nd_cff_minguidance,MATRIX,Minimum annual guidance value for Cash Flow From Financing,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_af_nd_cfi_maxguidance,MATRIX,Maximum annual guidance value for Cash Flow from Investing,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_af_nd_cfi_minguidance,MATRIX,Minimum annual guidance value for Cash Flow From Investing,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_af_nd_cfo_maxguidance,MATRIX,Maximum guidance value for Cash Flow from Operations on an annual basis,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_af_nd_cfo_minguidance,MATRIX,Minimum guidance value for cash flow from operations on an annual basis,1.0,2,1
+analyst4,anl4_fs_guidances_advanced_af_nd_currency,MATRIX,Pricing currency where the security trades for the annual period,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_af_nd_custom_eps_maxguidance,MATRIX,Maximum guidance value for custom earnings per share on an annual basis,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_af_nd_custom_eps_minguidance,MATRIX,Customized earnings per share - minimum guidance value for the annual period,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_af_nd_ebit_maxguidance,MATRIX,Maximum annual guidance value for Earnings Before Interest and Taxes (EBIT),1.0,1,1
+analyst4,anl4_fs_guidances_advanced_af_nd_ebit_minguidance,MATRIX,Minimum guidance value for Earnings Before Interest and Taxes (EBIT) on an annual basis,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_af_nd_ebitda_maxguidance,MATRIX,Maximum guidance value for EBITDA on an annual basis,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_af_nd_ebitda_minguidance,MATRIX,Minimum annual guidance value for EBITDA,1.0,1,1
+analyst4,anl4_fs_guidances_advanced_af_nd_epsa_maxguidance,MATRIX,The maximum guidance value for adjusted earnings per share on an annual basis,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_af_nd_epsa_minguidance,MATRIX,Minimum guidance value for adjusted earnings per share excluding extraordinary items and stock option expenses on an annual basis,1.0,1,1
+analyst4,anl4_fs_guidances_advanced_af_nd_epsr_maxguidance,MATRIX,Maximum guidance value for reported earnings per share (EPSR) for the annual period,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_af_nd_epsr_minguidance,MATRIX,Reported Earnings per Share minimum guidance value for the annual period,1.0,7,1
+analyst4,anl4_fs_guidances_advanced_af_nd_fcf_maxguidance,MATRIX,The maximum guidance value for Free Cash Flow on an annual basis,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_af_nd_fcf_minguidance,MATRIX,Minimum annual guidance value for Free Cash Flow,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_af_nd_fcfps_maxguidance,MATRIX,Maximum annual guidance value for Free Cash Flow per Share (FCFPS),1.0,0,0
+analyst4,anl4_fs_guidances_advanced_af_nd_fcfps_minguidance,MATRIX,Minimum annual guidance value for Free Cash Flow per Share,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_af_nd_ffo_maxguidance,MATRIX,Maximum guidance value for Funds from Operations on an annual basis,1.0,1,1
+analyst4,anl4_fs_guidances_advanced_af_nd_ffo_minguidance,MATRIX,Minimum annual guidance value for Funds From Operations,1.0,3,3
+analyst4,anl4_fs_guidances_advanced_af_nd_ffoa_maxguidance,MATRIX,Adjusted funds from operations - maximum guidance value for the annual period,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_af_nd_ffoa_minguidance,MATRIX,Adjusted funds from operation - minimum guidance for the annual period,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_af_nd_grossincome_maxguidance,MATRIX,Maximum guidance value for gross income on an annual basis,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_af_nd_grossincome_minguidance,MATRIX,Minimum guidance value for Gross Income on an annual basis,1.0,1,1
+analyst4,anl4_fs_guidances_advanced_af_nd_netdebt_maxguidance,MATRIX,Maximum annual guidance value for Net Debt on an annual basis,1.0,3,2
+analyst4,anl4_fs_guidances_advanced_af_nd_netdebt_minguidance,MATRIX,Minimum annual guidance value for Net Debt,1.0,3,3
+analyst4,anl4_fs_guidances_advanced_af_nd_netprofit_maxguidance,MATRIX,The maximum guidance value for net profit on an annual basis,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_af_nd_netprofit_minguidance,MATRIX,Minimum guidance value for Net Profit on an annual basis,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_af_nd_netprofita_maxguidance,MATRIX,Maximum annual guidance value for adjusted net profit,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_af_nd_netprofita_minguidance,MATRIX,Minimum annual guidance value for adjusted net profit,1.0,1,1
+analyst4,anl4_fs_guidances_advanced_af_nd_ptp_maxguidance,MATRIX,Maximum annual guidance value for Pretax income,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_af_nd_ptp_minguidance,MATRIX,Minimum guidance value for pretax income on an annual basis,1.0,3,3
+analyst4,anl4_fs_guidances_advanced_af_nd_ptpr_maxguidance,MATRIX,Maximum annual guidance value for reported pretax income (PTPR),1.0,1,1
+analyst4,anl4_fs_guidances_advanced_af_nd_ptpr_minguidance,MATRIX,Reported Pretax income - minimum guidance value,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_af_nd_rd_exp_maxguidance,MATRIX,Maximum guidance value for Research and Development Expense on an annual basis,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_af_nd_rd_exp_minguidance,MATRIX,Minimum guidance value for Research & Development Expense on an annual basis,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_af_nd_sga_maxguidance,MATRIX,"The maximum guidance value for Selling, General & Administrative Expense",1.0,0,0
+analyst4,anl4_fs_guidances_advanced_af_nd_sga_minguidance,MATRIX,"Minimum guidance value for Selling, General & Administrative Expense on an annual basis",1.0,1,1
+analyst4,anl4_fs_guidances_advanced_af_nd_sh_equity_maxguidance,MATRIX,Maximum annual guidance value for Shareholder's Equity,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_af_nd_sh_equity_minguidance,MATRIX,Minimum guidance value for Shareholder’s Equity,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_af_nd_shr_maxguidance,MATRIX,Maximum guidance value for Shares,1.0,2,1
+analyst4,anl4_fs_guidances_advanced_af_nd_shr_minguidance,MATRIX,Minimum guidance for shares on an annual basis,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_af_nd_shrb_maxguidance,MATRIX,Maximum guidance value for Shares Basic for the annual period,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_af_nd_shrb_minguidance,MATRIX,Minimum annual guidance value for Basic Shares (SHRB),1.0,0,0
+analyst4,anl4_fs_guidances_advanced_af_nd_soe_maxguidance,MATRIX,Stock option expense - maximum guidance value for the annual period,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_af_nd_soe_minguidance,MATRIX,Minimum guidance value for stock option expense on an annual basis,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_af_nd_tbvps_maxguidance,MATRIX,Maximum annual guidance value for Tangible Book Value per Share,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_af_nd_tbvps_minguidance,MATRIX,Minimum annual guidance value for Tangible Book Value per Share,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_af_nd_totassets_maxguidance,MATRIX,Maximum guidance value for total assets on an annual basis,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_af_nd_totassets_minguidance,MATRIX,Minimum annual guidance value for Total Assets,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_af_nd_totgw_maxguidance,MATRIX,Maximum guidance value for total goodwill on an annual basis,1.0,1,1
+analyst4,anl4_fs_guidances_advanced_af_nd_totgw_minguidance,MATRIX,Minimum guidance value for Total Goodwill,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_qf_nd_bvps_maxguidance,MATRIX,Book Value Per Share – maximum guidance value among forecasts,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_qf_nd_bvps_minguidance,MATRIX,Minimum guidance value for Book Value per Share (BVPS),1.0,0,0
+analyst4,anl4_fs_guidances_advanced_qf_nd_capex_maxguidance,MATRIX,Maximum guidance value for capital expenditures (CAPEX),1.0,0,0
+analyst4,anl4_fs_guidances_advanced_qf_nd_capex_minguidance,MATRIX,Minimum guidance value for Capital Expenditures,1.0,1,1
+analyst4,anl4_fs_guidances_advanced_qf_nd_cff_maxguidance,MATRIX,Cash Flow from Financing maximum guidance value,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_qf_nd_cff_minguidance,MATRIX,Minimum guidance value for Cash Flow From Financing,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_qf_nd_cfi_maxguidance,MATRIX,Maximum guidance value for Cash Flow from Investing,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_qf_nd_cfi_minguidance,MATRIX,Cash Flow from Investing minimum guidance value,1.0,2,2
+analyst4,anl4_fs_guidances_advanced_qf_nd_cfo_maxguidance,MATRIX,Maximum guidance value for Cash Flow from Operations,1.0,20,3
+analyst4,anl4_fs_guidances_advanced_qf_nd_cfo_minguidance,MATRIX,Minimum guidance value for Cash Flow from Operations,1.0,21,4
+analyst4,anl4_fs_guidances_advanced_qf_nd_custom_eps_maxguidance,MATRIX,Custom Earnings per share - the highest guidance value,1.0,1,1
+analyst4,anl4_fs_guidances_advanced_qf_nd_custom_eps_minguidance,MATRIX,Custom Earnings per share - Minimum guidance value,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_qf_nd_ebit_maxguidance,MATRIX,Maximum guidance value for EBIT,1.0,23,23
+analyst4,anl4_fs_guidances_advanced_qf_nd_ebit_minguidance,MATRIX,Minimum guidance value for Earnings Before Interest and Taxes (EBIT),1.0,4,3
+analyst4,anl4_fs_guidances_advanced_qf_nd_ebitda_maxguidance,MATRIX,Maximum guidance value for EBITDA,1.0,7,6
+analyst4,anl4_fs_guidances_advanced_qf_nd_ebitda_minguidance,MATRIX,"Minimum guidance value for EBITDA (Earnings before interest, taxes, depreciation and amortization)",1.0,6,6
+analyst4,anl4_fs_guidances_advanced_qf_nd_epsa_maxguidance,MATRIX,The maximum guidance value for adjusted earnings per share,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_qf_nd_epsa_minguidance,MATRIX,Minimum guidance value for adjusted EPS (excluding extraordinary items and stock option expenses),1.0,0,0
+analyst4,anl4_fs_guidances_advanced_qf_nd_epsr_maxguidance,MATRIX,Maximum guidance value for reported EPS,1.0,1,1
+analyst4,anl4_fs_guidances_advanced_qf_nd_epsr_minguidance,MATRIX,Minimum guidance value for reported EPS,1.0,2,2
+analyst4,anl4_fs_guidances_advanced_qf_nd_fcf_maxguidance,MATRIX,Maximum guidance value for Free Cash Flow,1.0,4,4
+analyst4,anl4_fs_guidances_advanced_qf_nd_fcf_minguidance,MATRIX,Minimum guidance value for Free Cash Flow,1.0,4,4
+analyst4,anl4_fs_guidances_advanced_qf_nd_fcfps_maxguidance,MATRIX,The maximum guidance value for free cash flow per share,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_qf_nd_fcfps_minguidance,MATRIX,Free cash flow per share minimum guidance value,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_qf_nd_ffo_maxguidance,MATRIX,Maximum guidance value for Funds from Operation,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_qf_nd_ffo_minguidance,MATRIX,Funds from operation - minimum guidance value,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_qf_nd_ffoa_maxguidance,MATRIX,Adjusted funds from operation - maximum guidance value,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_qf_nd_ffoa_minguidance,MATRIX,Minimum guidance value for Adjusted funds from operation,1.0,2,1
+analyst4,anl4_fs_guidances_advanced_qf_nd_grossincome_maxguidance,MATRIX,Maximum guidance value for Gross Income,1.0,2,2
+analyst4,anl4_fs_guidances_advanced_qf_nd_grossincome_minguidance,MATRIX,Minimum guidance value for Gross Income,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_qf_nd_netdebt_maxguidance,MATRIX,Maximum guidance value for Net Debt,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_qf_nd_netdebt_minguidance,MATRIX,Minimum guidance value for Net Debt,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_qf_nd_netprofit_maxguidance,MATRIX,Maximum guidance value for Net Profit,1.0,1,1
+analyst4,anl4_fs_guidances_advanced_qf_nd_netprofit_minguidance,MATRIX,Net profit minimum guidance value,1.0,6,6
+analyst4,anl4_fs_guidances_advanced_qf_nd_netprofita_maxguidance,MATRIX,Maximum guidance value for Adjusted net income,1.0,262,211
+analyst4,anl4_fs_guidances_advanced_qf_nd_netprofita_minguidance,MATRIX,Minimum guidance value for adjusted net income,1.0,428,377
+analyst4,anl4_fs_guidances_advanced_qf_nd_ptp_maxguidance,MATRIX,Maximum guidance value for pretax income (PTP),1.0,11,10
+analyst4,anl4_fs_guidances_advanced_qf_nd_ptp_minguidance,MATRIX,Minimum guidance value for Pretax income,1.0,1,1
+analyst4,anl4_fs_guidances_advanced_qf_nd_ptpr_maxguidance,MATRIX,Maximum guidance value for Reported Pretax Income,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_qf_nd_ptpr_minguidance,MATRIX,Minimum guidance value for reported pretax income (PTPR),1.0,0,0
+analyst4,anl4_fs_guidances_advanced_qf_nd_rd_exp_maxguidance,MATRIX,Maximum guidance value for Research and Development expense,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_qf_nd_rd_exp_minguidance,MATRIX,Minimum guidance value for Research and Development Expense,1.0,2,2
+analyst4,anl4_fs_guidances_advanced_qf_nd_sga_maxguidance,MATRIX,Maximum guidance value for SG&A expenses,1.0,1,1
+analyst4,anl4_fs_guidances_advanced_qf_nd_sga_minguidance,MATRIX,"Selling, General and Administrative Expense - minimum guidance value",1.0,0,0
+analyst4,anl4_fs_guidances_advanced_qf_nd_sh_equity_maxguidance,MATRIX,Maximum guidance value for Total Shareholders’ Equity,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_qf_nd_sh_equity_minguidance,MATRIX,Minimum guidance value for Shareholders' Equity,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_qf_nd_shr_maxguidance,MATRIX,The maximum guidance for Shares,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_qf_nd_shr_minguidance,MATRIX,Minimum guidance value for Shares,1.0,2,2
+analyst4,anl4_fs_guidances_advanced_qf_nd_shrb_maxguidance,MATRIX,Maximum guidance value for basic shares (SHRB),1.0,1,1
+analyst4,anl4_fs_guidances_advanced_qf_nd_shrb_minguidance,MATRIX,Minimum guidance value for Shares Basic,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_qf_nd_soe_maxguidance,MATRIX,Maximum guidance value for stock option expense (SOE),1.0,0,0
+analyst4,anl4_fs_guidances_advanced_qf_nd_soe_minguidance,MATRIX,Stock option expense - minimum guidance value,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_qf_nd_tbvps_maxguidance,MATRIX,Tangible Book Value per Share maximum guidance value,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_qf_nd_tbvps_minguidance,MATRIX,Tangible Book Value per Share - minimum guidance value,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_qf_nd_totassets_maxguidance,MATRIX,Maximum guidance value for Total Assets,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_qf_nd_totassets_minguidance,MATRIX,Minimum guidance value for Total Assets,1.0,0,0
+analyst4,anl4_fs_guidances_advanced_qf_nd_totgw_maxguidance,MATRIX,"Maximum guidance value for Total Goodwill, i.e., the upper bound of the provided guidance range",1.0,0,0
+analyst4,anl4_fs_guidances_advanced_qf_nd_totgw_minguidance,MATRIX,Minimum guidance value for Total Goodwill,1.0,0,0
+analyst4,anl4_fs_guidances_basic_af_nd_cfps_maxguidance,MATRIX,Maximum guidance value for Cash Flow Per Share on an annual basis,1.0,0,0
+analyst4,anl4_fs_guidances_basic_af_nd_cfps_minguidance,MATRIX,Minimum guidance value for Cash Flow Per Share on an annual basis,1.0,0,0
+analyst4,anl4_fs_guidances_basic_af_nd_div_maxguidance,MATRIX,Maximum guidance value for Dividend per share on an annual basis,1.0,16,15
+analyst4,anl4_fs_guidances_basic_af_nd_div_minguidance,MATRIX,Minimum guidance value for Dividend per share on an annual basis,1.0,4,4
+analyst4,anl4_fs_guidances_basic_af_nd_eps_maxguidance,MATRIX,Maximum guidance value for Earnings Per Share on an annual basis,1.0,1,1
+analyst4,anl4_fs_guidances_basic_af_nd_eps_minguidance,MATRIX,Minimum guidance value for Earnings Per Share on an annual basis,1.0,14,2
+analyst4,anl4_fs_guidances_basic_af_nd_eps_value,MATRIX,Earnings Per Share — guidance value for annual frequency,0.3506,0,0
+analyst4,anl4_fs_guidances_basic_af_nd_sales_maxguidance,MATRIX,Maximum guidance value for annual sales,1.0,0,0
+analyst4,anl4_fs_guidances_basic_af_nd_sales_minguidance,MATRIX,Minimum sales guidance for the annual period,1.0,2,2
+analyst4,anl4_fs_guidances_basic_af_nd_sales_value,MATRIX,Sales — guidance value for the annual period,0.415,12,9
+analyst4,anl4_fs_guidances_basic_qf_nd_cfps_maxguidance,MATRIX,Upper bound of the company’s Cash Flow Per Share guidance range,1.0,1,1
+analyst4,anl4_fs_guidances_basic_qf_nd_cfps_minguidance,MATRIX,Lower bound of the company’s Cash Flow Per Share guidance range,1.0,0,0
+analyst4,anl4_fs_guidances_basic_qf_nd_div_maxguidance,MATRIX,Upper bound of the company’s Dividend per share guidance range,1.0,0,0
+analyst4,anl4_fs_guidances_basic_qf_nd_div_minguidance,MATRIX,Lower bound of the company’s Dividend per share guidance range,1.0,3,3
+analyst4,anl4_fs_guidances_basic_qf_nd_eps_maxguidance,MATRIX,Upper bound of the company’s EPS guidance range,1.0,3,3
+analyst4,anl4_fs_guidances_basic_qf_nd_eps_minguidance,MATRIX,Lower bound of the company’s EPS guidance range,1.0,3,3
+analyst4,anl4_fs_guidances_basic_qf_nd_eps_value,MATRIX,Current EPS guidance value,0.2928,9,8
+analyst4,anl4_fs_guidances_basic_qf_nd_sales_maxguidance,MATRIX,Upper bound of the company’s Sales guidance range,1.0,16,8
+analyst4,anl4_fs_guidances_basic_qf_nd_sales_minguidance,MATRIX,Lower bound of the company’s Sales guidance range,1.0,11,3
+analyst4,anl4_fs_guidances_basic_qf_nd_sales_value,MATRIX,Current Sales guidance value,0.3271,0,0
+analyst4,anl4_fsactualafv4_actual,VECTOR,Announced financial data,0.764,22,22
+analyst4,anl4_fsactualafv4_item,VECTOR,Financial item,0.7877,2701,2030
+analyst4,anl4_fsactualqfv4_actual,VECTOR,Announced financial data,0.766,7,7
+analyst4,anl4_fsactualqfv4_item,VECTOR,Financial item,0.7773,138,94
+analyst4,anl4_fsdetailltv4v104_item,VECTOR,Financial item,0.7968,3454,2310
+analyst4,anl4_fsdetailrecv4v104_item,VECTOR,Financial item,0.8025,5304,1655
+analyst4,anl4_fsdtlestmtafv4_item,VECTOR,Financial item,0.7902,4145,2366
+analyst4,anl4_fsdtlestmtbscqv104_item,VECTOR,Financial item,0.7904,1107,468
+analyst4,anl4_fsdtlestmtbscv104_item,VECTOR,Financial item,0.8087,910,810
+analyst4,anl4_fsdtlestmtqfv4_item,VECTOR,Financial item,0.729,462,386
+analyst4,anl4_fsdtlestmtsafv4_item,VECTOR,Financial item,0.3145,31,19
+analyst4,anl4_fsgdncbscv4_maxguidance,VECTOR,Max guidance value,0.3216,66,65
+analyst4,anl4_fsgdncbscv4_minguidance,VECTOR,Minimum guidance value,0.3216,37,37
+analyst4,anl4_fsguidanceafv4_item,VECTOR,Financial item,0.4535,43,29
+analyst4,anl4_fsguidanceafv4_maxguidance,VECTOR,Maximum guidance value,0.4535,5,5
+analyst4,anl4_fsguidanceafv4_minguidance,VECTOR,Min guidance value,0.4535,6,5
+analyst4,anl4_fsguidancebasicqfv4_item,VECTOR,Financial item,0.3216,3770,2513
+analyst4,anl4_fsguidanceqfv4_item,VECTOR,Financial item,0.3053,2167,1636
+analyst4,anl4_fsguidanceqfv4_maxguidance,VECTOR,Max guidance value,0.3053,121,99
+analyst4,anl4_fsguidanceqfv4_minguidance,VECTOR,Min guidance value,0.3053,110,80
+analyst4,anl4_gric_flag,MATRIX,Gross income - forecast type (revision/new/...),0.8951,10160,5536
+analyst4,anl4_gric_high,MATRIX,Gross income - The highest estimation,0.6026,873,455
+analyst4,anl4_gric_low,MATRIX,Gross income - The lowest estimation,0.6026,2004,955
+analyst4,anl4_gric_mean,MATRIX,Gross income - mean of estimations,0.6026,660,410
+analyst4,anl4_gric_median,MATRIX,Gross income - median of estimations,0.6026,1188,741
+analyst4,anl4_gric_number,MATRIX,Gross income - number of estimations,0.6026,1329,996
+analyst4,anl4_gric_std,MATRIX,Gross income - std of estimations,0.4073,3707,2533
+analyst4,anl4_gric_value,MATRIX,Gross income- announced financial value,0.6954,2206,1444
+analyst4,anl4_guiafv4_est,VECTOR,Estimation value,0.6994,49,27
+analyst4,anl4_guibasicqfv4_est,VECTOR,Estimation value,0.4814,2777,2012
+analyst4,anl4_guiqfv4_est,VECTOR,Estimation value,0.4849,1813,1413
+analyst4,anl4_hold,VECTOR,The number of recommendations not clear about short or long the instrument,0.6243,940,841
+analyst4,anl4_mark,VECTOR,Recommendation consensus score,0.6243,781,406
+analyst4,anl4_median_capexp,MATRIX,Capital Expenditures - median of estimations,0.6173,469,239
+analyst4,anl4_median_epsreported,MATRIX,GAAP Earnings per share - median of estimations,0.7153,3832,1453
+analyst4,anl4_medianepsbfam,MATRIX,"Earnings before interest, taxes, depreciation and amortization - median of estimations",0.5831,1057,738
+analyst4,anl4_netdebt_flag,MATRIX,Net debt - forecast type (revision/new/...),0.8602,16615,6743
+analyst4,anl4_netdebt_high,MATRIX,Net debt - the highest estimation,0.5156,171,131
+analyst4,anl4_netdebt_low,MATRIX,Net debt - the lowest estimation,0.5156,292,163
+analyst4,anl4_netdebt_mean,MATRIX,Net debt - mean of estimations,0.5156,488,288
+analyst4,anl4_netdebt_median,MATRIX,Net Debt - median of estimations,0.5156,125,80
+analyst4,anl4_netdebt_number,MATRIX,Net debt - Number of estimations,0.5156,352,280
+analyst4,anl4_netprofit_flag,MATRIX,Net profit - forecast type (revision/new/...),0.8778,13716,6675
+analyst4,anl4_netprofit_high,MATRIX,Net Profit - The highest estimation,0.7667,577,374
+analyst4,anl4_netprofit_low,MATRIX,Net Profit - The Lowest Estimation,0.7667,1469,891
+analyst4,anl4_netprofit_mean,MATRIX,Net profit - mean of estimations,0.7667,736,528
+analyst4,anl4_netprofit_median,MATRIX,Net profit - Median of estimations,0.7667,1129,797
+analyst4,anl4_netprofit_number,MATRIX,Net profit - number of estimations,0.7667,10304,6467
+analyst4,anl4_netprofit_std,MATRIX,Net profit - standard deviation of estimations,0.5996,449,315
+analyst4,anl4_netprofit_value,MATRIX,Net profit- announced financial value,1.0,1584,558
+analyst4,anl4_netprofita_high,MATRIX,Adjusted Net Income - the highest estimation,0.7511,1048,732
+analyst4,anl4_netprofita_low,MATRIX,Adjusted net income - the lowest estimation,0.7511,4090,1517
+analyst4,anl4_netprofita_mean,MATRIX,Adjusted net income - mean of estimations,0.7511,1428,937
+analyst4,anl4_netprofita_median,MATRIX,Adjusted net income - median of estimations,0.7511,759,583
+analyst4,anl4_netprofita_number,MATRIX,Adjusted net income - number of estimations,0.7511,2697,1920
+analyst4,anl4_netprofita_std,MATRIX,Adjusted net income - std of estimations,0.5041,265,158
+analyst4,anl4_netprofita_value,MATRIX,Adjusted net income- announced financial value,0.9312,954,604
+analyst4,anl4_norec,VECTOR,The number of brokers with no recommendation,0.6243,69,62
+analyst4,anl4_ptp_flag,MATRIX,Pretax income - forecast type (revision/new/...),0.8289,26234,10190
+analyst4,anl4_ptp_high,MATRIX,Pretax income - the highest estimation,0.7327,3390,2818
+analyst4,anl4_ptp_low,MATRIX,Pretax income - the lowest estimation,0.7327,4573,1397
+analyst4,anl4_ptp_mean,MATRIX,Pretax income - mean of estimations,0.7327,807,434
+analyst4,anl4_ptp_median,MATRIX,Pretax income - median of estimations,0.7327,735,426
+analyst4,anl4_ptp_number,MATRIX,Pretax Income - number of estimations,0.7327,6496,3971
+analyst4,anl4_ptp_value,MATRIX,Pretax income- announced financial value,0.9431,1648,1186
+analyst4,anl4_ptpr_flag,MATRIX,Reported Pretax income - forecast type (revision/new/...),0.9008,10386,5118
+analyst4,anl4_ptpr_high,MATRIX,Reported pretax income - the highest estimation,0.4083,335,176
+analyst4,anl4_ptpr_low,MATRIX,Reported Pretax Income - The Lowest Estimation,0.4083,2862,1160
+analyst4,anl4_ptpr_mean,MATRIX,Reported Pretax income - mean of estimations,0.4083,269,141
+analyst4,anl4_ptpr_median,MATRIX,Reported pretax income - Median of estimations,0.4083,371,255
+analyst4,anl4_ptpr_number,MATRIX,Reported Pretax Income - number of estimations,0.4083,9735,3943
+analyst4,anl4_qf_az_cfps_mean,MATRIX,Cash Flow Per Share - average of estimations,0.3273,249,118
+analyst4,anl4_qf_az_cfps_median,MATRIX,Cash Flow Per Share - Median value among forecasts,0.3273,103,44
+analyst4,anl4_qf_az_cfps_number,MATRIX,Cash Flow Per Share - number of estimations,0.3273,68,43
+analyst4,anl4_qf_az_div_mean,MATRIX,Dividend per share - average of estimations,0.4857,70,38
+analyst4,anl4_qf_az_div_median,MATRIX,Dividend per share - median of estimations,0.4857,49,39
+analyst4,anl4_qf_az_div_number,MATRIX,Dividend per share - number of estimations,0.4857,58,41
+analyst4,anl4_qf_az_dts_spe,MATRIX,Earnings per share - std of estimations,0.571,1592,1025
+analyst4,anl4_qf_az_eps,MATRIX,"EPS - aggregation on estimations, 50th percentile",0.7848,559,324
+analyst4,anl4_qf_az_eps_mean,MATRIX,Earnings per share - mean of estimations,0.7848,1117,650
+analyst4,anl4_qf_az_eps_number,MATRIX,Earnings per share - number of estimations,0.7848,11515,5059
+analyst4,anl4_qf_az_hgih_spe,MATRIX,Earnings per share - The highest estimation,0.7848,583,344
+analyst4,anl4_qf_az_hgih_spfc,MATRIX,"Cash Flow - The highest estimation, per share",0.3273,255,79
+analyst4,anl4_qf_az_hgih_vid,MATRIX,Dividend per share - The highest estimation,0.4857,106,69
+analyst4,anl4_qf_az_wol_spe,MATRIX,Earnings per share - The lowest estimation,0.7848,506,276
+analyst4,anl4_qf_az_wol_spfc,MATRIX,Cash Flow Per Share - The lowest estimation,0.3273,105,52
+analyst4,anl4_qf_az_wol_vid,MATRIX,Dividend per share - The lowest value among forecasts,0.4857,178,135
+analyst4,anl4_qfd1_az_cfps_median,MATRIX,Cash Flow Per Share - Median value among forecasts,0.3273,163,58
+analyst4,anl4_qfd1_az_cfps_number,MATRIX,Cash Flow Per Share - number of estimations,0.3273,60,49
+analyst4,anl4_qfd1_az_div_median,MATRIX,Dividend per share - median of estimations,0.4857,99,52
+analyst4,anl4_qfd1_az_div_number,MATRIX,Dividend per share - number of estimations,0.4857,71,50
+analyst4,anl4_qfd1_az_dts_spe,MATRIX,Earnings per share - std of estimations,0.571,1492,999
+analyst4,anl4_qfd1_az_eps_number,MATRIX,Earnings per share - number of estimations,0.7848,6845,4010
+analyst4,anl4_qfd1_az_hgih_spe,MATRIX,Earnings per share - The highest estimation,0.7848,719,348
+analyst4,anl4_qfd1_az_hgih_spfc,MATRIX,"Cash Flow - The highest estimation, per share",0.3273,119,54
+analyst4,anl4_qfd1_az_hgih_vid,MATRIX,Dividend per share - The highest estimation,0.4857,83,54
+analyst4,anl4_qfd1_az_wol_spe,MATRIX,Earnings per share - The lowest estimation,0.7848,446,265
+analyst4,anl4_qfd1_az_wol_spfc,MATRIX,Cash Flow Per Share - The lowest estimation,0.3273,80,50
+analyst4,anl4_qfd1_az_wol_vid,MATRIX,Dividend per share - The lowest value among forecasts,0.4857,158,125
+analyst4,anl4_qfd1_azeps,MATRIX,"EPS - aggregation on estimations, 50th percentile",0.7848,504,271
+analyst4,anl4_qfv4_actual,VECTOR,Announced financial data,0.9925,485,453
+analyst4,anl4_qfv4_cfps_high,MATRIX,Cash Flow Per Share - The highest estimation for the quarter,0.3977,10,9
+analyst4,anl4_qfv4_cfps_low,MATRIX,Cash Flow Per Share - The lowest estimation,0.3977,16,15
+analyst4,anl4_qfv4_cfps_mean,MATRIX,Cash Flow Per Share - average of estimations,0.3977,11,11
+analyst4,anl4_qfv4_cfps_median,MATRIX,Cash Flow Per Share - Median value among forecasts,0.3977,9,9
+analyst4,anl4_qfv4_cfps_number,MATRIX,Cash Flow Per Share - number of estimations,0.3977,13,13
+analyst4,anl4_qfv4_div_high,MATRIX,Dividend per share - The highest estimation,0.6151,32,29
+analyst4,anl4_qfv4_div_low,MATRIX,Dividend per share - The lowest estimation,0.6151,92,86
+analyst4,anl4_qfv4_div_mean,MATRIX,Dividend per share - mean of estimations,0.6151,13,13
+analyst4,anl4_qfv4_div_median,MATRIX,Dividend per share - median of estimations,0.6151,31,27
+analyst4,anl4_qfv4_div_number,MATRIX,Dividend - number of estimations,0.6151,27,22
+analyst4,anl4_qfv4_dts_spe,MATRIX,Earnings per share - standard deviation of estimations,0.7237,1056,734
+analyst4,anl4_qfv4_eps_high,MATRIX,Earnings per share - The highest estimation,1.0,118,56
+analyst4,anl4_qfv4_eps_low,MATRIX,Earnings per share - The lowest estimation,1.0,96,52
+analyst4,anl4_qfv4_eps_mean,MATRIX,Earnings per share - mean of estimations,1.0,120,93
+analyst4,anl4_qfv4_eps_number,MATRIX,Earnings per share - number of estimations,1.0,1289,993
+analyst4,anl4_qfv4_maxguidance,VECTOR,Max guidance value,0.4849,3050,2096
+analyst4,anl4_qfv4_median_eps,MATRIX,Earnings per share - median of estimations,1.0,93,71
+analyst4,anl4_qfv4_minguidance,VECTOR,Min guidance value,0.4849,2551,1775
+analyst4,anl4_rd_exp_flag,MATRIX,Research and Development Expense - forecast type (revision/new/...),0.9754,4226,2394
+analyst4,anl4_rd_exp_high,MATRIX,Research and Development Expense - the highest estimation,0.2918,220,123
+analyst4,anl4_rd_exp_low,MATRIX,Research and Development Expense - the lowest estimation,0.2918,3148,1322
+analyst4,anl4_rd_exp_mean,MATRIX,Research and Development Expense - mean of estimations,0.2918,4047,3039
+analyst4,anl4_rd_exp_median,MATRIX,Research and Development Expense - Median of estimations,0.2918,192,115
+analyst4,anl4_rd_exp_number,MATRIX,Research and Development Expense - Number of Estimations,0.2918,251,159
+analyst4,anl4_tbve_ft,MATRIX,Tangible Book Value per Share - forecast type (revision/new/...),0.9305,10582,5617
+analyst4,anl4_tbvps_high,MATRIX,Tangible Book Value per Share - The highest estimation,0.3321,167,134
+analyst4,anl4_tbvps_low,MATRIX,Tangible Book Value per Share - The lowest estimation,0.3321,371,280
+analyst4,anl4_tbvps_mean,MATRIX,Tangible Book Value per Share - mean of estimations,0.3321,281,199
+analyst4,anl4_tbvps_median,MATRIX,Tangible Book Value per Share - median of estimations,0.3321,152,93
+analyst4,anl4_tbvps_number,MATRIX,Tangible Book Value per Share - number of estimations,0.3321,1809,1671
+analyst4,anl4_tot_gw_ft,MATRIX,Total Goodwill - forecast type (revision/new/...),0.8515,7397,1960
+analyst4,anl4_total_rec,VECTOR,The total number of recommendations,0.6243,2540,1651
+analyst4,anl4_totassets_flag,MATRIX,Total Assets - forecast type (revision/new/...),0.8122,13174,5355
+analyst4,anl4_totassets_high,MATRIX,Total Assets - The highest estimation,0.7213,708,411
+analyst4,anl4_totassets_low,MATRIX,Total Assets - The lowest estimation,0.7213,2287,1196
+analyst4,anl4_totassets_mean,MATRIX,Total Assets - mean of estimations,0.7213,526,324
+analyst4,anl4_totassets_median,MATRIX,Total Assets - median of estimations,0.7213,453,297
+analyst4,anl4_totassets_number,MATRIX,Total Assets - number of estimations,0.7213,5945,3740
+analyst4,anl4_totassets_std,MATRIX,Total Assets - standard deviation of estimations,0.3233,1275,1094
+analyst4,anl4_totassets_value,MATRIX,Total Assets - actual value,0.6486,1308,497
+analyst4,anl4_totgw_high,MATRIX,Total Goodwill - The highest estimation,0.5374,160,105
+analyst4,anl4_totgw_low,MATRIX,Total Goodwill - The lowest estimation,0.5374,180,116
+analyst4,anl4_totgw_mean,MATRIX,Total Goodwill - mean of estimations,0.5374,223,97
+analyst4,anl4_totgw_median,MATRIX,Total Goodwill - median of estimations,0.5374,154,102
+analyst4,anl4_totgw_number,MATRIX,Total Goodwill - number of estimations,0.5374,258,161
+analyst4,anl4_under,VECTOR,The number of Underweight recommendations,0.6243,117,86
+analyst4,avg_capex_quarterly_estimate,MATRIX,The arithmetic average of broker estimates for capital expenditures in the current quarter.,0.6442,4,2
+analyst4,avg_ebitda_quarterly_estimate,MATRIX,"The arithmetic average of quarterly broker estimates for earnings before interest, taxes, depreciation, and amortization.",0.7649,2,1
+analyst4,avg_pretax_profit_quarterly_estimate,MATRIX,The arithmetic average of broker estimates for pretax profit in the current quarter.,0.9083,1,1
+analyst4,avg_total_assets_quarterly_estimate,MATRIX,The arithmetic average of broker estimates for total assets in the current quarter.,0.7048,2,2
+analyst4,basic_shares_max_guidance_qtr,MATRIX,The maximum guidance value for Basic Shares.,1.0,152,135
+analyst4,book_value_per_share_2,MATRIX,Book Value Per Share - Actual Value,0.7481,99,75
+analyst4,book_value_per_share_avg,MATRIX,Average book value per share.,0.4056,8,7
+analyst4,book_value_per_share_max,MATRIX,Highest estimate of book value per share.,0.4056,2,1
+analyst4,book_value_per_share_median,MATRIX,Median value of book value per share.,0.4056,0,0
+analyst4,book_value_per_share_min,MATRIX,Lowest estimate of book value per share.,0.4056,3,3
+analyst4,book_value_per_share_min_guidance_qtr,MATRIX,Book value per share - minimum guidance value,1.0,71,57
+analyst4,book_value_per_share_reported_value,MATRIX,Book Value Per Share - Actual Value,0.5245,133,77
+analyst4,capital_expenditure_amount,MATRIX,Capital Expenditures - Total value,0.7524,48,42
+analyst4,capital_expenditure_guidance_value,MATRIX,Capital Expenditures - Total value for the annual guidance,0.3587,34,31
+analyst4,capital_expenditure_max,MATRIX,Highest estimate of capital expenditures for the period.,0.6442,53,5
+analyst4,capital_expenditure_max_guidance_qtr,MATRIX,The maximum guidance value for Capital Expenditures,1.0,52,40
+analyst4,capital_expenditure_median,MATRIX,Median value of capital expenditures for the period.,0.6442,1,1
+analyst4,capital_expenditure_min,MATRIX,Minimum projected spending on fixed assets for the period.,0.6442,1,1
+analyst4,capital_expenditure_reported_value,MATRIX,Capital Expenditures - Total (Cash Flow/Investing) (Millions),0.6592,95,85
+analyst4,capital_expenditure_stddev,MATRIX,Standard deviation of capital expenditure estimates.,0.297,1,1
+analyst4,cash_flow_financing_max_guidance,MATRIX,Cash Flow From Financing - Maximum guidance value provided annually,1.0,83,74
+analyst4,cash_flow_from_financing,MATRIX,Cash Flow From Financing - Value,0.6432,70,57
+analyst4,cash_flow_from_investing,MATRIX,Cash Flow from Investing - Value,0.6481,101,72
+analyst4,cash_flow_from_operations,MATRIX,Cash Flow from Operations - Value for the annual period,0.7137,472,353
+analyst4,cash_flow_operations_min_guidance,MATRIX,Minimum guidance value for Cash Flow from Operations on an annual basis.,1.0,27,25
+analyst4,cashflow_financing_avg,MATRIX,Average cash flows from financing activities.,0.5374,5,4
+analyst4,cashflow_financing_max,MATRIX,Highest estimate of cash flows from financing activities.,0.5374,1,1
+analyst4,cashflow_financing_median,MATRIX,Median value of cash flows from financing activities.,0.5374,3,2
+analyst4,cashflow_financing_min,MATRIX,Lowest estimate of cash flows from financing activities.,0.5374,1,1
+analyst4,cashflow_investing_avg,MATRIX,Average cash flows from investing activities.,0.5442,2,2
+analyst4,cashflow_investing_max,MATRIX,Highest estimate of cash flows from investing activities.,0.5442,3,3
+analyst4,cashflow_investing_median,MATRIX,Median value of cash flows from investing activities.,0.5442,1,1
+analyst4,cashflow_investing_min,MATRIX,Lowest estimate of cash flows from investing activities.,0.5442,1,1
+analyst4,cashflow_per_share_average,MATRIX,Cash Flow Per Share - average of estimations with a delay of 1 quarter,0.3977,31,27
+analyst4,cashflow_per_share_estimate_count,MATRIX,Cash Flow Per Share - number of estimations - delay1,0.3977,26,26
+analyst4,cashflow_per_share_max_guidance,MATRIX,The maximum guidance value for Cash Flow Per Share on an annual basis.,1.0,42,40
+analyst4,cashflow_per_share_max_guidance_quarterly,MATRIX,The maximum guidance value for Cash Flow Per Share.,1.0,58,56
+analyst4,cashflow_per_share_maximum,MATRIX,"Cash Flow - The highest estimation, per share, with a delay of 1 quarter",0.3977,17,14
+analyst4,cashflow_per_share_median_value,MATRIX,Cash Flow Per Share - Median value among forecasts,0.3977,13,13
+analyst4,cashflow_per_share_min_guidance,MATRIX,Cash Flow Per Share - Minimum guidance value for the annual period,1.0,38,38
+analyst4,cashflow_per_share_min_guidance_quarterly,MATRIX,Minimum guidance value for Cash Flow Per Share,1.0,47,39
+analyst4,cashflow_per_share_minimum,MATRIX,"Cash Flow Per Share - The lowest estimation, delay 1 quarter",0.3977,8,7
+analyst4,dividend_estimate_average,MATRIX,Dividend per share - average of estimations - delay 1,0.6151,19,19
+analyst4,dividend_estimate_count,MATRIX,Dividend per share - number of estimations with a delay of 1 quarter,0.6151,32,23
+analyst4,dividend_estimate_maximum,MATRIX,Dividend per share - The highest value among forecasts with a delay of 1 quarter,0.6151,25,24
+analyst4,dividend_estimate_median_value,MATRIX,Dividend per share - median of estimations,0.6151,15,14
+analyst4,dividend_estimate_minimum,MATRIX,Dividend per share - The lowest value among forecasts - D1,0.6151,69,63
+analyst4,dividend_estimate_standard_deviation,MATRIX,Dividend per share - standard deviation of estimations,0.2742,6,6
+analyst4,dividend_estimate_stddev_quarterly,MATRIX,Dividend per share - standard deviation of estimations,0.2742,4,4
+analyst4,dividend_estimate_value,VECTOR,Dividend per share - estimated value,0.4663,1,1
+analyst4,dividend_max_guidance_quarterly,MATRIX,Maximum guidance value for Dividend per share,1.0,114,101
+analyst4,dividend_max_guidance_value,MATRIX,The maximum guidance value for Dividend per share on an annual basis.,1.0,203,153
+analyst4,dividend_min_guidance_quarterly,MATRIX,Minimum guidance value for Dividend per share,1.0,89,85
+analyst4,dividend_min_guidance_value,MATRIX,Minimum guidance value for Dividend per share on an annual basis,1.0,167,138
+analyst4,dividend_previous_estimate_value,VECTOR,The previous estimation of dividend,0.4592,1,1
+analyst4,earnings_per_share_average,MATRIX,Earnings per share - mean of estimations,1.0,312,236
+analyst4,earnings_per_share_estimate_count,MATRIX,Earnings per share - number of estimations,1.0,868,696
+analyst4,earnings_per_share_guidance_value,MATRIX,Earnings Per Share - guidance value for annual frequency,0.36,68,65
+analyst4,earnings_per_share_max_guidance,MATRIX,The maximum guidance value for Earnings Per Share on an annual basis.,1.0,46,43
+analyst4,earnings_per_share_maximum,MATRIX,Earnings per share - The highest estimation,1.0,60,54
+analyst4,earnings_per_share_median_value,MATRIX,Earnings per share - median of estimations,1.0,100,77
+analyst4,earnings_per_share_min_guidance,MATRIX,Minimum guidance value for Earnings Per Share on an annual basis.,1.0,42,41
+analyst4,earnings_per_share_minimum,MATRIX,Earnings per share - The lowest estimation,1.0,45,38
+analyst4,earnings_per_share_nongaap_value,MATRIX,Non-GAAP Earnings Per Share - Actual Value,0.7978,106,94
+analyst4,earnings_per_share_reported,MATRIX,Reported Earnings Per Share - Actual Value,0.957,107,99
+analyst4,earnings_per_share_reported_value,MATRIX,Reported Earnings Per Share - Actual Value,0.9902,168,131
+analyst4,earnings_per_share_standard_deviation,MATRIX,Earnings per share - standard deviation of estimations,0.7237,679,531
+analyst4,ebit_avg,MATRIX,Average operating profit before interest and taxes.,0.9061,8,5
+analyst4,ebit_max,MATRIX,Highest estimate of operating profit before interest and taxes.,0.9061,4,4
+analyst4,ebit_median,MATRIX,Median value of operating profit before interest and taxes.,0.9061,5,2
+analyst4,ebit_min,MATRIX,Lowest estimate of operating profit before interest and taxes.,0.9061,3,3
+analyst4,ebit_reported_value,MATRIX,Earnings Before Interest & Taxes - actual value for the quarter,0.9483,261,182
+analyst4,ebit_stddev,MATRIX,Standard deviation of operating profit before interest and taxes.,0.6271,87,8
+analyst4,ebitda_max,MATRIX,Highest estimate of EBITDA for the period.,0.7649,8,8
+analyst4,ebitda_median,MATRIX,Median value of EBITDA for the period.,0.7649,5,4
+analyst4,ebitda_min,MATRIX,Lowest estimate of EBITDA for the period.,0.7649,7,3
+analyst4,ebitda_reported_value,MATRIX,EBITDA value for the quarter.,0.8132,212,158
+analyst4,ebitda_stddev,MATRIX,"Standard deviation of EBITDA estimates, indicating variability.",0.4948,6,5
+analyst4,eps_adjusted_min_guidance_qtr,MATRIX,Minimum guidance value for adjusted Earnings per share excluding extraordinary items and stock option expenses.,1.0,43,36
+analyst4,eps_adjusted_min_guidance_value,MATRIX,The minimum guidance value for adjusted earnings per share excluding extraordinary items and stock option expenses on an annual basis.,1.0,33,30
+analyst4,eps_estimate_value,VECTOR,Earnings per share - estimation value,0.9942,73,34
+analyst4,eps_guidance_value_quarterly,MATRIX,Earnings Per Share - Basic value,0.3007,60,48
+analyst4,eps_max_guidance_quarterly,MATRIX,The maximum guidance value for Earnings Per Share.,1.0,126,107
+analyst4,eps_min_guidance_quarterly,MATRIX,Minimum guidance value for Earnings per Share,1.0,81,69
+analyst4,eps_previous_estimate_value,VECTOR,The previous estimation of Earnings Per Share,0.9886,54,21
+analyst4,eps_reported_avg,MATRIX,Average reported earnings per share.,0.8623,8,7
+analyst4,eps_reported_max,MATRIX,Highest estimate of reported earnings per share.,0.8623,3,3
+analyst4,eps_reported_median,MATRIX,Median value of reported earnings per share.,0.8623,3,3
+analyst4,eps_reported_min_guidance_qtr,MATRIX,Reported Earnings Per Share - Minimum guidance value,1.0,55,53
+analyst4,est_bookvalue_ps,MATRIX,Book value per share - average of estimations,0.6751,1497,696
+analyst4,est_capex,MATRIX,Capital Expenditures - mean of estimations,0.6427,5859,1464
+analyst4,est_cashflow_fin,MATRIX,Cash Flow From Financing - mean of estimations,0.6205,933,386
+analyst4,est_cashflow_invst,MATRIX,Cash Flow From Investing - mean of estimations,0.6155,706,415
+analyst4,est_cashflow_op,MATRIX,Cash Flow From Operations - mean of estimations,0.6518,2645,1376
+analyst4,est_cashflow_ps,MATRIX,Cash Flow Per Share - average of estimations,0.3273,315,173
+analyst4,est_dividend_ps,MATRIX,Dividend per share - average of estimations,0.4857,386,234
+analyst4,est_ebit,MATRIX,Earnings before interest and taxes - mean of estimations,0.7309,2158,432
+analyst4,est_ebitda,MATRIX,"Earnings before interest, taxes, depreciation, and amortization - mean of estimations",0.6046,1943,492
+analyst4,est_eps,MATRIX,Earnings per share - mean of estimations,0.7848,8920,5000
+analyst4,est_epsa,MATRIX,Earnings per share adjusted by excluding extraordinary items and stock option expenses - average of estimations,0.1579,1595,691
+analyst4,est_epsr,MATRIX,GAAP Earnings per share - mean of estimations,0.7405,2862,968
+analyst4,est_fcf,MATRIX,Free Cash Flow - Mean of Estimations,0.5777,2295,1706
+analyst4,est_fcf_ps,MATRIX,Free Cash Flow Per Share - Mean of Estimations,0.4642,381,287
+analyst4,est_ffo,MATRIX,"Funds From Operation - Summary on Estimations, Mean",0.0411,51,34
+analyst4,est_grossincome,MATRIX,Gross income - Mean of estimations,0.6246,1374,525
+analyst4,est_netdebt,MATRIX,Net debt - mean of estimations,0.5434,331,167
+analyst4,est_netprofit,MATRIX,Net profit - mean of estimations,0.7861,2480,1323
+analyst4,est_netprofit_adj,MATRIX,Adjusted net income - Mean of estimations,0.7731,1516,864
+analyst4,est_ptp,MATRIX,Pretax income - mean of estimations,0.7527,3037,1930
+analyst4,est_ptpr,MATRIX,Reported pretax income - mean of estimations,0.4374,601,317
+analyst4,est_rd_expense,MATRIX,Research and Development Expense - mean of estimations,0.3131,5041,2886
+analyst4,est_sales,MATRIX,Sales - mean of estimations,0.7458,2789,1043
+analyst4,est_sga,MATRIX,SGA - mean of estimations,0.5121,607,217
+analyst4,est_shequity,MATRIX,Mean of SH Equity segment - mean of estimations,0.7598,1237,562
+analyst4,est_tbv_ps,MATRIX,Tangible Book Value per Share - mean of estimations,0.3473,209,139
+analyst4,est_tot_assets,MATRIX,Total Assets - mean of estimations,0.7522,1342,685
+analyst4,est_tot_goodwill,MATRIX,Total Goodwill - mean of estimations,0.5652,532,244
+analyst4,estimate_value_currency_code,VECTOR,Home currency of instrument,1.0,52,44
+analyst4,estimate_value_currency_code_detail_qtr,VECTOR,Home currency of instrument,0.964,117,102
+analyst4,estimate_value_currency_code_qtr,VECTOR,Home currency of instrument,1.0,84,71
+analyst4,financing_cashflow_reported_value,MATRIX,Cash Flow From Financing - Value,0.4781,212,168
+analyst4,free_cash_flow_per_share,MATRIX,Free cash flow per share - actual financial value for the annual period,0.4912,169,126
+analyst4,free_cash_flow_per_share_actual_value,MATRIX,Free cash flow per share- announced financial value,0.3514,30,27
+analyst4,free_cash_flow_per_share_max_guidance,MATRIX,The maximum guidance value for Free Cash Flow Per Share on an annual basis.,1.0,63,62
+analyst4,free_cash_flow_per_share_reported_value,MATRIX,Free cash flow per share- announced financial value,0.3514,27,22
+analyst4,free_cash_flow_reported_value,MATRIX,Free cash flow value for the quarter.,0.5288,146,96
+analyst4,free_cash_flow_total,MATRIX,Free Cash Flow value - Annual,0.6822,405,295
+analyst4,free_cashflow_avg,MATRIX,Average free cash flow for the period.,0.5519,6,6
+analyst4,free_cashflow_max,MATRIX,Highest estimate of free cash flow for the period.,0.5519,6,4
+analyst4,free_cashflow_min,MATRIX,Lowest estimate of free cash flow for the period.,0.5519,0,0
+analyst4,free_cashflow_per_share_avg,MATRIX,Average free cash flow per share.,0.3782,1,1
+analyst4,free_cashflow_per_share_max,MATRIX,Highest estimate of free cash flow per share.,0.3782,2,2
+analyst4,free_cashflow_per_share_median,MATRIX,Median value of free cash flow per share.,0.3782,0,0
+analyst4,funds_from_operations_max_guidance,MATRIX,The maximum guidance value for Funds from operation - annual,1.0,55,50
+analyst4,goodwill_min_guidance_qtr,MATRIX,Minimum guidance value for Total Goodwill,1.0,84,41
+analyst4,gross_income_avg,MATRIX,Average gross income for the period.,0.6803,12,7
+analyst4,gross_income_max,MATRIX,Highest estimate of gross income for the period.,0.6803,20,16
+analyst4,gross_income_median,MATRIX,Median value of gross income for the period.,0.6803,7,3
+analyst4,gross_income_reported_value,MATRIX,Gross Income value for the quarter,0.6954,189,127
+analyst4,gross_income_total,MATRIX,Gross Income value on an annual basis,0.7047,104,89
+analyst4,guidance_estimate_value,VECTOR,Estimated value for basic annual financial guidance,0.5848,310,284
+analyst4,guidance_previous_estimate_value_qtr,VECTOR,The previous estimation of finanicial item,0.0,0,0
+analyst4,guidance_reporting_currency,MATRIX,Pricing Currency where the security trades - Annual,1.0,91,82
+analyst4,guidance_value_currency_code_qtr,VECTOR,Home currency of instrument,0.4849,22,22
+analyst4,highest_sales_estimate,MATRIX,Sales - The highest estimation for the annual period,1.0,66,54
+analyst4,investing_cashflow_reported_value,MATRIX,Cash Flow from Investing - Value,0.4859,60,53
+analyst4,lowest_sales_estimate,MATRIX,Sales - The lowest estimation for the annual period,1.0,65,48
+analyst4,max_adj_net_income_quarterly_estimate,MATRIX,The highest broker estimate for adjusted net profit in the current quarter.,0.8557,1,1
+analyst4,max_adjusted_eps_guidance,MATRIX,The maximum guidance value for adjusted earnings per share.,1.0,130,110
+analyst4,max_adjusted_eps_guidance_2,MATRIX,The maximum guidance value for adjusted earnings per share on an annual basis.,1.0,75,70
+analyst4,max_adjusted_funds_from_operations_adj_guidance,MATRIX,Adjusted funds from operation - Maximum guidance value,1.0,63,61
+analyst4,max_adjusted_funds_from_operations_guidance,MATRIX,Max guidance value for Funds from operation,1.0,43,42
+analyst4,max_adjusted_funds_from_operations_guidance_2,MATRIX,Adjusted funds from operation - maximum guidance value for the annual period,1.0,52,50
+analyst4,max_adjusted_net_income_guidance,MATRIX,The maximum guidance value for Adjusted net income.,1.0,1665,1342
+analyst4,max_adjusted_net_profit_guidance,MATRIX,The maximum guidance value for adjusted net profit on an annual basis.,1.0,29,25
+analyst4,max_book_value_per_share_guidance,MATRIX,Book value per share - Maximum value among forecasts,1.0,48,47
+analyst4,max_book_value_per_share_guidance_2,MATRIX,Book value per share - Maximum guidance value for the annual period,1.0,53,51
+analyst4,max_capital_expenditure_guidance,MATRIX,The maximum guidance value for Capital Expenditures on an annual basis.,1.0,66,59
+analyst4,max_custom_eps_guidance,MATRIX,Custom Earnings per share - The highest guidance value,1.0,60,58
+analyst4,max_customized_eps_guidance,MATRIX,The maximum guidance value for custom earnings per share on an annual basis.,1.0,70,62
+analyst4,max_ebit_guidance,MATRIX,The maximum guidance value for Earnings Before Interest and Taxes (EBIT) on an annual basis.,1.0,71,66
+analyst4,max_ebitda_guidance,MATRIX,"The maximum guidance value for Earnings Before Interest, Taxes, Depreciation, and Amortization (EBITDA) on an annual basis.",1.0,42,37
+analyst4,max_financing_cashflow_guidance,MATRIX,Cash Flow From Financing - Maximum guidance value,1.0,45,42
+analyst4,max_free_cash_flow_guidance,MATRIX,The maximum guidance value for Free Cash Flow on an annual basis.,1.0,48,47
+analyst4,max_free_cashflow_guidance,MATRIX,The maximum guidance value for Free Cash Flow.,1.0,91,80
+analyst4,max_free_cashflow_per_share_guidance,MATRIX,The maximum guidance value for free cash flow per share.,1.0,83,76
+analyst4,max_gross_income_guidance,MATRIX,The maximum guidance value for Gross Income.,1.0,52,50
+analyst4,max_gross_income_guidance_2,MATRIX,The maximum guidance for Gross Income on an annual basis.,1.0,38,37
+analyst4,max_investing_cashflow_guidance,MATRIX,The maximum guidance value for Cash Flow from Investing.,1.0,40,37
+analyst4,max_investing_cashflow_guidance_2,MATRIX,The maximum guidance value for Cash Flow from Investing activities on an annual basis.,1.0,60,55
+analyst4,max_net_debt_guidance,MATRIX,The maximum guidance value for Net Debt on an annual basis.,1.0,75,73
+analyst4,max_net_income_guidance,MATRIX,The maximum guidance value for net profit.,1.0,97,79
+analyst4,max_net_profit_guidance,MATRIX,The maximum guidance value for net profit on an annual basis.,1.0,47,43
+analyst4,max_net_profit_quarterly_estimate,MATRIX,The highest broker estimate for net profit in the current quarter.,0.9409,0,0
+analyst4,max_operating_cashflow_guidance,MATRIX,The maximum guidance value for Cash Flow from Operations.,1.0,79,64
+analyst4,max_operating_cashflow_guidance_2,MATRIX,The maximum guidance value for Cash Flow from Operations on an annual basis.,1.0,38,35
+analyst4,max_pretax_profit_guidance,MATRIX,The maximum guidance value for Pretax income on an annual basis.,1.0,57,49
+analyst4,max_reported_eps_guidance,MATRIX,Reported Earnings Per Share - Maximum guidance value,1.0,60,58
+analyst4,max_reported_eps_guidance_2,MATRIX,Reported Earnings Per Share - Maximum guidance value for the annual period,1.0,32,28
+analyst4,max_reported_pretax_income_guidance,MATRIX,Reported Pretax income- maximum guidance value,1.0,48,42
+analyst4,max_reported_pretax_income_guidance_2,MATRIX,Reported Pretax income- maximum guidance value,1.0,117,102
+analyst4,max_reported_pretax_profit_quarterly_estimate,MATRIX,The highest broker estimate for reported pretax profit in the current quarter.,0.4519,0,0
+analyst4,max_research_development_expense_guidance,MATRIX,The maximum guidance value for Research and Development Expense.,1.0,66,61
+analyst4,max_selling_general_admin_guidance,MATRIX,"The maximum guidance value for Selling, General & Administrative Expense",1.0,71,64
+analyst4,max_share_buyback_guidance,MATRIX,Maximum guidance value for Shares Basic - Annual,1.0,55,54
+analyst4,max_shareholders_equity_guidance,MATRIX,The maximum guidance value for Total Shareholders' Equity.,1.0,205,178
+analyst4,max_shares_outstanding_guidance,MATRIX,The maximum guidance for Shares,1.0,64,59
+analyst4,max_stock_option_expense_guidance,MATRIX,Stock option expense - Maximum guidance value for the annual period,1.0,58,54
+analyst4,max_tangible_book_value_per_share_guidance,MATRIX,Tangible Book Value per Share - maximum guidance value,1.0,93,85
+analyst4,max_total_assets_guidance,MATRIX,The maximum guidance value for Total Assets.,1.0,83,82
+analyst4,max_total_assets_guidance_2,MATRIX,The maximum guidance value for Total Assets,1.0,110,100
+analyst4,max_total_assets_quarterly_estimate,MATRIX,The highest broker estimate for total assets in the current quarter.,0.7048,0,0
+analyst4,max_total_goodwill_guidance,MATRIX,The maximum guidance value for Total Goodwill.,1.0,78,68
+analyst4,max_total_goodwill_guidance_2,MATRIX,The maximum guidance value for Total Goodwill on an annual basis.,1.0,50,48
+analyst4,maximum_guidance_value,VECTOR,Maximum guidance value for basic annual financials,0.5848,148,144
+analyst4,median_free_cash_flow_quarterly_estimate,MATRIX,The median broker estimate for free cash flow in the current quarter.,0.5519,1,1
+analyst4,median_sales_estimate,MATRIX,Sales - median of estimations,1.0,81,63
+analyst4,min_adj_net_income_quarterly_estimate,MATRIX,The lowest broker estimate for adjusted net profit in the current quarter.,0.8557,2,2
+analyst4,min_adjusted_funds_from_operations_adj_guidance,MATRIX,Minimum guidance value for Adjusted funds from operation,1.0,48,42
+analyst4,min_adjusted_funds_from_operations_guidance,MATRIX,Funds from operation - minimum guidance value,1.0,42,40
+analyst4,min_adjusted_funds_from_operations_guidance_2,MATRIX,Adjusted funds from operation - minimum guidance for the annual period,1.0,59,54
+analyst4,min_adjusted_net_income_guidance,MATRIX,Adjusted net income - minimum guidance value,1.0,3181,2522
+analyst4,min_basic_shares_guidance,MATRIX,Shares Basic - Minimum guidance value,1.0,69,59
+analyst4,min_book_value_per_share_guidance,MATRIX,Book value per share - minimum guidance value for the annual period,1.0,54,51
+analyst4,min_capex_guidance,MATRIX,Minimum guidance value for Capital Expenditures,1.0,71,63
+analyst4,min_capital_expenditure_guidance,MATRIX,Minimum guidance value for Capital Expenditures,1.0,33,30
+analyst4,min_custom_eps_guidance,MATRIX,Custom Earnings per share - Minimum guidance value,1.0,30,30
+analyst4,min_customized_eps_guidance,MATRIX,Customized Earnings per share - Minimum guidance value for the annual period,1.0,51,45
+analyst4,min_ebit_guidance,MATRIX,Minimum guidance value for Earnings Before Interest and Taxes (EBIT),1.0,86,78
+analyst4,min_ebit_guidance_2,MATRIX,Minimum guidance value for Earnings Before Interest and Taxes (EBIT) on an annual basis.,1.0,74,70
+analyst4,min_ebitda_guidance,MATRIX,"Minimum guidance value for Earnings Before Interest, Taxes, Depreciation, and Amortization (EBITDA) - Annual",1.0,34,31
+analyst4,min_financing_cashflow_guidance,MATRIX,Minimum guidance value for Cash Flow From Financing,1.0,40,36
+analyst4,min_financing_cashflow_guidance_2,MATRIX,Minimum guidance value for Cash Flow From Financing on an annual basis,1.0,53,51
+analyst4,min_free_cash_flow_guidance,MATRIX,The minimum guidance value for Free Cash Flow on an annual basis.,1.0,40,35
+analyst4,min_free_cash_flow_per_share_guidance,MATRIX,Free cash flow per share - minimum guidance value for the annual period,1.0,56,55
+analyst4,min_free_cash_flow_per_share_quarterly_estimate,MATRIX,The lowest broker estimate for free cash flow per share in the current quarter.,0.3782,1,1
+analyst4,min_free_cashflow_guidance,MATRIX,Minimum guidance value for Free Cash Flow,1.0,53,49
+analyst4,min_free_cashflow_per_share_guidance,MATRIX,Free cash flow per share - minimum guidance value,1.0,53,52
+analyst4,min_funds_from_operations_guidance,MATRIX,Funds from operation - minimum guidance value for annual period,1.0,43,43
+analyst4,min_gross_income_guidance,MATRIX,The minimum guidance value for Gross Income.,1.0,46,38
+analyst4,min_gross_income_guidance_2,MATRIX,The minimum guidance for Gross Income on an annual basis.,1.0,28,23
+analyst4,min_gross_income_quarterly_estimate,MATRIX,The lowest broker estimate for gross income in the current quarter.,0.6803,0,0
+analyst4,min_investing_cashflow_guidance,MATRIX,Cash Flow From Investing - Minimum guidance value,1.0,62,59
+analyst4,min_investing_cashflow_guidance_2,MATRIX,Cash Flow From Investing - Minimum guidance value for the annual period,1.0,65,60
+analyst4,min_net_debt_guidance,MATRIX,The minimum guidance value for Net Debt on an annual basis.,1.0,78,68
+analyst4,min_net_income_guidance,MATRIX,Net profit - minimum guidance value,1.0,131,111
+analyst4,min_net_profit_guidance,MATRIX,Minimum guidance value for Net Profit on an annual basis,1.0,43,41
+analyst4,min_operating_cashflow_guidance,MATRIX,Minimum guidance value for Cash Flow from Operations,1.0,43,40
+analyst4,min_pretax_profit_guidance,MATRIX,Minimum guidance value for Pretax income,1.0,53,48
+analyst4,min_pretax_profit_guidance_2,MATRIX,The minimum guidance value for Pretax income on an annual basis.,1.0,71,65
+analyst4,min_reported_eps_guidance,MATRIX,Reported Earnings Per Share - Minimum guidance value for the annual period,1.0,27,23
+analyst4,min_reported_eps_quarterly_estimate,MATRIX,The lowest broker estimate for reported earnings per share in the current quarter.,0.8623,2,2
+analyst4,min_research_development_expense_guidance,MATRIX,Minimum guidance value for Research & Development Expense,1.0,54,43
+analyst4,min_research_development_expense_guidance_2,MATRIX,Minimum guidance value for Research & Development Expense on an annual basis,1.0,27,26
+analyst4,min_sg_and_a_expense_guidance,MATRIX,"Selling, General & Administrative Expense - Minimum guidance value",1.0,36,31
+analyst4,min_share_buyback_guidance,MATRIX,Shares Basic - Minimum guidance value for the annual period,1.0,54,46
+analyst4,min_share_count_guidance,MATRIX,Minimum guidance for shares on an annual basis,1.0,64,57
+analyst4,min_shareholders_equity_guidance,MATRIX,Minimum guidance value for Shareholders' Equity,1.0,73,68
+analyst4,min_shares_outstanding_guidance,MATRIX,Minimum guidance value for Shares,1.0,53,48
+analyst4,min_stock_option_expense_guidance,MATRIX,Stock option expense - minimum guidance value,1.0,114,101
+analyst4,min_stock_option_expense_guidance_2,MATRIX,Minimum guidance value for stock option expense on an annual basis,1.0,46,45
+analyst4,min_tangible_book_value_per_share_guidance,MATRIX,Tangible Book Value per Share - minimum guidance value,1.0,49,43
+analyst4,min_tangible_book_value_per_share_guidance_2,MATRIX,Tangible Book Value per Share - Minimum guidance value,1.0,89,82
+analyst4,min_total_assets_guidance,MATRIX,Minimum guidance value for Total Assets,1.0,24,23
+analyst4,min_total_assets_guidance_2,MATRIX,Minimum guidance value for Total Assets on an annual basis,1.0,41,41
+analyst4,min_total_goodwill_guidance,MATRIX,Total Goodwill - The lowest guidance value,1.0,40,35
+analyst4,minimum_guidance_value,VECTOR,Minimum guidance value for basic annual financials,0.5848,100,98
+analyst4,net_debt_actual_value,MATRIX,Net debt- announced financial value,0.3883,112,91
+analyst4,net_debt_amount,MATRIX,Net debt - actual value for the annual period,0.6849,140,87
+analyst4,net_debt_avg,MATRIX,"Average net debt, calculated as total debt minus cash.",0.3728,0,0
+analyst4,net_debt_max,MATRIX,"Highest estimate of net debt, calculated as total debt minus cash.",0.3728,4,3
+analyst4,net_debt_max_guidance_qtr,MATRIX,Maximum guidance value for Net Debt,1.0,77,64
+analyst4,net_debt_median,MATRIX,"Median value of net debt, calculated as total debt minus cash.",0.3728,1,1
+analyst4,net_debt_min,MATRIX,"Lowest estimate of net debt, calculated as total debt minus cash.",0.3728,0,0
+analyst4,net_debt_min_guidance_qtr,MATRIX,Minimum guidance value for Net Debt,1.0,88,77
+analyst4,net_debt_reported_value,MATRIX,Net Debt value for the quarter,0.3883,85,63
+analyst4,net_income_adjusted,MATRIX,Adjusted net income- announced financial value for annual frequency,0.9134,343,234
+analyst4,net_income_avg,MATRIX,Average net profit after all expenses and taxes.,0.9409,10,9
+analyst4,net_income_median,MATRIX,Median value of net profit after all expenses and taxes.,0.9409,8,8
+analyst4,net_income_min,MATRIX,Lowest estimate of net profit after all expenses and taxes.,0.9409,3,3
+analyst4,net_income_stddev,MATRIX,Standard deviation of net profit estimates.,0.6943,10,9
+analyst4,net_income_total_2,MATRIX,Net profit- announced financial value for annual data,0.9728,177,152
+analyst4,net_profit_adjusted_min_guidance,MATRIX,The minimum guidance value for adjusted net profit on an annual basis.,1.0,32,30
+analyst4,net_profit_adjusted_value,MATRIX,Adjusted net income- announced financial value,0.9312,146,97
+analyst4,net_profit_reported_value,MATRIX,Net profit- announced financial value,1.0,62,53
+analyst4,num_adj_net_income_est,MATRIX,"Number of estimates for adjusted net profit, excluding non-recurring items.",0.8557,18,15
+analyst4,num_book_value_per_share_est,MATRIX,Number of estimates for book value per share.,0.4056,14,14
+analyst4,num_capex_est,MATRIX,Number of estimates for capital expenditures.,0.6442,0,0
+analyst4,num_cashflow_financing_est,MATRIX,Number of estimates for cash flows from financing activities.,0.5374,0,0
+analyst4,num_cashflow_investing_est,MATRIX,Number of estimates for cash flows from investing activities.,0.5442,0,0
+analyst4,num_ebit_est,MATRIX,Number of estimates for operating profit before interest and taxes.,0.9061,8,6
+analyst4,num_ebitda_estimates_quarter,MATRIX,The count of broker estimates for EBITDA in the current quarter.,0.7649,1,1
+analyst4,num_eps_reported_est,MATRIX,Number of estimates for reported earnings per share.,0.8623,18,17
+analyst4,num_free_cashflow_est,MATRIX,Number of estimates for free cash flow.,0.5519,3,3
+analyst4,num_free_cashflow_per_share_est,MATRIX,Number of estimates for free cash flow per share.,0.3782,18,18
+analyst4,num_gross_income_est,MATRIX,Number of estimates for gross income.,0.6803,4,4
+analyst4,num_net_debt_est,MATRIX,Number of estimates for net debt.,0.3728,1,1
+analyst4,num_net_income_est,MATRIX,Number of estimates for net profit after all expenses and taxes.,0.9409,43,40
+analyst4,num_op_cash_flow_est,MATRIX,Number of estimates for cash flow from operations.,0.6195,1,1
+analyst4,num_pretax_income_est,MATRIX,Number of estimates for profit before taxes.,0.9083,21,19
+analyst4,num_pretax_income_reported_est,MATRIX,"Number of estimates for reported profit before taxes, including exceptional items.",0.4519,4,4
+analyst4,num_rnd_expense_est,MATRIX,Number of estimates for research and development expenses.,0.3709,1,1
+analyst4,num_sga_estimates_quarter,MATRIX,"The count of broker estimates for selling, general, and administrative expenses in the current quarter.",0.5475,1,1
+analyst4,num_shareholders_equity_est,MATRIX,Number of estimates for owners’ equity after liabilities.,0.7264,1,1
+analyst4,num_total_assets_est,MATRIX,Number of estimates for total assets.,0.7048,0,0
+analyst4,num_total_goodwill_estimates_quarter,MATRIX,The count of broker estimates for total goodwill in the current quarter.,0.435,0,0
+analyst4,op_cash_flow_avg,MATRIX,Average cash generated from core business operations.,0.6195,20,14
+analyst4,op_cash_flow_max,MATRIX,Highest estimate of cash generated from core business operations.,0.6195,5,5
+analyst4,op_cash_flow_median,MATRIX,Median value of cash generated from core business operations.,0.6195,3,2
+analyst4,op_cash_flow_min,MATRIX,Lowest estimate of cash generated from core business operations.,0.6195,8,4
+analyst4,op_cash_flow_stddev,MATRIX,Standard deviation of operating cash flow estimates.,0.2734,6,6
+analyst4,operating_cashflow_reported_value,MATRIX,Cash Flow from Operations - Value,0.5809,447,241
+analyst4,operating_profit_before_depr_amort,MATRIX,EBITDA value - Annual,0.8252,43,36
+analyst4,operating_profit_before_depr_amort_max_guidance_qtr,MATRIX,"Max guidance value for Earnings before interest, taxes, depreciation and amortization",1.0,183,171
+analyst4,operating_profit_before_depr_amort_min_guidance_qtr,MATRIX,"Minimum guidance value for Earnings before interest, taxes, depreciation and amortization",1.0,189,173
+analyst4,operating_profit_before_interest_tax,MATRIX,Earnings Before Interest and Taxes (EBIT) - Actual Value,0.9274,159,120
+analyst4,operating_profit_max_guidance_qtr,MATRIX,The maximum guidance value for Earnings Before Interest and Taxes.,1.0,194,179
+analyst4,pretax_income_actual_reported_value,MATRIX,Reported Pretax income- announced financial value,0.42,23,22
+analyst4,pretax_income_max,MATRIX,Highest estimate of profit before taxes.,0.9083,1,1
+analyst4,pretax_income_max_guidance_qtr,MATRIX,The maximum guidance value for Pretax income.,1.0,89,85
+analyst4,pretax_income_median,MATRIX,Median value of profit before taxes.,0.9083,2,2
+analyst4,pretax_income_min,MATRIX,Lowest estimate of profit before taxes.,0.9083,1,1
+analyst4,pretax_income_reported,MATRIX,Reported Pretax income - actual value for the annual fiscal period,0.5585,16,12
+analyst4,pretax_income_reported_avg,MATRIX,"Average reported profit before taxes, including exceptional items.",0.4519,1,1
+analyst4,pretax_income_reported_median,MATRIX,"Median reported profit before taxes, including exceptional items.",0.4519,0,0
+analyst4,pretax_income_reported_min,MATRIX,"Lowest estimate of reported profit before taxes, including exceptional items.",0.4519,0,0
+analyst4,pretax_income_reported_min_guidance,MATRIX,Reported Pretax income - minimum guidance value,1.0,91,75
+analyst4,pretax_income_reported_min_guidance_qtr,MATRIX,Reported Pretax income- minimum guidance value,1.0,77,73
+analyst4,pretax_income_reported_value,MATRIX,Reported Pretax income - actual value for the quarter,0.42,20,20
+analyst4,pretax_income_standalone_value,MATRIX,Pretax Profit - actual value for the quarter,0.9431,241,211
+analyst4,pretax_income_stddev,MATRIX,"Standard deviation of profit before taxes, showing estimate dispersion.",0.643,6,6
+analyst4,pretax_income_total,MATRIX,Pretax Profit - Value for the annual period,0.9405,58,54
+analyst4,previous_guidance_estimate,VECTOR,The previous estimation of financial item - annual frequency,0.0,0,0
+analyst4,previous_guidance_value_annual,VECTOR,The previous estimation of finanicial item,0.0,0,0
+analyst4,previous_quarterly_guidance_estimate,VECTOR,The previous estimation of finanicial item,0.0,0,0
+analyst4,previous_recommendation_value,VECTOR,The previous estimation of financial item for recommendation,0.0,0,0
+analyst4,reporting_currency_code_9,MATRIX,Home currency of instrument,1.0,779,594
+analyst4,research_development_expense,MATRIX,Research & Development Expense - Actual Value (Annual),0.3766,76,64
+analyst4,research_development_expense_actual_value,MATRIX,Research and Development Expense- announced financial value,0.3797,44,43
+analyst4,research_development_expense_reported_value,MATRIX,Research & Development (Income Statement) Value in Millions,0.3797,32,29
+analyst4,research_development_max_guidance,MATRIX,The maximum guidance value for Research and Development Expense on an annual basis.,1.0,40,38
+analyst4,rnd_expense_avg,MATRIX,Average research and development expenses.,0.3709,32,32
+analyst4,rnd_expense_max,MATRIX,Highest estimate of research and development expenses.,0.3709,1,1
+analyst4,rnd_expense_median,MATRIX,Median value of research and development expenses.,0.3709,0,0
+analyst4,rnd_expense_min,MATRIX,Lowest estimate of research and development expenses.,0.3709,2,2
+analyst4,sales_estimate_average,MATRIX,Sales - mean of estimations with a delay of 1 quarter,1.0,139,90
+analyst4,sales_estimate_average_annual,MATRIX,Sales - mean of estimations,1.0,96,69
+analyst4,sales_estimate_average_quarterly,MATRIX,Sales - mean of estimations,1.0,112,68
+analyst4,sales_estimate_count,MATRIX,Sales - number of estimations,1.0,2007,1529
+analyst4,sales_estimate_count_2,MATRIX,Number of Sales estimates,1.0,133,106
+analyst4,sales_estimate_count_quarterly,MATRIX,Sales - number of estimations,1.0,1858,1433
+analyst4,sales_estimate_dispersion,MATRIX,Standard deviation of Sales estimations for the annual period.,0.6792,74,49
+analyst4,sales_estimate_maximum,MATRIX,Sales - The highest estimation,1.0,134,102
+analyst4,sales_estimate_maximum_quarterly,MATRIX,Sales - The highest estimation,1.0,78,49
+analyst4,sales_estimate_median_quarterly,MATRIX,Sales - median of estimations,1.0,114,70
+analyst4,sales_estimate_median_value,MATRIX,Sales - Median value among forecasts,1.0,89,59
+analyst4,sales_estimate_minimum,MATRIX,Sales - The lowest estimation,1.0,70,61
+analyst4,sales_estimate_minimum_quarterly,MATRIX,Sales - The lowest estimation,1.0,91,58
+analyst4,sales_estimate_standard_deviation,MATRIX,Sales - standard deviation of estimations,0.7259,574,373
+analyst4,sales_estimate_stddev_quarterly,MATRIX,Standard deviation of Sales estimations,0.7259,679,390
+analyst4,sales_estimate_value,VECTOR,Sales - Estimated value,0.9931,42,18
+analyst4,sales_guidance_value,MATRIX,Sales - Guidance value for the annual period,0.4262,278,244
+analyst4,sales_guidance_value_quarterly,MATRIX,Sales - guidance value,0.3262,69,60
+analyst4,sales_max_guidance_quarterly,MATRIX,The maximum guidance value for sales.,1.0,280,239
+analyst4,sales_max_guidance_value,MATRIX,Maximum guidance value for annual sales,1.0,58,53
+analyst4,sales_min_guidance_quarterly,MATRIX,Minimum guidance value for Sales,1.0,314,226
+analyst4,sales_min_guidance_value,MATRIX,Minimum sales guidance for the annual period.,1.0,39,27
+analyst4,sales_previous_estimate_value,VECTOR,The previous estimation of Sales,0.9867,29,15
+analyst4,selling_general_admin_expense,MATRIX,"Selling, General & Administrative Expense Value",0.6346,49,30
+analyst4,selling_general_admin_expense_actual_value,MATRIX,"Selling, General & Administrative Expense - actual value",0.6163,47,47
+analyst4,selling_general_admin_expense_max_guidance_qtr,MATRIX,"Selling, General & Admin Expenses - Maximum guidance value",1.0,52,51
+analyst4,selling_general_admin_expense_reported_value,MATRIX,"Selling, General & Administrative Expense value",0.6163,67,66
+analyst4,sg_and_a_expense_avg,MATRIX,"Average selling, general, and administrative expenses.",0.5475,0,0
+analyst4,sg_and_a_expense_max,MATRIX,"Highest estimate of selling, general, and administrative expenses.",0.5475,1,1
+analyst4,sg_and_a_expense_median,MATRIX,"Median value of selling, general, and administrative expenses.",0.5475,0,0
+analyst4,sg_and_a_expense_min,MATRIX,"Lowest estimate of selling, general, and administrative expenses.",0.5475,0,0
+analyst4,sg_and_admin_min_guidance_value,MATRIX,"Minimum guidance value for Selling, General & Administrative Expense on an annual basis.",1.0,48,41
+analyst4,shareholders_equity_actual_value,MATRIX,Shareholders' Equity - Total Value,0.6951,152,139
+analyst4,shareholders_equity_avg,MATRIX,Average owners’ equity after liabilities.,0.7264,2,2
+analyst4,shareholders_equity_max,MATRIX,Highest estimate of owners’ equity after liabilities.,0.7264,2,2
+analyst4,shareholders_equity_max_guidance,MATRIX,The maximum guidance value for Shareholder's Equity on an annual basis.,1.0,77,58
+analyst4,shareholders_equity_median,MATRIX,Median value of owners’ equity after liabilities for the period.,0.7264,0,0
+analyst4,shareholders_equity_min,MATRIX,Lowest estimate of owners’ equity after liabilities for the period.,0.7264,0,0
+analyst4,shareholders_equity_min_guidance,MATRIX,Minimum guidance value for Share Equity,1.0,57,54
+analyst4,shareholders_equity_reported_value,MATRIX,Shareholders' Equity - Total Value,0.6951,116,99
+analyst4,shareholders_equity_stddev,MATRIX,Standard deviation of owners’ equity estimates.,0.3384,0,0
+analyst4,shareholders_equity_total_2,MATRIX,Shareholder's Equity - Total Value,0.8469,42,36
+analyst4,shares_outstanding_max_guidance,MATRIX,Maximum guidance value for Shares,1.0,119,108
+analyst4,stddev_gross_income_quarterly_estimate,MATRIX,The standard deviation of broker estimates for gross income in the current quarter.,0.4421,18,18
+analyst4,stddev_rd_expense_quarterly_estimate,MATRIX,The standard deviation of broker estimates for research and development expense in the current quarter.,0.2633,0,0
+analyst4,stddev_reported_eps_quarterly_estimate,MATRIX,The standard deviation of broker estimates for reported earnings per share in the current quarter.,0.5649,25,20
+analyst4,stddev_sga_expense_quarterly_estimate,MATRIX,"The standard deviation of broker estimates for selling, general, and administrative expenses in the current quarter.",0.3387,0,0
+analyst4,stock_option_expense_max_guidance_qtr,MATRIX,Stock option expense - maximum guidance value,1.0,57,50
+analyst4,tangible_book_value_per_share_max_guidance,MATRIX,Tangible Book Value per Share - Maximum guidance value,1.0,141,84
+analyst4,total_assets_amount,MATRIX,Total Assets - actual value,0.8035,176,111
+analyst4,total_assets_median,MATRIX,Median value of total assets owned by the company.,0.7048,6,5
+analyst4,total_assets_min,MATRIX,Lowest estimate of total assets owned by the company.,0.7048,1,1
+analyst4,total_assets_reported_value,MATRIX,Total Assets - actual value,0.6486,222,143
+analyst4,total_assets_stddev,MATRIX,Standard deviation of total assets estimates.,0.3199,6,6
+analyst4,total_goodwill_actual_value,MATRIX,Total Goodwill - announced financial value,0.3761,115,106
+analyst4,total_goodwill_amount,MATRIX,Total Goodwill - Value,0.5285,33,28
+analyst4,total_goodwill_avg,MATRIX,Average value of goodwill assets for the period.,0.435,1,1
+analyst4,total_goodwill_max,MATRIX,Highest estimate of goodwill assets for the period.,0.435,2,2
+analyst4,total_goodwill_median,MATRIX,Median value of goodwill assets for the period.,0.435,1,1
+analyst4,total_goodwill_min,MATRIX,Lowest estimate of goodwill assets for the period.,0.435,3,2
+analyst4,total_goodwill_reported_value,MATRIX,Total Goodwill - Actual Value in Millions,0.3761,77,65

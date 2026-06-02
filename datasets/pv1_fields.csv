@@ -1,0 +1,25 @@
+dataset,field_id,type,description,coverage,alphaCount,userCount
+pv1,adjfactor,MATRIX,Adjustment factor applied to historical prices and dividends to account for splits and other corporate actions,1.0,484,153
+pv1,adv20,MATRIX,Average daily volume in past 20 days,1.0,109445,19760
+pv1,cap,MATRIX,Daily market capitalization (in millions),1.0,426116,35742
+pv1,close,MATRIX,Daily close price,1.0,602986,57208
+pv1,country,GROUP,Country grouping,1.0,20931,3405
+pv1,currency,GROUP,Currency,1.0,4275,1624
+pv1,cusip,SYMBOL,CUSIP Value,1.0,93,54
+pv1,dividend,MATRIX,Dividend,1.0,12636,4764
+pv1,exchange,GROUP,Exchange grouping,1.0,50150,2930
+pv1,high,MATRIX,Daily high price,1.0,60783,15635
+pv1,industry,GROUP,Industry grouping,1.0,276675,31873
+pv1,isin,SYMBOL,ISIN Value,1.0,0,0
+pv1,low,MATRIX,Daily low price,1.0,53253,14815
+pv1,market,GROUP,Market grouping,1.0,162658,20403
+pv1,open,MATRIX,Daily open price,1.0,59107,13831
+pv1,returns,MATRIX,Daily returns,1.0,388918,38536
+pv1,sector,GROUP,Sector grouping,1.0,387841,28314
+pv1,sedol,SYMBOL,Sedol,1.0,185,124
+pv1,sharesout,MATRIX,Daily outstanding shares (in millions),1.0,31681,7036
+pv1,split,MATRIX,Stock split ratio,1.0,19575,4118
+pv1,subindustry,GROUP,Subindustry grouping,1.0,324715,35081
+pv1,ticker,SYMBOL,Ticker,1.0,293,129
+pv1,volume,MATRIX,Daily volume,1.0,359894,40025
+pv1,vwap,MATRIX,Daily volume weighted average price,1.0,72805,20441

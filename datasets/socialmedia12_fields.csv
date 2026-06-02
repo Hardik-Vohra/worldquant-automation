@@ -1,0 +1,19 @@
+dataset,field_id,type,description,coverage,alphaCount,userCount
+socialmedia12,scl12_alltype_buzzvec,VECTOR,sentiment volume,0.9525,439,265
+socialmedia12,scl12_alltype_sentvec,VECTOR,sentiment,0.9525,141,69
+socialmedia12,scl12_alltype_typevec,VECTOR,instrument type index,0.9525,113,69
+socialmedia12,scl12_buzz,MATRIX,relative sentiment volume,1.0,22083,14670
+socialmedia12,scl12_buzz_fast_d1,MATRIX,relative sentiment volume,0.9756,294,210
+socialmedia12,scl12_buzzvec,VECTOR,Vector representing the volume of social media sentiment/mentions related to the instrument,1.0,4283,2619
+socialmedia12,scl12_sentiment,MATRIX,sentiment,1.0,3711,1544
+socialmedia12,scl12_sentiment_fast_d1,MATRIX,sentiment,0.9756,391,275
+socialmedia12,scl12_sentvec,VECTOR,Vector representing the sentiment score (bullish/bearish/neutral) derived from social media data for the instrument,1.0,714,384
+socialmedia12,scl12_typevec,VECTOR,Vector containing the type indices identifying the categories of instruments in the dataset,1.0,554,285
+socialmedia12,snt_buzz,MATRIX,"Negative relative sentiment volume measure for current day, with missing values filled as 0",1.0,9646,3286
+socialmedia12,snt_buzz_bfl,MATRIX,"Negative relative sentiment volume measure for current day, with missing values filled as 1",1.0,6118,2743
+socialmedia12,snt_buzz_bfl_fast_d1,MATRIX,"Negative relative sentiment volume measure for current day, with missing values filled as 1",0.9998,174,151
+socialmedia12,snt_buzz_fast_d1,MATRIX,"Negative relative sentiment volume measure for current day, with missing values filled as 0",0.9769,239,213
+socialmedia12,snt_buzz_ret,MATRIX,negative return of relative sentiment volume,1.0,4047,1866
+socialmedia12,snt_buzz_ret_fast_d1,MATRIX,negative return of relative sentiment volume,0.9769,100,76
+socialmedia12,snt_value,MATRIX,"Negative sentiment score/indicator for current day, with missing values filled as 0",1.0,2758,1025
+socialmedia12,snt_value_fast_d1,MATRIX,"Negative sentiment score/indicator for current day, with missing values filled as 0",0.9769,384,282

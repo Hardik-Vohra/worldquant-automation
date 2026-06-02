@@ -1,0 +1,17 @@
+dataset,field_id,type,description,coverage,alphaCount,userCount
+model51,beta_last_30_days_spy,MATRIX,"The rolling beta value of the security relative to SPY, calculated via regression over the last 30 calendar days, representing market sensitivity",0.9765,1531,670
+model51,beta_last_360_days_spy,MATRIX,"The rolling beta value of the security relative to SPY, calculated via regression over the last 360 calendar days, representing market sensitivity",0.9482,1549,860
+model51,beta_last_60_days_spy,MATRIX,"The rolling beta value of the security relative to SPY, calculated via regression over the last 60 calendar days, representing market sensitivity",0.9752,1874,851
+model51,beta_last_90_days_spy,MATRIX,"The rolling beta value of the security relative to SPY, calculated via regression over the last 90 calendar days, representing market sensitivity",0.9734,1499,587
+model51,correlation_last_30_days_spy,MATRIX,"The Pearson correlation coefficient of daily log returns between the security and SPY, calculated over the most recent 30 calendar days",0.9765,1201,530
+model51,correlation_last_360_days_spy,MATRIX,"The Pearson correlation coefficient of daily log returns between the security and SPY, calculated over the most recent 360 calendar days",0.9482,1521,842
+model51,correlation_last_60_days_spy,MATRIX,"The Pearson correlation coefficient of daily log returns between the security and SPY, calculated over the most recent 60 calendar days",0.9752,1692,949
+model51,correlation_last_90_days_spy,MATRIX,"The Pearson correlation coefficient of daily log returns between the security and SPY, calculated over the most recent 90 calendar days",0.9734,1054,508
+model51,systematic_risk_last_30_days,MATRIX,"The portion of the security’s return variance attributed to systematic (market) risk, quantified as R² from a regression on SPY, over the last 30 calendar days",0.965,957,474
+model51,systematic_risk_last_360_days,MATRIX,"The portion of the security’s return variance attributed to systematic (market) risk, quantified as R² from a regression on SPY, over the last 360 calendar days",0.937,1368,816
+model51,systematic_risk_last_60_days,MATRIX,"The portion of the security’s return variance attributed to systematic (market) risk, quantified as R² from a regression on SPY, over the last 60 calendar days",0.9637,1367,761
+model51,systematic_risk_last_90_days,MATRIX,"The portion of the security’s return variance attributed to systematic (market) risk, quantified as R² from a regression on SPY, over the last 90 calendar days",0.9619,2113,1163
+model51,unsystematic_risk_last_30_days,MATRIX,"The portion of return variance not explained by SPY (idiosyncratic risk), calculated as 1 minus R² over the last 30 calendar days",0.965,1445,612
+model51,unsystematic_risk_last_360_days,MATRIX,"The portion of return variance not explained by SPY (idiosyncratic risk), calculated as 1 minus R² over the last 360 calendar days",0.937,12199,3765
+model51,unsystematic_risk_last_60_days,MATRIX,"The portion of return variance not explained by SPY (idiosyncratic risk), calculated as 1 minus R² over the last 60 calendar days",0.9637,2171,1002
+model51,unsystematic_risk_last_90_days,MATRIX,"The portion of return variance not explained by SPY (idiosyncratic risk), calculated as 1 minus R² over the last 90 calendar days",0.9619,4631,2229

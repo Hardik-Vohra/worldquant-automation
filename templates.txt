@@ -1,0 +1,15 @@
+rank({field})
+
+rank(ts_rank({field},{w}))
+
+rank(ts_zscore({field},{w}))
+
+rank(ts_delta({field},{w}))
+
+rank({field}/ts_mean({field},{w}))
+
+rank(ts_std_dev({field},{w}))
+
+rank(ts_sum({field},{w}))
+
+rank(-ts_delta({field},{w}))

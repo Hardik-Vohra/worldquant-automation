@@ -1,0 +1,14 @@
+config.py
+cookie.txt
+
+__pycache__/
+*.pyc
+
+.vscode/
+
+results.csv
+results_batch1.csv
+results_enriched.csv
+
+current_alpha.txt
+current_sim.txt

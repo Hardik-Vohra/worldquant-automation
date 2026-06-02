@@ -1,0 +1,20 @@
+dataset,field_id,type,description,coverage,alphaCount,userCount
+sentiment1,daily_equity_mood_indicator,MATRIX,A daily composite value representing the sentiment level for an equity.,0.5408,13,12
+sentiment1,snt1_cored1_score,MATRIX,"Proprietary composite analyst score; bearish if < 5, bullish if > 5, neutral if between -5 and 5",0.6497,3831,590
+sentiment1,snt1_d1_analystcoverage,MATRIX,Number of analysts providing an earnings estimate for the stock,0.5744,4202,576
+sentiment1,snt1_d1_buyrecpercent,MATRIX,"Percentage of analysts recommending a buy, calculated as (# of analysts recommending buy) / (# of all analysts)",0.5688,2934,446
+sentiment1,snt1_d1_downtargetpercent,MATRIX,"Percent of analysts who have lowered their price target recently, out of all analysts covering the stock",0.5733,3653,420
+sentiment1,snt1_d1_dtstsespe,MATRIX,Standard deviation (dispersion) among analysts' earnings estimates for the next fiscal year,0.5736,2983,459
+sentiment1,snt1_d1_dynamicfocusrank,MATRIX,"Composite rank (0-100) emphasizing dynamic, short-term analyst sentiment signals; higher values indicate stronger buy signals, lower values indicate sell signals",0.603,1926,330
+sentiment1,snt1_d1_earningsrevision,MATRIX,One-month change in the mean (average) analyst earnings estimate divided by the stock price,0.5744,3802,473
+sentiment1,snt1_d1_earningssurprise,MATRIX,"Difference between actual reported earnings and expected earnings (consensus), divided by share price",0.5736,2891,329
+sentiment1,snt1_d1_earningstorpedo,MATRIX,Difference between expected (FY1) earnings and previous four quarters' actual earnings divided by price; flags possible negative inflection,0.5674,2109,193
+sentiment1,snt1_d1_fundamentalfocusrank,MATRIX,"Rank (0-100) emphasizing longer-term, fundamental/value metrics; higher values for buy signal, lower for sell signal",0.603,2554,264
+sentiment1,snt1_d1_longtermepsgrowthest,MATRIX,Median expected long-term (3-5 years) growth rate in operating earnings as forecasted by analysts,0.5416,2199,261
+sentiment1,snt1_d1_netearningsrevision,MATRIX,"Net percentage of analysts raising minus lowering earnings estimates, out of total analysts covering the stock",0.5681,2063,226
+sentiment1,snt1_d1_netrecpercent,MATRIX,"Percentage difference between analysts recommending buy and those recommending sell, divided by total number of analysts",0.5688,4038,353
+sentiment1,snt1_d1_nettargetpercent,MATRIX,"Net percentage of analysts raising minus lowering price targets, divided by total number of analysts",0.5733,2909,223
+sentiment1,snt1_d1_sellrecpercent,MATRIX,"Percentage of analysts recommending a sell, calculated as (# of analysts recommending sell) / (# of all analysts)",0.5688,2587,406
+sentiment1,snt1_d1_stockrank,MATRIX,"Rank (0-100) based on equity-style factors, where higher values reflect a stronger buy signal and lower values a sell signal",0.6026,2208,251
+sentiment1,snt1_d1_uptargetpercent,MATRIX,"Percent of analysts who have increased their price target recently, out of all analysts covering the stock",0.5733,2330,254
+sentiment1,weekly_equity_mood_index,MATRIX,A weekly composite score reflecting market mood for individual equities.,0.6497,7,7

@@ -1,0 +1,7 @@
+dataset,field_id,type,description,coverage,alphaCount,userCount
+univ1,top1000,UNIVERSE,No field description,1.0,10,8
+univ1,top200,UNIVERSE,No field description,1.0,9,3
+univ1,top2000,UNIVERSE,No field description,1.0,0,0
+univ1,top3000,UNIVERSE,No field description,1.0,55,18
+univ1,top500,UNIVERSE,No field description,1.0,36,11
+univ1,topsp500,UNIVERSE,No field description,1.0,4,4

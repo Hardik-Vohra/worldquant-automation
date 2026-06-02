@@ -1,0 +1,139 @@
+dataset,field_id,type,description,coverage,alphaCount,userCount
+model53,annualized_pd_10_year,MATRIX,Annualized probability of default over a 10-year horizon.,0.8563,20,15
+model53,annualized_pd_10_year_jc5,MATRIX,Annualized probability of default over a 10-year horizon using JC5 model.,0.9185,21,20
+model53,annualized_pd_10_year_jc7,MATRIX,Annualized probability of default over a 10-year horizon using JC7 model.,0.8792,68,51
+model53,annualized_pd_10_year_jm5,MATRIX,Annualized probability of default over a 10-year horizon using JM5 model.,0.9185,11,8
+model53,annualized_pd_10_year_ms5,MATRIX,Annualized probability of default over a 10-year horizon using MS5 model.,0.9216,9,9
+model53,annualized_pd_1_month,MATRIX,Annualized probability of default over a 1-month horizon.,0.8563,10,8
+model53,annualized_pd_1_month_jc5,MATRIX,Annualized probability of default over a 1-month horizon using JC5 model.,0.9185,18,16
+model53,annualized_pd_1_month_jc7,MATRIX,Annualized probability of default over a 1-month horizon using JC7 model.,0.8792,20,17
+model53,annualized_pd_1_month_jm5,MATRIX,Annualized probability of default over a 1-month horizon using JM5 model.,0.9185,4,4
+model53,annualized_pd_1_month_ms5,MATRIX,Annualized probability of default over a 1-month horizon using MS5 model.,0.9216,6,4
+model53,annualized_pd_1_year,MATRIX,Annualized probability of default over a 1-year horizon.,0.8563,4,4
+model53,annualized_pd_1_year_jc5,MATRIX,Annualized probability of default over a 1-year horizon using JC5 model.,0.9185,11,11
+model53,annualized_pd_1_year_jc7,MATRIX,Annualized probability of default over a 1-year horizon using JC7 model.,0.8792,18,13
+model53,annualized_pd_1_year_jm5,MATRIX,Annualized probability of default over a 1-year horizon using JM5 model.,0.9185,7,7
+model53,annualized_pd_1_year_ms5,MATRIX,Annualized probability of default over a 1-year horizon using MS5 model.,0.9216,18,13
+model53,annualized_pd_2_year,MATRIX,Annualized probability of default over a 2-year horizon.,0.8563,6,6
+model53,annualized_pd_2_year_jc5,MATRIX,Annualized probability of default over a 2-year horizon using JC5 model.,0.9185,18,16
+model53,annualized_pd_2_year_jc7,MATRIX,Annualized probability of default over a 2-year horizon using JC7 model.,0.8792,36,33
+model53,annualized_pd_2_year_jm5,MATRIX,Annualized probability of default over a 2-year horizon using JM5 model.,0.9185,6,6
+model53,annualized_pd_2_year_ms5,MATRIX,Annualized probability of default over a 2-year horizon using MS5 model.,0.9216,12,8
+model53,annualized_pd_3_month,MATRIX,Annualized probability of default over a 3-month horizon.,0.8563,4,4
+model53,annualized_pd_3_month_jc5,MATRIX,Annualized probability of default over a 3-month horizon using JC5 model.,0.9185,19,18
+model53,annualized_pd_3_month_jc7,MATRIX,Annualized probability of default over a 3-month horizon using JC7 model.,0.8792,14,10
+model53,annualized_pd_3_month_jm5,MATRIX,Annualized probability of default over a 3-month horizon using JM5 model.,0.9185,5,3
+model53,annualized_pd_3_month_ms5,MATRIX,Annualized probability of default over a 3-month horizon using MS5 model.,0.9216,9,7
+model53,annualized_pd_3_year,MATRIX,Annualized probability of default over a 3-year horizon.,0.8563,8,6
+model53,annualized_pd_3_year_jc5,MATRIX,Annualized probability of default over a 3-year horizon using JC5 model.,0.9185,6,5
+model53,annualized_pd_3_year_jc7,MATRIX,Annualized probability of default over a 3-year horizon using JC7 model.,0.8792,44,39
+model53,annualized_pd_3_year_jm5,MATRIX,Annualized probability of default over a 3-year horizon using JM5 model.,0.9185,4,4
+model53,annualized_pd_3_year_ms5,MATRIX,Annualized probability of default over a 3-year horizon using MS5 model.,0.9216,3,2
+model53,annualized_pd_4_year,MATRIX,Annualized probability of default over a 4-year horizon.,0.8563,6,6
+model53,annualized_pd_4_year_jc5,MATRIX,Annualized probability of default over a 4-year horizon using JC5 model.,0.9185,3,3
+model53,annualized_pd_4_year_jc7,MATRIX,Annualized probability of default over a 4-year horizon using JC7 model.,0.8792,35,31
+model53,annualized_pd_4_year_jm5,MATRIX,Annualized probability of default over a 4-year horizon using JM5 model.,0.9185,6,5
+model53,annualized_pd_4_year_ms5,MATRIX,Annualized probability of default over a 4-year horizon using MS5 model.,0.9216,2,2
+model53,annualized_pd_5_year,MATRIX,Annualized probability of default over a 5-year horizon.,0.8563,10,9
+model53,annualized_pd_5_year_jc5,MATRIX,Annualized probability of default over a 5-year horizon using JC5 model.,0.9185,13,8
+model53,annualized_pd_5_year_jc7,MATRIX,Annualized probability of default over a 5-year horizon using JC7 model.,0.8792,30,28
+model53,annualized_pd_5_year_jm5,MATRIX,Annualized probability of default over a 5-year horizon using JM5 model.,0.9185,3,3
+model53,annualized_pd_5_year_ms5,MATRIX,Annualized probability of default over a 5-year horizon using MS5 model.,0.9216,7,7
+model53,annualized_pd_6_month,MATRIX,Annualized probability of default over a 6-month horizon.,0.8563,0,0
+model53,annualized_pd_6_month_jc5,MATRIX,Annualized probability of default over a 6-month horizon using JC5 model.,0.9185,3,3
+model53,annualized_pd_6_month_jc7,MATRIX,Annualized probability of default over a 6-month horizon using JC7 model.,0.8792,7,6
+model53,annualized_pd_6_month_jm5,MATRIX,Annualized probability of default over a 6-month horizon using JM5 model.,0.9185,2,2
+model53,annualized_pd_6_month_ms5,MATRIX,Annualized probability of default over a 6-month horizon using MS5 model.,0.9216,4,3
+model53,annualized_pd_7_year,MATRIX,Annualized probability of default over a 7-year horizon.,0.8563,3,3
+model53,annualized_pd_7_year_jc5,MATRIX,Annualized probability of default over a 7-year horizon using JC5 model.,0.9185,3,3
+model53,annualized_pd_7_year_jc7,MATRIX,Annualized probability of default over a 7-year horizon using JC7 model.,0.8792,28,26
+model53,annualized_pd_7_year_jm5,MATRIX,Annualized probability of default over a 7-year horizon using JM5 model.,0.9185,3,3
+model53,annualized_pd_7_year_ms5,MATRIX,Annualized probability of default over a 7-year horizon using MS5 model.,0.9216,4,3
+model53,expected_rating_value,MATRIX,Expected value of the credit rating based on probability distribution.,0.7936,9,9
+model53,implied_credit_spread_array,MATRIX,Array of credit spreads implied by model for various maturities.,0.9179,36,29
+model53,mdl53_implied_ratings,MATRIX,"implied ratings modeling using ratings of Standard & Poor's as reported by S&P affiliate others, supplemented by a file with daily changes in ratings by Standard & Poor's",0.5,1887,255
+model53,mdl53_implied_spreads,MATRIX,"Model-implied credit spread level for the issuer on the given date, typically expressed in basis points",0.9641,801,219
+model53,mdl53_jc5_10year,MATRIX,Annualized default probability at the 10-year horizon (percentage),0.965,1106,245
+model53,mdl53_jc5_1month,MATRIX,Annualized default probability at the 1-month horizon (percentage),0.965,493,120
+model53,mdl53_jc5_1year,MATRIX,Annualized default probability at the 1-year horizon (percentage),0.965,903,255
+model53,mdl53_jc5_2year,MATRIX,Annualized default probability at the 2-year horizon (percentage),0.965,423,155
+model53,mdl53_jc5_3month,MATRIX,Annualized default probability at the 3-month horizon (percentage),0.965,869,134
+model53,mdl53_jc5_3year,MATRIX,Annualized default probability at the 3-year horizon (percentage),0.965,540,108
+model53,mdl53_jc5_4year,MATRIX,Annualized default probability at the 4-year horizon (percentage),0.965,324,130
+model53,mdl53_jc5_5year,MATRIX,Annualized default probability at the 5-year horizon (percentage),0.965,444,191
+model53,mdl53_jc5_6month,MATRIX,Annualized default probability at the 6-month horizon (percentage),0.965,478,121
+model53,mdl53_jc5_7year,MATRIX,Annualized default probability at the 7-year horizon (percentage),0.965,569,181
+model53,mdl53_jc6_10year,MATRIX,Annualized default probability at the 10-year horizon (percentage) from the Kamakura Jarrow–Chava v6 model for US issuers,0.9147,185,61
+model53,mdl53_jc6_1month,MATRIX,Annualized default probability at the 1-month horizon (percentage) from the Kamakura Jarrow–Chava v6 model for US issuers,0.9147,192,71
+model53,mdl53_jc6_1year,MATRIX,Annualized default probability at the 1-year horizon (percentage) from the Kamakura Jarrow–Chava v6 model for US issuers,0.9147,482,100
+model53,mdl53_jc6_2year,MATRIX,Annualized default probability at the 2-year horizon (percentage) from the Kamakura Jarrow–Chava v6 model for US issuers,0.9147,457,82
+model53,mdl53_jc6_3month,MATRIX,Annualized default probability at the 3-month horizon (percentage) from the Kamakura Jarrow–Chava v6 model for US issuers,0.9147,572,66
+model53,mdl53_jc6_3year,MATRIX,Annualized default probability at the 3-year horizon (percentage) from the Kamakura Jarrow–Chava v6 model for US issuers,0.9147,276,87
+model53,mdl53_jc6_4year,MATRIX,Annualized default probability at the 4-year horizon (percentage) from the Kamakura Jarrow–Chava v6 model for US issuers,0.9147,418,173
+model53,mdl53_jc6_5year,MATRIX,Annualized default probability at the 5-year horizon (percentage) from the Kamakura Jarrow–Chava v6 model for US issuers,0.9147,402,83
+model53,mdl53_jc6_6month,MATRIX,Annualized default probability at the 6-month horizon (percentage) from the Kamakura Jarrow–Chava v6 model for US issuers,0.9147,314,62
+model53,mdl53_jc6_7year,MATRIX,Annualized default probability at the 7-year horizon (percentage) from the Kamakura Jarrow–Chava v6 model for US issuers,0.9147,1070,79
+model53,mdl53_jm5_10year,MATRIX,10-year annualized default probability (percentage) from Kamakura hybrid Jarrow–Merton v5 model,0.965,281,85
+model53,mdl53_jm5_1month,MATRIX,1-month annualized default probability (percentage) from Kamakura hybrid Jarrow–Merton v5 model,0.965,255,58
+model53,mdl53_jm5_1year,MATRIX,1-year annualized default probability (percentage) from Kamakura hybrid Jarrow–Merton v5 model,0.965,435,100
+model53,mdl53_jm5_2year,MATRIX,2-year annualized default probability (percentage) from Kamakura hybrid Jarrow–Merton v5 model,0.965,323,108
+model53,mdl53_jm5_3month,MATRIX,3-month annualized default probability (percentage) from Kamakura hybrid Jarrow–Merton v5 model,0.965,412,72
+model53,mdl53_jm5_3year,MATRIX,3-year annualized default probability (percentage) from Kamakura hybrid Jarrow–Merton v5 model,0.965,350,71
+model53,mdl53_jm5_4year,MATRIX,4-year annualized default probability (percentage) from Kamakura hybrid Jarrow–Merton v5 model,0.965,265,78
+model53,mdl53_jm5_5year,MATRIX,5-year annualized default probability (percentage) from Kamakura hybrid Jarrow–Merton v5 model,0.965,255,73
+model53,mdl53_jm5_6month,MATRIX,6-month annualized default probability (percentage) from Kamakura hybrid Jarrow–Merton v5 model,0.965,347,74
+model53,mdl53_jm5_7year,MATRIX,7-year annualized default probability (percentage) from Kamakura hybrid Jarrow–Merton v5 model,0.965,341,93
+model53,mdl53_ms5_10year,MATRIX,"Annualized default probability at the 10-year horizon from Kamakura’s Merton structural model v5 (MS5), reported in percent",0.9709,532,84
+model53,mdl53_ms5_1month,MATRIX,"Annualized default probability at the 1-month horizon from Kamakura’s Merton structural model v5 (MS5), reported in percent",0.9709,413,80
+model53,mdl53_ms5_1year,MATRIX,"Annualized default probability at the 1-year horizon from Kamakura’s Merton structural model v5 (MS5), reported in percent",0.9709,321,73
+model53,mdl53_ms5_2year,MATRIX,"Annualized default probability at the 2-year horizon from Kamakura’s Merton structural model v5 (MS5), reported in percent",0.9709,237,74
+model53,mdl53_ms5_3month,MATRIX,"Annualized default probability at the 3-month horizon from Kamakura’s Merton structural model v5 (MS5), reported in percent",0.9709,458,79
+model53,mdl53_ms5_3year,MATRIX,"Annualized default probability at the 3-year horizon from Kamakura’s Merton structural model v5 (MS5), reported in percent",0.9709,454,68
+model53,mdl53_ms5_4year,MATRIX,"Annualized default probability at the 4-year horizon from Kamakura’s Merton structural model v5 (MS5), reported in percent",0.9709,352,63
+model53,mdl53_ms5_5year,MATRIX,"Annualized default probability at the 5-year horizon from Kamakura’s Merton structural model v5 (MS5), reported in percent",0.9709,370,79
+model53,mdl53_ms5_6month,MATRIX,"Annualized default probability at the 6-month horizon from Kamakura’s Merton structural model v5 (MS5), reported in percent",0.9709,460,93
+model53,mdl53_ms5_7year,MATRIX,"Annualized default probability at the 7-year horizon from Kamakura’s Merton structural model v5 (MS5), reported in percent",0.9709,462,97
+model53,probability_dist_a,MATRIX,Probability from the rating distribution for A grade.,0.7719,0,0
+model53,probability_dist_a_minus,MATRIX,Probability from the rating distribution for A- grade.,0.7719,0,0
+model53,probability_dist_a_plus,MATRIX,Probability from the rating distribution for A+ grade.,0.7719,1,1
+model53,probability_dist_aa,MATRIX,Probability from the rating distribution for AA grade.,0.7719,1,1
+model53,probability_dist_aa_minus,MATRIX,Probability from the rating distribution for AA- grade.,0.7719,4,2
+model53,probability_dist_aa_plus,MATRIX,Probability from the rating distribution for AA+ grade.,0.7719,3,2
+model53,probability_dist_aaa,MATRIX,Probability from the rating distribution for AAA grade.,0.7719,1,1
+model53,probability_dist_b,MATRIX,Probability from the rating distribution for B grade.,0.7719,3,2
+model53,probability_dist_b_minus,MATRIX,Probability from the rating distribution for B- grade.,0.7719,0,0
+model53,probability_dist_b_plus,MATRIX,Probability from the rating distribution for B+ grade.,0.7719,0,0
+model53,probability_dist_bb,MATRIX,Probability from the rating distribution for BB grade.,0.7719,1,1
+model53,probability_dist_bb_minus,MATRIX,Probability from the rating distribution for BB- grade.,0.7719,4,4
+model53,probability_dist_bb_plus,MATRIX,Probability from the rating distribution for BB+ grade.,0.7719,2,2
+model53,probability_dist_bbb,MATRIX,Probability from the rating distribution for BBB grade.,0.7719,1,1
+model53,probability_dist_bbb_minus,MATRIX,Probability from the rating distribution for BBB- grade.,0.7719,1,1
+model53,probability_dist_bbb_plus,MATRIX,Probability from the rating distribution for BBB+ grade.,0.7719,0,0
+model53,probability_dist_cc_or_c,MATRIX,Probability from the rating distribution for CC or C grade.,0.7719,0,0
+model53,probability_dist_ccc,MATRIX,Probability from the rating distribution for CCC grade.,0.7719,1,1
+model53,probability_dist_ccc_minus,MATRIX,Probability from the rating distribution for CCC- grade.,0.7719,1,1
+model53,probability_dist_ccc_plus,MATRIX,Probability from the rating distribution for CCC+ grade.,0.7719,2,2
+model53,probability_investment_grade_rating,MATRIX,Probability that a credit rating is investment grade or higher.,0.7936,3,3
+model53,probability_non_investment_grade_rating,MATRIX,Probability that a credit rating falls below investment grade.,0.7936,7,6
+model53,probability_rating_a,VECTOR,Probability assigned to the A credit rating category.,0.3503,15,11
+model53,probability_rating_a_minus,VECTOR,Probability assigned to the A- credit rating category.,0.3503,5,4
+model53,probability_rating_a_plus,VECTOR,Probability assigned to the A+ credit rating category.,0.3503,21,15
+model53,probability_rating_aa,VECTOR,Probability assigned to the AA credit rating category.,0.3503,11,7
+model53,probability_rating_aa_minus,VECTOR,Probability assigned to the AA- credit rating category.,0.3503,6,6
+model53,probability_rating_aa_plus,VECTOR,Probability assigned to the AA+ credit rating category.,0.3503,1,1
+model53,probability_rating_aaa,VECTOR,Probability assigned to the AAA credit rating category.,0.3503,2,1
+model53,probability_rating_b,VECTOR,Probability assigned to the B credit rating category.,0.3503,0,0
+model53,probability_rating_b_minus,VECTOR,Probability assigned to the B- credit rating category.,0.3503,73,72
+model53,probability_rating_b_plus,VECTOR,Probability assigned to the B+ credit rating category.,0.3503,0,0
+model53,probability_rating_bb,VECTOR,Probability assigned to the BB credit rating category.,0.3503,0,0
+model53,probability_rating_bb_minus,VECTOR,Probability assigned to the BB- credit rating category.,0.3503,10,10
+model53,probability_rating_bb_plus,VECTOR,Probability assigned to the BB+ credit rating category.,0.3503,9,9
+model53,probability_rating_bbb,VECTOR,Probability assigned to the BBB credit rating category.,0.3503,6,6
+model53,probability_rating_bbb_minus,VECTOR,Probability assigned to the BBB- credit rating category.,0.3503,0,0
+model53,probability_rating_bbb_plus,VECTOR,Probability assigned to the BBB+ credit rating category.,0.3503,0,0
+model53,probability_rating_cc_or_c,VECTOR,Probability assigned to the CC or C credit rating category.,0.3503,12,11
+model53,probability_rating_ccc,VECTOR,Probability assigned to the CCC credit rating category.,0.3503,42,38
+model53,probability_rating_ccc_minus,VECTOR,Probability assigned to the CCC- credit rating category.,0.3503,19,17
+model53,probability_rating_ccc_plus,VECTOR,Probability assigned to the CCC+ credit rating category.,0.3503,2,2
+model53,probability_rating_downgrade,VECTOR,Probability that a credit rating will be downgraded.,0.3503,7,5
+model53,probability_rating_upgrade,VECTOR,Probability that a credit rating will be upgraded.,0.3503,11,8

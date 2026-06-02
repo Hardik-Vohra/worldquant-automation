@@ -1,0 +1,75 @@
+dataset,field_id,type,description,coverage,alphaCount,userCount
+option9,call_breakeven_10,MATRIX,"Price at which a stock's call options with expiration 10 days in the future break even based on its recent bid/ask mean, weighted by open interest or volume",0.9824,2516,1181
+option9,call_breakeven_1080,MATRIX,Price at which a stock's call options with expiration 1080 days in the future break even based on its recent bid/ask mean.,0.9824,1138,486
+option9,call_breakeven_120,MATRIX,"Price at which a stock's call options with expiration 120 days in the future break even based on its recent bid/ask mean, weighted by open interest or volume",0.9824,948,381
+option9,call_breakeven_150,MATRIX,"Price at which a stock's call options with expiration 150 days in the future break even based on its recent bid/ask mean, weighted by open interest or volume",0.9824,666,264
+option9,call_breakeven_180,MATRIX,Open-interest-weighted mean breakeven price at which buyers of call options break even for options expiring in 180 days,0.9824,905,355
+option9,call_breakeven_20,MATRIX,"Open-interest-weighted average breakeven price of call options expiring in 20 days, representing the price at which call buyers break even",0.9824,1821,1152
+option9,call_breakeven_270,MATRIX,Price at which a stock's call options with expiration 270 days in the future break even based on its recent bid/ask mean,0.9824,668,284
+option9,call_breakeven_30,MATRIX,"Open-interest-weighted average breakeven price of call options expiring in 30 days, representing the price at which call buyers break even",0.9824,1010,425
+option9,call_breakeven_360,MATRIX,"Weighted mean break-even price of call options expiring in 360 days, based on recent bid/ask prices",0.9824,570,256
+option9,call_breakeven_60,MATRIX,"Open interest-weighted mean breakeven price for call options expiring in 60 days, showing average price at which call buyers break even",0.9824,631,293
+option9,call_breakeven_720,MATRIX,Weighted mean breakeven price of call options expiring in 720 days indicating the price at which call buyers break even,0.9824,583,273
+option9,call_breakeven_90,MATRIX,Price at which a stock's call options with expiration 90 days in the future break even based on its recent bid/ask mean,0.9824,427,275
+option9,forward_price_10,MATRIX,Synthetic forward price for the underlying at 10 days derived from put-call parity using ATM options and adjusted for interest rates and dividends,0.9796,1078,492
+option9,forward_price_1080,MATRIX,"Synthetic forward price at 1080 days derived from at-the-money call and put option prices, reflecting market consensus for the underlying at that tenor",0.9796,525,308
+option9,forward_price_120,MATRIX,Synthetic forward price at 120 days derived from at-the-money call and put options reflecting the market's forward expectation of the underlying security,0.9796,429,331
+option9,forward_price_150,MATRIX,Synthetic forward price at 150 days derived from at-the-money call and put options reflecting the market's forward expectation of the underlying security,0.9796,446,269
+option9,forward_price_180,MATRIX,Synthetic forward price at 180 days derived from put-call parity using at-the-money calls and puts reflecting market consensus forward expectation,0.9796,588,293
+option9,forward_price_20,MATRIX,Synthetic forward price for the underlying at 20 days derived from put-call parity using ATM options and adjusted for interest rates and dividends,0.9796,704,349
+option9,forward_price_270,MATRIX,Synthetic forward price at 270 days expiry derived from ATM calls and puts reflecting the market-consensus forward expectation,0.9796,515,233
+option9,forward_price_30,MATRIX,"Synthetic forward price at 30 days expiry, derived from at-the-money call and put options, reflecting market consensus forward expectation",0.9796,621,312
+option9,forward_price_360,MATRIX,"Synthetic forward price at 360 days derived from put-call parity using ATM call and put prices, reflecting the market-consensus forward expectation of the underlying",0.9796,578,226
+option9,forward_price_60,MATRIX,Synthetic forward price at 60 days derived from at-the-money call and put options reflecting the market's forward expectation of the underlying security,0.9796,443,271
+option9,forward_price_720,MATRIX,Synthetic forward price at 720 days derived from at-the-money call and put options reflecting the market's forward expectation of the underlying security,0.9796,567,287
+option9,forward_price_90,MATRIX,"Synthetic forward price at 90 days derived from put-call parity using ATM call and put prices, reflecting the market-consensus forward expectation of the underlying",0.9796,403,233
+option9,option_breakeven_10,MATRIX,Open-interest-weighted mean breakeven price at which buyers of calls and puts combined break even for options expiring in 10 days,0.9835,684,287
+option9,option_breakeven_1080,MATRIX,Open-interest-weighted mean breakeven price at which buyers of calls and puts combined break even for options expiring in 1080 days,0.9835,525,203
+option9,option_breakeven_120,MATRIX,"Weighted mean breakeven price for combined call and put options with expiration 120 days in the future, based on recent bid/ask mid-prices and weighted by open interest or volume",0.9835,540,233
+option9,option_breakeven_150,MATRIX,Price at which a stock's options with expiration 150 days in the future break even based on its recent bid/ask mean,0.9835,329,161
+option9,option_breakeven_180,MATRIX,"Weighted mean break-even price for combined call and put options expiring in 180 days, based on recent bid/ask prices",0.9835,487,225
+option9,option_breakeven_20,MATRIX,Price at which a stock's options with expiration 20 days in the future break even based on its recent bid/ask mean,0.9835,458,286
+option9,option_breakeven_270,MATRIX,The weighted mean price at which buyers of call and put options combined break even at 270 days to expiry based on recent bid/ask prices,0.9835,577,192
+option9,option_breakeven_30,MATRIX,"Open-interest-weighted average breakeven price of all call and put options expiring in 30 days, representing the price at which option buyers collectively break even",0.9835,455,246
+option9,option_breakeven_360,MATRIX,"Open-interest-weighted average breakeven price of all call and put options expiring in 360 days, representing the price at which option buyers collectively break even",0.9835,406,172
+option9,option_breakeven_60,MATRIX,The weighted mean price at which buyers of call and put options combined break even at 60 days to expiry based on recent bid/ask prices,0.9835,308,186
+option9,option_breakeven_720,MATRIX,Price at which a stock's options with expiration 720 days in the future break even based on its recent bid/ask mean,0.9835,297,157
+option9,option_breakeven_90,MATRIX,Open-interest-weighted mean breakeven price at which buyers of calls and puts combined break even for options expiring in 90 days,0.9835,346,189
+option9,pcr_oi_10,MATRIX,"Ratio of put open interest to call open interest for options expiring in 10 days, indicating short-term positioning",0.9838,1567,650
+option9,pcr_oi_1080,MATRIX,"Ratio of put option open interest to call option open interest for stock options expiring in 1080 days, representing longer-term positioning",0.9838,1229,609
+option9,pcr_oi_120,MATRIX,"Ratio of total put option open interest to total call option open interest for options expiring in 120 days, indicating longer-term put-call positioning",0.9838,1877,723
+option9,pcr_oi_150,MATRIX,"Ratio of total put option open interest to total call option open interest for options expiring in 150 days, indicating longer-term put-call positioning",0.9838,1515,980
+option9,pcr_oi_180,MATRIX,"Ratio of total put option open interest to call option open interest for options expiring in 180 days, representing longer-term positioning",0.9838,2918,1860
+option9,pcr_oi_20,MATRIX,Ratio of put open interest to call open interest on a stock's options with expiration 20 days in the future,0.9838,687,355
+option9,pcr_oi_270,MATRIX,"Ratio of put open interest to call open interest for options expiring in 270 days, indicating longer-term position skew",0.9838,14126,8956
+option9,pcr_oi_30,MATRIX,"Ratio of put open interest to call open interest for options expiring in 30 days, reflecting medium-term option positioning",0.9838,1001,472
+option9,pcr_oi_360,MATRIX,Ratio of total put option open interest to call option open interest for options expiring in 360 days,0.9838,1142,539
+option9,pcr_oi_60,MATRIX,"Ratio of put open interest to call open interest for options expiring in 60 days, reflecting medium-to-long term option positioning",0.9838,1366,624
+option9,pcr_oi_720,MATRIX,"Ratio of put open interest to call open interest for options expiring in 720 days, indicating very long-term option sentiment",0.9838,953,574
+option9,pcr_oi_90,MATRIX,"Ratio of put open interest to call open interest for options expiring in 90 days, reflecting longer-term positioning",0.9838,1543,551
+option9,pcr_oi_all,MATRIX,Ratio of total put option open interest to call option open interest aggregated across all option maturities for the stock,0.9838,957,444
+option9,pcr_vol_10,MATRIX,"Ratio of total put option volume to call option volume for options expiring in 10 days, reflecting very short-term sentiment flow",0.981,523,304
+option9,pcr_vol_1080,MATRIX,Ratio of put volume to call volume on a stock's options with expiration 1080 days in the future.,0.981,502,291
+option9,pcr_vol_120,MATRIX,Ratio of put options volume to call options volume for contracts expiring in 120 days on a stock's options,0.981,397,285
+option9,pcr_vol_150,MATRIX,"Ratio of total put options volume to call options volume for options expiring in 150 days, reflecting short-term options flow sentiment",0.981,347,195
+option9,pcr_vol_180,MATRIX,"Ratio of total put option volume to call option volume for options expiring in 180 days, capturing short-term options flow sentiment",0.981,539,368
+option9,pcr_vol_20,MATRIX,"Ratio of put option volume to call option volume for options expiring in 20 days, signaling short-term options flow sentiment",0.981,305,206
+option9,pcr_vol_270,MATRIX,"Ratio of total put options volume to call options volume for contracts expiring 270 days in the future, indicating short-term options flow sentiment at longer tenor",0.981,603,355
+option9,pcr_vol_30,MATRIX,Ratio of put volume to call volume on a stock's options with expiration 30 days in the future,0.981,327,206
+option9,pcr_vol_360,MATRIX,Ratio of put volume to call volume on a stock's options with expiration 360 days in the future,0.981,470,261
+option9,pcr_vol_60,MATRIX,"Ratio of total put options volume to call options volume for contracts expiring 60 days in the future, indicating short-term options flow sentiment",0.981,335,245
+option9,pcr_vol_720,MATRIX,Ratio of put options volume to call options volume for contracts expiring in 720 days on a stock's options,0.981,271,197
+option9,pcr_vol_90,MATRIX,"Ratio of put options volume to call options volume for stock options expiring in 90 days, indicating short-term options flow sentiment",0.981,281,239
+option9,pcr_vol_all,MATRIX,"Ratio of total put option volume to call option volume aggregated across all maturities, measuring short-term options flow sentiment",0.981,411,236
+option9,put_breakeven_10,MATRIX,"Open interest-weighted mean breakeven price for put options expiring in 10 days, average price at which put buyers break even",0.9795,1015,631
+option9,put_breakeven_1080,MATRIX,Price at which a stock's put options with expiration 1080 days in the future break even based on its recent bid/ask mean,0.9795,868,593
+option9,put_breakeven_120,MATRIX,Price at which a stock's put options with expiration 120 days in the future break even based on its recent bid/ask mean,0.9795,442,267
+option9,put_breakeven_150,MATRIX,Open-interest-weighted mean breakeven price at which buyers of put options break even for options expiring in 150 days,0.9795,407,199
+option9,put_breakeven_180,MATRIX,"Weighted mean breakeven price of put options expiring in 180 days derived from open interest or volume, indicating the price at which put buyers break even",0.9795,346,215
+option9,put_breakeven_20,MATRIX,"Price at which a stock's put options with expiration 20 days in the future break even based on its recent bid/ask mean, weighted by open interest or volume",0.9795,365,235
+option9,put_breakeven_270,MATRIX,Weighted mean breakeven price of put options expiring in 270 days indicating the break even price for put buyers based on recent bids and asks,0.9795,360,175
+option9,put_breakeven_30,MATRIX,The weighted mean break-even price of put options expiring in 30 days based on recent bid/ask prices,0.9795,404,257
+option9,put_breakeven_360,MATRIX,Open-interest-weighted mean breakeven price at which buyers of put options break even for options expiring in 360 days,0.9795,406,227
+option9,put_breakeven_60,MATRIX,"Price at which a stock's put options with expiration 60 days in the future break even based on its recent bid/ask mean, weighted by open interest or volume",0.9795,384,218
+option9,put_breakeven_720,MATRIX,Weighted mean breakeven price of put options expiring in 720 days indicating the put buyers break-even price based on recent bid/ask,0.9795,414,260
+option9,put_breakeven_90,MATRIX,Open-interest-weighted mean breakeven price at which buyers of put options break even for options expiring in 90 days,0.9795,453,250

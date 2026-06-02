@@ -1,0 +1,376 @@
+dataset,field_id,type,description,coverage,alphaCount,userCount
+earnings4,abs_avg_pct_move_announcements_12,MATRIX,"Absolute average percent earnings move across the last 12 earnings announcements, measured at the time of the announcement",0.9692,0,0
+earnings4,absolute_average_announcement_percent_move,MATRIX,Absolute average percentage earnings-day price move over the last 12 announcements,0.9693,0,0
+earnings4,aggregate_option_open_interest,MATRIX,Total open interest,0.9693,0,0
+earnings4,aggregate_option_open_interest_2,VECTOR,Total options open interest,0.9692,0,0
+earnings4,announcement_effect_10,MATRIX,The earn effect for earnings date number 10,0.9692,0,0
+earnings4,announcement_effect_2,MATRIX,The earn effect for earnings date number 2,0.9692,0,0
+earnings4,announcement_effect_3,MATRIX,The earnings effect for earnings date number 3,0.9692,0,0
+earnings4,announcement_effect_7,MATRIX,The earn effect for earnings date number7.,0.9692,0,0
+earnings4,announcement_effect_8,MATRIX,The earn effect for earnings date number8.,0.9692,0,0
+earnings4,announcement_effect_9,MATRIX,The earn effect for earnings date number9.,0.9692,0,0
+earnings4,atm_volatility_month1,MATRIX,At-the-money implied volatility for month 1,0.9692,0,0
+earnings4,atm_volatility_month2,MATRIX,At-the-money implied volatility for month 2,0.9692,0,0
+earnings4,atm_volatility_month3,MATRIX,At-the-money implied volatility for month 3,0.9692,0,0
+earnings4,avg_option_volume_20d,MATRIX,Average option volume for all strikes over the last 20 days,0.9692,0,0
+earnings4,best_fit_implied_announcement_effect,MATRIX,The implied earnings effect needed to best fit the term structure of monthly implied volatilities (earnings-specific volatility add-on),0.9693,1,1
+earnings4,days_to_expiry_month2,MATRIX,Days to expiration for month 2,0.9692,0,0
+earnings4,days_to_expiry_month3,MATRIX,Days to expiration for month 3 options,0.9692,0,0
+earnings4,eighth_event_option_effect,MATRIX,The earn effect for earnings date number8.,0.9693,0,0
+earnings4,eighth_event_straddle_price_percent_of_equity,MATRIX,Straddle or strangle price as a percent of stock price for earnings date number 8,0.9692,0,0
+earnings4,eighth_historical_announcement_percent_move,MATRIX,Percentage stock price move on the 8th prior earnings announcement (back 8),0.9693,0,0
+earnings4,eighth_historical_straddle_price_percent,MATRIX,Earnings straddle/strangle price as a percentage of stock price for the 8th prior earnings date,0.9693,0,0
+earnings4,eleventh_event_option_effect,MATRIX,The earn effect for earnings date number11.,0.9693,0,0
+earnings4,eleventh_event_option_effect_2,MATRIX,The earn effect for earnings date number11.,0.9692,0,0
+earnings4,eleventh_event_straddle_price_percent_of_equity,MATRIX,Cost of the earnings straddle/strangle as a percent of stock price for earnings event number 11,0.9693,0,0
+earnings4,eleventh_historical_announcement_percent_move,MATRIX,The percentage move for earnings date number back11.,0.9693,0,0
+earnings4,ern4_1000dclshv,VECTOR,"1000-day close-to-close historical volatility, annualized percent",0.9692,480,157
+earnings4,ern4_1000dclshvxern,VECTOR,"1000-day close-to-close historical volatility excluding earnings-day effects, annualized percent",0.9692,77,45
+earnings4,ern4_1000dorhv,VECTOR,"1000-day ORATS open-range historical tick volatility (annualized), including earnings days",0.9692,119,52
+earnings4,ern4_1000dorhvxern,VECTOR,"1000-day open-range (intraday) historical volatility with earnings days excluded, annualized percent",0.9692,96,34
+earnings4,ern4_10dclshv,VECTOR,"10-day close-to-close historical volatility, annualized percent",0.9692,131,51
+earnings4,ern4_10dclshvxern,VECTOR,"10-day close-to-close historical volatility excluding earnings-day effects, annualized percent",0.9692,39,23
+earnings4,ern4_10dexerniv,VECTOR,10-day constant-maturity implied volatility with earnings effect removed,0.9692,26,17
+earnings4,ern4_10div,VECTOR,10-day constant-maturity implied volatility (annualized),0.9692,67,37
+earnings4,ern4_10dorhv,VECTOR,"10-day ORATS open-range historical tick volatility (annualized), including earnings days",0.9692,42,25
+earnings4,ern4_10dorhvxern,VECTOR,"10-day ORATS open-range historical tick volatility (annualized), excluding the earnings day",0.9692,42,18
+earnings4,ern4_120dclshv,VECTOR,"120-day close-to-close historical volatility, annualized percent",0.9692,78,42
+earnings4,ern4_120dclshvxern,VECTOR,"120-day close-to-close historical volatility excluding earnings-day effects, annualized percent",0.9692,52,30
+earnings4,ern4_120dorhv,VECTOR,"120-day ORATS open-range historical tick volatility (annualized), including earnings days",0.9692,70,41
+earnings4,ern4_120dorhvxern,VECTOR,"120-day ORATS open-range historical tick volatility (annualized), excluding the earnings day",0.9692,69,30
+earnings4,ern4_20dclshv,VECTOR,"20-day close-to-close historical volatility, annualized percent",0.9692,53,21
+earnings4,ern4_20dclshvxern,VECTOR,"20-day close-to-close historical volatility excluding earnings-day effects, annualized percent",0.9692,35,17
+earnings4,ern4_20dexerniv,VECTOR,20-day constant-maturity implied volatility with earnings effect removed,0.9692,31,20
+earnings4,ern4_20div,VECTOR,"Interpolated implied volatility over 20 calendar days, annualized percent",0.9692,44,32
+earnings4,ern4_20dorhv,VECTOR,"20-day ORATS open-range historical tick volatility (annualized), including earnings days",0.9692,60,27
+earnings4,ern4_20dorhvxern,VECTOR,"20-day ORATS open-range historical tick volatility (annualized), excluding the earnings day",0.9692,48,32
+earnings4,ern4_252dclshv,VECTOR,"252-day close-to-close historical volatility, annualized percent",0.9692,54,27
+earnings4,ern4_252dclshvxern,VECTOR,"252-day close-to-close historical volatility excluding earnings-day effects, annualized percent",0.9692,50,22
+earnings4,ern4_252dorhv,VECTOR,"252-day ORATS open-range historical tick volatility (annualized), including earnings days",0.9692,51,24
+earnings4,ern4_252dorhvxern,VECTOR,"252-day ORATS open-range historical tick volatility (annualized), excluding the earnings day",0.9692,46,32
+earnings4,ern4_30dexerniv,VECTOR,30-day constant-maturity implied volatility with earnings effect removed,0.9692,69,28
+earnings4,ern4_30div,VECTOR,"Interpolated implied volatility over 30 calendar days, annualized percent",0.9692,136,49
+earnings4,ern4_500dclshv,VECTOR,"500-day close-to-close historical volatility, annualized percent",0.9692,44,32
+earnings4,ern4_500dclshvxern,VECTOR,"500-day close-to-close historical volatility excluding earnings-day effects, annualized percent",0.9692,82,35
+earnings4,ern4_500dorhv,VECTOR,"500-day ORATS open-range historical tick volatility (annualized), including earnings days",0.9692,43,22
+earnings4,ern4_500dorhvxern,VECTOR,"500-day open-range (intraday) historical volatility with earnings days excluded, annualized percent",0.9692,29,20
+earnings4,ern4_5dclshv,VECTOR,"5-day close-to-close historical volatility, annualized percent",0.9692,18,12
+earnings4,ern4_5dclshvxern,VECTOR,"5-day close-to-close historical volatility excluding earnings-day effects, annualized percent",0.9692,25,16
+earnings4,ern4_5dorhv,VECTOR,"5-day ORATS open-range historical tick volatility (annualized), including earnings days",0.9692,27,19
+earnings4,ern4_5dorhvxern,VECTOR,"5-day ORATS open-range historical tick volatility (annualized), excluding the earnings day",0.9692,44,21
+earnings4,ern4_60dclshv,VECTOR,"60-day close-to-close historical volatility, annualized percent",0.9692,44,28
+earnings4,ern4_60dclshvxern,VECTOR,"60-day close-to-close historical volatility excluding earnings-day effects, annualized percent",0.9692,34,15
+earnings4,ern4_60dexerniv,VECTOR,60-day constant-maturity implied volatility with earnings effect removed,0.9692,15,12
+earnings4,ern4_60div,VECTOR,60-day constant-maturity implied volatility (annualized),0.9696,111,64
+earnings4,ern4_60dorhv,VECTOR,"60-day ORATS open-range historical tick volatility (annualized), including earnings days",0.9692,49,18
+earnings4,ern4_60dorhvxern,VECTOR,"60-day ORATS open-range historical tick volatility (annualized), excluding the earnings day",0.9692,36,19
+earnings4,ern4_6mexerniv,VECTOR,6-month constant-maturity implied volatility with earnings effect removed,0.9692,14,8
+earnings4,ern4_6miv,VECTOR,"Interpolated implied volatility over 6 months, annualized percent",0.9692,42,29
+earnings4,ern4_90dclshv,VECTOR,"90-day close-to-close historical volatility, annualized percent",0.9692,56,23
+earnings4,ern4_90dclshvxern,VECTOR,"90-day close-to-close historical volatility excluding earnings-day effects, annualized percent",0.9692,40,25
+earnings4,ern4_90dexerniv,VECTOR,90-day constant-maturity implied volatility with earnings effect removed,0.9692,37,26
+earnings4,ern4_90div,VECTOR,"Interpolated implied volatility over 90 calendar days, annualized percent",0.9692,131,78
+earnings4,ern4_90dorhv,VECTOR,"90-day ORATS open-range historical tick volatility (annualized), including earnings days",0.9692,47,28
+earnings4,ern4_90dorhvxern,VECTOR,"90-day ORATS open-range historical tick volatility (annualized), excluding the earnings day",0.9692,49,23
+earnings4,ern4_absavgernmv,VECTOR,Absolute average earnings-day stock move percentage across the last 12 events,0.9692,96,48
+earnings4,ern4_avg20doptvolu,VECTOR,20-day average total options trading volume,0.9692,146,63
+earnings4,ern4_erneffct1,VECTOR,The earn effect for earnings date number1.,0.9692,85,33
+earnings4,ern4_erneffct10,VECTOR,The earn effect for earnings date number10.,0.9692,18,14
+earnings4,ern4_erneffct11,VECTOR,The earn effect for earnings date number11.,0.9692,19,18
+earnings4,ern4_erneffct12,VECTOR,The earn effect for earnings date number12.,0.9692,27,16
+earnings4,ern4_erneffct2,VECTOR,The earn effect for earnings date number2.,0.9692,13,12
+earnings4,ern4_erneffct3,VECTOR,The earn effect for earnings date number3.,0.9692,40,28
+earnings4,ern4_erneffct4,VECTOR,The earn effect for earnings date number4.,0.9692,31,21
+earnings4,ern4_erneffct5,VECTOR,The earn effect for earnings date number5.,0.9692,11,10
+earnings4,ern4_erneffct6,VECTOR,The earn effect for earnings date number6.,0.9692,28,17
+earnings4,ern4_erneffct7,VECTOR,The earn effect for earnings date number7.,0.9692,19,14
+earnings4,ern4_erneffct8,VECTOR,The earn effect for earnings date number8.,0.9692,11,7
+earnings4,ern4_erneffct9,VECTOR,The earn effect for earnings date number9.,0.9692,18,14
+earnings4,ern4_ernmnth,VECTOR,The next expiration month number directly after earnings date.,0.9692,192,75
+earnings4,ern4_ernmv1,VECTOR,"Stock price move on the most recent past earnings date, expressed as a percentage change (float, decimal fraction)",0.9692,1234,338
+earnings4,ern4_ernmv10,VECTOR,"Stock price move on the tenth most recent past earnings date, expressed as a percentage change (float, decimal fraction)",0.9692,20,13
+earnings4,ern4_ernmv11,VECTOR,"Stock price move on the eleventh most recent past earnings date, expressed as a percentage change (float, decimal fraction)",0.9692,169,60
+earnings4,ern4_ernmv12,VECTOR,"Stock price move on the twelfth most recent past earnings date, expressed as a percentage change (float, decimal fraction)",0.9692,39,25
+earnings4,ern4_ernmv2,VECTOR,"Stock price move on the second most recent past earnings date, expressed as a percentage change (float, decimal fraction)",0.9692,270,94
+earnings4,ern4_ernmv3,VECTOR,"Stock price move on the third most recent past earnings date, expressed as a percentage change (float, decimal fraction)",0.9692,46,27
+earnings4,ern4_ernmv4,VECTOR,"Stock price move on the fourth most recent past earnings date, expressed as a percentage change (float, decimal fraction)",0.9692,58,42
+earnings4,ern4_ernmv5,VECTOR,"Stock price move on the fifth most recent past earnings date, expressed as a percentage change (float, decimal fraction)",0.9692,55,26
+earnings4,ern4_ernmv6,VECTOR,"Stock price move on the sixth most recent past earnings date, expressed as a percentage change (float, decimal fraction)",0.9692,21,15
+earnings4,ern4_ernmv7,VECTOR,"Stock price move on the seventh most recent past earnings date, expressed as a percentage change (float, decimal fraction)",0.9692,25,18
+earnings4,ern4_ernmv8,VECTOR,"Stock price move on the eighth most recent past earnings date, expressed as a percentage change (float, decimal fraction)",0.9692,27,22
+earnings4,ern4_ernmv9,VECTOR,"Stock price move on the ninth most recent past earnings date, expressed as a percentage change (float, decimal fraction)",0.9692,65,21
+earnings4,ern4_ernmvstdev,VECTOR,The standard deviation of the 12 earnings move absolute values.,0.9692,91,33
+earnings4,ern4_ernstrapct1,VECTOR,"At-the-money straddle/strangle price as a percent of stock price for the most recent past earnings date (float, decimal fraction)",0.9692,66,31
+earnings4,ern4_ernstrapct10,VECTOR,"At-the-money straddle/strangle price as a percent of stock price for the tenth most recent past earnings date (float, decimal fraction)",0.9692,16,13
+earnings4,ern4_ernstrapct11,VECTOR,Straddle price as a percentage of the stock price for the 11th past earnings date,0.9692,30,22
+earnings4,ern4_ernstrapct12,VECTOR,Straddle price as a percentage of the stock price for the 12th past earnings date,0.9692,27,19
+earnings4,ern4_ernstrapct2,VECTOR,"At-the-money straddle/strangle price as a percent of stock price for the second most recent past earnings date (float, decimal fraction)",0.9692,52,28
+earnings4,ern4_ernstrapct3,VECTOR,"At-the-money straddle/strangle price as a percent of stock price for the third most recent past earnings date (float, decimal fraction)",0.9692,87,46
+earnings4,ern4_ernstrapct4,VECTOR,"At-the-money straddle/strangle price as a percent of stock price for the fourth most recent past earnings date (float, decimal fraction)",0.9692,22,20
+earnings4,ern4_ernstrapct5,VECTOR,"At-the-money straddle/strangle price as a percent of stock price for the fifth most recent past earnings date (float, decimal fraction)",0.9692,19,13
+earnings4,ern4_ernstrapct6,VECTOR,"At-the-money straddle/strangle price as a percent of stock price for the sixth most recent past earnings date (float, decimal fraction)",0.9692,30,20
+earnings4,ern4_ernstrapct7,VECTOR,"At-the-money straddle/strangle price as a percent of stock price for the seventh most recent past earnings date (float, decimal fraction)",0.9692,27,19
+earnings4,ern4_ernstrapct8,VECTOR,"At-the-money straddle/strangle price as a percent of stock price for the eighth most recent past earnings date (float, decimal fraction)",0.9692,24,18
+earnings4,ern4_ernstrapct9,VECTOR,"At-the-money straddle/strangle price as a percent of stock price for the ninth most recent past earnings date (float, decimal fraction)",0.9692,16,13
+earnings4,ern4_fairmth2xieevol90d,VECTOR,The 90 day IV minus the implied earnings effect plus the average earnings percent move applied to the second earnings month.,0.9692,58,31
+earnings4,ern4_fairvol90d,VECTOR,The 90 day IV plus the average earnings percent move applied to the first earnings month.,0.9692,65,33
+earnings4,ern4_fairxieevol90d,VECTOR,The 90 day IV minus the implied earnings effect plus the average earnings percent move applied to the first earnings month.,0.9692,88,37
+earnings4,ern4_fcsterneffct,VECTOR,Forecasted earnings effect on implied volatility (percent),0.9692,57,36
+earnings4,ern4_fcstslope,VECTOR,ORATS forecasted 28 calendar day put/call slope.,0.9692,17,15
+earnings4,ern4_impernmv,VECTOR,Implied Earnings Move in the market over the fitXearnings implied volatility for the first earnings month.,0.9692,16,12
+earnings4,ern4_impernmv90d,VECTOR,The percent move on earnings needed to make the FairXieeVol90d equal to 1st earn month implied.,0.9692,61,35
+earnings4,ern4_impernmvmth290d,VECTOR,The percent move on earnings needed to make the FairXieeVol90d equal to 2nd earn month implied.,0.9692,23,17
+earnings4,ern4_impliedee,VECTOR,The implied earnings effect to make the best fit term structure of the month implied volatilities.,0.9692,27,18
+earnings4,ern4_impmth2ernmv,VECTOR,Implied Earnings Move in the market over the fit implied volatility for the second earnings month.,0.9692,29,14
+earnings4,ern4_m1atmiv,VECTOR,"At-the-money implied volatility for month 1 (front-month) options, annualized (decimal)",0.9692,25,18
+earnings4,ern4_m1dtex,VECTOR,Days to expiration for month 1 (front-month) options,0.9692,97,26
+earnings4,ern4_m1fcaststrapx,VECTOR,Forecasted near-ATM straddle price for month 1 (USD),0.9692,58,22
+earnings4,ern4_m1histrike,VECTOR,The high strike of the straddle or strangle for month 1.,0.9692,40,21
+earnings4,ern4_m1lostrike,VECTOR,The low strike of the straddle or strangle for month 1.,0.9692,79,34
+earnings4,ern4_m1smoothstrapx,VECTOR,Smoothed estimate of the month 1 near-ATM straddle price (USD),0.9692,39,27
+earnings4,ern4_m1strapx,VECTOR,Near-ATM straddle price for month 1 maturity (USD),0.9692,61,27
+earnings4,ern4_m2atmiv,VECTOR,"At-the-money implied volatility for month 2 options, annualized (decimal)",0.9692,246,66
+earnings4,ern4_m2dtex,VECTOR,Days to expiration for month 2 options,0.9692,39,22
+earnings4,ern4_m2fcaststrapx,VECTOR,Forecasted near-ATM straddle price for month 2 (USD),0.9692,59,22
+earnings4,ern4_m2histrike,VECTOR,The high strike of the straddle or strangle for month 2.,0.9692,73,31
+earnings4,ern4_m2lostrike,VECTOR,The low strike of the straddle or strangle for month 2.,0.9692,59,37
+earnings4,ern4_m2smoothstrpx,VECTOR,Smoothed estimate of the month 2 near-ATM straddle price (USD),0.9692,29,24
+earnings4,ern4_m2strapx,VECTOR,Near-ATM straddle price for month 2 maturity (USD),0.9692,66,22
+earnings4,ern4_m3atmiv,VECTOR,"At-the-money implied volatility for month 3 options, annualized (decimal)",0.9692,195,67
+earnings4,ern4_m3dtex,VECTOR,Days to expiration for month 3 options,0.9692,33,20
+earnings4,ern4_m4atmiv,VECTOR,"At-the-money implied volatility for month 4 options, annualized (decimal)",0.9692,166,84
+earnings4,ern4_m4dtex,VECTOR,Days to expiration for month 4 options,0.9692,39,21
+earnings4,ern4_nexterntod,VECTOR,"Time-of-day code for the next earnings release (0900=BMO, 1200=During, 1630=AMC, 2359=Unknown)",0.9692,184,87
+earnings4,ern4_or20divxern,VECTOR,The 28 calendar day interpolated implied volatility with earnings out.,0.9692,47,24
+earnings4,ern4_orinfivxern,VECTOR,The infinite implied volatility with earnings out.,0.9692,83,32
+earnings4,ern4_px,VECTOR,Underlying stock/ETF reference price (typically close or snapshot),0.9692,90,27
+earnings4,ern4_slope,VECTOR,The put call slope at the interpolated 28 calendar day.,0.9692,54,29
+earnings4,event_move_standard_deviation_twelve_periods,MATRIX,Standard deviation of the absolute values of the last 12 earnings-day moves,0.9693,0,0
+earnings4,fair_vol_month2_xiee_90d,MATRIX,"Adjusted 90-day implied volatility for the second earnings month: 90d IV minus the implied earnings effect, then plus the average earnings percent move",0.9692,0,0
+earnings4,fair_vol_xiee_90d,MATRIX,The 90 day IV minus the implied earnings effect plus the average earnings percent move applied to the first earnings month.,0.9692,0,0
+earnings4,fifth_event_option_effect,MATRIX,The earnings effect for earnings date number 5,0.9692,0,0
+earnings4,fifth_historical_announcement_effect,MATRIX,The earn effect for earnings date number5.,0.9693,0,0
+earnings4,fifth_historical_announcement_percent_move,MATRIX,Percentage move for earnings date number back 5,0.9693,0,0
+earnings4,fifth_historical_straddle_price_percent,MATRIX,Earnings straddle or strangle price as a percent of stock price for earnings date number 5,0.9693,0,0
+earnings4,first_event_option_effect,MATRIX,The earn effect for earnings date number1.,0.9693,0,0
+earnings4,first_event_option_effect_2,MATRIX,The earnings effect for earnings date number 1,0.9692,0,0
+earnings4,first_event_straddle_price_percent_of_equity,MATRIX,Cost of the earnings straddle/strangle as a percent of stock price for earnings event number 1,0.9693,0,0
+earnings4,first_event_straddle_price_percent_of_equity_2,MATRIX,Straddle or strangle price as a percent of stock price for earnings date number 1,0.9692,0,0
+earnings4,first_historical_announcement_percent_move,MATRIX,Percentage move for earnings date number back 1,0.9693,0,0
+earnings4,first_month_days_to_expiry,MATRIX,Days to expiration for month 1,0.9692,0,0
+earnings4,five_day_close_to_close_vol,MATRIX,5-day historical close-to-close volatility.,0.9692,0,0
+earnings4,five_day_close_to_close_volatility,MATRIX,5-day close-to-close historical volatility.,0.9693,0,0
+earnings4,five_day_close_vol_ex_announcement,MATRIX,5-day historical close-to-close volatility excluding announcement days.,0.9692,0,0
+earnings4,five_day_ex_announcement_close_volatility,MATRIX,5-day close-to-close historical volatility excluding earnings announcement days.,0.9693,0,0
+earnings4,five_day_ex_announcement_intraday_volatility,MATRIX,5-day intraday historical volatility excluding earnings announcement days.,0.9693,0,0
+earnings4,five_day_intraday_historical_volatility,MATRIX,5-day intraday historical volatility.,0.9693,0,0
+earnings4,five_day_intraday_historical_volatility_2,MATRIX,"5-day open-range historical tick volatility (percent, annualized)",0.9692,0,0
+earnings4,five_day_intraday_vol_ex_announcement,MATRIX,5-day historical intraday volatility excluding announcement days.,0.9692,0,0
+earnings4,five_hundred_day_close_to_close_volatility,MATRIX,Historical close-to-close volatility measured over 500 days.,0.9693,0,0
+earnings4,five_hundred_day_ex_announcement_close_to_close_volatility,MATRIX,500-day historical close-to-close volatility excluding event days.,0.9692,0,0
+earnings4,five_hundred_day_ex_announcement_close_volatility,MATRIX,500-day close-to-close historical volatility excluding earnings announcement days.,0.9693,0,0
+earnings4,five_hundred_day_ex_announcement_intraday_volatility,MATRIX,500-day intraday historical volatility excluding earnings announcement days.,0.9693,0,0
+earnings4,five_hundred_day_intraday_historical_volatility,MATRIX,500-day open-range historical tick volatility (percent),0.9693,0,0
+earnings4,fivehundred_day_close_to_close_vol,MATRIX,500-day close-to-close historical volatility,0.9692,0,0
+earnings4,fivehundred_day_intraday_vol,MATRIX,500-day open-range historical tick volatility (percent),0.9692,0,0
+earnings4,fivehundred_day_intraday_vol_ex_announcement,MATRIX,500-day historical intraday volatility excluding announcement days.,0.9692,0,0
+earnings4,forecasted_announcement_effect,MATRIX,"ORATS forecasted earnings effect incorporating day-of/day-after behavior, seasonality, recency, and move vs expected move",0.9693,0,0
+earnings4,forecasted_announcement_effect_2,MATRIX,"ORATS forecasted earnings effect considers day of and day after earnings, seasonality, recency, median and average of move divided by expected move.",0.9692,0,0
+earnings4,forecasted_put_call_slope,MATRIX,ORATS forecasted 28-calendar-day put/call skew slope,0.9693,0,0
+earnings4,forecasted_put_call_slope_28d,MATRIX,ORATS forecasted 28 calendar day put/call slope,0.9692,0,0
+earnings4,forecasted_straddle_price_month1,MATRIX,ORATS forecast theoretical straddle/strangle price for month 1,0.9692,0,0
+earnings4,fourth_event_option_effect,MATRIX,The earn effect for earnings date number 4,0.9692,0,0
+earnings4,fourth_event_straddle_price_percent_of_equity,MATRIX,The earn straddle or strangle price as a percent of stock price for earnings date number4.,0.9693,0,0
+earnings4,fourth_historical_announcement_effect,MATRIX,The earn effect for earnings date number4.,0.9693,0,0
+earnings4,fourth_historical_announcement_percent_move,MATRIX,The percentage move for earnings date number back4.,0.9693,0,0
+earnings4,fourth_month_at_the_money_implied_volatility,MATRIX,At-the-money implied volatility for month 4,0.9692,0,0
+earnings4,fourth_month_days_to_expiry,MATRIX,Days to expiration for month 4,0.9692,0,0
+earnings4,high_strike_month1,MATRIX,The higher strike used for the month 1 straddle or strangle,0.9692,0,0
+earnings4,high_strike_month2,MATRIX,The high strike of the straddle or strangle for month 2,0.9692,0,0
+earnings4,implied_announcement_effect,MATRIX,The implied earnings effect that best fits the term structure of monthly implied volatilities,0.9692,0,0
+earnings4,implied_move_month2,MATRIX,Implied Earnings Move in the market over the fit implied volatility for the second earnings month.,0.9692,0,0
+earnings4,infinite_iv_ex_announcement,MATRIX,Infinite (long-run) implied volatility with earnings effects excluded,0.9692,0,0
+earnings4,infinite_maturity_ex_announcement_implied_volatility,MATRIX,The infinite implied volatility with earnings out.,0.9693,0,0
+earnings4,low_strike_month1,MATRIX,The low strike of the straddle or strangle for month 1,0.9692,0,0
+earnings4,market_implied_announcement_percent_move,MATRIX,Implied Earnings Move in the market over the fitXearnings implied volatility for the first earnings month.,0.9693,0,0
+earnings4,market_implied_event_move_percent,MATRIX,Market-implied earnings move for the first earnings month derived from the fit×earnings implied volatility,0.9692,0,0
+earnings4,market_implied_second_month_announcement_move,MATRIX,Implied earnings-day percent move inferred from the fitted implied volatility for the second earnings month,0.9693,0,0
+earnings4,month_four_at_the_money_implied_volatility,MATRIX,At-the-money implied volatility for option month 4,0.9693,0,0
+earnings4,month_four_days_to_expiration,MATRIX,Days to expiration for the month-4 option series,0.9693,0,0
+earnings4,month_one_at_the_money_implied_volatility,MATRIX,At-the-money implied volatility for option month 1,0.9693,0,0
+earnings4,month_one_days_to_expiration,MATRIX,Number of days until expiration for the front-month (month 1) option,0.9693,0,0
+earnings4,month_one_forecasted_straddle_strategy_price,MATRIX,The strangle or straddle ORATS Forecast theo for month 1.,0.9693,0,0
+earnings4,month_one_smoothed_straddle_strategy_price,MATRIX,The strangle or straddle ORATS smooth theo for month 1.,0.9693,0,0
+earnings4,month_one_straddle_high_strike,MATRIX,High strike of the straddle or strangle for month 1,0.9693,0,0
+earnings4,month_one_straddle_low_strike,MATRIX,Lower strike used for the month-1 straddle/strangle,0.9693,0,0
+earnings4,month_one_straddle_strategy_price,MATRIX,Price of the month-1 straddle or strangle,0.9693,0,0
+earnings4,month_three_at_the_money_implied_volatility,MATRIX,At-the-money implied volatility for options with month 3 maturity,0.9693,0,0
+earnings4,month_three_days_to_expiration,MATRIX,Days to expiration for the month-3 option series,0.9693,0,0
+earnings4,month_two_at_the_money_implied_volatility,MATRIX,At-the-money implied volatility for the second-month option expiration,0.9693,0,0
+earnings4,month_two_straddle_low_strike,MATRIX,Lower strike used for the month-2 straddle/strangle,0.9693,0,0
+earnings4,month_two_straddle_strategy_price,MATRIX,Strangle or straddle price for month 2,0.9693,0,0
+earnings4,next_announcement_time_of_day,MATRIX,"Time of day earnings are released: Before=900, After=1630, During=1200, Unknown=2359",0.9692,0,0
+earnings4,ninety_day_adjusted_implied_volatility,MATRIX,90-day IV plus the average earnings percent move applied to the first earnings month (a “fair” volatility measure),0.9692,0,0
+earnings4,ninety_day_close_to_close_volatility,MATRIX,90-day close-to-close historical volatility.,0.9693,0,0
+earnings4,ninety_day_close_to_close_volatility_2,MATRIX,90-day close-to-close historical volatility,0.9692,0,0
+earnings4,ninety_day_close_vol_ex_announcement,MATRIX,90-day historical close-to-close volatility excluding announcement days.,0.9692,0,0
+earnings4,ninety_day_ex_announcement_close_volatility,MATRIX,90-day close-to-close historical volatility excluding earnings announcement days.,0.9693,0,0
+earnings4,ninety_day_ex_announcement_implied_volatility,MATRIX,Implied volatility for ninety days with earnings effect removed.,0.9693,0,0
+earnings4,ninety_day_ex_announcement_intraday_volatility,MATRIX,90-day intraday historical volatility excluding earnings announcement days.,0.9693,0,0
+earnings4,ninety_day_fair_ex_announcement_implied_volatility,MATRIX,The 90 day IV minus the implied earnings effect plus the average earnings percent move applied to the first earnings month.,0.9693,0,0
+earnings4,ninety_day_fair_implied_volatility_with_announcement,MATRIX,The 90 day IV plus the average earnings percent move applied to the first earnings month.,0.9693,0,0
+earnings4,ninety_day_interpolated_implied_volatility,MATRIX,Implied volatility estimated for a ninety calendar day maturity.,0.9693,0,0
+earnings4,ninety_day_interpolated_iv,MATRIX,90 calendar day interpolated implied volatility.,0.9692,0,0
+earnings4,ninety_day_intraday_historical_volatility,MATRIX,Historical volatility measured over 90 days using intraday price ticks.,0.9693,0,0
+earnings4,ninety_day_intraday_vol,MATRIX,90-day historical intraday volatility.,0.9692,0,0
+earnings4,ninety_day_intraday_vol_ex_announcement,MATRIX,90-day historical intraday volatility excluding announcement days.,0.9692,0,0
+earnings4,ninety_day_iv_ex_announcement,MATRIX,90-day interpolated implied volatility with announcement effect removed.,0.9692,0,0
+earnings4,ninety_day_required_event_move_percent,MATRIX,The percent move on earnings needed to make the FairXieeVol90d equal to 1st earn month implied.,0.9693,0,0
+earnings4,ninety_day_required_event_move_percent_2,MATRIX,Percent earnings move required so FairXieeVol90d equals the first earnings-month implied volatility,0.9692,0,0
+earnings4,ninety_day_required_move_for_second_month,MATRIX,The percent move on earnings needed to make the FairXieeVol90d equal to 2nd earn month implied.,0.9693,0,0
+earnings4,ninth_historical_announcement_effect,MATRIX,The earn effect for earnings date number9.,0.9693,0,0
+earnings4,ninth_historical_announcement_percent_move,MATRIX,Percentage stock price move on the 9th prior earnings announcement (back 9),0.9693,0,0
+earnings4,ninth_historical_event_percent_move,MATRIX,The percentage price move at the 9th prior earnings announcement (earnings date number back 9),0.9692,0,0
+earnings4,ninth_historical_straddle_price_percent,MATRIX,Earnings straddle or strangle price as a percent of stock price for earnings date number 9,0.9693,0,0
+earnings4,one_hundred_twenty_day_ex_announcement_close_to_close_volatility,MATRIX,120-day historical close-to-close volatility excluding event days.,0.9692,0,0
+earnings4,one_hundred_twenty_day_ex_announcement_intraday_volatility,MATRIX,120-day historical intraday volatility excluding event days.,0.9692,0,0
+earnings4,one_thousand_day_close_to_close_volatility,MATRIX,Historical close-to-close volatility measured over 1000 days.,0.9693,0,0
+earnings4,one_thousand_day_ex_announcement_close_volatility,MATRIX,1000-day close-to-close historical volatility excluding earnings announcement days.,0.9693,0,0
+earnings4,one_thousand_day_ex_announcement_intraday_volatility,MATRIX,1000-day historical intraday volatility excluding event days.,0.9693,0,0
+earnings4,one_thousand_day_ex_announcement_intraday_volatility_2,MATRIX,1000-day open-range volatility excluding earnings effects (percent),0.9692,0,0
+earnings4,one_thousand_day_intraday_historical_volatility,MATRIX,1000-day intraday historical volatility.,0.9693,0,0
+earnings4,one_twenty_day_close_to_close_volatility,MATRIX,120-day close-to-close historical volatility.,0.9693,0,0
+earnings4,one_twenty_day_ex_announcement_close_volatility,MATRIX,120-day close-to-close historical volatility excluding earnings announcement days.,0.9693,0,0
+earnings4,one_twenty_day_ex_announcement_intraday_volatility,MATRIX,120-day intraday historical volatility excluding earnings announcement days.,0.9693,0,0
+earnings4,one_twenty_day_intraday_historical_volatility,MATRIX,120-day intraday historical volatility.,0.9693,0,0
+earnings4,one_year_ex_announcement_implied_volatility,MATRIX,Implied volatility for one year maturity with earnings effect removed.,0.9693,0,0
+earnings4,one_year_ex_announcement_implied_volatility_2,VECTOR,1-year constant-maturity implied volatility with earnings effect removed,0.9692,0,0
+earnings4,one_year_interpolated_implied_volatility,MATRIX,Implied volatility estimated for a one year maturity.,0.9693,0,0
+earnings4,one_year_interpolated_implied_volatility_2,VECTOR,1-year constant-maturity implied volatility (annualized),0.9692,0,0
+earnings4,one_year_interpolated_implied_volatility_mean_2,MATRIX,Implied volatility interpolated for a one-year maturity.,0.9692,0,0
+earnings4,one_year_iv_ex_announcement,MATRIX,One-year interpolated implied volatility with announcement effect removed.,0.9692,0,0
+earnings4,onehundredtwenty_day_close_to_close_vol,MATRIX,120-day historical close-to-close volatility.,0.9692,0,0
+earnings4,onehundredtwenty_day_intraday_vol,MATRIX,120-day open-range historical tick volatility (percent),0.9692,0,0
+earnings4,onethousand_day_close_to_close_vol,MATRIX,1000-day historical close-to-close volatility.,0.9692,0,0
+earnings4,onethousand_day_close_vol_ex_announcement,MATRIX,1000-day historical close-to-close volatility excluding announcement days.,0.9692,0,0
+earnings4,onethousand_day_intraday_vol,MATRIX,1000-day historical intraday volatility.,0.9692,0,0
+earnings4,pct_move_announcement_1,MATRIX,The percentage price move at the most recent prior earnings announcement (earnings date number back 1),0.9692,1,1
+earnings4,pct_move_announcement_10,MATRIX,The percentage price move at the 10th prior earnings announcement (earnings date number back 10),0.9692,0,0
+earnings4,pct_move_announcement_11,MATRIX,Percentage move for earnings date number back 11,0.9692,0,0
+earnings4,pct_move_announcement_2,MATRIX,The percentage price move at the second most recent prior earnings announcement (earnings date number back 2),0.9692,1,1
+earnings4,pct_move_announcement_4,MATRIX,Percentage move for earnings date number back 4,0.9692,0,0
+earnings4,pct_move_announcement_5,MATRIX,The percentage price move at the 5th prior earnings announcement (earnings date number back 5),0.9692,0,0
+earnings4,pct_move_announcement_8,MATRIX,The percentage move for earnings date number back 8,0.9692,0,0
+earnings4,post_announcement_expiration_month,MATRIX,Next expiration month number directly after the earnings date,0.9693,0,0
+earnings4,post_announcement_expiry_month,MATRIX,The next options expiration month number directly after the earnings date,0.9692,0,0
+earnings4,put_call_slope_28d,MATRIX,The put-call slope at the interpolated 28 calendar day,0.9692,0,0
+earnings4,put_call_volatility_slope_twenty_eight_day,MATRIX,Put–call skew slope at an interpolated 28 calendar-day maturity,0.9693,0,0
+earnings4,required_announcement_move_month2_90d,MATRIX,The percent move on earnings needed to make the FairXieeVol90d equal to 2nd earn month implied.,0.9692,0,0
+earnings4,second_event_straddle_price_percent_of_equity,MATRIX,The earn straddle or strangle price as a percent of stock price for earnings date number2.,0.9693,0,0
+earnings4,second_event_straddle_price_percent_of_equity_2,MATRIX,Earnings straddle or strangle price expressed as a percent of the stock price for earnings date number 2,0.9692,0,0
+earnings4,second_historical_announcement_effect,MATRIX,The earn effect for earnings date number2.,0.9693,0,0
+earnings4,second_historical_event_percent_move,MATRIX,The percentage move for earnings date number back2.,0.9693,0,0
+earnings4,second_month_adjusted_ninety_day_volatility,MATRIX,The 90 day IV minus the implied earnings effect plus the average earnings percent move applied to the second earnings month.,0.9693,0,0
+earnings4,second_month_days_to_expiry,MATRIX,Days to option expiration for month 2,0.9693,0,0
+earnings4,second_month_forecasted_straddle_price,MATRIX,The strangle or straddle ORATS Forecast theo for month 2.,0.9693,0,0
+earnings4,second_month_forecasted_straddle_price_2,MATRIX,Strangle or straddle ORATS forecast theoretical price for month 2,0.9692,0,0
+earnings4,second_month_highest_strike_price,MATRIX,The high strike of the straddle or strangle for month 2.,0.9693,0,0
+earnings4,second_month_lowest_strike_price,MATRIX,Low strike of the straddle or strangle for month 2,0.9692,0,0
+earnings4,second_month_smoothed_straddle_price,MATRIX,ORATS smoothed theoretical straddle/strangle price for month 2,0.9693,0,0
+earnings4,seventh_historical_announcement_effect,MATRIX,Earnings effect for earnings date number 7,0.9693,0,0
+earnings4,seventh_historical_event_percent_move,MATRIX,Percentage price move for earnings date number back 7,0.9693,0,0
+earnings4,seventh_historical_event_percent_move_2,MATRIX,The percentage move for earnings date number back 7,0.9692,0,0
+earnings4,seventh_historical_straddle_price_percent,MATRIX,Earnings straddle/strangle price as a percentage of stock price for the 7th prior earnings date,0.9693,0,0
+earnings4,six_month_ex_announcement_implied_volatility,MATRIX,Implied volatility for a six-month period with event effects excluded.,0.9693,0,0
+earnings4,six_month_interpolated_implied_volatility,MATRIX,Implied volatility interpolated for a six-month maturity.,0.9693,0,0
+earnings4,six_month_interpolated_iv,MATRIX,6-month interpolated implied volatility.,0.9692,0,0
+earnings4,six_month_iv_ex_announcement,MATRIX,6-month interpolated implied volatility with announcement effect removed.,0.9692,0,0
+earnings4,sixth_event_option_effect,MATRIX,The earnings effect for earnings date number 6,0.9692,0,0
+earnings4,sixth_event_straddle_price_percent_of_equity,MATRIX,Earnings straddle or strangle price expressed as a percent of the stock price for earnings date number 6,0.9692,0,0
+earnings4,sixth_historical_announcement_effect,MATRIX,The earn effect for earnings date number6.,0.9693,0,0
+earnings4,sixth_historical_announcement_percent_move,MATRIX,The percentage move for earnings date number back6.,0.9693,0,0
+earnings4,sixth_historical_event_percent_move,MATRIX,The percentage price move at the 6th prior earnings announcement (earnings date number back 6),0.9692,0,0
+earnings4,sixth_historical_straddle_price_percent,MATRIX,Earnings straddle or strangle price as a percent of stock price for earnings date number 6,0.9693,0,0
+earnings4,sixty_day_close_to_close_vol,MATRIX,60-day historical close-to-close volatility.,0.9692,0,0
+earnings4,sixty_day_close_to_close_volatility,MATRIX,Historical close-to-close volatility measured over 60 days.,0.9693,0,0
+earnings4,sixty_day_close_vol_ex_announcement,MATRIX,60-day historical close-to-close volatility excluding announcement days.,0.9692,0,0
+earnings4,sixty_day_ex_announcement_close_volatility,MATRIX,60-day close-to-close historical volatility excluding earnings announcement days.,0.9693,0,0
+earnings4,sixty_day_ex_announcement_implied_volatility,MATRIX,Implied volatility for sixty days with earnings effect removed.,0.9693,0,0
+earnings4,sixty_day_ex_announcement_intraday_volatility,MATRIX,60-day open-range tick volatility excluding earnings events (percent),0.9693,0,0
+earnings4,sixty_day_interpolated_implied_volatility,MATRIX,Implied volatility estimated for a sixty calendar day maturity.,0.9696,0,0
+earnings4,sixty_day_interpolated_iv,MATRIX,60 calendar day interpolated implied volatility.,0.9696,0,0
+earnings4,sixty_day_intraday_historical_volatility,MATRIX,60-day open-range historical tick volatility (percent),0.9693,0,0
+earnings4,sixty_day_intraday_vol,MATRIX,60-day historical intraday volatility.,0.9692,0,0
+earnings4,sixty_day_intraday_vol_ex_announcement,MATRIX,60-day historical intraday volatility excluding announcement days.,0.9692,0,0
+earnings4,sixty_day_iv_ex_announcement,MATRIX,60-day interpolated implied volatility with announcement effect removed.,0.9692,0,0
+earnings4,smoothed_straddle_price_month1,MATRIX,ORATS smoothed theoretical price of the month 1 straddle or strangle,0.9692,0,0
+earnings4,smoothed_straddle_price_month2,MATRIX,Strangle or straddle ORATS smoothed theoretical price for month 2,0.9692,0,0
+earnings4,stddev_pct_move_announcements_12,MATRIX,Standard deviation of the absolute earnings moves across the last 12 earnings announcements,0.9692,0,0
+earnings4,straddle_price_month1,MATRIX,The strangle or straddle price for month 1,0.9692,0,0
+earnings4,straddle_price_month2,MATRIX,Strangle or straddle price for month 2,0.9692,0,0
+earnings4,straddle_price_pct_move_11,MATRIX,Straddle/strangle price for earnings date number 11 as a percent of the stock price,0.9692,0,0
+earnings4,straddle_price_pct_move_4,MATRIX,Earnings straddle or strangle price expressed as a percent of the stock price for earnings date number 4,0.9692,0,0
+earnings4,straddle_price_pct_move_5,MATRIX,Straddle/strangle price for earnings date number 5 as a percent of the stock price,0.9692,0,0
+earnings4,straddle_price_pct_move_7,MATRIX,Earnings straddle or strangle price expressed as a percent of the stock price for earnings date number 7,0.9692,0,0
+earnings4,straddle_price_pct_move_9,MATRIX,Straddle or strangle price as a percent of stock price for earnings date number 9,0.9692,0,0
+earnings4,ten_day_close_to_close_volatility,MATRIX,10-day close-to-close historical volatility.,0.9693,0,0
+earnings4,ten_day_close_to_close_volatility_2,MATRIX,Historical close-to-close volatility measured over 10 days.,0.9692,0,0
+earnings4,ten_day_close_vol_ex_announcement,MATRIX,10-day historical close-to-close volatility excluding announcement days.,0.9692,0,0
+earnings4,ten_day_ex_announcement_close_volatility,MATRIX,10-day close-to-close historical volatility excluding earnings announcement days.,0.9693,0,0
+earnings4,ten_day_ex_announcement_implied_volatility,MATRIX,Implied volatility for a 10-day period with event effects excluded.,0.9693,0,0
+earnings4,ten_day_ex_announcement_intraday_volatility,MATRIX,10-day open-range tick volatility excluding earnings events (percent),0.9693,0,0
+earnings4,ten_day_ex_announcement_intraday_volatility_2,MATRIX,10-day historical intraday volatility excluding event days.,0.9692,0,0
+earnings4,ten_day_interpolated_implied_volatility,MATRIX,Implied volatility interpolated for a 10-day maturity.,0.9693,0,0
+earnings4,ten_day_interpolated_implied_volatility_2,MATRIX,Implied volatility interpolated for a 10-day maturity.,0.9692,0,0
+earnings4,ten_day_intraday_historical_volatility,MATRIX,10-day intraday historical volatility.,0.9693,0,0
+earnings4,ten_day_intraday_historical_volatility_2,MATRIX,10-day open-range historical tick volatility (percent),0.9692,0,0
+earnings4,ten_day_iv_ex_announcement,MATRIX,10-day interpolated implied volatility with announcement effect removed.,0.9692,0,0
+earnings4,tenth_event_straddle_price_percent_of_equity,MATRIX,Earnings straddle or strangle price expressed as a percent of the stock price for earnings date number 10,0.9692,0,0
+earnings4,tenth_historical_announcement_effect,MATRIX,The earn effect for earnings date number10.,0.9693,0,0
+earnings4,tenth_historical_event_percent_move,MATRIX,Percentage price move on the 10th most recent earnings announcement date,0.9693,0,0
+earnings4,tenth_historical_straddle_price_percent,MATRIX,Earnings straddle or strangle price as a percent of stock price for earnings date number 10,0.9693,0,0
+earnings4,third_event_straddle_price_percent_of_equity,MATRIX,Earnings straddle or strangle price expressed as a percent of the stock price for earnings date number 3,0.9692,0,0
+earnings4,third_historical_announcement_effect,MATRIX,The earn effect for earnings date number3.,0.9693,0,0
+earnings4,third_historical_announcement_percent_move,MATRIX,The percentage move for earnings date number back3.,0.9693,0,0
+earnings4,third_historical_event_percent_move,MATRIX,Percentage stock move for earnings date number back 3,0.9692,0,0
+earnings4,third_historical_straddle_price_percent,MATRIX,Earnings straddle or strangle price as a percent of stock price for earnings date number 3,0.9693,0,0
+earnings4,thirty_day_ex_announcement_implied_volatility,MATRIX,Implied volatility for a 30-day period with earnings effects removed.,0.9693,0,0
+earnings4,thirty_day_ex_announcement_implied_volatility_2,MATRIX,Implied volatility for a 30-day period with earnings effects removed.,0.9692,0,0
+earnings4,thirty_day_interpolated_implied_volatility,MATRIX,Implied volatility estimated for a thirty calendar day maturity.,0.9693,0,0
+earnings4,thirty_day_interpolated_iv,MATRIX,30 calendar day interpolated implied volatility.,0.9692,0,0
+earnings4,total_option_open_interest,MATRIX,Total open interest,0.9692,0,0
+earnings4,twelfth_event_option_effect,MATRIX,The earn effect for earnings date number 12,0.9692,0,0
+earnings4,twelfth_event_straddle_price_percent_of_equity,MATRIX,Cost of the earnings straddle/strangle as a percent of stock price for earnings event number 12,0.9693,0,0
+earnings4,twelfth_event_straddle_price_percent_of_equity_2,MATRIX,The earnings straddle/strangle price as a percent of stock price for earnings date number 12,0.9692,0,0
+earnings4,twelfth_historical_announcement_effect,MATRIX,The earn effect for earnings date number12.,0.9693,0,0
+earnings4,twelfth_historical_announcement_percent_move,MATRIX,Percentage move for earnings date number back 12,0.9693,0,0
+earnings4,twelfth_historical_event_percent_move,MATRIX,Percentage stock move for earnings date number back 12,0.9692,0,0
+earnings4,twenty_day_average_option_volume,MATRIX,Average daily options trading volume across all strikes over the last 20 trading days,0.9693,0,0
+earnings4,twenty_day_close_to_close_vol,MATRIX,20-day historical close-to-close volatility.,0.9692,0,0
+earnings4,twenty_day_close_to_close_volatility,MATRIX,20-day close-to-close historical volatility.,0.9693,0,0
+earnings4,twenty_day_ex_announcement_close_to_close_volatility,MATRIX,20-day historical close-to-close volatility excluding event days.,0.9693,0,0
+earnings4,twenty_day_ex_announcement_close_to_close_volatility_2,MATRIX,20-day historical close-to-close volatility excluding event days.,0.9692,0,0
+earnings4,twenty_day_ex_announcement_implied_volatility,MATRIX,Implied volatility for a 20-day period with earnings announcement effects excluded.,0.9693,0,0
+earnings4,twenty_day_ex_announcement_intraday_volatility,MATRIX,20-day historical intraday volatility excluding event days.,0.9693,0,0
+earnings4,twenty_day_interpolated_implied_volatility,MATRIX,Implied volatility estimated for a twenty calendar day maturity.,0.9693,0,0
+earnings4,twenty_day_interpolated_iv,MATRIX,20 calendar day interpolated implied volatility.,0.9692,0,0
+earnings4,twenty_day_intraday_historical_volatility,MATRIX,20-day intraday historical volatility.,0.9693,0,0
+earnings4,twenty_day_intraday_vol,MATRIX,20-day historical intraday volatility.,0.9692,0,0
+earnings4,twenty_day_intraday_vol_ex_announcement,MATRIX,20-day historical intraday volatility excluding announcement days.,0.9692,0,0
+earnings4,twenty_day_iv_ex_announcement,MATRIX,20-day interpolated implied volatility with announcement effect removed.,0.9692,0,0
+earnings4,twenty_eight_day_ex_announcement_implied_volatility,MATRIX,The 28 calendar day interpolated implied volatility with earnings out.,0.9693,0,0
+earnings4,twenty_eight_day_iv_ex_announcement,MATRIX,28 calendar day (approximately 20 trading days) interpolated implied volatility with earnings effect removed,0.9692,0,0
+earnings4,two_fifty_two_day_ex_announcement_close_volatility,MATRIX,252-day close-to-close historical volatility excluding earnings announcement days.,0.9693,0,0
+earnings4,two_fifty_two_day_ex_announcement_intraday_volatility,MATRIX,252-day intraday historical volatility excluding earnings announcement days.,0.9693,0,0
+earnings4,two_fifty_two_day_intraday_historical_volatility,MATRIX,252-day intraday historical volatility.,0.9693,0,0
+earnings4,two_hundred_fifty_two_day_close_to_close_volatility,MATRIX,Historical close-to-close volatility measured over 252 days.,0.9693,0,0
+earnings4,two_hundred_fifty_two_day_close_to_close_volatility_2,MATRIX,Historical close-to-close volatility measured over 252 days.,0.9692,0,0
+earnings4,twofiftytwo_day_close_vol_ex_announcement,MATRIX,252-day historical close-to-close volatility excluding announcement days.,0.9692,0,0
+earnings4,twofiftytwo_day_intraday_vol,MATRIX,252-day historical intraday volatility.,0.9692,0,0
+earnings4,twofiftytwo_day_intraday_vol_ex_announcement,MATRIX,252-day historical intraday volatility excluding announcement days.,0.9692,0,0
+earnings4,underlying_asset_market_price,MATRIX,Market price of the underlying asset at the time of data calculation.,0.9693,0,0
+earnings4,underlying_asset_price,MATRIX,Price of the underlying asset at the time of calculation.,0.9692,0,0
+earnings4,upcoming_announcement_time_of_day,MATRIX,"Time of day earnings released: Before=900, After=1630, During=1200, Unknown=2359",0.9693,0,0
+earnings4,weeks_until_next_announcement,MATRIX,Weeks to the next earnings; 1 indicates this week,0.9692,0,0
+earnings4,weeks_until_next_event,MATRIX,Number of weeks until the next earnings date; 1 indicates this week,0.9693,0,0
+earnings4,weeks_until_next_event_2,VECTOR,Number of weeks from Date until the next earnings announcement,0.9692,0,0
