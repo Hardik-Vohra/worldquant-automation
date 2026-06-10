@@ -15,10 +15,12 @@ headers = {
 
 import os
 
-if not os.path.exists("results.csv"):
+RESULTS_FILE = "results_elite.csv"
+
+if not os.path.exists(RESULTS_FILE):
 
     with open(
-        "results.csv",
+        RESULTS_FILE,
         "w",
         newline=""
     ) as f:
@@ -41,14 +43,7 @@ if not os.path.exists("results.csv"):
         ])
 
 # EXISTING CODE CONTINUES
-with open("batch_next_v2.txt") as f:
-    alphas = [
-        x.strip()
-        for x in f.readlines()
-        if x.strip()
-    ]
-
-with open("batch_next_v2.txt") as f:
+with open("elite_submission_batch.txt") as f:
     alphas = [
         x.strip()
         for x in f.readlines()
@@ -116,6 +111,8 @@ for alpha in alphas:
 
         location = r.headers.get("Location")
 
+        print("LOCATION:", location)
+
         if location:
 
             sim_id = location.split("/")[-1]
@@ -123,7 +120,7 @@ for alpha in alphas:
             print("SIM:", sim_id)
 
             with open(
-                "results.csv",
+                RESULTS_FILE,
                 "a",
                 newline=""
             ) as f:

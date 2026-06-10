@@ -18,25 +18,16 @@ while True:
     )
 
     print("\nSTATUS:", r.status_code)
+    print("HEADERS:", dict(r.headers))
+    print("BODY:", r.text)
 
-    data = r.json()
+    try:
+        data = r.json()
+    except:
+        break
 
-    print(data)
-
-    if "progress" in data:
-        print(f"Progress: {data['progress']*100:.1f}%")
-    else:
-        print(data)
-
-    if data.get("status") == "COMPLETE":
-
-        alpha_id = data.get("alpha")
-
-        print("ALPHA_ID:", alpha_id)
-
-        with open("current_alpha.txt", "w") as f:
-            f.write(alpha_id)
-
+    if data.get("progress", 0) >= 1:
+        print("Progress reached 100%")
         break
 
     time.sleep(5)

@@ -1,47 +1,75 @@
 import pandas as pd
-import glob
 
-all_dfs = []
+df = pd.read_csv("selected_fields.csv")
 
-for file in glob.glob("datasets/*_fields.csv"):
+# MATRIX only
 
-    df = pd.read_csv(file)
+df = df[
+    df["type"] == "MATRIX"
+]
 
-    df["dataset_source"] = (
-        file.split("\\")[-1]
-        .replace("_fields.csv", "")
-    )
+# Score
 
-    all_dfs.append(df)
-
-master = pd.concat(all_dfs, ignore_index=True)
-
-master["field_score"] = (
-    master["coverage"] * 40
-    + master["alphaCount"] * 0.001
-    + master["userCount"] * 0.01
+df["score"] = (
+    df["coverage"] * 100
+    +
+    df["alphaCount"] * 0.0005
+    +
+    df["userCount"] * 0.005
 )
 
-master = master.sort_values(
-    "field_score",
+df = df.sort_values(
+    "score",
     ascending=False
 )
 
-master.to_csv(
-    "field_database.csv",
+top100 = df.head(100)
+
+top100.to_csv(
+    "top100_fields.csv",
     index=False
 )
 
-core_fields = master[
-    (master["coverage"] >= 0.60)
-    &
-    (master["alphaCount"] >= 50)
+print(top100[
+    [
+        "dataset",
+        "field_id",
+        "score",
+        "coverage",
+        "alphaCount"
+    ]
+])
+
+# ------------------------
+# Alternative fields only
+# ------------------------
+
+top_alt = df[
+    df["dataset"] != "pv1"
 ]
 
-core_fields.to_csv(
-    "core_fields.csv",
+top_alt = top_alt.sort_values(
+    "score",
+    ascending=False
+)
+
+top_alt = top_alt.head(100)
+
+top_alt.to_csv(
+    "top100_alternative_fields.csv",
     index=False
 )
 
-print("Total fields:", len(master))
-print("Core fields:", len(core_fields))
+print(
+    "\nSaved -> top100_alternative_fields.csv"
+)
+
+print(
+    top_alt[
+        [
+            "dataset",
+            "field_id",
+            "score"
+        ]
+    ].head(20)
+)

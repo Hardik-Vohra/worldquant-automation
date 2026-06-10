@@ -9,54 +9,26 @@ headers = {
     "Accept": "application/json;version=2.0"
 }
 
-# Load results
+# ------------------------
+# Load Results
+# ------------------------
 
-df = pd.read_csv(
-    "results.csv",
-    header=None
-)
-
-df.columns = [
-    "alpha",
-    "status",
-    "sim_id",
-    "alpha_id",
-    "sharpe",
-    "fitness",
-    "turnover",
-    "returns",
-    "margin"
-]
+df = pd.read_csv("results_elite.csv")
 
 df = df.astype(object)
 
-for col in [
-    "sharpe",
-    "fitness",
-    "turnover",
-    "returns",
-    "margin"
-]:
-    df[col] = pd.to_numeric(
-        df[col],
-        errors="coerce"
-    )
-
 for idx, row in df.iterrows():
 
-    sim_id = row["sim_id"]
+    sim_id = str(row["sim_id"]).strip()
 
-    if sim_id == "sim_id":
-     continue
-
-    if pd.isna(sim_id):
+    if not sim_id:
         continue
 
     try:
 
-        # -------------------
+        # ------------------------
         # Get Simulation
-        # -------------------
+        # ------------------------
 
         sim_url = (
             f"https://api.worldquantbrain.com/"
@@ -70,28 +42,48 @@ for idx, row in df.iterrows():
 
         if r.status_code != 200:
 
-            print(
-                f"Failed sim {sim_id}"
-            )
+            print(f"\nFAILED SIM: {sim_id}")
+            print("STATUS:", r.status_code)
+            print("BODY:", r.text[:500])
+
             continue
 
         sim_data = r.json()
 
-        if sim_data.get("status") != "COMPLETE":
+        print("SIM DATA:", sim_data)
+
+        status = sim_data.get(
+            "status",
+            ""
+        )
+
+        if status != "COMPLETE":
 
             print(
-                f"{sim_id} still running"
+                f"{sim_id} -> {status}"
             )
+
             continue
 
-        alpha_id = sim_data.get("alpha")
+        alpha_id = sim_data.get(
+            "alpha"
+        )
 
         if not alpha_id:
+
+            print(
+                f"{sim_id} -> no alpha id"
+            )
+
             continue
 
-        # -------------------
-        # Get Alpha
-        # -------------------
+        print(
+            f"SIM COMPLETE -> {alpha_id}"
+        )
+
+        # ------------------------
+        # Get Alpha Metrics
+        # ------------------------
 
         alpha_url = (
             f"https://api.worldquantbrain.com/"
@@ -106,8 +98,9 @@ for idx, row in df.iterrows():
         if r2.status_code != 200:
 
             print(
-                f"Failed alpha {alpha_id}"
+                f"FAILED ALPHA: {alpha_id}"
             )
+
             continue
 
         alpha_data = r2.json()
@@ -117,51 +110,46 @@ for idx, row in df.iterrows():
             {}
         )
 
+        # ------------------------
+        # Save Metrics
+        # ------------------------
+
         df.loc[idx, "alpha_id"] = alpha_id
+
         df.loc[idx, "status"] = alpha_data.get(
             "status",
             ""
         )
 
-        df.loc[idx, "sharpe"] = float(
-    is_data.get(
-        "sharpe",
-        0
-    )
-)
-
-        df.loc[idx, "fitness"] = float(
-    is_data.get(
-        "fitness",
-        0
-    )
-)
-
-        df.loc[idx, "turnover"] = float(
-            is_data.get(
-                "turnover",
-                0
-            )
-        )
-        
-
-        df.loc[idx, "returns"] = float(
-            is_data.get(
-                "returns",
-                0
-            )
+        df.loc[idx, "sharpe"] = is_data.get(
+            "sharpe",
+            None
         )
 
-        df.loc[idx, "margin"] = float(
-            is_data.get(
-                "margin",
-                0
-            )
+        df.loc[idx, "fitness"] = is_data.get(
+            "fitness",
+            None
+        )
+
+        df.loc[idx, "turnover"] = is_data.get(
+            "turnover",
+            None
+        )
+
+        df.loc[idx, "returns"] = is_data.get(
+            "returns",
+            None
+        )
+
+        df.loc[idx, "margin"] = is_data.get(
+            "margin",
+            None
         )
 
         print(
             f"{alpha_id} | "
-            f"Sharpe={is_data.get('sharpe')}"
+            f"Sharpe={is_data.get('sharpe')} | "
+            f"Fitness={is_data.get('fitness')}"
         )
 
         time.sleep(1)
@@ -169,16 +157,21 @@ for idx, row in df.iterrows():
     except Exception as e:
 
         print(
-            "ERROR:",
-            e
+            f"ERROR: {sim_id}"
         )
 
+        print(e)
+
+# ------------------------
+# Save Enriched Results
+# ------------------------
+
 df.to_csv(
-    "results_enriched.csv",
+    "results_elite_enriched.csv",
     index=False
 )
 
 print()
 print(
-    "Saved -> results_enriched.csv"
+    "Saved -> results_elite_enriched.csv"
 )

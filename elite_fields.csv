@@ -1,0 +1,1001 @@
+dataset,field_id,type,description,coverage,alphaCount,userCount,score
+pv1,close,MATRIX,Daily close price,1.0,602986,57208,287.8688417042871
+pv1,cap,MATRIX,Daily market capitalization (in millions),1.0,426116,35742,282.0452409780711
+pv1,returns,MATRIX,Daily returns,1.0,388918,38536,281.5081342356473
+pv1,volume,MATRIX,Daily volume,1.0,359894,40025,280.9220986219142
+pv1,sector,GROUP,Sector grouping,1.0,387841,28314,279.9392680844937
+pv1,subindustry,GROUP,Subindustry grouping,1.0,324715,35081,279.2342796183377
+pv1,industry,GROUP,Industry grouping,1.0,276675,31873,277.15375380185213
+pv1,market,GROUP,Market grouping,1.0,162658,20403,269.61154383430335
+pv1,adv20,MATRIX,Average daily volume in past 20 days,1.0,109445,19760,265.48919344569373
+pv1,vwap,MATRIX,Daily volume weighted average price,1.0,72805,20441,261.58227091815564
+pv1,high,MATRIX,Daily high price,1.0,60783,15635,258.4374748888383
+pv1,open,MATRIX,Daily open price,1.0,59107,13831,257.54491571705086
+pv1,low,MATRIX,Daily low price,1.0,53253,14815,256.84559676564373
+pv1,exchange,GROUP,Exchange grouping,1.0,50150,2930,248.14343203726187
+socialmedia12,scl12_buzz,MATRIX,relative sentiment volume,1.0,22083,14670,247.99422660973755
+pv1,sharesout,MATRIX,Daily outstanding shares (in millions),1.0,31681,7036,247.9297258623207
+analyst4,anl4_adjusted_netincome_ft,MATRIX,Adjusted net income - forecast type (revision/new/...),0.8706,51888,26336,246.52227137437302
+pv1,split,MATRIX,Stock split ratio,1.0,19575,4118,240.4374245234055
+pv1,country,GROUP,Country grouping,1.0,20931,3405,240.15681298103414
+pv13,pv13_r2_min2_3000_sector,GROUP,grouping fields,1.0,19420,3729,239.8619199014438
+pv13,pv13_h_min2_3000_sector,GROUP,grouping fields,1.0,19763,3435,239.62649021517714
+option9,pcr_oi_270,MATRIX,"Ratio of put open interest to call open interest for options expiring in 270 days, indicating longer-term position skew",0.9838,14126,8956,239.4393845314926
+option8,implied_volatility_call_270,MATRIX,Implied volatility of the at-the-money call for the stock with an expiration 270 calendar days from the measurement date,0.9729,14480,9737,239.01488242699924
+option8,implied_volatility_put_270,MATRIX,Implied volatility of the at-the-money put for the stock with an expiration 270 calendar days from the measurement date,0.9727,13895,9626,238.52519772809922
+pv1,dividend,MATRIX,Dividend,1.0,12636,4764,236.78910705802832
+option8,implied_volatility_call_120,MATRIX,Implied volatility of the at-the-money call for the stock with an expiration 120 calendar days from the measurement date,0.9729,13514,6731,236.47869236365898
+pv13,pv13_r2_min20_3000_sector,GROUP,grouping fields,1.0,11680,2818,233.37787614712752
+analyst4,anl4_ebit_value,MATRIX,Earnings before interest and taxes - announced financial value,0.9483,16610,3637,233.00415085030113
+pv13,pv13_h_min2_focused_pureplay_3000_sector,GROUP,grouping fields,1.0,11474,2435,232.46982349343642
+socialmedia12,snt_buzz,MATRIX,"Negative relative sentiment volume measure for current day, with missing values filled as 0",1.0,9646,3286,232.23267552002665
+analyst4,anl4_ptp_flag,MATRIX,Pretax income - forecast type (revision/new/...),0.8289,26234,10190,230.7847980453516
+option8,implied_volatility_call_1080,MATRIX,Implied volatility of the at-the-money call for the stock with an expiration 1080 calendar days from the measurement date,0.9729,8856,3733,229.30581047860417
+model51,unsystematic_risk_last_360_days,MATRIX,"The portion of return variance not explained by SPY (idiosyncratic risk), calculated as 1 minus R² over the last 360 calendar days",0.937,12199,3765,228.96075585329896
+analyst4,anl4_tbve_ft,MATRIX,Tangible Book Value per Share - forecast type (revision/new/...),0.9305,10582,5617,228.88869722925818
+analyst4,anl4_epsr_flag,MATRIX,"GAAP Earnings - estimation type (revision/new/...), per share",0.8742,15123,7360,228.18013701040178
+option8,implied_volatility_call_180,MATRIX,Implied volatility of the at-the-money call for the stock with an expiration 180 calendar days from the measurement date,0.9729,7637,3912,228.05920878890666
+option8,implied_volatility_call_60,MATRIX,Implied volatility of the at-the-money call for the stock with an expiration 60 calendar days from the measurement date,0.9729,7617,3830,227.92709719388873
+option8,implied_volatility_put_120,MATRIX,"At-the-money implied volatility of put options with 120 calendar days to expiration, annualized decimal",0.9727,7676,3687,227.79403917166144
+analyst4,anl4_netdebt_flag,MATRIX,Net debt - forecast type (revision/new/...),0.8602,16615,6743,227.2832561539679
+analyst4,anl4_netprofit_flag,MATRIX,Net profit - forecast type (revision/new/...),0.8778,13716,6675,227.0752836086927
+socialmedia12,snt_buzz_bfl,MATRIX,"Negative relative sentiment volume measure for current day, with missing values filled as 1",1.0,6118,2743,226.77739957885427
+option8,implied_volatility_put_180,MATRIX,"At-the-money implied volatility of put options with 180 calendar days to expiration, annualized decimal",0.9727,6626,3648,226.2701171030645
+option8,implied_volatility_mean_10,MATRIX,The average of IvCall10 and IvPut10,0.9688,7273,2998,225.83078714921442
+analyst4,anl4_ptpr_flag,MATRIX,Reported Pretax income - forecast type (revision/new/...),0.9008,10386,5118,225.266674964566
+analyst4,anl4_bvps_flag,MATRIX,Book value per share - forecast type (revision/new/...),0.8223,17862,7928,225.02627915085083
+socialmedia8,snt_social_value,MATRIX,Z-score of sentiment,1.0,5331,2497,224.93104526641363
+analyst4,anl4_gric_flag,MATRIX,Gross income - forecast type (revision/new/...),0.8951,10160,5536,224.86916199897362
+analyst4,anl4_ffo_flag,MATRIX,Funds from Operation - forecast type (revision/new/...),1.0,6302,1734,224.78162335703587
+socialmedia8,snt_social_volume,MATRIX,Normalized tweet volume,1.0,5181,2205,224.02414461028778
+pv13,rel_num_all,MATRIX,number of the companies whose product overlapped with the instrument,0.9939,5393,2134,223.6515346653104
+analyst4,actuals_value_currency_code,MATRIX,Pricing Currency where the security trades,1.0,4274,3003,223.64389387812875
+option8,implied_volatility_call_150,MATRIX,Implied volatility of the at-the-money call for the stock with an expiration 150 calendar days from the measurement date,0.9729,5685,2712,223.2766744854041
+socialmedia12,scl12_buzzvec,VECTOR,Vector representing the volume of social media sentiment/mentions related to the instrument,1.0,4283,2619,222.9810722994521
+option8,implied_volatility_put_60,MATRIX,Implied volatility of the at-the-money put for the stock with an expiration 60 calendar days from the measurement date,0.9727,5229,2976,222.88502237566857
+option8,parkinson_volatility_120,MATRIX,Historical Parkinson volatility for approximately 120 calendar days,0.9801,4849,2680,222.3470655304951
+pv13,pv13_h_f1_sector,GROUP,grouping fields,0.9989,5236,1546,222.2454051956602
+option8,implied_volatility_call_30,MATRIX,Implied volatility of the at-the-money call for the stock with an expiration 30 calendar days from the measurement date,0.9729,4991,2229,220.99470342276345
+option8,implied_volatility_call_10,MATRIX,Implied volatility of the at-the-money call for the stock with an expiration 10 calendar days from the measurement date,0.9729,4802,2392,220.9614754561901
+option8,implied_volatility_put_150,MATRIX,"At-the-money implied volatility of put options with 150 calendar days to expiration, annualized decimal",0.9727,4835,2335,220.8894088370874
+option8,historical_volatility_180,MATRIX,Historical close-to-close volatility for approximately 180 calendar days,0.9796,4665,2130,220.76230768630683
+socialmedia12,snt_buzz_ret,MATRIX,negative return of relative sentiment volume,1.0,4047,1866,220.72022282738163
+pv1,currency,GROUP,Currency,1.0,4275,1624,220.57404819526855
+analyst4,anl4_flag_erbfintax,MATRIX,Earnings before interest and taxes - forecast type (revision/new/...),0.8184,12623,6909,220.47717501466514
+option8,historical_volatility_120,MATRIX,Historical close-to-close volatility for approximately 120 calendar days,0.98,4457,2161,220.4185001304539
+analyst4,anl4_rd_exp_flag,MATRIX,Research and Development Expense - forecast type (revision/new/...),0.9754,4226,2394,219.93817055489296
+analyst4,min_adjusted_net_income_guidance,MATRIX,Adjusted net income - minimum guidance value,1.0,3181,2522,219.81867183218262
+option8,implied_volatility_call_90,MATRIX,Implied volatility of the at-the-money call for the stock with an expiration 90 calendar days from the measurement date,0.9729,4703,1946,219.7219099226456
+option8,implied_volatility_put_90,MATRIX,Implied volatility of the at-the-money put for the stock with an expiration 90 calendar days from the measurement date,0.9727,4386,2038,219.2350828645344
+model51,unsystematic_risk_last_90_days,MATRIX,"The portion of return variance not explained by SPY (idiosyncratic risk), calculated as 1 minus R² over the last 90 calendar days",0.9619,4631,2229,219.14622451479914
+analyst4,anl4_totassets_flag,MATRIX,Total Assets - forecast type (revision/new/...),0.8122,13174,5355,219.01062726815093
+pv13,pv13_reveremap,MATRIX,Mapping data,0.9924,3877,1678,219.00051664341368
+socialmedia12,scl12_sentiment,MATRIX,sentiment,1.0,3711,1544,218.90715688572013
+option8,implied_volatility_call_360,MATRIX,Implied volatility of the at-the-money call for the stock with an expiration 360 calendar days from the measurement date,0.9729,4172,2086,218.87131934130153
+news12,nws12_afterhsz_sl,VECTOR,Whether a long or short position would have been more advantageous: If (EODHigh - Last) > (Last - EODLow) Then LS = 1; If (EODHigh - Last) = (Last - EODLow) Then LS = 0; If (EODHigh - Last) < (Last - EODLow) Then LS = -1.,0.707,22448,13774,218.54306665759026
+option8,implied_volatility_mean_120,MATRIX,The average of IvCall120 and IvPut120,0.9688,3884,2371,218.38622642860554
+option8,implied_volatility_put_30,MATRIX,Implied volatility of the at-the-money put for the stock with an expiration 30 calendar days from the measurement date,0.9727,3952,1819,217.62525953332104
+analyst4,anl4_cff_flag,MATRIX,Cash Flow From Financing Activities - forecast type (revision/new/...),0.8244,8781,6175,216.8867249697397
+analyst4,anl4_ebitda_value,MATRIX,"Earnings before interest, taxes, depreciation and amortization - announced financial value",0.8133,15153,2392,216.49171346445507
+option8,implied_volatility_call_720,MATRIX,Implied volatility of the at-the-money call for the stock with an expiration 720 calendar days from the measurement date,0.9729,3483,1796,216.3187328136417
+option9,pcr_oi_180,MATRIX,"Ratio of total put option open interest to call option open interest for options expiring in 180 days, representing longer-term positioning",0.9838,2918,1860,215.81430999175242
+analyst4,anl4_capex_flag,MATRIX,Capital Expenditures - forecast type (revision/new/...),0.8506,7258,3633,214.95041981762898
+pv13,pv13_revere_key_sector_total,MATRIX,Number of key focus sectors for the company,0.9334,4055,2209,214.92326442526922
+pv13,pv13_h2_sector,GROUP,grouping fields,1.0,2798,1220,214.90730226570807
+option8,implied_volatility_put_360,MATRIX,Implied volatility of the at-the-money put for the stock with an expiration 360 calendar days from the measurement date,0.9727,3154,1654,214.89521918880894
+option8,parkinson_volatility_180,MATRIX,Historical Parkinson volatility for approximately 180 calendar days,0.9796,3015,1502,214.65295924004334
+analyst4,anl4_qf_az_eps_number,MATRIX,Earnings per share - number of estimations,0.7848,11515,5059,214.64053532872822
+socialmedia12,snt_value,MATRIX,"Negative sentiment score/indicator for current day, with missing values filled as 0",1.0,2758,1025,213.89335087082645
+pv13,rel_ret_all,MATRIX,Averaged one-day return of the companies whose product overlapped with the instrument,0.9613,3001,1692,213.37162703259978
+option8,implied_volatility_put_10,MATRIX,"At-the-money implied volatility of put options with 10 calendar days to expiration, annualized decimal",0.9727,2936,1337,213.11609551542705
+analyst4,anl4_netprofit_number,MATRIX,Net profit - number of estimations,0.7667,10304,6467,212.94695603673057
+option8,implied_volatility_put_720,MATRIX,Implied volatility of the at-the-money put for the stock with an expiration 720 calendar days from the measurement date,0.9727,2618,1594,212.84862352117182
+analyst4,sales_estimate_count,MATRIX,Sales - number of estimations,1.0,2007,1529,212.7140598800486
+option8,historical_volatility_10,MATRIX,Historical close-to-close volatility for approximately 10 calendar days,0.9808,2737,1200,212.68437916888385
+news12,news_pe_ratio,MATRIX,Reported price-to-earnings ratio for the calendar day of the session,0.9662,2977,1341,212.6196537200977
+option8,historical_volatility_60,MATRIX,Historical close-to-close volatility for approximately 60 calendar days,0.9805,2715,1186,212.51507685983418
+analyst4,anl4_tot_gw_ft,MATRIX,Total Goodwill - forecast type (revision/new/...),0.8515,7397,1960,212.14569885490573
+analyst4,est_eps,MATRIX,Earnings per share - mean of estimations,0.7848,8920,5000,212.02859912623236
+option8,implied_volatility_mean_180,MATRIX,The average of IvCall180 and IvPut180,0.9688,2547,1515,211.9297929979321
+option9,call_breakeven_10,MATRIX,"Price at which a stock's call options with expiration 10 days in the future break even based on its recent bid/ask mean, weighted by open interest or volume",0.9824,2516,1181,211.92304594118337
+pv13,pv13_custretsig_retsig,MATRIX,Sign of customer return,0.9276,3726,1606,211.90421082348013
+analyst4,sales_estimate_count_quarterly,MATRIX,Sales - number of estimations,1.0,1858,1433,211.61905498301226
+model77,mdl177_garpanalystmodel_qgp_vfpriceratio,MATRIX,Value to Price Rank,1.0,2260,880,211.1409128524606
+option8,implied_volatility_put_1080,MATRIX,"At-the-money implied volatility of put options with 1080 calendar days to expiration, annualized decimal",0.9727,2387,1297,210.8950142314451
+pv13,pv13_1l_scibr,GROUP,grouping fields,0.9385,3303,1339,210.88101581113347
+news12,news_tot_ticks,MATRIX,Total number of ticks during the trading day,0.9691,2608,1082,210.51467408637222
+option8,historical_volatility_150,MATRIX,Historical close-to-close volatility for approximately 150 calendar days,0.9798,2362,1050,210.44435962625383
+option8,implied_volatility_call_20,MATRIX,Implied volatility of the at-the-money call for the stock with an expiration 20 calendar days from the measurement date,0.9729,2371,1194,210.43439492300422
+analyst4,anl4_cfi_flag,MATRIX,Cash Flow From Investing - forecast type (revision/new/...),0.8287,5427,4035,210.3783071169151
+analyst4,anl4_ebitda_flag,MATRIX,"Earnings before interest, taxes, depreciation and amortization - forecast type (revision/new/...)",0.8633,4464,2944,210.30956541353441
+pv13,pv13_revere_term_sector_total,MATRIX,Number of terminal sectors for the company,0.9334,3337,1276,210.2326153223805
+analyst4,max_adjusted_net_income_guidance,MATRIX,The maximum guidance value for Adjusted net income.,1.0,1665,1342,210.19511420988408
+analyst4,anl4_fcf_flag,MATRIX,Free cash flow - forecast type (revision/new/...),0.859,4228,2993,209.41903619962278
+analyst4,anl4_cfo_flag,MATRIX,Cash Flow From Operations - forecast type (revision/new/...),0.8269,5022,3800,209.12292378244666
+news12,news_cap,MATRIX,Reported total market capitalization for the calendar day of the session,0.8272,6894,1946,208.975742929135
+analyst4,anl4_epsr_value,MATRIX,GAAP Earnings per share - announced financial value,0.9904,1864,1010,208.94363941588148
+option8,implied_volatility_mean_150,MATRIX,The average of IvCall150 and IvPut150,0.9688,2070,1177,208.5957354350135
+option9,call_breakeven_20,MATRIX,"Open-interest-weighted average breakeven price of call options expiring in 20 days, representing the price at which call buyers break even",0.9824,1821,1152,208.56751337954435
+option8,historical_volatility_90,MATRIX,Historical close-to-close volatility for approximately 90 calendar days,0.9803,2047,927,208.441348525525
+analyst4,anl4_qfd1_az_eps_number,MATRIX,Earnings per share - number of estimations,0.7848,6845,4010,208.27817751975158
+option8,implied_volatility_mean_90,MATRIX,The average of IvCall90 and IvPut90,0.9688,1966,1190,208.13539103066708
+model51,systematic_risk_last_90_days,MATRIX,"The portion of the security’s return variance attributed to systematic (market) risk, quantified as R² from a regression on SPY, over the last 90 calendar days",0.9619,2113,1163,208.05145980575872
+model51,unsystematic_risk_last_60_days,MATRIX,"The portion of return variance not explained by SPY (idiosyncratic risk), calculated as 1 minus R² over the last 60 calendar days",0.9637,2171,1002,207.75779075034797
+option8,parkinson_volatility_90,MATRIX,Historical volatility using the Parkinson high–low estimator over approximately the past 90 calendar days,0.9803,1901,934,207.7393450774968
+model77,mdl177_fangma_gpam_usa_fangma_gpam11,MATRIX,A composite or specialized metric summarizing growth or profitability characteristics for a group of prominent technology firms.,1.0,1866,648,207.69804501893768
+option8,historical_volatility_30,MATRIX,Historical close-to-close volatility for approximately 30 calendar days,0.9807,1864,940,207.61487901870606
+option8,implied_volatility_mean_60,MATRIX,The average of IvCall60 and IvPut60,0.9688,1863,1152,207.43541255380066
+news12,nws12_mainz_01p,VECTOR,The minimum of L or S above for 10-minute bucket,0.9741,2168,755,207.3704219891664
+pv13,rel_num_part,MATRIX,number of the instrument's partners,0.7837,7402,2747,207.05954929114216
+pv13,pv13_com_rk_au,MATRIX,the HITS authority score of competitors,0.9051,2840,1561,206.79772547054003
+option8,historical_volatility_20,MATRIX,Historical close-to-close volatility for approximately 20 calendar days,0.9807,1774,880,206.7908451487761
+option8,parkinson_volatility_150,MATRIX,Historical Parkinson volatility for approximately 150 calendar days,0.9798,1869,794,206.708647671758
+news12,news_spy_close,MATRIX,SPY price at session close,0.9717,1922,881,206.69737773592175
+option8,implied_volatility_put_20,MATRIX,"At-the-money implied volatility of put options with 20 calendar days to expiration, annualized decimal",0.9727,1848,933,206.69138450501546
+option9,pcr_oi_120,MATRIX,"Ratio of total put option open interest to total call option open interest for options expiring in 120 days, indicating longer-term put-call positioning",0.9838,1877,723,206.68358355961067
+model51,beta_last_60_days_spy,MATRIX,"The rolling beta value of the security relative to SPY, calculated via regression over the last 60 calendar days, representing market sensitivity",0.9752,1874,851,206.6215720181917
+pv13,pv13_new_1l_scibr,GROUP,grouping fields,0.9896,1541,904,206.40803025973236
+option8,parkinson_volatility_10,MATRIX,Historical Parkinson volatility for approximately 10 calendar days,0.9808,1813,770,206.35133817456747
+news12,news_mins_20_chg,MATRIX,The minimum of L or S above for 20-minute bucket,0.9142,2769,1214,206.19852277068708
+model51,correlation_last_60_days_spy,MATRIX,"The Pearson correlation coefficient of daily log returns between the security and SPY, calculated over the most recent 60 calendar days",0.9752,1692,949,206.14488374430428
+analyst4,anl4_qfv4_eps_number,MATRIX,Earnings per share - number of estimations,1.0,1289,993,206.13266100684007
+option8,implied_volatility_mean_30,MATRIX,The average of IvCall30 and IvPut30,0.9688,1758,988,206.0884791054891
+option8,parkinson_volatility_60,MATRIX,Historical volatility using the Parkinson high–low estimator over approximately the past 60 calendar days,0.9805,1775,766,206.08362324235745
+option9,pcr_oi_150,MATRIX,"Ratio of total put option open interest to total call option open interest for options expiring in 150 days, indicating longer-term put-call positioning",0.9838,1515,980,206.06116795984997
+option8,parkinson_volatility_20,MATRIX,Historical volatility using the Parkinson high–low estimator over approximately the past 20 calendar days,0.9807,1777,723,205.8264011226671
+pv13,pv13_hierarchy23_sector,GROUP,grouping fields,1.0,1320,864,205.67509057988266
+news12,news_atr14,MATRIX,14-day Average True Range,0.8947,3915,760,205.37142682581242
+analyst4,anl4_netprofit_value,MATRIX,Net profit- announced financial value,1.0,1584,558,205.31414422888932
+option8,parkinson_volatility_30,MATRIX,Historical volatility using the Parkinson high–low estimator over approximately the past 30 calendar days,0.9807,1638,687,204.757359977105
+news12,news_spy_last,MATRIX,SPY last price at the time of the news,0.9718,1641,755,204.3569097810214
+option9,pcr_oi_10,MATRIX,"Ratio of put open interest to call open interest for options expiring in 10 days, indicating short-term positioning",0.9838,1567,650,204.34811022014637
+news12,nws12_prez_4l,VECTOR,Number of minutes that elapsed before price went up 4 percentage points,0.9199,2082,1312,204.3059937841237
+analyst4,anl4_afv4_eps_mean,MATRIX,Earnings per share - mean of estimations for annual frequency,1.0,1313,662,204.29218694137487
+model77,book_leverage_ratio_3,MATRIX,Book leverage ratio; total assets divided by book equity,1.0,1287,680,204.22627059739054
+model77,mdl177_2_sensitivityfactor400_ttmocfev,MATRIX,Trailing 12-month operating cash flow per share divided by enterprise value per share; a valuation and quality metric,1.0,1457,521,204.13654706509922
+pv13,rel_ret_comp,MATRIX,Averaged one-day return of the competing companies,0.8228,4028,2322,204.0458085157655
+pv13,pv13_com_page_rank,MATRIX,the PageRank of competitors,0.9051,2296,1369,204.01642212100182
+analyst4,anl4_ptp_value,MATRIX,Pretax income- announced financial value,0.9431,1648,1186,203.7851651986443
+news12,news_eps_actual,MATRIX,Actual Earnings Per Share reported in the news release,0.9646,1693,708,203.6277563847806
+model51,beta_last_30_days_spy,MATRIX,"The rolling beta value of the security relative to SPY, calculated via regression over the last 30 calendar days, representing market sensitivity",0.9765,1531,670,203.53713918786377
+news12,news_eod_close,MATRIX,Session closing price,0.8778,2980,1252,203.44662071126106
+option9,pcr_oi_90,MATRIX,"Ratio of put open interest to call open interest for options expiring in 90 days, reflecting longer-term positioning",0.9838,1543,551,203.3690575372327
+news12,news_max_dn_ret,MATRIX,Percent change from price at time of news to lowest price after news,0.9704,1549,693,203.21246190166696
+option8,implied_volatility_mean_skew_90,MATRIX,Skew steepness for the implied volatility duration of 90 calendar days by subtracting the mean implied volatility of the call and put options with strikes at 110% of the money from the mean implied volatility of the call and put options with strikes at 90% of the money,0.9508,1516,1064,203.17855018420295
+analyst4,anl4_fsdetailrecv4v104_item,VECTOR,Financial item,0.8025,5304,1655,203.07485218520685
+option8,implied_volatility_mean_skew_360,MATRIX,Skew steepness for the implied volatility duration of 360 calendar days by subtracting the mean implied volatility of the call and put options with strikes at 110% of the money from the mean implied volatility of the call and put options with strikes at 90% of the money,0.9508,1569,962,203.01857604241414
+news12,news_pct_1min,MATRIX,Percent change in price during the first minute following the news release,0.9717,1266,954,202.92262850561505
+option8,implied_volatility_mean_360,MATRIX,The average of IvCall360 and IvPut360,0.9688,1372,856,202.89472365066862
+option9,pcr_oi_60,MATRIX,"Ratio of put open interest to call open interest for options expiring in 60 days, reflecting medium-to-long term option positioning",0.9838,1366,624,202.7724966159215
+news12,news_mins_20_pct_dn,MATRIX,Number of minutes that elapsed before price went down 20 percentage points,0.9678,1440,756,202.65774222718247
+model77,mdl177_fangma_rvm_usa_fangma_rvm6,MATRIX,"Relative value model 6 for FANGMA (Facebook, Apple, Netflix, Google, Mircosoft, Amazon)",1.0,1374,430,202.59263055152545
+analyst4,anl4_ptp_number,MATRIX,Pretax Income - number of estimations,0.7327,6496,3971,202.49608323463065
+pv13,rel_num_comp,MATRIX,number of the instrument's competitors,0.8902,2304,1334,202.43179240847925
+pv13,pv13_3l_scibr,GROUP,grouping fields,0.9385,1682,941,202.37335831478987
+model51,beta_last_90_days_spy,MATRIX,"The rolling beta value of the security relative to SPY, calculated via regression over the last 90 calendar days, representing market sensitivity",0.9734,1499,587,202.35583861039612
+model77,mdl177_5shortsentimentfactor_act_util,MATRIX,Actual Utilization Rate: the real observed proportion of shares lent out (actively used for short selling) versus available supply,1.0,1160,575,202.35090812045837
+pv13,pv13_revere_city,MATRIX,City code,0.9382,1706,915,202.34500905131506
+model51,beta_last_360_days_spy,MATRIX,"The rolling beta value of the security relative to SPY, calculated via regression over the last 360 calendar days, representing market sensitivity",0.9482,1549,860,202.0705746212716
+analyst4,anl4_afv4_eps_high,MATRIX,Earnings per share - The highest estimation,1.0,1020,694,202.0049374094706
+news12,nws12_prez_57p,VECTOR,The minimum of L or S above for 7.5-minute bucket,0.9199,1950,940,201.985689104158
+model77,mdl177_2_garpanalystmodel_qgp_capeff,MATRIX,"Measurement of how efficiently a company utilizes its capital/resources, ranked relative to peers",0.9658,1668,504,201.90259138299515
+news12,news_max_dn_amt,MATRIX,Price at the time of the news minus the after-news low,0.9704,1648,465,201.8401713962242
+model51,correlation_last_360_days_spy,MATRIX,"The Pearson correlation coefficient of daily log returns between the security and SPY, calculated over the most recent 360 calendar days",0.9482,1521,842,201.7826401742256
+model51,systematic_risk_last_60_days,MATRIX,"The portion of the security’s return variance attributed to systematic (market) risk, quantified as R² from a regression on SPY, over the last 60 calendar days",0.9637,1367,761,201.76078376025816
+model77,mdl177_2_5yearrelativevaluefactor_rel5yfwdep,MATRIX,"5-year Relative Leading 12-Month Earnings Yield: next 4-quarter consensus analyst earnings-to-price ratio minus the 60-month average, scaled by the standard deviation",0.8515,3412,1142,201.71052780804112
+option9,pcr_oi_1080,MATRIX,"Ratio of put option open interest to call option open interest for stock options expiring in 1080 days, representing longer-term positioning",0.9838,1229,609,201.5949892695014
+news12,nws12_mainz_01l,VECTOR,Number of minutes that elapsed before price went up 10 percentage points,0.9741,1322,629,201.51517073807744
+model51,unsystematic_risk_last_30_days,MATRIX,"The portion of return variance not explained by SPY (idiosyncratic risk), calculated as 1 minus R² over the last 30 calendar days",0.965,1445,612,201.35738870686816
+news12,news_indx_perf,MATRIX,Difference in percent return between the stock and the S&P 500 ETF over the session: ((EODClose - TONLast) / TONLast) - ((SPYClose - SPYLast) / SPYLast),0.9713,1512,481,201.23821770813655
+analyst4,anl4_epsr_number,MATRIX,GAAP Earnings per share - number of estimations,0.7153,6353,4514,201.17420047755004
+analyst4,anl4_fsdtlestmtafv4_item,VECTOR,Financial item,0.7902,4145,2366,201.16588597752715
+option8,implied_volatility_mean_20,MATRIX,The average of IvCall20 and IvPut20,0.9688,1319,636,201.01771843366495
+option8,implied_volatility_mean_skew_1080,MATRIX,Skew steepness for the implied volatility duration of 1080 calendar days by subtracting the mean implied volatility of the call and put options with strikes at 110% of the money from the mean implied volatility of the call and put options with strikes at 90% of the money,0.9508,1392,817,201.0064614208118
+news12,news_max_up_ret,MATRIX,Percent change from price at time of news to highest price after news,0.8458,2730,1643,200.72866909281765
+pv13,pv13_revere_country,MATRIX,Country code,0.9573,1340,731,200.72061140262335
+option8,implied_volatility_mean_1080,MATRIX,The average of IvCall1080 and IvPut1080,0.9688,1233,675,200.64112742486816
+analyst4,earnings_per_share_estimate_count,MATRIX,Earnings per share - number of estimations,1.0,868,696,200.40735830645656
+option8,implied_volatility_mean_720,MATRIX,The average of IvCall720 and IvPut720,0.9688,1152,730,200.35329250143948
+option9,pcr_oi_360,MATRIX,Ratio of total put option open interest to call option open interest for options expiring in 360 days,0.9838,1142,539,200.2519623357397
+analyst4,anl4_totassets_number,MATRIX,Total Assets - number of estimations,0.7213,5945,3740,200.17028120732118
+option8,implied_volatility_mean_270,MATRIX,The average of IvCall270 and IvPut270,0.9688,1137,722,200.16732225765656
+news12,news_high_exc_stddev,MATRIX,"Standardized measure of price movement from end-of-day high to last price in the time-of-news window, divided by 30-day closing price standard deviation",0.9652,1361,519,199.95623892497193
+model51,correlation_last_30_days_spy,MATRIX,"The Pearson correlation coefficient of daily log returns between the security and SPY, calculated over the most recent 30 calendar days",0.9765,1201,530,199.94123125716123
+analyst4,anl4_fsdetailltv4v104_item,VECTOR,Financial item,0.7968,3454,2310,199.8829554133896
+pv13,pv13_ompetitorgraphrank_hub_rank,MATRIX,the HITS hub score of competitors,0.9051,1718,1054,199.81146028337932
+news12,news_eod_high,MATRIX,Highest price from the time of news to end of session,0.9707,1328,472,199.7872975295921
+news18,nws18_bam,VECTOR,"Mergers and acquisitions sentiment indicator (e.g., -1 negative, 0 neutral, +1 positive)",1.0,1055,408,199.6910104228761
+option9,call_breakeven_1080,MATRIX,Price at which a stock's call options with expiration 1080 days in the future break even based on its recent bid/ask mean.,0.9824,1138,486,199.56038024988476
+news12,news_mins_5_chg,MATRIX,"Minimum value among L or S for each minute bucket, indicating the fastest reaction time at the 5th percentile",0.9671,1452,399,199.48117937124275
+model51,systematic_risk_last_360_days,MATRIX,"The portion of the security’s return variance attributed to systematic (market) risk, quantified as R² from a regression on SPY, over the last 360 calendar days",0.937,1368,816,199.44655372718452
+news18,nws18_event_relevance,VECTOR,Integer from 0 to 100 indicating the event’s relevance within the story,1.0,935,494,199.43894357761937
+option9,put_breakeven_10,MATRIX,"Open interest-weighted mean breakeven price for put options expiring in 10 days, average price at which put buyers break even",0.9795,1015,631,199.43073325211859
+option8,implied_volatility_mean_skew_180,MATRIX,Skew steepness for the implied volatility duration of 180 calendar days by subtracting the mean implied volatility of the call and put options with strikes at 110% of the money from the mean implied volatility of the call and put options with strikes at 90% of the money,0.9508,1202,796,199.41001055369787
+analyst4,anl4_af_eps_value,MATRIX,Earnings Per Share - Actual Value,0.9956,824,665,199.22028221604873
+option8,implied_volatility_mean_skew_270,MATRIX,Skew steepness for the implied volatility duration of 270 calendar days by subtracting the mean implied volatility of the call and put options with strikes at 110% of the money from the mean implied volatility of the call and put options with strikes at 90% of the money,0.9508,1143,801,198.93840475873
+news12,news_eod_vwap,MATRIX,VWAP from the time of news to the end of the session,0.9673,1102,619,198.9364875827307
+option9,forward_price_10,MATRIX,Synthetic forward price for the underlying at 10 days derived from put-call parity using ATM options and adjusted for interest rates and dividends,0.9796,1078,492,198.8004455227948
+news12,news_low_exc_stddev,MATRIX,"Standardized measure of price movement from last price in time-of-news window to end-of-day low, divided by 30-day closing price standard deviation",0.9707,1177,493,198.79841122805493
+option8,implied_volatility_mean_skew_720,MATRIX,Skew steepness for the implied volatility duration of 720 calendar days by subtracting the mean implied volatility of the call and put options with strikes at 110% of the money from the mean implied volatility of the call and put options with strikes at 90% of the money,0.9508,1146,769,198.76100374553235
+model77,mdl177_2_liquidityriskfactor_si_ratio,MATRIX,Ratio of shares sold short to average daily trading volume over the last 30 days,1.0,1126,297,198.7586125729248
+option9,pcr_oi_720,MATRIX,"Ratio of put open interest to call open interest for options expiring in 720 days, indicating very long-term option sentiment",0.9838,953,574,198.75848691846963
+analyst4,anl4_dez1qfv4_est,VECTOR,Estimation value,0.964,975,787,198.58211631342033
+analyst4,reporting_currency_code_9,MATRIX,Home currency of instrument,1.0,779,594,198.53574622456452
+model77,mdl177_garpanalystmodel_qgp_relgrowth,MATRIX,"Rank comparing company's growth metrics against its industry peers, showing relative growth strength",1.0,811,527,198.34048482014808
+analyst4,anl4_fcfps_flag,MATRIX,Free cash flow per share - forecast type (revision/new/...),0.8947,1605,1094,198.27756715632006
+option9,pcr_oi_30,MATRIX,"Ratio of put open interest to call open interest for options expiring in 30 days, reflecting medium-term option positioning",0.9838,1001,472,198.27300975890776
+model51,correlation_last_90_days_spy,MATRIX,"The Pearson correlation coefficient of daily log returns between the security and SPY, calculated over the most recent 90 calendar days",0.9734,1054,508,198.1152005418543
+news12,news_mins_5_pct_up,MATRIX,Number of minutes before the price increased by at least 5 percent after the news release,0.9214,1531,674,198.056856957368
+analyst4,anl4_epsa_flag,MATRIX,Earnings per share adjusted by excluding extraordinary items and stock option expenses - forecast type (revision/new/...),1.0,872,409,197.8001413568878
+option9,call_breakeven_30,MATRIX,"Open-interest-weighted average breakeven price of call options expiring in 30 days, representing the price at which call buyers break even",0.9824,1010,425,197.69914892155157
+pv13,pv13_h_min20_top3000_sector,GROUP,grouping fields,1.0,1011,291,197.5806075098155
+option9,put_breakeven_1080,MATRIX,Price at which a stock's put options with expiration 1080 days in the future break even based on its recent bid/ask mean,0.9795,868,593,197.55782784946715
+option9,pcr_oi_all,MATRIX,Ratio of total put option open interest to call option open interest aggregated across all option maturities for the stock,0.9838,957,444,197.5188491905398
+analyst4,actual_eps_value_quarterly,MATRIX,Earnings Per Share (Income Statement/Per Share) (Actual),1.0,810,447,197.50664670322905
+news18,nws18_qep,VECTOR,"Equities sentiment polarity score derived from positive/negative words in news (typically -1, 0, +1)",1.0,985,298,197.43878141297978
+model77,mdl177_2_garpanalystmodel_qgp_vfpriceratio,MATRIX,"Ranking based on the ratio of intrinsic (fundamental, value-based) valuation to market price, indicating relative under/overvaluation",0.9546,1182,512,197.4194678656377
+earnings4,ern4_ernmv1,VECTOR,"Stock price move on the most recent past earnings date, expressed as a percentage change (float, decimal fraction)",0.9692,1234,338,197.23826302752306
+analyst4,anl4_ady_pu,VECTOR,The number of upper estimations,0.7196,5677,2266,197.03460662286682
+model77,mdl177_liquidityriskfactor_si_ratio_alt,MATRIX,Short interest ratio: shares sold short divided by average daily volume over last 30 days; estimates days to cover shorts,1.0,980,276,197.00581212659034
+model77,mdl177_2_deepvaluefactor_curep,MATRIX,"Current Earnings Yield (sum of recent 3 quarters EPS and analyst estimates, divided by price)",0.9442,1285,491,197.00531263043717
+model77,mdl177_2_sensitivityfactor400_chg12msip,MATRIX,Change in the short interest ratio (shares sold short / shares outstanding) over the previous 12 months,0.9616,1244,361,196.8871291481169
+pv13,pv13_revere_index_cap,MATRIX,Company market capitalization,0.8495,2047,1201,196.65490043706978
+option9,call_breakeven_120,MATRIX,"Price at which a stock's call options with expiration 120 days in the future break even based on its recent bid/ask mean, weighted by open interest or volume",0.9824,948,381,196.52119102913215
+news12,nws12_prez_57l,VECTOR,Number of minutes that elapsed before price went up 7.5 percentage points,0.9199,1282,722,196.4766097569502
+model77,mdl177_2_managementqualityfactor_saleicap,MATRIX,Trailing 12-month sales divided by invested capital,1.0,873,312,196.46181970925613
+option8,implied_volatility_mean_skew_30,MATRIX,Skew steepness for the implied volatility duration of 30 calendar days by subtracting the mean implied volatility of the call and put options with strikes at 110% of the money from the mean implied volatility of the call and put options with strikes at 90% of the money,0.9508,985,654,196.4397397242026
+option8,implied_volatility_mean_skew_120,MATRIX,Skew steepness for the implied volatility duration of 120 calendar days by subtracting the mean implied volatility of the call and put options with strikes at 110% of the money from the mean implied volatility of the call and put options with strikes at 90% of the money,0.9508,976,654,196.34804269860408
+option8,implied_volatility_mean_skew_60,MATRIX,Skew steepness for the implied volatility duration of 60 calendar days by subtracting the mean implied volatility of the call and put options with strikes at 110% of the money from the mean implied volatility of the call and put options with strikes at 90% of the money,0.9508,1093,507,196.20836706771166
+pv13,pv13_revere_zipcode,MATRIX,Zip code,0.9328,1265,542,196.2017226267109
+pv13,pv13_h_min10_top3000_sector,GROUP,grouping fields,1.0,874,289,196.09164347847874
+model16,analyst_revision_rank_derivative,MATRIX,Daily-indicator variant of momentum capturing recent price moves and analyst estimate revisions,1.0,699,447,196.03476951250897
+model51,systematic_risk_last_30_days,MATRIX,"The portion of the security’s return variance attributed to systematic (market) risk, quantified as R² from a regression on SPY, over the last 30 calendar days",0.965,957,474,195.9650517998818
+analyst4,anl4_fsactualafv4_item,VECTOR,Financial item,0.7877,2701,2030,195.86889299310337
+pv13,pv13_h_min10_all_sector,GROUP,grouping fields,0.9995,914,254,195.84555837854737
+news12,news_ton_last,MATRIX,Price at the time of the news,0.9717,849,512,195.82374272069748
+model77,mdl177_garpanalystmodel_qgp_capeff,MATRIX,"Measurement of capital utilization efficiency, showing how effectively the company uses its capital for growth/profit",1.0,776,345,195.7865973789651
+option9,call_breakeven_180,MATRIX,Open-interest-weighted mean breakeven price at which buyers of call options break even for options expiring in 180 days,0.9824,905,355,195.70504671468996
+pv13,pv13_5l_scibr,GROUP,grouping fields,0.9385,1009,682,195.659530396207
+model77,mdl177_2_deepvaluefactor_fcfp,MATRIX,Leading 12-Month Median Earnings Yield,0.9521,1114,415,195.52952314024853
+socialmedia12,scl12_sentvec,VECTOR,Vector representing the sentiment score (bullish/bearish/neutral) derived from social media data for the instrument,1.0,714,384,195.48904209837897
+model77,mdl177_5shortsentimentfactor_dmd_supply,MATRIX,"Demand-to-supply ratio in securities lending, indicating borrow demand relative to lendable supply",1.0,676,428,195.48399732376285
+news12,news_main_vwap,MATRIX,Main session volume-weighted average price,0.9707,947,380,195.32754189818374
+option8,implied_volatility_mean_skew_150,MATRIX,Skew steepness for the implied volatility duration of 150 calendar days by subtracting the mean implied volatility of the call and put options with strikes at 110% of the money from the mean implied volatility of the call and put options with strikes at 90% of the money,0.9508,911,609,195.30369468658012
+analyst4,anl4_afv4_median_eps,MATRIX,Earnings per share - median of estimations,1.0,644,439,195.12637680251927
+news12,news_max_up_amt,MATRIX,After-news high minus the price at the time of the news,0.9692,941,377,195.07452372386155
+news18,nws18_ssc,VECTOR,"Granular sentiment score from -1.00 to +1.00 for the story, combining multiple sentiment analysis techniques",1.0,740,327,195.04507429488157
+analyst4,anl4_netprofita_low,MATRIX,Adjusted net income - the lowest estimation,0.7511,4090,1517,194.90119196907185
+news18,nws18_ghc_lna,VECTOR,Change in analyst recommendation,0.903,1454,558,194.75835916183144
+pv13,pv13_r2_min5_3000_sector,GROUP,grouping fields,1.0,843,237,194.74287831431695
+analyst4,anl4_afv4_eps_low,MATRIX,Earnings per share - The lowest estimation for annual frequency,1.0,607,457,194.7360947402326
+pv13,pv13_h_f3_sector,GROUP,grouping fields,0.9989,786,261,194.4140050029795
+news12,news_vol_stddev,MATRIX,"Z-score of current volume compared to 30-day average volume, using 30-day volume standard deviation",0.9672,927,348,194.32567693887412
+analyst4,anl4_ptp_high,MATRIX,Pretax income - the highest estimation,0.7327,3390,2818,194.27948887682692
+model53,mdl53_jc5_10year,MATRIX,Annualized default probability at the 10-year horizon (percentage),0.965,1106,245,194.12074700674816
+analyst4,anl4_adxqfv110_pu,VECTOR,The number of upper estimations,0.6979,4883,2626,194.09518730073364
+model77,mdl177_2_managementqualityfactor_noato,MATRIX,Net operating asset turnover: trailing 12-month sales divided by 4-quarters average net operating assets (short-term debt + long-term debt + preferred equity + common equity - cash),0.9837,899,251,194.04109307080023
+analyst4,anl4_basicconqfv110_pu,VECTOR,The number of upper estimations,0.7262,3857,2295,193.89366072185402
+analyst4,anl4_ptp_low,MATRIX,Pretax income - the lowest estimation,0.7327,4573,1397,193.76542335979602
+analyst4,anl4_netprofita_value,MATRIX,Adjusted net income- announced financial value,0.9312,954,604,193.76325569496152
+news18,nws18_qcm,VECTOR,News sentiment of relevant news with high confidence,1.0,678,299,193.72512364886796
+news12,news_pct_90min,MATRIX,Percent change in price during the first 90 minutes following the news release,0.9692,793,398,193.63564169692066
+news12,nws12_mainz_57l,VECTOR,Number of minutes that elapsed before price went up 7.5 percentage points,0.9741,740,410,193.58297232544206
+news18,nws18_relevance,VECTOR,Score from 0 to 100 indicating how strongly the entity is related to the story higher is more relevant,1.0,681,282,193.47753106665084
+model77,mdl177_2_growthanalystmodel_qga_opmarginsales,MATRIX,Measure of linkage between operating margin and sales (strength of margins relative to revenue growth),1.0,643,308,193.34369364553226
+analyst4,est_ptp,MATRIX,Pretax income - mean of estimations,0.7527,3037,1930,193.28851324369975
+analyst4,anl4_epsr_low,MATRIX,GAAP Earnings per share - The lowest estimation,0.7153,5019,1466,193.19672601757267
+news12,news_eod_low,MATRIX,Lowest price from the time of news to end of session,0.9707,874,290,193.17885519943363
+option9,pcr_oi_20,MATRIX,Ratio of put open interest to call open interest on a stock's options with expiration 20 days in the future,0.9838,687,355,193.0925420335936
+option9,forward_price_20,MATRIX,Synthetic forward price for the underlying at 20 days derived from put-call parity using ATM options and adjusted for interest rates and dividends,0.9796,704,349,192.83164380053998
+analyst4,anl4_afv4_eps_number,MATRIX,Earnings per share - number of estimations for annual frequency,1.0,561,361,192.77323955806577
+analyst4,est_netprofit,MATRIX,Net profit - mean of estimations,0.7861,2480,1323,192.7162335194028
+news12,nws12_mainz_mov_vol,VECTOR,30-day moving average session volume,0.9689,784,324,192.46596308947278
+model77,enterprise_value_weighted_value_score,MATRIX,Earnings Valuation (submodule of Value Analyst II),1.0,551,350,192.43941158010028
+news12,nws12_mainz_prev_vol,VECTOR,Previous day's session volume,0.9733,693,373,192.37599859214072
+analyst4,anl4_ebit_number,MATRIX,Earnings before interest and taxes - number of estimations,0.7097,3584,2698,192.31832059542722
+model53,mdl53_jc5_1year,MATRIX,Annualized default probability at the 1-year horizon (percentage),0.965,903,255,192.29418082631955
+option8,implied_volatility_mean_skew_10,MATRIX,Skew steepness for the implied volatility duration of 10 calendar days by subtracting the mean implied volatility of the call and put options with strikes at 110% of the money from the mean implied volatility of the call and put options with strikes at 90% of the money,0.9508,793,430,192.1813750629901
+news18,nws18_ber,VECTOR,Earnings Release Indicator flag for earnings release events,1.0,615,265,192.14995117924366
+news12,nws12_prez_01l,VECTOR,Number of minutes that elapsed before price went up 10 percentage points,0.9199,980,511,192.0673477208512
+option8,implied_volatility_mean_skew_20,MATRIX,Skew steepness for the implied volatility duration of 20 calendar days by subtracting the mean implied volatility of the call and put options with strikes at 110% of the money from implied volatility of the call and put options with strikes at 90% of the money,0.9508,733,490,192.04731092511776
+pv13,pv13_4l_scibr,GROUP,grouping fields,0.9385,786,543,192.02702871845375
+option9,option_breakeven_10,MATRIX,Open-interest-weighted mean breakeven price at which buyers of calls and puts combined break even for options expiring in 10 days,0.9835,684,287,191.95899078330197
+news12,news_pct_120min,MATRIX,Percent change in price during the first 120 minutes following the news release,0.9063,1037,582,191.92144656901078
+analyst4,anl4_netprofita_number,MATRIX,Adjusted net income - number of estimations,0.7511,2697,1920,191.91566618151978
+pv13,pv13_h_min51_f3_sector,GROUP,grouping fields,0.9989,755,171,191.9078861458626
+pv13,pv13_r2_min10_3000_sector,GROUP,grouping fields,1.0,659,212,191.72885917875186
+analyst4,anl4_qfv4_actual,VECTOR,Announced financial data,0.9925,485,453,191.70257222921168
+news12,news_atr_ratio,MATRIX,Ratio of current day's price range to 20-day average true range,0.7967,2598,791,191.67162730548705
+news12,news_pct_30sec,MATRIX,Percent change in price in the 30 seconds after the news release,0.9673,635,432,191.63567427341368
+option9,call_breakeven_270,MATRIX,Price at which a stock's call options with expiration 270 days in the future break even based on its recent bid/ask mean,0.9824,668,284,191.56028650262556
+model77,mdl177_2_deepvaluefactor_estep,MATRIX,Forward 12-month median earnings-to-price (earnings yield),0.9722,681,333,191.5260015433181
+option9,pcr_vol_270,MATRIX,"Ratio of total put options volume to call options volume for contracts expiring 270 days in the future, indicating short-term options flow sentiment at longer tenor",0.981,603,355,191.5103956336083
+socialmedia12,scl12_typevec,VECTOR,Vector containing the type indices identifying the categories of instruments in the dataset,1.0,554,285,191.4696401915636
+model77,mdl177_deepvaluefactor_curep_alt,MATRIX,Cash-to-Price,0.9477,844,349,191.45303204598903
+analyst4,anl4_capex_value,MATRIX,Capital Expenditures - announced financial value,0.6592,6549,1786,191.23367086209012
+option9,call_breakeven_150,MATRIX,"Price at which a stock's call options with expiration 150 days in the future break even based on its recent bid/ask mean, weighted by open interest or volume",0.9824,666,264,191.16654958908734
+option9,call_breakeven_60,MATRIX,"Open interest-weighted mean breakeven price for call options expiring in 60 days, showing average price at which call buyers break even",0.9824,631,293,191.146792778162
+pv13,pv13_6l_scibr,GROUP,grouping fields,0.9385,757,488,191.11864630379807
+option9,forward_price_30,MATRIX,"Synthetic forward price at 30 days expiry, derived from at-the-money call and put options, reflecting market consensus forward expectation",0.9796,621,312,191.02041688009257
+pv13,rel_ret_part,MATRIX,Averaged one-day return of the instrument's partners,0.7097,3926,1722,190.98542172841977
+news18,nws18_nip,VECTOR,"Narrative impact score in [-1, 1] estimating the news item’s short-term market impact (e.g., next two hours)",0.903,1264,330,190.73886588850152
+pv13,pv13_h_min5_3000_sector,GROUP,grouping fields,1.0,620,192,190.6267617638592
+option9,pcr_vol_180,MATRIX,"Ratio of total put option volume to call option volume for options expiring in 180 days, capturing short-term options flow sentiment",0.981,539,368,190.56967461578583
+analyst4,anl4_median_epsreported,MATRIX,GAAP Earnings per share - median of estimations,0.7153,3832,1453,190.4543989442729
+analyst4,anl4_bac1detaillt_item,VECTOR,Financial item,0.6827,4106,2405,190.40308562223868
+news12,news_pct_60min,MATRIX,Percent change in price during the first 60 minutes following the news release,0.9692,618,341,190.37510641215897
+analyst4,anl4_fs_guidances_advanced_qf_nd_netprofita_minguidance,MATRIX,Minimum guidance value for adjusted net income,1.0,428,377,190.2890401673781
+news18,nws18_bee,VECTOR,"Earnings evaluation score indicating positive, neutral, or negative assessment (-1, 0, +1)",1.0,516,259,190.28383690016193
+model53,mdl53_implied_spreads,MATRIX,"Model-implied credit spread level for the issuer on the given date, typically expressed in basis points",0.9641,801,219,190.24922381042694
+option9,forward_price_180,MATRIX,Synthetic forward price at 180 days derived from put-call parity using at-the-money calls and puts reflecting market consensus forward expectation,0.9796,588,293,190.16216067320929
+news12,news_pct_30min,MATRIX,Percent change in price during the first 30 minutes following the news release,0.9717,584,345,190.1183123476072
+option9,call_breakeven_720,MATRIX,Weighted mean breakeven price of call options expiring in 720 days indicating the price at which call buyers break even,0.9824,583,273,190.00465036022263
+option9,forward_price_720,MATRIX,Synthetic forward price at 720 days derived from at-the-money call and put options reflecting the market's forward expectation of the underlying security,0.9796,567,287,189.69601658789125
+option9,call_breakeven_360,MATRIX,"Weighted mean break-even price of call options expiring in 360 days, based on recent bid/ask prices",0.9824,570,256,189.45927252103624
+model77,mdl177_2_relativevaluemodel_ttmfcfp,MATRIX,TTM Free Cash Flow-to-Price; trailing 12-month free cash flow per share divided by month-end trading price. Free cash flow is operating cash flow minus capital expenditures and cash dividends,0.9896,620,186,189.42885390360772
+option9,pcr_vol_10,MATRIX,"Ratio of total put option volume to call option volume for options expiring in 10 days, reflecting very short-term sentiment flow",0.981,523,304,189.31647572624746
+option9,forward_price_1080,MATRIX,"Synthetic forward price at 1080 days derived from at-the-money call and put option prices, reflecting market consensus for the underlying at that tenor",0.9796,525,308,189.27971851186584
+analyst4,anl4_ebit_low,MATRIX,Earnings before interest and taxes - The lowest estimation,0.7097,3918,1213,189.21429784009354
+news12,nws12_prez_4p,VECTOR,The minimum of L or S above for 4-minute bucket,0.9199,806,426,189.20715674884264
+analyst4,anl4_dez1qfv4_preest,VECTOR,The previous estimation of finanicial item,0.964,518,419,189.12031238804593
+analyst4,anl4_cuo1detailafv110_item,VECTOR,Financial item,0.688,3926,1798,189.03124171553276
+news12,nws12_mainz_curr_vol,VECTOR,Current day's session volume,0.9733,518,331,188.87471367624136
+analyst4,anl4_capex_high,MATRIX,Capital Expenditures - The highest estimation,0.6173,8457,1538,188.85312084951875
+news12,news_post_vwap,MATRIX,Post-session volume-weighted average price,0.9705,557,298,188.79580749076652
+model53,mdl53_jc5_3month,MATRIX,Annualized default probability at the 3-month horizon (percentage),0.965,869,134,188.71130600867843
+option9,forward_price_360,MATRIX,"Synthetic forward price at 360 days derived from put-call parity using ATM call and put prices, reflecting the market-consensus forward expectation of the underlying",0.9796,578,226,188.69777486313697
+option9,pcr_vol_1080,MATRIX,Ratio of put volume to call volume on a stock's options with expiration 1080 days in the future.,0.981,502,291,188.6896707123388
+analyst4,est_sales,MATRIX,Sales - mean of estimations,0.7458,2789,1043,188.67204259036703
+pv13,pv13_h_min30_3000_mapped_sector,GROUP,grouping fields,1.0,532,173,188.5804907377311
+analyst4,actual_sales_value_quarterly,MATRIX,Sales - Value in financial services income statement (in millions),1.0,421,276,188.57014067129683
+option9,option_breakeven_120,MATRIX,"Weighted mean breakeven price for combined call and put options with expiration 120 days in the future, based on recent bid/ask mid-prices and weighted by open interest or volume",0.9835,540,233,188.56079836525333
+model77,mdl177_2_deepvaluefactor_fwdep,MATRIX,Forward 12-month earnings-to-price ratio (mean consensus EPS divided by trading price),0.9709,541,291,188.42642902573786
+option9,option_breakeven_270,MATRIX,The weighted mean price at which buyers of call and put options combined break even at 270 days to expiry based on recent bid/ask prices,0.9835,577,192,188.2591896312482
+model77,mdl177_2_vma2_vma2_va,MATRIX,"Value Analyst II composite score aggregating valuation-oriented subscores (Earnings Quality, Earnings Valuation, Financial Statement Valuation, Investor Sentiment)",1.0,525,166,188.2429811894609
+news12,news_mins_3_pct_up,MATRIX,Number of minutes before the price increased by at least 3 percent after the news release,0.9209,737,400,188.09924538253756
+analyst4,est_epsr,MATRIX,GAAP Earnings per share - mean of estimations,0.7405,2862,968,188.027576110435
+model77,mdl177_relativevaluemodel_ttmfcfp,MATRIX,Trailing Twelve Month Free Cash Flow-to-Price; trailing 12-month free cash flow per share divided by month-end trading price,0.9896,544,181,187.98789138201641
+analyst4,anl4_capex_low,MATRIX,Capital Expenditures - The lowest estimation,0.6173,7535,1626,187.97693369865715
+news12,news_mins_5_pct_dn,MATRIX,Number of minutes before the price decreased by at least 5 percent after the news release,0.8467,1212,637,187.97021050616445
+analyst4,anl4_ebit_high,MATRIX,Earnings before interest and taxes - The highest estimation,0.7097,3358,1285,187.96044542011077
+option9,option_breakeven_20,MATRIX,Price at which a stock's options with expiration 20 days in the future break even based on its recent bid/ask mean,0.9835,458,286,187.93791317940355
+news12,nws12_mainz_mktcap,VECTOR,Reported market capitalization for the calendar day of the session,0.9726,627,187,187.86761147883175
+pv13,pv13_hierarchy_min2_focused_pureplay_3000_513_sector,GROUP,grouping fields,0.9929,400,302,187.79827830061254
+option9,forward_price_270,MATRIX,Synthetic forward price at 270 days expiry derived from ATM calls and puts reflecting the market-consensus forward expectation,0.9796,515,233,187.69767323160414
+news12,news_mins_7_5_pct_dn,MATRIX,Number of minutes elapsed before price decreases by 7.5 percentage points after the event,0.8817,914,519,187.62838471063256
+option9,forward_price_120,MATRIX,Synthetic forward price at 120 days derived from at-the-money call and put options reflecting the market's forward expectation of the underlying security,0.9796,429,331,187.6235269314585
+option9,option_breakeven_1080,MATRIX,Open-interest-weighted mean breakeven price at which buyers of calls and puts combined break even for options expiring in 1080 days,0.9835,525,203,187.59361209659818
+model77,mdl177_2_sensitivityfactor400_rev3my2std,MATRIX,"3-M Revision in FY2 EPS Forecasts: Dispersion Relative : It is defined as the change in a stock's current analysts mean earnings estimate for fiscal year 2 less that of three months ago, scaled by the standard deviation of analyst forecasts as of three months ago.",0.932,1022,150,187.59134684359088
+option9,pcr_vol_360,MATRIX,Ratio of put volume to call volume on a stock's options with expiration 360 days in the future,0.981,470,261,187.49030345896966
+analyst4,est_capex,MATRIX,Capital Expenditures - mean of estimations,0.6427,5859,1464,187.47710143296646
+news12,news_mins_4_pct_up,MATRIX,Number of minutes before the price increased by at least 4 percent after the news release,0.9673,522,277,187.4639202091024
+model77,mdl177_garpanalystmodel_qgp_roefcf,MATRIX,"Combined measure of profitability (ROE) and cash flow (FCF), ranking stocks by both financial quality factors",1.0,450,191,187.40215025516568
+model16,composite_factor_score_derivative,MATRIX,Momentum score based on analyst revisions; intraday variant,1.0,379,269,187.3938223221962
+news18,nws18_qmb,VECTOR,"Editorials and commentary score indicating stance or sentiment (-1, 0, +1)",1.0,482,165,187.36010547830844
+option9,option_breakeven_180,MATRIX,"Weighted mean break-even price for combined call and put options expiring in 180 days, based on recent bid/ask prices",0.9835,487,225,187.35582905489292
+analyst4,anl4_cfo_low,MATRIX,Cash Flow From Operations - The lowest estimation,0.6232,6985,1471,187.30852075011188
+news12,news_mins_20_pct_up,MATRIX,Number of minutes that elapsed before price went up 20 percentage points,0.9673,491,303,187.29992567195418
+model77,mdl177_growthanalystmodel_qga_opmarginsales_alt,MATRIX,"The relationship between operating margin and sales, indicating operational profitability as a proportion of sales",1.0,412,221,187.24786283897174
+option9,option_breakeven_30,MATRIX,"Open-interest-weighted average breakeven price of all call and put options expiring in 30 days, representing the price at which option buyers collectively break even",0.9835,455,246,187.12186977828378
+news12,news_mov_vol,MATRIX,30-day moving average of session volume,0.8046,1721,618,187.11294321329973
+news12,news_ton_high,MATRIX,Highest price reached during the session before the time of news,0.9707,499,261,187.0578035030274
+pv1,adjfactor,MATRIX,Adjustment factor applied to historical prices and dividends to account for splits and other corporate actions,1.0,484,153,187.026251921443
+option9,forward_price_150,MATRIX,Synthetic forward price at 150 days derived from at-the-money call and put options reflecting the market's forward expectation of the underlying security,0.9796,446,269,186.97769574112758
+option9,forward_price_60,MATRIX,Synthetic forward price at 60 days derived from at-the-money call and put options reflecting the market's forward expectation of the underlying security,0.9796,443,271,186.94725595580223
+option9,call_breakeven_90,MATRIX,Price at which a stock's call options with expiration 90 days in the future break even based on its recent bid/ask mean,0.9824,427,275,186.93323628440373
+analyst4,anl4_fs_detail_estimates_basic_qf_delay1_v4_nd_sales_number,MATRIX,Number of Sales estimates,0.9852,389,313,186.9284323207782
+option9,put_breakeven_120,MATRIX,Price at which a stock's put options with expiration 120 days in the future break even based on its recent bid/ask mean,0.9795,442,267,186.84063260300564
+news12,nws12_prez_5p,VECTOR,The minimum of L or S above for 5-minute bucket,0.9199,614,451,186.77463357722635
+option9,put_breakeven_90,MATRIX,Open-interest-weighted mean breakeven price at which buyers of put options break even for options expiring in 90 days,0.9795,453,250,186.75823667607239
+analyst4,anl4_bac1detailrec_item,VECTOR,Financial item,0.7128,2880,1290,186.7547893050785
+model77,mdl177_5shortsentimentfactor_dmd_conc,MATRIX,Demand value concentration: degree to which borrowing demand is concentrated among a few borrowers,1.0,534,114,186.5473281107763
+news12,news_ton_low,MATRIX,Lowest price reached during the session before the time of news,0.9707,481,247,186.4165848713309
+model77,mdl177_2_deepvaluefactor_ttmocfp,MATRIX,Trailing 12-month operating cash flow per share divided by trading price,1.0,374,225,186.37193525606554
+model16,cashflow_efficiency_rank_derivative,MATRIX,Ranks stocks by their ability to generate cash flows and operational profitability,1.0,355,247,186.31645103934522
+model77,mdl177_fa_fc_fwdep,MATRIX,Leading 12-Month Mean Earnings Yield: Next 4-quarter mean consensus earnings estimate divided by trading price,0.9712,537,191,186.28606246175673
+option9,pcr_vol_120,MATRIX,Ratio of put options volume to call options volume for contracts expiring in 120 days on a stock's options,0.981,397,285,186.24447910694363
+model77,mdl177_valanalystmodel_qva_chgacc,MATRIX,Change in Net Op Working Capital Rank,1.0,434,162,186.22221131492066
+model77,mdl177_deepvaluefactor_fcfp_alt,MATRIX,Leading 12-Month Median Earnings Yield,0.9611,512,254,186.21907617749983
+option9,put_breakeven_720,MATRIX,Weighted mean breakeven price of put options expiring in 720 days indicating the put buyers break-even price based on recent bid/ask,0.9795,414,260,186.05538723892045
+pv13,pv13_h_min52_3000_sector,GROUP,grouping fields,1.0,478,129,186.05467822638707
+model16,earnings_certainty_rank_derivative,MATRIX,Measures the sustainability and certainty of earnings quality,1.0,361,226,186.04119220566474
+news12,news_mins_1_chg,MATRIX,Minimum number of minutes taken for price to move (up or down) 1 percentage point after the event,0.9175,657,356,186.03072822215134
+model53,mdl53_jc5_7year,MATRIX,Annualized default probability at the 7-year horizon (percentage),0.965,569,181,185.97639704366992
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_netprofit_number,MATRIX,Net Profit - number of analyst estimates,0.9409,488,396,185.93330629818468
+analyst4,anl4_basicconafv110_pu,VECTOR,The number of upper estimations,0.7343,2118,1277,185.78225375737037
+option9,put_breakeven_30,MATRIX,The weighted mean break-even price of put options expiring in 30 days based on recent bid/ask prices,0.9795,404,257,185.75366859567347
+analyst4,anl4_epsr_high,MATRIX,GAAP Earnings per share - The highest estimation,0.7153,2575,1252,185.73641064672276
+news12,nws12_prez_mov_vol,VECTOR,30-day moving average session volume,0.9123,693,331,185.68039444965052
+model77,mdl177_2_sensitivityfactor400_ney,MATRIX,"Normalized Earnings Yield : It is defined as the average of three normalized earnings calculated by ROE, NPM and EPS FY2, scaled by price.",0.851,1113,437,185.66821875675453
+option9,pcr_vol_all,MATRIX,"Ratio of total put option volume to call option volume aggregated across all maturities, measuring short-term options flow sentiment",0.981,411,236,185.65053419917092
+model77,mdl177_2_valueanalystmodel_qva_composite,MATRIX,Composite rank combining multiple value analyst measures for overall scoring,1.0,424,149,185.57406815972544
+socialmedia12,snt_value_fast_d1,MATRIX,"Negative sentiment score/indicator for current day, with missing values filled as 0",0.9769,384,282,185.44966783109405
+model77,market_volatility_index,MATRIX,Sensitivity of stock or portfolio to market volatility as measured by the VIX index,0.9819,381,257,185.40900401067384
+socialmedia12,scl12_sentiment_fast_d1,MATRIX,sentiment,0.9756,391,275,185.37462272649037
+analyst4,anl4_fs_actuals_advanced_af_nd_currency,MATRIX,Pricing currency in which the security trades,1.0,312,264,185.36068103533265
+model77,mdl177_2_sensitivityfactor400_earnshortfall,MATRIX,"Earnings Shortfall : It is defined as the difference between reported accounting earnings and free cash flow, scaled by average assets.",0.9905,492,128,185.35415376223528
+option9,forward_price_90,MATRIX,"Synthetic forward price at 90 days derived from put-call parity using ATM call and put prices, reflecting the market-consensus forward expectation of the underlying",0.9796,403,233,185.25075435640002
+model77,mdl177_deepvaluefactor_estep_alt,MATRIX,TTM EBITDA-to-Price,0.9772,402,244,185.21565667219048
+option9,put_breakeven_360,MATRIX,Open-interest-weighted mean breakeven price at which buyers of put options break even for options expiring in 360 days,0.9795,406,227,185.18485999919815
+model77,forward_two_year_eps_growth_rate,MATRIX,"Projected two-year-ahead EPS growth, defined as the difference between FY2 and FY1 forecasted earnings scaled by price",1.0,299,267,184.9927596491163
+analyst4,anl4_totassets_low,MATRIX,Total Assets - The lowest estimation,0.7213,2287,1196,184.92220205278676
+news12,nws12_allz_newrecord,VECTOR,Tracks whether the news is first instance or a duplicate,0.9745,387,262,184.92082355712157
+analyst4,earnings_per_share_average,MATRIX,Earnings per share - mean of estimations,1.0,312,236,184.8023326110772
+model77,mdl177_v1_400_yoychgda,MATRIX,Year-over-year change in leverage: difference between most recent quarterly total liabilities as a percentage of total assets and the same percentage one year ago,1.0,473,102,184.78571815809894
+analyst4,sales_min_guidance_quarterly,MATRIX,Minimum guidance value for Sales,1.0,314,226,184.65047647566334
+option9,put_breakeven_150,MATRIX,Open-interest-weighted mean breakeven price at which buyers of put options break even for options expiring in 150 days,0.9795,407,199,184.5542585767818
+model77,mdl177_deepvaluefactor_fwdep_alt,MATRIX,Forward 12-month Earnings-to-Price: next four quarters’ mean consensus EPS divided by price,0.9761,416,200,184.4573867582834
+analyst4,actual_sales_value_annual,MATRIX,Sales - Actual Value,0.9943,316,240,184.44300240622607
+option9,put_breakeven_60,MATRIX,"Price at which a stock's put options with expiration 60 days in the future break even based on its recent bid/ask mean, weighted by open interest or volume",0.9795,384,218,184.42779199196033
+analyst4,est_netprofit_adj,MATRIX,Adjusted net income - Mean of estimations,0.7731,1516,864,184.36854732814473
+model77,mdl177_2_deepvaluefactor_f12mepssev,MATRIX,Forward 12-month earnings per share divided by enterprise value,0.9626,478,195,184.36757927026173
+model77,mdl177_2_valuemomemtummodel_vma_composite,MATRIX,Value Momentum Composite,1.0,320,205,184.35379207524807
+option9,put_breakeven_20,MATRIX,"Price at which a stock's put options with expiration 20 days in the future break even based on its recent bid/ask mean, weighted by open interest or volume",0.9795,365,235,184.2954923591417
+model77,mdl177_valanalystmodel_qva_incstmt,MATRIX,Income Stmt Rank,1.0,352,167,184.28450046634927
+model77,mdl177_fa_fc_fcfp,MATRIX,"Forward Free Cash Flow-to-Price: Next 4-quarter mean consensus earnings estimate plus trailing 12-month depreciation expense per share minus capital expenditures, divided by trading price",0.9524,477,234,184.23403489563538
+analyst4,anl4_fs_detail_estimates_basic_qf_v4_nd_sales_number,MATRIX,Sales - number of estimations,0.9852,320,268,184.20796812930936
+option9,option_breakeven_360,MATRIX,"Open-interest-weighted average breakeven price of all call and put options expiring in 360 days, representing the price at which option buyers collectively break even",0.9835,406,172,184.20458982691486
+news12,news_mins_4_pct_dn,MATRIX,Number of minutes before the price decreased by at least 4 percent after the news release,0.971,386,238,184.06656468995538
+model77,mdl177_2_sensitivityfactor400_chgqtrepssurp,MATRIX,"Change in Real Earnings Surprise : It is defined as the change in quarterly earnings surprise (Actual EPS - Consensus Estimate EPS), scaled by the most recent closing price.",0.9392,570,206,184.05748606288694
+socialmedia12,scl12_alltype_buzzvec,VECTOR,sentiment volume,0.9525,439,265,184.03522881303155
+earnings4,ern4_1000dclshv,VECTOR,"1000-day close-to-close historical volatility, annualized percent",0.9692,480,157,183.99164786619247
+model77,mdl177_2_managementqualityfactor_ollev,MATRIX,Operating liability leverage: 1 minus the ratio of (short-term debt + long-term debt + common equity + preferred equity - cash) to (total assets - cash) in the current quarter,1.0,398,120,183.86856689688236
+model77,mdl177_2_sensitivityfactor400_y2aepsgpc,MATRIX,"Percentage change in consensus analyst EPS forecast from fiscal year 1 to fiscal year 2, normalized by year 1 forecast (forward growth rate)",0.9895,366,175,183.85603845573644
+option9,pcr_vol_60,MATRIX,"Ratio of total put options volume to call options volume for contracts expiring 60 days in the future, indicating short-term options flow sentiment",0.981,335,245,183.79776927929385
+analyst4,sales_max_guidance_quarterly,MATRIX,The maximum guidance value for sales.,1.0,280,239,183.7867413100474
+model53,mdl53_jc5_5year,MATRIX,Annualized default probability at the 5-year horizon (percentage),0.965,444,191,183.76821968180133
+model77,mdl177_earningsqualityfactor_ttmaccu_alt,MATRIX,Trailing twelve months accruals (earnings quality measure based on accruals),1.0,415,108,183.76359201375837
+model77,mdl177_fangma_emf_usa_fangma_emf25,MATRIX,"Earnings momentum factors 25 for FANGMA (Facebook, Apple, Netflix, Google, Mircosoft, Amazon)",1.0,363,140,183.71533812825825
+analyst4,anl4_netprofit_low,MATRIX,Net Profit - The Lowest Estimation,0.7667,1469,891,183.5675074606279
+news12,nws12_allz_provider,VECTOR,index of name of the news provider,0.9745,359,225,183.41371531086298
+option9,put_breakeven_180,MATRIX,"Weighted mean breakeven price of put options expiring in 180 days derived from open interest or volume, indicating the price at which put buyers break even",0.9795,346,215,183.3196398378894
+pv13,pv13_rha2_min5_sector,GROUP,grouping fields,0.722,2048,1056,183.2670214117402
+news12,nws12_prez_provider,VECTOR,index of name of the news provider,0.9199,565,261,183.21766330083733
+model53,mdl53_jc6_7year,MATRIX,Annualized default probability at the 7-year horizon (percentage) from the Kamakura Jarrow–Chava v6 model for US issuers,0.9147,1070,79,183.1436138778469
+news18,nws18_event_similarity_days,VECTOR,"Number of days since a similar event was last detected within the past 365 days, up to 5 decimals",0.8999,623,315,183.13021475162884
+option9,option_breakeven_90,MATRIX,Open-interest-weighted mean breakeven price at which buyers of calls and puts combined break even for options expiring in 90 days,0.9835,346,189,183.07836816027103
+option9,pcr_vol_150,MATRIX,"Ratio of total put options volume to call options volume for options expiring in 150 days, reflecting short-term options flow sentiment",0.981,347,195,183.01259809389734
+model77,mdl177_fa_saleicap,MATRIX,Trailing 12-Month Sales to Invested Capital: Sales over the past 12 months divided by invested capital,1.0,312,162,182.93078290943535
+model77,mdl177_2_deepvaluefactor_ttmfcfp,MATRIX,Trailing 12-month free cash flow per share divided by month-end trading price (operating cash flow minus capital expenditures and cash dividends),1.0,325,149,182.92215028414836
+analyst4,anl4_gric_value,MATRIX,Gross income- announced financial value,0.6954,2206,1444,182.91321706530002
+model53,mdl53_jc5_3year,MATRIX,Annualized default probability at the 3-year horizon (percentage),0.965,540,108,182.89093219961055
+model77,mdl177_valanalystmodel_qva_shortfall,MATRIX,Rank related to earnings shortfalls (occurrence/size),1.0,345,128,182.76344977238563
+option9,pcr_vol_30,MATRIX,Ratio of put volume to call volume on a stock's options with expiration 30 days in the future,0.981,327,206,182.69373005016826
+option9,put_breakeven_270,MATRIX,Weighted mean breakeven price of put options expiring in 270 days indicating the break even price for put buyers based on recent bids and asks,0.9795,360,175,182.69119955851954
+model77,mdl177_2_sensitivityfactor400_chg12mtotdebt,MATRIX,Relative change in total debt (sum of long-term and short-term debt) over the past 12 months,0.9926,365,128,182.58539535582202
+analyst4,anl4_fsdtlestmtbscv104_item,VECTOR,Financial item,0.8087,910,810,182.50676924317665
+analyst4,anl4_fs_guidances_advanced_qf_nd_netprofita_maxguidance,MATRIX,Maximum guidance value for Adjusted net income,1.0,262,211,182.5044716951377
+model53,mdl53_jc5_1month,MATRIX,Annualized default probability at the 1-month horizon (percentage),0.965,493,120,182.50430789986294
+news12,nws12_prez_57s,VECTOR,Number of minutes that elapsed before price went down 7.5 percentage points,0.9199,451,355,182.5014754525825
+model77,mdl177_2_relativevaluemodel_fc_estep,MATRIX,Leading 12-Month Median Earnings Yield; median consensus earnings estimate for the next fiscal year divided by trading price,0.9743,358,188,182.471958960181
+pv13,pv13_ustomergraphrank_hub_rank,MATRIX,the HITS hub score of customers,0.7906,1123,742,182.35997052812516
+news12,news_short_interest,MATRIX,Ratio of total number of shares sold short to total shares outstanding,0.872,637,451,182.35179373260905
+model77,mdl177_2_managementqualityfactor_equityto,MATRIX,Equity Turnover: trailing 12-month sales divided by average trailing 12-month reported book equity,1.0,288,167,182.28408677814062
+model77,mdl177_valueanalystmodel_qva_composite_alt,MATRIX,Overall composite rank summarizing multiple Value Analyst signals for a stock,1.0,312,142,182.27625505670107
+news12,nws12_prez_1p,VECTOR,The minimum of L or S above for 1-minute bucket,0.9199,507,267,182.24974937833912
+model53,mdl53_jc5_2year,MATRIX,Annualized default probability at the 2-year horizon (percentage),0.965,423,155,182.24661458856727
+model53,mdl53_jc5_6month,MATRIX,Annualized default probability at the 6-month horizon (percentage),0.965,478,121,182.23711119777545
+news12,nws12_mainz_02l,VECTOR,Number of minutes that elapsed before price went up 20 percentage points,0.9741,351,187,182.22852157013074
+model77,mdl177_valuemomemtummodel_vma_composite,MATRIX,Primary composite score combining value and momentum modules/signals into a unified ranking for each stock,1.0,277,176,182.1569597997755
+model53,mdl53_ms5_10year,MATRIX,"Annualized default probability at the 10-year horizon from Kamakura’s Merton structural model v5 (MS5), reported in percent",0.9709,532,84,182.08847052411005
+pv13,pv13_ustomergraphrank_page_rank,MATRIX,the PageRank of customers,0.7906,1082,745,182.00853047102868
+option9,pcr_vol_20,MATRIX,"Ratio of put option volume to call option volume for options expiring in 20 days, signaling short-term options flow sentiment",0.981,305,206,181.99944498585063
+analyst4,anl4_netprofita_mean,MATRIX,Adjusted net income - mean of estimations,0.7511,1428,937,181.9760515243298
+pv13,pv13_rha2_min2_sector,GROUP,grouping fields,0.722,1846,994,181.92689348778535
+option9,pcr_vol_90,MATRIX,"Ratio of put options volume to call options volume for stock options expiring in 90 days, indicating short-term options flow sentiment",0.981,281,239,181.9222653260911
+option9,option_breakeven_60,MATRIX,The weighted mean price at which buyers of call and put options combined break even at 60 days to expiry based on recent bid/ask prices,0.9835,308,186,181.8389558532504
+option9,option_breakeven_150,MATRIX,Price at which a stock's options with expiration 150 days in the future break even based on its recent bid/ask mean,0.9835,329,161,181.7789082207672
+model77,mdl177_2_pricemomentumfactor_indrelrtn5d_,MATRIX,"Stock's 5-day return minus industry average 5-day return, scaled by industry standard deviation, reflecting industry-relative momentum",1.0,368,92,181.77096390617157
+news12,nws12_prez_4s,VECTOR,Number of minutes that elapsed before price went down 4 percentage points,0.9199,519,216,181.42777488345706
+model53,mdl53_ms5_7year,MATRIX,"Annualized default probability at the 7-year horizon from Kamakura’s Merton structural model v5 (MS5), reported in percent",0.9709,462,97,181.39210793421518
+model77,mdl177_v1_400_visiratio,MATRIX,Visibility ratio: most recent daily trading volume divided by average daily trading volume over previous 50 days; measures trading activity relative to norm,1.0,298,129,181.34210798618477
+analyst4,anl4_ebit_median,MATRIX,Earnings before interest and taxes - median of estimations,0.7097,1952,999,181.27999570367749
+model77,mdl177_historicalgrowthfactor_chgnpm_alt,MATRIX,Most recent quarterly net profit margin minus net profit margin from four quarters ago,0.9621,414,140,181.23658465419783
+model77,mdl177_2_deepvaluefactor_ttmfcfev,MATRIX,Trailing 12-month free cash flow divided by enterprise value,0.9955,307,130,181.2269844457415
+model77,mdl177_5shortsentimentfactor_conc_ratio,MATRIX,"Short Concentration Ratio: measures the degree to which short interest is concentrated in a limited number of stocks, indicating potential crowding risk in short positions",1.0,317,111,181.21300818427724
+socialmedia12,scl12_buzz_fast_d1,MATRIX,relative sentiment volume,0.9756,294,210,181.18904423077853
+pv1,ticker,SYMBOL,Ticker,1.0,293,129,181.17346992566473
+model53,mdl53_ms5_6month,MATRIX,"Annualized default probability at the 6-month horizon from Kamakura’s Merton structural model v5 (MS5), reported in percent",0.9709,460,93,181.1404543413165
+model16,multi_factor_acceleration_score_derivative,MATRIX,Change in the acceleration of multi-factor score compared to previous period.,1.0,243,186,181.12722533720495
+analyst4,anl4_qf_az_eps_mean,MATRIX,Earnings per share - mean of estimations,0.7848,1117,650,181.0655147481933
+analyst4,anl4_basicconqfv110_numest,VECTOR,The number of forecasts counted in aggregation,0.7262,1469,1151,180.796451004007
+model16,growth_potential_rank_derivative,MATRIX,Composite growth score qualifying the stock’s expected medium‑term growth potential,1.0,240,177,180.756887086367
+model77,mdl177_fa_equityto,MATRIX,Equity Turnover Ratio,1.0,273,134,180.65765495607283
+option9,option_breakeven_720,MATRIX,Price at which a stock's options with expiration 720 days in the future break even based on its recent bid/ask mean,0.9835,297,157,180.6339100301889
+model77,mdl177_5shortsentimentfactor_inv_conc,MATRIX,Inventory value concentration: degree to which lending inventory is concentrated among a few lenders,1.0,313,101,180.6187939255039
+pv13,pv13_revere_index_value,MATRIX,Value of specified index for the date,0.8603,598,456,180.6060329356255
+option9,pcr_vol_720,MATRIX,Ratio of put options volume to call options volume for contracts expiring in 720 days on a stock's options,0.981,271,197,180.59935581643265
+analyst4,anl4_basicconltv110_numest,VECTOR,The number of forecasts counted in aggregation,0.7004,1719,1319,180.46773077597706
+analyst4,anl4_detailrecv4v104_est,VECTOR,Estimation value,0.7885,1001,662,180.43140776737738
+analyst4,anl4_netprofit_median,MATRIX,Net profit - Median of estimations,0.7667,1129,797,180.38027210431292
+model53,mdl53_jm5_1year,MATRIX,1-year annualized default probability (percentage) from Kamakura hybrid Jarrow–Merton v5 model,0.965,435,100,180.35202501769663
+analyst4,anl4_bvps_number,MATRIX,Book value per share - number of estimations,0.6499,2303,1952,180.2996298725412
+model53,mdl53_ms5_3month,MATRIX,"Annualized default probability at the 3-month horizon from Kamakura’s Merton structural model v5 (MS5), reported in percent",0.9709,458,79,180.29063527397486
+analyst4,est_ebit,MATRIX,Earnings before interest and taxes - mean of estimations,0.7309,2158,432,180.2176929451605
+analyst4,est_cashflow_op,MATRIX,Cash Flow From Operations - mean of estimations,0.6518,2645,1376,180.1263559403923
+news12,news_mins_3_chg,MATRIX,Minimum number of minutes taken for price to move (up or down) 3 percentage points after the event,0.9174,440,240,180.05443342192174
+analyst4,anl4_basicconqfv110_mean,VECTOR,Mean of estimations,0.7262,1309,1218,179.92675480935833
+model77,mdl177_fangma_mam_usa_fangma_mam4,MATRIX,"Momentum analyst model 5 for FANGMA (Facebook, Apple, Netflix, Google, Mircosoft, Amazon)",1.0,258,129,179.90595286927328
+analyst4,est_tot_assets,MATRIX,Total Assets - mean of estimations,0.7522,1342,685,179.9010001038618
+analyst4,anl4_fsdtlestmtbscqv104_item,VECTOR,Financial item,0.7904,1107,468,179.8961325153037
+model77,mdl177_valuemomemtummodel_reportedearningsmomentummodule,MATRIX,"Module tracking the momentum (trend, change, acceleration) in reported earnings, focusing on recent earnings announcements and their pattern",1.0,296,94,179.7067058460297
+model77,consensus_analyst_rating,MATRIX,Street Consensus Rating,0.9887,281,131,179.703080322313
+model77,mdl177_2_vma2_vma2_va_fs,MATRIX,"Financial Statement Valuation subscore within the Value Analyst II component, based on ratios from financial statements (e.g., book, earnings, cash flow)",1.0,263,119,179.69694974537336
+analyst4,anl4_basicconqfv110_down,VECTOR,Number of lower estimations,0.7262,1296,1176,179.6517123794658
+news12,nws12_afterhsz_57s,VECTOR,Number of minutes that elapsed before price went down 7.5 percentage points,0.707,2104,650,179.61325567220766
+fundamental2,fn_accum_oth_income_loss_net_of_tax_a,MATRIX,"Accumulated change in equity from transactions and other events and circumstances from non-owner sources, net of tax effect, at period end. Excludes Net Income (Loss), and accumulated changes in equity from transactions resulting from investments by owners and distributions to owners. Includes foreign currency translation items, certain pension adjustments, unrealized gains and losses on certain investments in debt and equity securities, other than temporary impairment (OTTI) losses related to factors other than credit losses on available-for-sale and held-to-maturity debt securities that an entity does not intend to sell and it is not more likely than not that the entity will be required to sell before recovery of the amortized cost basis, as well as changes in the fair value of derivatives related to the effective portion of a designated cash flow hedge.",0.6936,1932,1004,179.5919988945492
+model53,mdl53_ms5_3year,MATRIX,"Annualized default probability at the 3-year horizon from Kamakura’s Merton structural model v5 (MS5), reported in percent",0.9709,454,68,179.46350671249579
+news18,nws18_acb,VECTOR,News sentiment specializing in corporate action announcements,0.903,538,190,179.45852284932312
+model77,mdl177_2_deepvaluefactor_bp,MATRIX,Book value per share divided by month-end trading price (book-to-market ratio),1.0,239,137,179.44265765920593
+analyst4,anl4_cuo1detailqfv110_item,VECTOR,Financial item,0.6295,2855,1599,179.4105677757341
+model16,relative_valuation_rank_derivative,MATRIX,Assesses whether the stock is under or overpriced based on standard valuation multiples indicator variant,1.0,229,148,179.40052461895925
+sentiment1,snt1_cored1_score,MATRIX,"Proprietary composite analyst score; bearish if < 5, bullish if > 5, neutral if between -5 and 5",0.6497,3831,590,179.39050147793802
+pv13,pv13_2l_scibr,GROUP,grouping fields,0.9385,362,202,179.36005823785746
+socialmedia12,snt_buzz_fast_d1,MATRIX,"Negative relative sentiment volume measure for current day, with missing values filled as 0",0.9769,239,213,179.32626930852916
+model77,asia_pacific_sales_exposure,MATRIX,Proportion of company sales from the Asia-Pacific region,0.7924,863,660,179.32449688729895
+model53,mdl53_ms5_1month,MATRIX,"Annualized default probability at the 1-month horizon from Kamakura’s Merton structural model v5 (MS5), reported in percent",0.9709,413,80,179.32090551161536
+model77,mdl177_2_surpriseanalystmodel_qsa_surpsn,MATRIX,"Rank of a company's earnings or revenue surprise, normalized relative to its sector (sector-neutral surprise analyst rank)",0.9754,368,92,179.31096390617154
+model77,mdl177_fangma_dvm_usa_fangma_dvm5,MATRIX,"Deep value model 5 for FANGMA (Facebook, Apple, Netflix, Google, Mircosoft, Amazon)",1.0,272,101,179.21958201827096
+analyst4,max_shareholders_equity_guidance,MATRIX,The maximum guidance value for Total Shareholders' Equity.,1.0,205,178,179.2156907170996
+model77,mdl177_relativevaluemodel_fc_estep,MATRIX,Leading 12-Month Median Earnings Yield; calculated as next fiscal year median consensus earnings estimate divided by trading price,0.9743,279,160,179.18491785661482
+model77,mdl177_historicalgrowthfactor_chgepsp_alt,MATRIX,"Difference between most recent trailing 12-month earnings per share and 4 quarters ago, divided by month-end trading price",0.9993,342,64,179.17924082113757
+model77,mdl177_surpriseanalystmodel_qsa_surpsn,MATRIX,Surprise Analyst Sector-Neutral Rank,0.9754,369,89,179.174078408034
+news12,nws12_prez_5l,VECTOR,Number of minutes that elapsed before price went up 5 percentage points,0.9199,420,208,179.12799959664787
+model77,mdl177_2_earningmomentumfactor400_q1aepsg,MATRIX,EPS growth estimate for next fiscal quarter,0.9172,473,173,179.12734971302342
+news12,news_mins_10_chg,MATRIX,"Minimum value among L or S for each minute bucket, indicating the fastest reaction time at the 10th percentile",0.7395,1631,512,179.12699458109438
+model77,mdl177_2_vma2_vma2,MATRIX,Value Momentum Analyst II overall composite score combining Value and Momentum components,1.0,266,103,179.09444107970936
+news12,news_all_vwap,MATRIX,"VWAP across all sessions (pre, main, post)",0.728,1582,676,179.0591269633715
+analyst4,actuals_reporting_currency,VECTOR,Home currency of instrument,0.9876,268,129,179.04478604829632
+news12,nws12_mainz_vol_ratio,VECTOR,Curr_Vol / Mov_Vol,0.9712,339,111,179.00195053257755
+model77,mdl177_garpanalystmodel_qgp_relpegy,MATRIX,"Rolling rank of PEGY ratios over a period, highlighting attractiveness based on earnings growth, price, and yield",1.0,286,86,178.92436275086914
+analyst4,est_shequity,MATRIX,Mean of SH Equity segment - mean of estimations,0.7598,1237,562,178.85892267314387
+model53,mdl53_jc5_4year,MATRIX,Annualized default probability at the 4-year horizon (percentage),0.965,324,130,178.7142384393031
+analyst4,operating_profit_max_guidance_qtr,MATRIX,The maximum guidance value for Earnings Before Interest and Taxes.,1.0,194,179,178.69477984008853
+model77,mdl177_2_sensitivityfactor400_chginvavgast,MATRIX,"12-month change in quarterly total inventory, normalized by the average assets between the most recent quarter-end and the same quarter one year prior",0.9051,562,136,178.44270091053755
+model77,mdl177_valueanalystmodel_qva_epmodule_alt,MATRIX,"Rank of cyclicality measures of a company’s earnings, indicating earnings stability or volatility",1.0,224,127,178.4211553416423
+model77,mdl177_valueanalystmodel_qva_composite,MATRIX,Overall composite rank aggregating Value Analyst factors for the stock,1.0,248,103,178.39648346035392
+analyst4,dividend_max_guidance_value,MATRIX,The maximum guidance value for Dividend per share on an annual basis.,1.0,203,153,178.3659629505103
+analyst4,operating_profit_before_depr_amort_min_guidance_qtr,MATRIX,"Minimum guidance value for Earnings before interest, taxes, depreciation and amortization",1.0,189,173,178.26551721767748
+model53,mdl53_jm5_3month,MATRIX,3-month annualized default probability (percentage) from Kamakura hybrid Jarrow–Merton v5 model,0.965,412,72,178.1867731353523
+model53,mdl53_ms5_5year,MATRIX,"Annualized default probability at the 5-year horizon from Kamakura’s Merton structural model v5 (MS5), reported in percent",0.9709,370,79,178.16215379944376
+model77,mdl177_2_earningmomentumfactor400_surp,MATRIX,"Earnings surprise: actual EPS minus forecast, scaled by price at quarter end",0.9467,305,189,178.14097138032625
+analyst4,anl4_adxqfv110_numest,VECTOR,The number of forecasts counted in aggregation,0.6979,1516,1118,178.1358533350449
+model77,mdl177_valueanalystmodel_qva_shortfall_alt,MATRIX,Rank reflecting the degree to which earnings fall short of expectations or guidance,0.9839,258,122,178.01920239385746
+model77,mdl77_shortsentimentfactor_act_util,MATRIX,Account Utility,0.9497,291,189,177.97265838348525
+news12,news_mins_3_pct_dn,MATRIX,Number of minutes before the price decreased by at least 3 percent after the news release,0.9174,371,221,177.94232545209286
+analyst4,operating_profit_before_depr_amort_max_guidance_qtr,MATRIX,"Max guidance value for Earnings before interest, taxes, depreciation and amortization",1.0,183,171,177.88682996015714
+model77,mdl177_2_industryrrelativevaluefactor_curindbp_,MATRIX,"Industry Relative Book-to-Market: Stock's current book-to-price ratio minus industry average, scaled by industry standard deviation",0.9902,238,123,177.88604334734026
+analyst4,anl4_total_rec,VECTOR,The total number of recommendations,0.6243,2540,1651,177.88183960360624
+model53,mdl53_jm5_2year,MATRIX,2-year annualized default probability (percentage) from Kamakura hybrid Jarrow–Merton v5 model,0.965,323,108,177.764174569069
+model77,mdl177_2_earningsqualityfactor_ttmaccu,MATRIX,"Difference between trailing 12-month net income and trailing 12-month operating cash flow, scaled by beginning total assets",1.0,250,88,177.6977112399785
+analyst4,anl4_netprofita_high,MATRIX,Adjusted Net Income - the highest estimation,0.7511,1048,732,177.65165459339624
+model53,mdl53_jc6_4year,MATRIX,Annualized default probability at the 4-year horizon (percentage) from the Kamakura Jarrow–Chava v6 model for US issuers,0.9147,418,173,177.64398569529402
+model77,mdl177_pricemomentumfactor_visiratio_alt,MATRIX,Visibility Ratio; most recent daily trading volume divided by average daily trading volume in prior 50 trading days,1.0,221,110,177.57442482528447
+model53,mdl53_jm5_7year,MATRIX,7-year annualized default probability (percentage) from Kamakura hybrid Jarrow–Merton v5 model,0.965,341,93,177.56458128197607
+model77,mdl177_deepvaluefactor_ttmocfp_alt,MATRIX,TTM Operating Cash Flow-to-Price: trailing 12-month operating cash flow per share divided by trading price,1.0,209,122,177.53199708403676
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_epsr_number,MATRIX,Number of EPS growth rate estimates,0.8623,463,391,177.48515472121485
+model77,mdl177_2_sensitivityfactor400_irttmsalesev,MATRIX,Stock's trailing 12 month sales-to-enterprise (SEV) value less the average of the SEVs of all stocks in the same industry deflated by the standard deviation of the SEVs of all stocks in the same relative universe.,0.9861,279,89,177.4569443833438
+news12,news_mins_4_chg,MATRIX,"Minimum value among L or S (minutes to reach positive/negative return thresholds) for each minute bucket, representing the fastest reaction time at the 4th percentile",0.9209,364,191,177.37645039596384
+news12,nws12_prez_allticks,VECTOR,Total number of ticks for the trading day,0.9199,350,210,177.357152902039
+pv13,pv13_new_6l_scibr,GROUP,grouping fields,0.9896,220,131,177.35563662810938
+model77,mdl177_earningsqualityfactor_ttmaccu,MATRIX,"Accounting accruals; trailing 12-month net income minus trailing 12-month operating cash flow, scaled by beginning total assets",1.0,236,92,177.34359887711759
+analyst4,anl4_dez1afv4_est,VECTOR,Estimation value,0.967,242,170,177.33893221591876
+model77,mdl177_vra_surpriseforecastmodule,MATRIX,Surprise Forecaster Module,1.0,301,56,177.31952651292144
+model77,mdl177_fa_ollev,MATRIX,Operating Liability Leverage: 1 minus the ratio of (short-term debt + long-term debt + common equity + preferred equity − cash) to (total assets − cash) in the current quarter; indicates operational leverage from liabilities,1.0,208,117,177.27676564197645
+model77,mdl177_2_sensitivityfactor400_rev3my1std,MATRIX,"The change in a stock's current analysts mean earnings estimate for fiscal year 1 less that of three months ago, scaled by the standard deviation of analyst forecasts as of three months ago.",0.9321,401,120,177.15347361417395
+analyst4,net_income_adjusted,MATRIX,Adjusted net income- announced financial value for annual frequency,0.9134,343,234,177.04434414445478
+fundamental2,fn_op_lease_rent_exp_a,MATRIX,"Rental expense for the reporting period incurred under operating leases, including minimum and any contingent rent expense, net of related sublease income.",0.6377,2446,1143,177.00761149412543
+model77,mdl177_fa_fc_f12mepssev,MATRIX,Forward 12-Month EPS-to-Enterprise Value: Consensus forward 12-month EPS forecast divided by market value of equity plus long-term debt per share,0.9629,275,133,176.98320765692606
+model77,mdl177_2_valueanalystmodel_qva_epmodule,MATRIX,"Rank based on cyclicality of company earnings, measuring how variable or stable earnings are",0.9984,200,123,176.97445690861593
+news12,news_mins_10_pct_up,MATRIX,Number of minutes before the price increased by at least 10 percent after the news release,0.6282,2542,1267,176.95697832920706
+model77,mdl177_vra2_dvm_composite,MATRIX,"Composite score measuring deep value characteristics for US equities, aggregating multiple valuation-related signals such as price-to-book, price-to-earnings, and other fundamental ratios",0.9916,268,77,176.89065792946633
+pv13,pv13_hierarchy_min2_pureplay_only_sector,GROUP,grouping fields,0.7036,1421,866,176.78339098753457
+model77,abnormal_return_earnings_release,MATRIX,Abnormal stock return around quarterly earnings release event,0.9992,202,114,176.77672043223413
+socialmedia12,snt_buzz_bfl_fast_d1,MATRIX,"Negative relative sentiment volume measure for current day, with missing values filled as 1",0.9998,174,151,176.7472623434665
+model77,mdl177_2_momemtumanalystmodel_qma_estrev,MATRIX,"Rank based on analyst estimate revisions, reflecting recent up and down changes to future EPS forecasts relative to total estimates",0.9716,255,121,176.63187966846192
+model53,mdl53_jm5_6month,MATRIX,6-month annualized default probability (percentage) from Kamakura hybrid Jarrow–Merton v5 model,0.965,347,74,176.60946536542627
+model77,mdl177_deepvaluefactor_ttmfcfp_alt,MATRIX,TTM Free Cash Flow-to-Price: trailing 12-month free cash flow per share divided by trading price,1.0,209,101,176.59593937359602
+pv13,pv13_ustomergraphrank_auth_rank,MATRIX,the HITS authority score of customers,0.7906,741,535,176.57416323702782
+analyst4,ebit_reported_value,MATRIX,Earnings Before Interest & Taxes - actual value for the quarter,0.9483,261,182,176.56087580181804
+model53,mdl53_ms5_4year,MATRIX,"Annualized default probability at the 4-year horizon from Kamakura’s Merton structural model v5 (MS5), reported in percent",0.9709,352,63,176.54909598613133
+model53,mdl53_jm5_3year,MATRIX,3-year annualized default probability (percentage) from Kamakura hybrid Jarrow–Merton v5 model,0.965,350,71,176.49119282973894
+model77,mdl177_deepvaluefactor_f12mepssev_alt,MATRIX,Cash to Enterprise Value,0.9682,249,132,176.48635481973122
+pv1,sedol,SYMBOL,Sedol,1.0,185,124,176.3990354236435
+model77,mdl177_vra_qsa_efficiency,MATRIX,"A quantitative ranking of a stock's fundamental efficiency, summarizing how well the company's financials reflect operational effectiveness and resource utilization",0.9899,277,67,176.3637496627869
+model53,mdl53_ms5_1year,MATRIX,"Annualized default probability at the 1-year horizon from Kamakura’s Merton structural model v5 (MS5), reported in percent",0.9709,321,73,176.35584092146496
+model77,mdl177_2_valuemomemtummodel_earningsvaluationmodule,MATRIX,Earnings Valuation Module,1.0,208,97,176.348179913001
+model53,mdl53_jc6_1year,MATRIX,Annualized default probability at the 1-year horizon (percentage) from the Kamakura Jarrow–Chava v6 model for US issuers,0.9147,482,100,176.34576912073203
+news12,news_curr_vol,MATRIX,Current day's session volume,0.7769,911,438,176.26889696611917
+model77,mdl177_valuemomemtummodel_earningsexpectationmodule,MATRIX,"Module capturing factors related to analyst or market expectations of future earnings, including consensus forecasts and changes",1.0,230,75,176.0778438066496
+model77,mdl177_5shortsentimentfactor_onloan_conc,MATRIX,"On Loan Concentration: degree to which stocks on loan (for short selling) are concentrated in a few names, signifying crowding and potential risk in short positions",1.0,224,79,176.07113719541363
+model53,mdl53_jc6_3month,MATRIX,Annualized default probability at the 3-month horizon (percentage) from the Kamakura Jarrow–Chava v6 model for US issuers,0.9147,572,66,176.00232026410222
+analyst4,pretax_income_standalone_value,MATRIX,Pretax Profit - actual value for the quarter,0.9431,241,211,175.98230863492694
+analyst4,dividend_min_guidance_value,MATRIX,Minimum guidance value for Dividend per share on an annual basis,1.0,167,138,175.91200945968606
+model16,multi_factor_static_score_derivative,MATRIX,Change in static multi-factor score compared to previous period.,1.0,172,130,175.90890256098353
+model77,mdl177_liquidityriskfactor_volto_alt,MATRIX,Trading turnover ratio: Monthly total trading volume divided by total outstanding shares (recent); velocity of share turnover,1.0,220,79,175.89176018854695
+model77,mdl177_2_deepvaluefactor_indidivy,MATRIX,Indicated dividend yield,1.0,195,100,175.85674917651147
+analyst4,anl4_dez1basicqfv4v104_est,VECTOR,Estimation value,0.7891,680,564,175.8297517172273
+model77,mdl177_garpanalystmodel_qgp_avgrating,MATRIX,"Average of analyst ratings for the stock, reflecting overall analyst sentiment or recommendation",1.0,185,108,175.71420614827773
+earnings4,ern4_ernmv2,VECTOR,"Stock price move on the second most recent past earnings date, expressed as a percentage change (float, decimal fraction)",0.9692,270,94,175.71057266679975
+model77,mdl177_2_managementqualityfactor_aspanratio,MATRIX,"Quarterly operating assets minus operating liabilities, divided by lagged total assets",0.9103,362,170,175.6823461251618
+model77,mdl177_2_liquidityriskfactor_yoychgda,MATRIX,"Year-over-year quarterly change in leverage, expressed as difference in total liabilities to total assets percentage from a year ago to current",1.0,228,70,175.65061942074897
+model77,mdl177_fa_aspanratio,MATRIX,Attention Span Ratio,0.9106,395,140,175.61794156443565
+analyst4,anl4_basicconltv110_pu,VECTOR,The number of upper estimations,0.7004,1262,926,175.6122190513342
+model77,mdl177_earningsmomemtummodel_fc_fcfroey1p_alt,MATRIX,"Product of trailing 12-month free cash flow yield and forward return on equity, scaled by stock price",1.0,245,60,175.60768468019018
+model77,mdl177_historicalgrowthfactor_chgepsp,MATRIX,"Difference between most recent trailing 12-month EPS and that 4 quarters ago, divided by month-end trading price",0.9976,255,58,175.59946166432422
+model77,mdl177_2_historicalgrowthfactor_chgeps,MATRIX,"Change in trailing twelve-month earnings per share (before extra items) from 4 quarters ago, scaled by average total assets per share",0.9966,246,63,175.54829878307814
+model77,mdl177_fa_ttmfcfev,MATRIX,TTM Free Cash Flow-to-Enterprise Value: Trailing twelve-month free cash flow divided by enterprise value,0.9958,213,85,175.51149663148604
+analyst4,anl4_cfo_median,MATRIX,Cash Flow From Operations - median of estimations,0.6232,2489,1091,175.49921067611177
+model77,mdl177_pricemomentumfactor_visiratio,MATRIX,Visibility Ratio: recent daily volume divided by average daily volume over prior 50 days (trading activity indicator),1.0,199,89,175.48222201713168
+model77,mdl177_2_vma2_vma2_va_ev,MATRIX,"Earnings Valuation subscore within the Value Analyst II component, focused on earnings-based valuation ratios (e.g., P/E, EV/EBITDA)",1.0,250,56,175.46978573049057
+news12,news_close_vol,MATRIX,Main session close volume,0.6909,1752,562,175.44723698991078
+model77,mdl177_pricemomentumfactor_volpre6m,MATRIX,Average trading volume over the preceding 6 months (trading activity measure),0.9991,241,60,175.35374658243342
+model77,mdl177_2_valueanalystmodel_qva_shortfall,MATRIX,"Rank based on earnings shortfall, flagging how much reported earnings fell below expectations",0.9789,209,119,175.29853402108492
+model77,mdl177_2_managementqualityfactor_reoa,MATRIX,Retained Earnings-to-Total Assets: cumulative retained earnings from most recent quarter divided by total assets from same quarter,1.0,203,82,175.27540297742513
+model53,mdl53_jm5_10year,MATRIX,10-year annualized default probability (percentage) from Kamakura hybrid Jarrow–Merton v5 model,0.965,281,85,175.19080719064868
+pv13,pv13_hierarchy_min2_focused_only_sector,GROUP,grouping fields,0.7036,1310,739,175.17870576862808
+model77,mdl177_deepvaluefactor_ttmfcfev_alt,MATRIX,TTM Free Cash Flow-to-Enterprise Value: trailing 12-month free cash flow divided by enterprise value,1.0,183,99,175.17520850603034
+model77,mdl177_industryrrelativevaluefactor_curindbp__alt,MATRIX,"A stock’s current book-to-price ratio minus the industry average, adjusted by dividing with the industry standard deviation (industry-relative book-to-market ratio standardized by industry)",0.9936,185,108,175.07420614827774
+model77,mdl177_fangma_emf_usa_fangma_emf30,MATRIX,"Earnings momentum factors 30 for FANGMA (Facebook, Apple, Netflix, Google, Mircosoft, Amazon)",1.0,220,66,175.00509011213236
+analyst4,anl4_qfv4_dts_spe,MATRIX,Earnings per share - standard deviation of estimations,0.7237,1056,734,175.00125235476656
+model77,mdl177_2_pricemomentumfactor_visiratio,MATRIX,"Stock's most recent daily volume divided by the average daily volume over prior 50 trading days, indicating current volume visibility or liquidity spike",1.0,188,89,174.91651850224775
+model77,mdl177_2_liquidityriskfactor_booklev,MATRIX,Book leverage ratio; reported quarterly total assets divided by book equity,1.0,188,89,174.91651850224775
+analyst4,basic_shares_max_guidance_qtr,MATRIX,The maximum guidance value for Basic Shares.,1.0,152,135,174.8676536426046
+model53,mdl53_jc6_2year,MATRIX,Annualized default probability at the 2-year horizon (percentage) from the Kamakura Jarrow–Chava v6 model for US issuers,0.9147,457,82,174.83289488012483
+model77,mdl177_2_garpanalystmodel_qgp_relgrowth,MATRIX,"Rank comparing a stock’s growth metrics to its peers, emphasizing relative growth within its universe",0.905,298,233,174.78104131069537
+model77,mdl177_2_garpanalystmodel_qgp_roefcf,MATRIX,Combined rank measuring both Return on Equity and Free Cash Flow to capture quality and profitability,0.9059,337,178,174.75738798403398
+model77,mdl177_valanalystmodel_qva_composite,MATRIX,Composite rank integrating multiple Value Analyst factors,1.0,196,79,174.7421704607493
+analyst4,earnings_per_share_reported_value,MATRIX,Reported Earnings Per Share - Actual Value,0.9902,168,131,174.7329967621626
+analyst4,anl4_cfo_high,MATRIX,Cash Flow From Operations - The highest value among forecasts,0.6232,2278,1114,174.71796871192794
+model77,mdl177_valuemomemtummodel_vm_compositesn,MATRIX,Value Momentum Composite SN,1.0,171,103,174.69689926384137
+model77,mdl177_fangma_gpam_usa_fangma_gpam10,MATRIX,A metric measuring long-term growth or profitability performance for a set of leading technology companies.,1.0,179,93,174.64604242025212
+news18,nws18_sse,VECTOR,Continuous sentiment score between -1.00 and +1.00 for the entity-event,0.8999,386,149,174.6274234007791
+pv13,pv13_new_5l_scibr,GROUP,grouping fields,0.9896,169,128,174.617046392311
+model77,mdl177_v1_400_curindbp_,MATRIX,"Industry relative book-to-market ratio: stock's book-to-price ratio minus industry average, deflated by standard deviation for industry",0.9905,181,109,174.59246869973006
+model77,mdl177_valueanalystmodel_qva_chgacc_alt,MATRIX,Rank of change in net operating working capital for a stock compared to peers,0.8143,882,157,174.57622717117445
+model77,mdl177_valanalystmodel_qva_finstmt,MATRIX,Financial Statement Rank,1.0,176,93,174.4779712370883
+analyst4,anl4_ady_numest,VECTOR,The number of forecasts counted in aggregation,0.7196,1024,754,174.41806766197024
+model77,mdl177_fa_ocfast,MATRIX,Operating Cash Flow to Assets: Ratio of operating cash flow over the period to total assets; measures how effectively assets generate cash flow,1.0,204,67,174.32763831726461
+model77,mdl177_valanalystmodel_qva_chginv,MATRIX,Change in Inventory Rank,1.0,232,51,174.26660312856416
+analyst4,net_income_total_2,MATRIX,Net profit- announced financial value for annual data,0.9728,177,152,174.250025109883
+model53,mdl53_jm5_4year,MATRIX,4-year annualized default probability (percentage) from Kamakura hybrid Jarrow–Merton v5 model,0.965,265,78,174.1822023501521
+model77,mdl177_2_liquidityriskfactor_nlprice,MATRIX,Natural logarithm of the cubic of a stock's unadjusted closing price,1.0,151,119,174.17626392237298
+model77,mdl177_valueanalystmodel_qva_shortfall,MATRIX,Rank of earnings shortfall compared to expectations or historical norms,0.9789,197,106,174.13681447925487
+news12,nws12_mainz_short_interest,VECTOR,Total number of shares sold short divided by total number of shares outstanding,0.8632,374,300,174.1248115834485
+analyst4,anl4_netprofit_mean,MATRIX,Net profit - mean of estimations,0.7667,736,528,174.0508210811849
+model77,mdl177_industryrrelativevaluefactor_curindbp_,MATRIX,"A stock's current book-to-price ratio minus the industry average, deflated by the industry's standard deviation of BPs",0.9902,185,94,174.0468511951347
+model77,mdl77_fangma_gpam11,MATRIX,to_fill,1.0,174,87,174.03454381162618
+news12,news_mins_1_pct_dn,MATRIX,Number of minutes before the price decreased by at least 1 percent after the news release,0.8309,598,219,174.01075371291628
+model77,mdl177_garpanalystmodel_qgp_valuation,MATRIX,"Rank showing the stock's valuation compared to peers, based on key valuation metrics",1.0,172,88,173.97609779363847
+model77,mdl177_earningmomentumfactor_qepsferr_alt,MATRIX,Forecast error for prior fiscal quarter’s earnings (actual EPS minus forecasted EPS),0.9174,282,171,173.93194136049965
+model77,mdl177_valueanalystmodel_qva_incstmt_alt,MATRIX,Rank based on a key income statement metric (operating income to enterprise value) compared to other stocks,0.9775,223,81,173.90005675487168
+model77,mdl177_2_liquidityriskfactor_numest,MATRIX,Number of financial analysts providing earnings estimates for the company for the current fiscal year,0.99,167,112,173.8765788875943
+model77,inverse_peg_ratio_2,MATRIX,Inverse of PEG Ratio,1.0,147,117,173.82554585996948
+model77,mdl177_2_deepvaluefactor_navp,MATRIX,Most recent net asset value per share divided by price,1.0,171,86,173.80448536140744
+model77,mdl177_5shortsentimentfactor_days_to_cover,MATRIX,"Days to Cover: number of days it would take for all current short positions to be repurchased (covered), given average trading volume; reflects potential risk of short squeezes",1.0,170,86,173.74617615829953
+news12,news_open,MATRIX,Price at the session open,0.7145,1127,600,173.7249889932561
+socialmedia8,snt_social_volume_fast_d1,MATRIX,Normalized tweet volume,0.9998,143,121,173.6982382194263
+model77,mdl177_2_valuemomemtummodel_vm_compositesn,MATRIX,Value Momentum Composite SN,1.0,151,108,173.69554461960848
+analyst4,anl4_bvps_low,MATRIX,"Book value - the lowest estimation, per share",0.6499,1608,1066,173.6867127264326
+model77,inverse_peg_ratio,MATRIX,Inverse of PEG Ratio,1.0,146,115,173.67227682331918
+model53,mdl53_jc6_5year,MATRIX,Annualized default probability at the 5-year horizon (percentage) from the Kamakura Jarrow–Chava v6 model for US issuers,0.9147,402,83,173.6134496136834
+analyst4,anl4_qfd1_az_hgih_spe,MATRIX,Earnings per share - The highest estimation,0.7848,719,348,173.54787173111313
+model77,mdl177_2_valueanalystmodel_qva_chgacc,MATRIX,"Rank based on change in net operating working capital, reflecting shifts in operational liquidity or efficiency",0.8076,739,207,173.51419226048873
+analyst4,anl4_epsr_mean,MATRIX,GAAP Earnings per share - mean of estimations,0.7153,1133,560,173.51366937049045
+analyst4,anl4_cuo1conqfv110_item,VECTOR,Financial item,0.6979,1091,855,173.5090134437572
+model77,mdl177_2_growthanalystmodel_qga_iarsales,MATRIX,Inv Acc Rec to Sales Link,0.9617,202,125,173.48346932517526
+model53,mdl53_jm5_5year,MATRIX,5-year annualized default probability (percentage) from Kamakura hybrid Jarrow–Merton v5 model,0.965,255,73,173.4720999108165
+model77,mdl177_2_vma2_vma2_ma,MATRIX,"Momentum Analyst II composite score aggregating price momentum, earnings momentum, expectations, and fundamental growth signals",1.0,174,77,173.4314038726831
+model77,mdl177_earningsmomemtummodel_fc_y2repsg_alt,MATRIX,"Difference between FY2 consensus EPS forecast and last fiscal year's reported EPS, divided by month-end price (2-year ahead EPS growth scaled by price)",1.0,140,119,173.42505761769192
+model77,mdl177_2_earningsqualityfactor_uap,MATRIX,"Difference between current accounts payable and expected level (prior year's balance multiplied by COGS growth in trailing 12 months), scaled by total assets",0.7347,1273,294,173.40404514302017
+model53,mdl53_ms5_2year,MATRIX,"Annualized default probability at the 2-year horizon from Kamakura’s Merton structural model v5 (MS5), reported in percent",0.9709,237,74,173.40014730439628
+model77,mdl177_2_sensitivityfactor400_otmptc,MATRIX,Out-of-the-Money Put-to-Call Ratio,0.9226,284,136,173.3847964318271
+model77,mdl177_deepvaluefactor_bp_alt,MATRIX,Book-to-Price: most recent book value per share divided by trading price,1.0,172,78,173.3801552073129
+analyst4,est_bookvalue_ps,MATRIX,Book value per share - average of estimations,0.6751,1497,696,173.36278869457425
+model77,mdl177_surpriseanalystmodel_qsa_efficiency,MATRIX,Fundamentals Rank,0.99,196,73,173.3523627534007
+model77,mdl177_deepvaluefactor_indidivy_alt,MATRIX,Indicated Dividend Yield: expected annualized dividend divided by price,1.0,174,75,173.3015264406668
+model77,mdl177_2_deepvaluefactor_ebitdaev,MATRIX,Trailing 12-month EBITDA divided by enterprise value,0.9744,214,83,173.30046427549317
+analyst4,anl4_netprofita_median,MATRIX,Adjusted net income - median of estimations,0.7511,759,583,173.2926892469449
+model77,mdl77_garpanalystmodel_qgp_relgrowth,MATRIX,Relative Growth Rank: Relative Growth Rank,1.0,149,102,173.27999788211073
+model77,mdl177_valueanalystmodel_qva_chgacc,MATRIX,Rank of change in net operating working capital for the stock,0.8076,726,202,173.21529467054415
+model77,mdl177_momemtumanalystmodel_qma_estrev,MATRIX,"Estimate Revisions Rank: rank reflecting the difference between recent upward and downward revisions to next fiscal year EPS estimates over four weeks, scaled by the total number of estimates",0.9543,232,104,173.21018628644464
+model77,mdl177_2_managementqualityfactor_astto,MATRIX,Assets Turnover Ratio: trailing 12-month sales divided by most recently reported quarterly assets,1.0,159,88,173.19492000099893
+model77,mdl177_liquidityriskfactor_yoychgda_alt,MATRIX,Year-over-year Change in Leverage : It is defined as the difference between the most recent reported quarterly total liabilities as a percentage of the reported total assets and the percentage for the same quarter one year ago.,1.0,178,70,173.18725744361413
+analyst4,anl4_adxqfv110_down,VECTOR,Number of lower estimations,0.6979,1036,889,173.1869793959262
+model77,mdl177_earningmomentumfactor_q1aepsg_alt,MATRIX,Estimated growth in earnings per share for the upcoming fiscal quarter,0.9231,292,122,173.17264786703277
+model77,mdl177_2_deepvaluemodel2_dv_currroe,MATRIX,"Current return on equity for the stock, computed as net income divided by shareholders’ equity for the most recent reporting period",0.9948,183,73,173.14968304211072
+earnings4,ern4_m2atmiv,VECTOR,"At-the-money implied volatility for month 2 options, annualized (decimal)",0.9692,246,66,173.0373464632346
+pv13,pv13_new_4l_scibr,GROUP,grouping fields,0.9896,152,114,172.98903985574063
+model77,mdl77_garpanalystmodel_qgp_vfpriceratio,MATRIX,Value to Price Rank: Value to Price Rank,1.0,160,82,172.9082466888276
+model77,mdl177_2_valuemomemtummodel_earningsexpectationmodule,MATRIX,"A module tracking market expectations regarding the company's future earnings, often based on analyst forecasts or consensus estimates",1.0,156,86,172.891998646756
+model77,mdl177_2_valueanalystmodel_qva_incstmt,MATRIX,Rank of operating income in relation to enterprise value based on income statement data,0.9719,221,75,172.87044052015446
+model77,mdl177_pricemomentumfactor_volpre6m_alt,MATRIX,"6-month moving average of average monthly turnover ratio; measures trading volume normalized by shares outstanding, averaged over the past 6 months",1.0,191,56,172.79021005945057
+model77,mdl177_relativevaluemodel_rvm_composite,MATRIX,"Composite score from the Relative Value Model, aggregating multiple relative value factors",1.0,181,62,172.75574050272562
+pv13,pv13_hierarchy_min51_f1_sector,GROUP,grouping fields,0.9989,137,111,172.7550312080475
+model77,mdl177_earningsmomemtummodel_fc_egp_alt,MATRIX,Next 1-year average earnings estimate scaled by expected long-term growth rate and stock price (inverse PEG-type measure),1.0,162,76,172.65652911733602
+news12,nws12_mainz_4s,VECTOR,Number of minutes that elapsed before price went down 4 percentage points,0.9741,172,113,172.62390818695027
+model77,mdl177_2_valuemomemtummodel_reportedearningsmomentummodule,MATRIX,Reported Earnings Momentum Module,1.0,168,70,172.6123865344373
+model77,mdl177_fa_past,MATRIX,Price-to-Total Assets: Month-end trading price divided by most recent total assets per share,1.0,227,38,172.61126452019263
+socialmedia8,snt_social_value_fast_d1,MATRIX,Z-score of sentiment,0.9998,140,101,172.59246297020303
+model77,mdl177_historicalgrowthfactor_chgnpm,MATRIX,Difference between most recent quarterly net profit margin and that 4 quarters ago (1-year change in net profit margin),0.9562,260,70,172.5786034584335
+news12,news_dividend_yield,MATRIX,Reported annual dividend yield percentage for the calendar day of the session,0.8534,406,225,172.53080685078737
+model77,mdl177_2_deepvaluemodel_indidivy,MATRIX,Indicated dividend yield; the projected annual dividend divided by current stock price,1.0,184,57,172.50577330351535
+analyst4,min_net_income_guidance,MATRIX,Net profit - minimum guidance value,1.0,131,111,172.42051358233917
+model77,mdl177_vra2_qma_epsgrwth,MATRIX,"Ranking of earnings per share growth for US equities, representing the relative EPS growth signal among stocks in the universe",0.9686,187,102,172.39806456944768
+model77,mdl177_liquidityriskfactor_dfl_alt,MATRIX,"Degree of financial leverage: (Pretax income + interest expense) divided by pretax income, proxy for interest dependency and leverage effect",0.9927,252,34,172.38063519472226
+model77,mdl177_valanalystmodel_qva_capexdep,MATRIX,Capex to Depreciation Rank,1.0,144,91,172.37628030945095
+analyst4,sales_estimate_count_2,MATRIX,Number of Sales estimates,1.0,133,106,172.34254217181865
+model53,mdl53_jm5_1month,MATRIX,1-month annualized default probability (percentage) from Kamakura hybrid Jarrow–Merton v5 model,0.965,255,58,172.33946166432423
+model77,mdl177_liquidityriskfactor_gear_alt,MATRIX,Capital gearing ratio: long-term debt divided by (total assets minus current liability); measures leverage excluding current liabilities,1.0,199,47,172.33917872001982
+news12,news_pct_10min,MATRIX,Percent change in price during the first 10 minutes following the news release,0.7657,713,405,172.3105954214045
+model77,mdl177_2_deepvaluefactor_proformaep,MATRIX,Trailing 12-month pro forma earnings-to-price (excludes special items),0.931,236,134,172.30697530354345
+analyst4,max_adjusted_eps_guidance,MATRIX,The maximum guidance value for adjusted earnings per share.,1.0,130,110,172.29962423857316
+analyst4,sales_estimate_maximum,MATRIX,Sales - The highest estimation,1.0,134,102,172.22639272553246
+model77,mdl177_2_earningmomentumfactor400_qepsferr,MATRIX,Forecast error for the prior fiscal quarter’s EPS estimates,0.9074,283,147,172.21580375043263
+pv13,pv13_hierarchy_sector,GROUP,grouping fields,1.0,132,104,172.17329303300517
+model77,mdl177_valanalystmodel_qva_epmodule,MATRIX,Earnings Cyclicality Rank,1.0,145,86,172.16560681035628
+model77,mdl177_earningsqualityfactor_uap,MATRIX,"Unexpected change in accounts payable, difference between current and expected accounts payable scaled by total assets",0.7347,1183,264,172.1351872843706
+news12,nws12_prez_short_interest,VECTOR,Total number of shares sold short divided by total number of shares outstanding,0.8116,471,354,172.09037880323262
+model77,mdl177_historicalgrowthfactor_chgeps_alt,MATRIX,"Difference in trailing 12-month earnings per share before extra items versus 4 quarters ago, adjusted by average total assets per share",0.9988,198,46,172.0637862557952
+model77,mdl177_2_relativevaluemodel_rvm_composite,MATRIX,Relative Value Model Composite; overall composite score aggregating various relative value signals within the model,1.0,160,69,172.0565198600914
+model77,mdl177_earningmomentumfactor_numrevy1_alt,MATRIX,Net number of upward and downward revisions in FY1 EPS forecasts,0.9865,205,55,172.05552014157155
+model77,mdl177_2_momemtumanalystmodel_qma_eplinkage,MATRIX,"Rank indicating the strength of linkage between earnings-related changes and stock price movement, considering factors like free cash flow and market reaction",1.0,159,69,171.99421436258504
+analyst4,sales_estimate_average,MATRIX,Sales - mean of estimations with a delay of 1 quarter,1.0,139,90,171.9707217586773
+model77,mdl177_liquidityriskfactor_booklev_alt,MATRIX,"Book Leverage ratio: Total assets from most recent quarter divided by book equity, reflecting company capital structure",1.0,147,80,171.94436851100335
+model77,mdl177_2_valueanalystmodel_qva_finstmt,MATRIX,Composite rank based on multiple financial statement metrics,0.9876,145,105,171.9132616876437
+model77,mdl177_earningmomentumfactor_rev1q1_alt,MATRIX,Change in EPS forecast for fiscal quarter one,0.9838,170,82,171.8908386040096
+analyst4,eps_max_guidance_quarterly,MATRIX,The maximum guidance value for Earnings Per Share.,1.0,126,107,171.852527000207
+model77,mdl177_2_historicalgrowthfactor_chgepsp,MATRIX,"Change in trailing 12-month earnings per share over the past year, scaled by month-end trading price",0.9976,181,54,171.8367327969303
+fundamental2,fn_comp_not_rec_a,MATRIX,Unrecognized cost of unvested share-based compensation awards.,0.6526,1449,857,171.826208851586
+model77,cash_burn_rate,MATRIX,Cash Burn Rate,0.9287,208,164,171.823069889151
+analyst4,tangible_book_value_per_share_max_guidance,MATRIX,Tangible Book Value per Share - Maximum guidance value,1.0,141,84,171.7715268584642
+model77,mdl177_valueanalystmodel_qva_epmodule,MATRIX,Rank of earnings cyclicality measures for the stock,0.9984,132,99,171.769342212158
+model77,mdl177_2_managementqualityfactor_capexast,MATRIX,Capital Expenditure-to-Total Assets: trailing 12-month capital expenditures divided by total assets from most recent quarter,0.9887,167,75,171.76330649546426
+model77,mdl177_2_sensitivityfactor400_oilprice,MATRIX,Oil Prices Sensitivity,0.9819,210,54,171.745247260923
+model77,mdl177_2_historicalgrowthfactor_chgocfp,MATRIX,"Change in trailing twelve-month operating cash flow per share from 4 quarters ago, divided by the trading price",0.9971,220,35,171.60922170745806
+news12,nws12_mainz_01s,VECTOR,Number of minutes that elapsed before price went down 10 percentage points,0.9741,161,105,171.60315882288418
+model77,current_liabilities_to_price,MATRIX,Current Liabilities-to-Price,0.846,347,293,171.53992363443817
+model77,mdl177_fa_astto,MATRIX,Assets turnover ratio: trailing twelve month sales divided by average assets,1.0,140,81,171.52119514010298
+earnings4,ern4_nexterntod,VECTOR,"Time-of-day code for the next earnings release (0900=BMO, 1200=During, 1630=AMC, 2359=Unknown)",0.9692,184,87,171.51024232317428
+model77,mdl177_2_sensitivityfactor400_yieldsprd,MATRIX,"Sensitivity of the stock or factor to changes in the slope of the yield curve, measured as the difference between long- and short-term interest rates",0.9819,218,47,171.43672235270446
+model77,mdl77_2400_vefcomtt,MATRIX,TTM Operating Cash Flow-to-Enterprise Value: It is defined as the trailing 12-month operating cash flow per share for a stock divided by its per share Enterprise Value.,0.9804,165,85,171.431614364833
+model77,mdl177_2_liquidityriskfactor_monchgsip,MATRIX,"Month-to-month change in short interest position (ratio), measures change in the amount of stock sold short",1.0,146,73,171.42465133380819
+analyst4,anl4_qf_az_hgih_spe,MATRIX,Earnings per share - The highest estimation,0.7848,583,344,171.39673191343908
+model77,mdl177_historicalgrowthfactor_salesaccel4q_alt,MATRIX,Change in sales growth rate over the most recent four quarters (sales acceleration),0.9244,216,152,171.39116314236676
+model77,mdl177_momemtumanalystmodel_qma_estrev_alt,MATRIX,"Rank based on estimate revisions, capturing the difference between recent upward and downward EPS estimate changes over four weeks, scaled by total estimate count",0.977,159,97,171.37657554569114
+analyst4,shares_outstanding_max_guidance,MATRIX,Maximum guidance value for Shares,1.0,119,108,171.33165683896618
+model77,mdl177_v1_400_tobinq,MATRIX,Tobin's Q: market value of equity plus debt divided by total assets; assesses whether market values firm's assets higher or lower than their cost,0.9942,158,67,171.20658054808285
+earnings4,ern4_ernmnth,VECTOR,The next expiration month number directly after earnings date.,0.9692,192,75,171.20056859048051
+model77,mdl177_2_garpanalystmodel_qgp_valuation,MATRIX,"Ranking of a stock's valuation according to GARP analyst metrics, possibly considering price-to-earnings, price-to-book, etc.",0.9655,176,96,171.1850522182552
+fundamental2,fn_def_tax_assets_liab_net_a,MATRIX,"Amount, after allocation of valuation allowances and deferred tax liability, of deferred tax asset attributable to deductible differences and carryforwards, without jurisdictional netting.",0.7058,1194,378,171.12669566906823
+pv13,pv13_new_2l_scibr,GROUP,grouping fields,0.9896,128,110,171.10577505017838
+model77,mdl177_pricemomentumfactor_indrelrtn5d__alt,MATRIX,"5-day industry-relative return; stock's return over last 5 days minus industry average, standardized by industry return standard deviation",1.0,148,66,171.06292615640942
+news12,nws12_mainz_02p,VECTOR,The minimum of L or S above for 20-minute bucket,0.9741,174,80,171.03010551259734
+model77,mdl177_2_managementqualityfactor_invast,MATRIX,Current inventory level divided by total assets from most recent quarter,0.9115,225,167,170.97516988973913
+model77,mdl177_2_managementqualityfactor_npm,MATRIX,Net profit margin: most recent quarterly net income after tax divided by corresponding quarterly sales,0.9669,164,103,170.97140923471264
+model77,mdl177_fangma_emf_usa_fangma_emf20,MATRIX,"Earnings momentum factors 20 for FANGMA (Facebook, Apple, Netflix, Google, Mircosoft, Amazon)",1.0,165,52,170.97133745132604
+analyst4,max_reported_pretax_income_guidance_2,MATRIX,Reported Pretax income- maximum guidance value,1.0,117,102,170.88049118580483
+model77,mdl177_2_surpriseanalystmodel_qsa_efficiency,MATRIX,Fundamentals Rank,0.99,164,63,170.85387015580415
+model77,mdl177_2_liquidityriskfactor_bap20d,MATRIX,"20-day average of bid-ask spread divided by price, proxy for short-term liquidity",1.0,153,59,170.8412488352468
+news12,nws12_mainz_3l,VECTOR,Number of minutes that elapsed before price went up 3 percentage points,0.9741,153,99,170.80537695407673
+earnings4,ern4_m3atmiv,VECTOR,"At-the-money implied volatility for month 3 options, annualized (decimal)",0.9692,195,67,170.79868511818572
+model77,mdl177_2_valuemomemtummodel_financialstatementmodule,MATRIX,Financial Statement Module,1.0,170,47,170.77264061956606
+model77,mdl177_2_pricemomemtummodel_pmm_composite,MATRIX,"A combined price momentum signal aggregating multiple price momentum metrics for a stock, used as an overall momentum indicator",0.9889,172,57,170.7251309977099
+model77,mdl177_2_liquidityriskfactor_volto,MATRIX,Trading turnover ratio; monthly total trading volume divided by current outstanding shares,1.0,137,72,170.724834057314
+news12,nws12_mainz_4l,VECTOR,Number of minutes that elapsed before price went up 4 percentage points,0.9741,159,90,170.71603568492253
+analyst4,anl4_qf_az_eps,MATRIX,"EPS - aggregation on estimations, 50th percentile",0.7848,559,324,170.67849374894064
+analyst4,anl4_qfv4_eps_mean,MATRIX,Earnings per share - mean of estimations,1.0,120,93,170.67437936731744
+model77,mdl177_valueanalystmodel_qva_finstmt,MATRIX,Rank based on composite assessment of financial statements,0.9876,143,84,170.67138927821162
+analyst4,anl4_basicconafv110_numest,VECTOR,The number of forecasts counted in aggregation,0.7343,707,551,170.62218116832264
+analyst4,anl4_gric_low,MATRIX,Gross income - The lowest estimation,0.6026,2004,955,170.60778296266372
+model77,mdl177_v1_400_ttmaccu,MATRIX,"Accounting accruals: trailing 12-month net income minus trailing 12-month operating cash flow, scaled by beginning total assets; measures quality of earnings",1.0,148,60,170.59383238032115
+analyst4,anl4_ptp_mean,MATRIX,Pretax income - mean of estimations,0.7327,807,434,170.59235074065438
+model77,earnings_expectation_module_score,MATRIX,Earnings Expectations (submodule of Momentum Analyst II),1.0,140,67,170.58513742966224
+model77,mdl177_fa_chgnpm,MATRIX,One-year change in net profit margin (most recent quarterly NPM minus four quarters ago),0.9565,220,65,170.57990072530964
+analyst4,dividend_max_guidance_quarterly,MATRIX,Maximum guidance value for Dividend per share,1.0,114,101,170.57418535005388
+analyst4,min_stock_option_expense_guidance,MATRIX,Stock option expense - minimum guidance value,1.0,114,101,170.57418535005388
+model77,mdl177_historicalgrowthfactor_chgocfp_alt,MATRIX,"Difference between most recent trailing 12-month operating cash flow per share and 4 quarters ago, divided by trading price",0.9995,187,37,170.50235042693143
+model77,mdl177_2_sensitivityfactor400_inflation,MATRIX,Inflation Sensitivity,0.9819,212,41,170.49126974851112
+model77,capex_to_total_assets,MATRIX,TTM capital expenditure divided by total assets; measure of investment intensity,0.989,145,76,170.45509332635177
+model77,mdl177_2_managementqualityfactor_capdistp,MATRIX,Total Capital Distribution,0.9528,236,58,170.34828863087992
+earnings4,ern4_m4atmiv,VECTOR,"At-the-money implied volatility for month 4 options, annualized (decimal)",0.9692,166,84,170.31319440661912
+news12,nws12_afterhsz_1l,VECTOR,Number of minutes that elapsed before price went up 1 percentage points,0.707,922,521,170.26463028444172
+model77,mdl177_fa_ebitdaev,MATRIX,TTM EBITDA-to-Enterprise Value: Trailing twelve-month EBITDA divided by enterprise value,0.9747,162,77,170.19104614151559
+news12,nws12_afterhsz_01l,VECTOR,Number of minutes that elapsed before price went up 10 percentage points,0.707,874,570,170.17918491185623
+analyst4,max_total_assets_guidance_2,MATRIX,The maximum guidance value for Total Assets,1.0,110,100,170.17090459732964
+model77,mdl177_earningmomentumfactor_numrevq1_alt,MATRIX,Net number of analyst revisions for fiscal quarter one EPS estimates,0.976,186,56,170.12634250771862
+model77,mdl177_valueanalystmodel_qva_incstmt,MATRIX,Rank based on operating income to enterprise value from income statement,0.9719,176,68,170.12202984872457
+model53,mdl53_jc6_3year,MATRIX,Annualized default probability at the 3-year horizon (percentage) from the Kamakura Jarrow–Chava v6 model for US issuers,0.9147,276,87,170.0968591342644
+model77,mdl177_earningmomentumfactor_surp,MATRIX,"Real earnings surprise; difference between actual and forecast EPS prior to announcement, scaled by price at quarter end",0.9467,174,114,170.0425203810514
+model77,mdl177_valuemomemtummodel_earningsvaluationmodule,MATRIX,"Module comprising signals that measure valuation based on earnings, such as price-to-earnings or earnings yield ratios",1.0,120,81,169.9915016922887
+model77,mdl177_historicalgrowthfactor_salesaccel4q,MATRIX,Acceleration of sales growth measured over the last four quarters,0.9206,203,139,169.94941205148868
+model77,mdl177_2_vma2_vma2_ma_ee,MATRIX,"Earnings Expectations subscore within the Momentum Analyst II component, reflecting analyst forecasts and revisions momentum",1.0,156,47,169.91846310802254
+analyst4,anl4_netprofit_high,MATRIX,Net Profit - The highest estimation,0.7667,577,374,169.90036881657582
+model77,mdl177_2_earningsqualityfactor_chgshare,MATRIX,Percent change in number of outstanding shares compared to one year ago,0.9912,130,80,169.8442190053737
+news12,nws12_afterhsz_result1,VECTOR,Percent change between the price at the time of the news release to the price at the close of the session,0.707,980,420,169.79888876406554
+model77,mdl177_earningmomentumfactor_q1aepsg,MATRIX,Estimated EPS growth for the next fiscal quarter,0.9172,232,110,169.77803554221867
+model77,mdl177_v1_400_indrelrtn5d_,MATRIX,"5-day industry relative return: stock's return in last 5 days minus industry average, deflated by industry standard deviation of these returns",1.0,131,65,169.77629293599583
+model53,mdl53_jc6_6month,MATRIX,Annualized default probability at the 6-month horizon (percentage) from the Kamakura Jarrow–Chava v6 model for US issuers,0.9147,314,62,169.711400020214
+model77,mdl177_v1_400_booklev,MATRIX,"Book Leverage: most recently reported quarterly total assets divided by book equity, indicating the leverage ratio using book values",1.0,113,86,169.69152507721788
+model77,mdl177_2_managementqualityfactor_yoychgroa,MATRIX,"Yearly Change in Return on Assets: most recent trailing 12-month net income before extra items as % of total assets, minus % for same quarter one year ago",0.9994,145,52,169.62752578484395
+model77,mdl177_vra_qva_valuation,MATRIX,"A rank summarizing valuation metrics (e.g., price/book, price/earnings) to indicate how attractive a stock's valuation is compared to peers",1.0,128,66,169.62158714057156
+analyst4,anl4_capex_number,MATRIX,Capital Expenditures - number of estimations,0.6173,1394,1199,169.5868811214351
+analyst4,anl4_ptp_median,MATRIX,Pretax income - median of estimations,0.7327,735,426,169.56622125343188
+fundamental2,fn_comp_options_grants_a,MATRIX,Net number of share options (or share units) granted during the period.,0.6394,1400,753,169.51637730340985
+model77,mdl177_2_5yearrelativevaluefactor_rel5ybp,MATRIX,"5-year Relative Book-to-Market: current book-to-market minus the 60-month average, scaled by standard deviation",0.8243,386,242,169.47955414700056
+model77,mdl177_earningsqualityfactor_chgshare,MATRIX,Percent change in company's number of shares outstanding over one year,0.9912,126,78,169.409110126921
+model77,coefficient_variation_fy1_eps,MATRIX,Coefficient of variation (dispersion) of EPS estimates for fiscal year 1; analyst disagreement,0.9341,189,109,169.38264255056697
+model77,mdl177_2_deepvaluefactor_ttmepb,MATRIX,Trailing 12-month earnings per share before non-recurring items divided by trading price,1.0,139,53,169.36134445891443
+model77,mdl177_momemtumanalystmodel_qma_epsgrwth_alt,MATRIX,"Rank of earnings growth, measuring changes in trailing twelve month earnings per share scaled by the recent closing stock price (earnings yield, E/P)",0.9698,149,85,169.3580894222301
+model77,mdl177_2_deepvaluefactor_ttmepa,MATRIX,Trailing 12-month earnings per share after special items divided by trading price,1.0,135,56,169.34180519653327
+model77,mdl177_2_managementqualityfactor_roa,MATRIX,Return on assets: trailing 12-month income before extra items divided by average total assets in the same period,1.0,120,71,169.3412360510477
+news12,nws12_mainz_eodclose,VECTOR,Close price of the session,0.9733,138,92,169.3377367970732
+pv13,pv13_hierarchys32_sector,GROUP,grouping fields,1.0,106,91,169.33723122986424
+model77,mdl177_2_sensitivityfactor400_imr,MATRIX,Volatility Spread,0.9408,209,77,169.33461944062265
+model77,housing_starts_indicator,MATRIX,Housing Starts Sensitivity,0.9819,116,109,169.31414117693964
+model77,mdl177_pricemomentumfactor_indrelrtn5d_,MATRIX,"Industry-relative return over last 5 days: stock's return minus industry average, deflated by industry standard deviation",1.0,129,61,169.3110164297813
+model77,mdl177_v1_400_capexast,MATRIX,Capital expenditure-to-total assets: trailing 12-month capital expenditures divided by total assets from most recent quarter,0.989,144,61,169.30300934943122
+model77,mdl177_2_deepvaluefactor_coreepsp,MATRIX,Trailing 12-month core earnings per share from operations (excludes special items) divided by trading price,1.0,135,55,169.25330731103628
+model77,mdl177_valanalystmodel_qva_cashflow,MATRIX,Rank of cash flow strength (free cash flow relative to market capitalization),1.0,118,72,169.24353213685725
+model77,mdl177_historicalgrowthfactor_chgcfp_alt,MATRIX,"Difference between trailing 12-month cash flow per share and 12 quarters ago, divided by trading price",0.9709,189,50,169.2193688852265
+model77,mdl177_historicalgrowthfactor_chgeps,MATRIX,"1-year change in assets-adjusted trailing twelve-month earnings per share before extra items (recent minus 4 quarters ago, divided by avg assets per share)",0.9966,159,42,169.21773873080608
+model77,mdl177_2_valueanalystmodel_qva_earnquality,MATRIX,Rank based on the quality and sustainability of earnings,1.0,120,69,169.2003816662142
+model77,mdl177_5shortsentimentfactor_sht_int,MATRIX,"Short Interest: the total number of shares currently sold short (but not yet covered), a key indicator of bearish sentiment in a stock",1.0,129,57,168.97755955728792
+analyst4,earnings_per_share_standard_deviation,MATRIX,Earnings per share - standard deviation of estimations,0.7237,679,531,168.97414542840974
+model77,mdl77_2earningsmomemtummodel_pge_cf,MATRIX,Estimates on the next 1-year average earnings scaled by company's prospects on growth and its stock price.,1.0,122,63,168.91625897052253
+analyst4,anl4_qf_az_wol_spe,MATRIX,Earnings per share - The lowest estimation,0.7848,506,276,168.88519756684855
+earnings4,ern4_ernmv11,VECTOR,"Stock price move on the eleventh most recent past earnings date, expressed as a percentage change (float, decimal fraction)",0.9692,169,60,168.83235369136918
+model77,mdl177_historicalgrowthfactor_chgfcf_alt,MATRIX,"Change in trailing 12-month free cash flow over last year, divided by average total assets",1.0,106,82,168.82249138360203
+analyst4,anl4_fs_detail_estimate_1qf_v4_nd_ptp_number,MATRIX,Pre-tax income number of contributing estimates,0.9083,184,171,168.77103063485052
+analyst4,sales_estimate_median_quarterly,MATRIX,Sales - median of estimations,1.0,114,70,168.76272066883908
+model77,mdl177_deepvaluefactor_proformaep_alt,MATRIX,TTM Pro Forma Earnings-to-Price: trailing 12-month adjusted/pro forma earnings per share divided by trading price,0.9347,171,116,168.7558144421233
+analyst4,anl4_qfd1_azeps,MATRIX,"EPS - aggregation on estimations, 50th percentile",0.7848,504,271,168.7545946242336
+news12,nws12_afterhsz_result_vs_index,VECTOR,((EODClose - TONLast) / TONLast) - ((SPYClose - SPYLast) / SPYLast),0.707,845,458,168.75044464636497
+model77,mdl177_2_pricemomemtummodel2_indrelrtn5d_,MATRIX,"5-day industry-relative return: the stock’s 5-day return minus its industry average, standardized by the industry’s return standard deviation; captures recent momentum relative to peers",1.0,133,51,168.73461659241627
+model77,mdl177_5shortsentimentfactor_lend_supply,MATRIX,"Lending Supply: the total quantity of shares available for lending in the market, reflecting liquidity for short sellers",1.0,133,51,168.73461659241627
+model77,mdl177_liquidityriskfactor_numest_alt,MATRIX,Number of analyst estimates for fiscal year 1; proxy for analyst coverage,0.993,116,77,168.7052834814255
+model77,mdl177_fa_ttmfcfp,MATRIX,Trailing Twelve-Month Free Cash Flow-to-Price: TTM free cash flow per share divided by month-end trading price,1.0,115,67,168.6334404369442
+model77,mdl177_2_valueanalystmodel_qva_valuation,MATRIX,"Overall valuation rank, likely reflecting various value measures",1.0,117,63,168.501261661455
+model77,mdl177_earningmomentumfactor_surp_alt,MATRIX,"Difference between actual EPS and consensus forecast, scaled by quarter-end price",0.9525,150,100,168.49840095235555
+model77,mdl177_2_earningmomentumfactor400_numrevq1,MATRIX,Net number of upward minus downward revisions for fiscal quarter 1 EPS forecasts,0.9711,163,58,168.49635149777058
+model77,mdl177_2_liquidityriskfactor_nlassets,MATRIX,Natural logarithm of most recent quarterly total assets,1.0,113,67,168.4595230098255
+analyst4,sales_estimate_average_quarterly,MATRIX,Sales - mean of estimations,1.0,112,68,168.4444107101097
+model77,mdl177_fa_bp,MATRIX,Book-to-Market: Most recent book value per share divided by month-end trading price,1.0,108,73,168.43380428831227
+fundamental2,fnd2_oprlsfmpdcurr,MATRIX,"Amount of required minimum rental payments for operating leases having an initial or remaining non-cancelable lease term in excess of 1 year due in the next fiscal year following the latest fiscal year. Excludes interim and annual periods when interim periods are reported on a rolling approach, from latest balance sheet date.",0.6378,1286,734,168.38004457202544
+news12,nws12_afterhsz_result2,VECTOR,Percent change between the price at the time of the news release to the price at the close of the session,0.707,904,371,168.373818708365
+model77,mdl177_2_historicalgrowthfactor_chgnpm,MATRIX,"Change in net profit margin from one year ago (quarterly), calculated as the difference between most recent and year-ago net profit margin",0.9562,161,78,168.34320261465894
+news12,nws12_mainz_opengap,VECTOR,(DayOpen - PrevClose) / PrevClose,0.9741,125,90,168.32711660209904
+model77,mdl177_2_liquidityriskfactor_de,MATRIX,Long-term debt-to-equity; latest long-term debt divided by book equity,1.0,131,48,168.28712071641684
+model77,mdl177_valanalystmodel_qva_yoychgdebt,MATRIX,Rank based on year-over-year change in debt issuance,1.0,145,39,168.28046348765304
+pv13,pv13_hierarchy23_513_sector,GROUP,grouping fields,0.9933,106,84,168.27154462707063
+model77,mdl77_2earningsmomemtummodel_fc_fcfroey1p,MATRIX,Product of TTM FCF Yield and Forward ROE: It is defined as the trailing 12-month free cash flow per share multiplied by the next 4-quarter consensus earnings forecasts divided by the most recently reported book value per share scaled by its trading price.,1.0,135,45,168.269755839806
+model77,mdl77_2earningsmomemtummodel_fc_numrevy1,MATRIX,"Net Number ofRevisions for Fiscal Year 1: It is defined as the weighted average of the number of FY1 analyst earnings forecasts raised less the number lowered within a month, divided by the total number of analyst forecasts.",1.0,119,58,168.26260464734906
+model77,mdl177_2_earningmomentumfactor400_rev1q1,MATRIX,Change in fiscal quarter 1 EPS forecast compared to the prior period,0.9717,134,81,168.25634402070557
+model77,mdl177_2_garpmodel_gpm_composite,MATRIX,GPM Composite Model,1.0,144,39,168.21173469477543
+model77,mdl177_2_historicalgrowthfactor_chgfcf,MATRIX,Change in trailing 12-month free cash flow over the past year divided by average total assets,0.9985,110,69,168.18777822337015
+analyst4,anl4_bac1detailafv110_item,VECTOR,Financial item,0.7154,657,566,168.13384583189193
+model77,mdl177_fangma_gpam_usa_fangma_gpam1,MATRIX,A metric evaluating short-term growth or profitability performance for a selected group of large technology companies.,1.0,119,56,168.09017376699322
+model77,mdl177_historicalgrowthfactor_chg3yepsp_alt,MATRIX,"Difference between trailing 12-month earnings per share now and 12 quarters ago, divided by month-end trading price",0.9513,172,71,168.0462465400581
+model77,mdl177_5shortsentimentfactor_benchmark_fee,MATRIX,Implied loan rate or benchmark borrowing fee in the securities lending market,1.0,101,77,168.03327226629065
+analyst4,anl4_qfv4_eps_high,MATRIX,Earnings per share - The highest estimation,1.0,118,56,168.00649127028805
+model77,mdl177_2_vma2_vma2_ma_pm,MATRIX,Price Momentum; measures price trend or momentum for the stock over a selected period,1.0,130,46,168.00271124056178
+model77,mdl177_garpanalystmodel_qgp_alert,MATRIX,Alert Rank,1.0,126,49,168.00198589172663
+analyst4,earnings_per_share_median_value,MATRIX,Earnings per share - median of estimations,1.0,100,77,167.93474930186053
+model77,mdl177_2_historicalgrowthfactor_salesaccel4q,MATRIX,Measure of acceleration in quarterly sales growth over the last 4 quarters,0.9206,173,127,167.9107043117434
+model77,mdl177_2_pricemomentumfactor_volpre6m,MATRIX,6-month moving average of monthly turnover ratio (trading volume relative to shares outstanding),0.9991,107,68,167.90184479422848
+analyst4,anl4_totassets_high,MATRIX,Total Assets - The highest estimation,0.7213,708,411,167.8736720120689
+model77,mdl177_2_vma2_vma2_ma_em,MATRIX,"Reported Earnings Momentum subscore within the Momentum Analyst II component, tracking momentum in realized earnings results and surprises",1.0,139,39,167.86082149666274
+news12,nws12_mainz_lowexcstddev,VECTOR,"(TONLast - EODLow)/StdDev, where StdDev is one standard deviation for the close price for 30 calendar days",0.9691,153,60,167.83389534500284
+model77,mdl177_2_valuemomemtummodel_earningspricelinkmodule,MATRIX,Earnings-Price Link Module,1.0,108,64,167.7854151717696
+analyst4,max_net_income_guidance,MATRIX,The maximum guidance value for net profit.,1.0,97,79,167.75980796007514
+model77,mdl177_vra_qva_earnquality,MATRIX,"A composite rank of earnings quality using multiple metrics such as earnings shortfall and inventory changes, reflecting the reliability and sustainability of reported earnings",1.0,115,56,167.75115825023641
+analyst4,max_tangible_book_value_per_share_guidance,MATRIX,Tangible Book Value per Share - maximum guidance value,1.0,93,85,167.70468430396758
+pv13,pv13_new_3l_scibr,GROUP,grouping fields,0.9896,102,87,167.6939739546874
+analyst4,anl4_totassets_value,MATRIX,Total Assets - actual value,0.6486,1308,497,167.68318804422228
+news12,nws12_mainz_rangestddev,VECTOR,"(RangeAmt-AvgRange)/RangeStdDev, where AvgRange is the average of the daily range, and RangeStdDev is one standard deviation for the daily range, both for 30 calendar days",0.9691,132,78,167.66073054455265
+analyst4,sales_estimate_stddev_quarterly,MATRIX,Standard deviation of Sales estimations,0.7259,679,390,167.65446578162835
+earnings4,ern4_avg20doptvolu,VECTOR,20-day average total options trading volume,0.9692,146,63,167.61874128458572
+earnings4,ern4_90div,VECTOR,"Interpolated implied volatility over 90 calendar days, annualized percent",0.9692,131,78,167.59525848819882
+model77,mdl177_earningmomentumfactor_y2repsg_alt,MATRIX,Forecasted 2-year ahead EPS growth,0.9584,139,86,167.58596481936596
+model77,mdl177_2_deepvaluefactor_ttmgfp,MATRIX,Trailing 12-month growth flow-to-price (GAAP earnings plus R&D) per share divided by trading price,1.0,122,48,167.5809450442773
+model77,mdl177_garpanalystmodel_qgp_composite,MATRIX,"Combined score based on GARP-specific metrics, summarizing the overall attractiveness of a stock according to Growth at a Reasonable Price factors",1.0,135,39,167.5709461279302
+analyst4,anl4_baz1v110_person,VECTOR,Broker Id,0.7154,636,537,167.54698935653056
+model77,mdl177_2_managementqualityfactor_revper,MATRIX,Total sales for the trailing 12 months divided by number of employees at last fiscal year end,0.9526,155,77,167.54210420594333
+model77,mdl177_garpanalystmodel_qgp_wratingchg,MATRIX,"Weighted change in analyst ratings over past 6 months, reflecting recent evolution in analyst sentiment",1.0,103,67,167.54144751729424
+model77,mdl177_fangma_mam_usa_fangma_mam7,MATRIX,"Momentum analyst model 7 for FANGMA (Facebook, Apple, Netflix, Google, Mircosoft, Amazon)",1.0,119,50,167.5340455914421
+model77,mdl177_vra_qma_epsgrwth,MATRIX,"A rank measure of a stock's earnings growth relative to peers, indicating how strong its earnings growth is compared to others in the universe",0.9686,141,67,167.51580910189315
+model77,mdl177_earningmomentumfactor_numrevy1,MATRIX,Net # of Revisions for Fiscal Year 1,0.9825,144,48,167.4764389147589
+analyst4,operating_profit_before_interest_tax,MATRIX,Earnings Before Interest and Taxes (EBIT) - Actual Value,0.9274,159,120,167.47069088032197
+analyst4,anl4_fs_detail_estimates_basic_qf_delay1_v4_nd_eps_number,MATRIX,Number of Earnings Per Share estimates,0.9844,103,90,167.438206523998
+model77,mdl177_2_deepvaluefactor_ttmsp,MATRIX,Trailing 12-month sales per share divided by month-end trading price,1.0,99,71,167.4350324549612
+analyst4,anl4_qfd1_az_wol_spe,MATRIX,Earnings per share - The lowest estimation,0.7848,446,265,167.42306749004416
+model77,mdl177_fangma_mam_usa_fangma_mam16,MATRIX,"Momentum analyst model 16 for FANGMA (Facebook, Apple, Netflix, Google, Mircosoft, Amazon)",1.0,138,36,167.39932889452805
+model77,mdl77_earningsmomemtummodel_fc_fcfroey1p,MATRIX,Product of TTM FCF Yield and Forward ROE: It is defined as the trailing 12-month free cash flow per share multiplied by the next 4-quarter consensus earnings forecasts divided by the most recently reported book value per share scaled by its trading price.,1.0,125,44,167.3961315183664
+model77,earnings_momentum_analyst_score,MATRIX,Reported Earnings Momentum (submodule of Momentum Analyst II),1.0,100,69,167.39368137865938
+model77,mdl177_2_momemtumanalystmodel_qma_epsgrwth,MATRIX,"Rank representing change in trailing twelve month EPS growth, scaled by recent stock price (earnings yield based)",0.9687,136,70,167.38320864348782
+model77,mdl177_historicalgrowthfactor_pctchgeps_alt,MATRIX,Percent change in trailing 12-month earnings per share before extra items now compared to 4 quarters ago,0.9935,149,35,167.37394763324312
+pv13,pv13_hierarchy_f4_sector,GROUP,grouping fields,1.0,93,79,167.34308099606946
+analyst4,guidance_reporting_currency,MATRIX,Pricing Currency where the security trades - Annual,1.0,91,82,167.31208880947338
+analyst4,estimate_value_currency_code_detail_qtr,VECTOR,Home currency of instrument,0.964,117,102,167.28049118580483
+fundamental2,fn_entity_common_stock_shares_out_a,MATRIX,"Indicate number of shares or other units outstanding of each of registrant's classes of capital or common stock or other ownership interests, if and as stated on cover of related periodic report. Where multiple classes or units exist define each class/interest by adding class of stock items such as Common Class A [Member], Common Class B [Member] or Partnership Interest [Member] onto the Instrument [Domain] of the Entity Listings, Instrument.",0.7161,703,410,167.27074963406162
+analyst4,pretax_income_max_guidance_qtr,MATRIX,The maximum guidance value for Pretax income.,1.0,89,85,167.2698331845702
+analyst4,dividend_min_guidance_quarterly,MATRIX,Minimum guidance value for Dividend per share,1.0,89,85,167.2698331845702
+model77,mdl177_2_vma2_vma2_va_eq,MATRIX,"Earnings Quality subscore within the Value Analyst II component, capturing the reliability and sustainability of earnings (e.g., accruals quality, consistency)",1.0,118,48,167.25033642166844
+model77,mdl177_2_surpriseanalystmodel_qsa_estexpect,MATRIX,Rank indicating the trend or direction of analyst estimate changes for a company (estimate trend rank),0.977,155,44,167.231872521347
+fundamental2,fn_op_lease_min_pay_due_a,MATRIX,Amount of required minimum rental payments for leases having an initial or remaining non-cancelable letter-terms in excess of 1 year.,0.6027,1500,860,167.1993408384733
+model77,mdl177_deepvaluefactor_navp_alt,MATRIX,"Ratio of a company’s net asset value per share (tangible book value) to its current share price, indicating how much balance-sheet net worth backs each share relative to market value",1.0,98,69,167.1936747115927
+analyst4,max_free_cashflow_guidance,MATRIX,The maximum guidance value for Free Cash Flow.,1.0,91,80,167.1901315438526
+model77,mdl177_valueanalystmodel_qva_finstmt_alt,MATRIX,Rank based on a composite of multiple financial statement metrics,0.9919,100,78,167.1884444307477
+analyst4,est_ebitda,MATRIX,"Earnings before interest, taxes, depreciation, and amortization - mean of estimations",0.6046,1943,492,167.1875757204173
+analyst4,anl4_bvps_high,MATRIX,"Book value - the highest estimation, per share",0.6499,1142,572,167.15854522152182
+model77,mdl177_2_sensitivityfactor400_ag,MATRIX,Aggregate Gamma,0.9393,185,65,167.13574044726414
+model77,mdl177_liquidityriskfactor_nlprice_alt,MATRIX,Natural logarithm of the cube of the stock’s unadjusted closing price; log-transformed price metric,1.0,96,71,167.13044038011412
+model77,mdl177_valueanalystmodel_qva_cashflow_alt,MATRIX,Rank based on free cash flow relative to market capitalization,0.9615,149,64,167.12828929044073
+analyst4,min_tangible_book_value_per_share_guidance_2,MATRIX,Tangible Book Value per Share - Minimum guidance value,1.0,89,82,167.09229974228563
+model77,mdl177_2_deepvaluefactor_ebitdap,MATRIX,Trailing 12-month EBITDA per share divided by month-end trading price,0.9766,130,61,167.04764515723699
+analyst4,sales_estimate_average_annual,MATRIX,Sales - mean of estimations,1.0,96,69,166.98958599528063
+fundamental2,fn_allocated_share_based_compensation_expense_a,MATRIX,"Represents the expense recognized during the period arising from equity-based compensation arrangements (for example, shares of stock, unit, stock options or other equity instruments) with employees, directors and certain consultants qualifying for treatment as employees.",0.6739,959,475,166.88642211577593
+analyst4,pretax_income_reported_min_guidance,MATRIX,Reported Pretax income - minimum guidance value,1.0,91,75,166.87155247192206
+model77,mdl177_fa_chgocfp,MATRIX,One-year change in price-adjusted trailing twelve month operating cash flow per share,0.9974,129,39,166.8597417751255
+model77,mdl177_2_garpanalystmodel_qgp_alert,MATRIX,"Ranking indicator highlighting stocks that trigger specific GARP alert signals, possibly for rapid reassessment or attention",0.9898,127,47,166.85630769373563
+model77,mdl177_historicalgrowthfactor_pctchgqtrast,MATRIX,"1-year growth rate in quarterly total assets per share, comparing most recent reported value to that of four quarters ago",1.0,104,57,166.84181855430734
+analyst4,anl4_qfv4_median_eps,MATRIX,Earnings per share - median of estimations,1.0,93,71,166.81627841778032
+model77,mdl177_liquidityriskfactor_nlassets_alt,MATRIX,Natural logarithm of the most recent quarterly total assets; serves as a size metric,1.0,114,47,166.80532633817197
+analyst4,anl4_gric_number,MATRIX,Gross income - number of estimations,0.6026,1329,996,166.7130960619672
+model77,mdl177_historicalgrowthfactor_chg3yepsast_alt,MATRIX,"Difference in trailing 12-month earnings per share before extra items versus 12 quarters ago, adjusted by average total assets per share",0.9482,162,65,166.70577571819976
+model77,equity_value_score,MATRIX,Earnings Quality (submodule of Value Analyst II),1.0,106,53,166.67320857744042
+analyst4,net_debt_min_guidance_qtr,MATRIX,Minimum guidance value for Net Debt,1.0,88,77,166.66990783076935
+news12,nws12_mainz_57p,VECTOR,The minimum of L or S above for 7.5-minute bucket,0.9741,104,93,166.66607741292523
+sentiment1,snt1_d1_fundamentalfocusrank,MATRIX,"Rank (0-100) emphasizing longer-term, fundamental/value metrics; higher values for buy signal, lower for sell signal",0.603,2554,264,166.65672415630914
+model77,mdl177_2_earningmomentumfactor400_numrevy1,MATRIX,Net number of upward minus downward revisions in FY1 EPS forecasts,0.9825,109,71,166.63813425300444
+model77,mdl177_liquidityriskfactor_de_alt,MATRIX,Long-term debt to equity ratio: Most recent long-term debt divided by book equity; measure of leverage,1.0,103,55,166.57066744508944
+model77,mdl177_fangma_dvf_usa_fangma_dvf22,MATRIX,"Deep value factors 22 for FANGMA (Facebook, Apple, Netflix, Google, Mircosoft, Amazon)",1.0,111,47,166.5409937674904
+pv13,pv13_hierarchy_min54_3000_sector,GROUP,grouping fields,1.0,88,75,166.54003039875306
+model77,mdl177_2_growthanalystmodel_qga_niroe,MATRIX,Return on equity computed using net income (Net Income / Shareholders' Equity),0.994,136,35,166.5174039505618
+model77,mdl177_fa_actrtn1m,MATRIX,1-Month Active Return,1.0,138,30,166.51467535373266
+news12,news_pre_vwap,MATRIX,Pre-session volume-weighted average price,0.8289,308,191,166.51088962911638
+analyst4,min_ebit_guidance,MATRIX,Minimum guidance value for Earnings Before Interest and Taxes (EBIT),1.0,86,78,166.50632044888096
+model77,mdl177_fangma_vmm_usa_fangma_vmm11,MATRIX,"Value momentum 11 for FANGMA (Facebook, Apple, Netflix, Google, Mircosoft, Amazon)",1.0,98,60,166.50556782221247
+model77,mdl177_earningsmomemtummodel_chgsup_alt,MATRIX,Change in EPS Surprise,1.0,118,41,166.47958302253215
+model77,mdl177_2_earningsqualityfactor_salerec,MATRIX,Difference between the yearly percent change in trailing 12-month sales and the yearly percent change in accounts receivable,0.8475,319,120,166.41216268592143
+analyst4,anl4_ebit_mean,MATRIX,Earnings before interest and taxes - mean of estimations,0.7097,714,380,166.4068223025736
+analyst4,max_total_assets_guidance,MATRIX,The maximum guidance value for Total Assets.,1.0,83,82,166.4023710274161
+model77,mdl177_valueanalystmodel_qva_earnquality,MATRIX,Rank of the quality or sustainability of earnings,1.0,121,38,166.35801867798082
+model77,mdl177_v1_400_reinrate,MATRIX,"Reinvestment rate: trailing 12-month earnings per share before extra items, less trailing 12-month dividends per share by ex-date, divided by average book equity per share in the same period",0.9524,134,81,166.32634402070556
+model77,mdl177_2_momemtumanalystmodel_qma_composite,MATRIX,Rank representing composite momentum signal derived from analyst-related factors,1.0,137,29,166.27852375988283
+analyst4,anl4_bvps_mean,MATRIX,Book value per share - average of estimations,0.6499,1098,515,166.24209337144404
+model77,mdl177_earningmomentumfactor_numrevq1,MATRIX,Net number of analyst revisions for fiscal quarter 1; weighted average of forecast increases minus decreases for Q1,0.9711,130,57,166.1641882847436
+model77,mdl177_2_historicalgrowthfactor_susgrowth,MATRIX,Maximum sustainable growth rate for the firm without increasing leverage,0.9523,130,83,166.13605722622808
+model77,mdl177_deepvaluefactor_ttmpiqp_alt,MATRIX,TTM Pretax Income-to-Price: trailing 12-month pretax income per share divided by trading price,1.0,110,44,166.12861446197493
+fundamental2,fn_income_tax_expense_a,MATRIX,Income Tax Expense (Benefit),0.6933,910,307,166.12592788746744
+model77,mdl177_2_earningmomentumfactor400_stdevfy2epsp,MATRIX,Standard deviation of FY2 EPS estimates scaled by price,0.9486,128,92,166.121121509383
+socialmedia12,scl12_alltype_sentvec,VECTOR,sentiment,0.9525,141,69,166.0507467862594
+analyst4,est_grossincome,MATRIX,Gross income - Mean of estimations,0.6246,1374,525,166.04859616469528
+pv13,pv13_hierarchy_min5_f3g2_sector,GROUP,grouping fields,1.0,86,71,166.04241178162613
+model77,mdl177_momemtumanalystmodel_qma_earnexp_alt,MATRIX,"Rank reflecting analyst expectations, calculated as an equal-weighted average of analyst earnings revisions and ratings change ranks",0.9807,146,36,166.0289154310085
+analyst4,max_free_cashflow_per_share_guidance,MATRIX,The maximum guidance value for free cash flow per share.,1.0,83,76,166.02719509770154
+model77,mdl177_earningmomentumfactor_rev1q1,MATRIX,Revision in fiscal Q1 EPS forecasts; change in current Q1 forecast minus previous Q1 forecast,0.9717,114,71,166.00265187871278
+model77,mdl177_earningsmomemtummodel_fc_numrevy1_alt,MATRIX,Weighted average net number of FY1 analyst forecast revisions in a month (raises minus lowers) divided by total forecasts,1.0,106,46,165.97902635316933
+analyst4,net_profit_adjusted_value,MATRIX,Adjusted net income- announced financial value,0.9312,146,97,165.9491632611402
+fundamental2,fn_allocated_share_based_compensation_expense_q,MATRIX,"Represents the expense recognized during the period arising from equity-based compensation arrangements (for example, shares of stock, units, stock options, or other equity instruments) with employees, directors, and certain consultants qualifying for treatment as employees.",0.6541,1155,403,165.94428488212898
+news12,nws12_mainz_3p,VECTOR,The minimum of L or S above for 3-minute bucket,0.9741,101,85,165.93146461411024
+model77,mdl177_2_managementqualityfactor_cfroi,MATRIX,"Cash Flow Return on Invested Capital: trailing 12-month cash flow divided by average invested capital (common equity, long-term debt, minority interest, and preferred stock)",0.9614,173,37,165.91848379077723
+model77,mdl177_2_managementqualityfactor_capacq,MATRIX,"Capital acquisition ratio, a measure relevant to sector or industry valuation and financial health",0.9608,137,60,165.9069061724386
+model77,mdl177_earningmomentumfactor_qepsferr,MATRIX,Prior fiscal quarter forecast error; difference between actual and estimated EPS for previous quarter,0.9074,181,101,165.9049309371893
+pv13,pv13_hierarchy2_513_sector,GROUP,grouping fields,0.9933,86,79,165.89921435991525
+model77,mdl177_valanalystmodel_qva_balsht,MATRIX,Rank of balance sheet strength (cash and equivalents relative to market capitalization),1.0,104,47,165.8956085561147
+analyst4,cash_flow_financing_max_guidance,MATRIX,Cash Flow From Financing - Maximum guidance value provided annually,1.0,83,74,165.89560855611467
+model77,mdl177_historicalgrowthfactor_reinrate_alt,MATRIX,"Reinvestment rate calculated as trailing 12-month EPS minus dividends, divided by average book equity per share",0.9651,110,85,165.87703849439086
+model77,mdl177_2_deepvaluefactor_cashp,MATRIX,Most recently reported cash and equivalents per share divided by trading price,0.9104,221,63,165.86118923552115
+analyst4,estimate_value_currency_code_qtr,VECTOR,Home currency of instrument,1.0,84,71,165.80984315998344
+model77,mdl177_valanalystmodel_qva_earnquality,MATRIX,Rank of earnings quality or stability,1.0,104,46,165.79034151012553
+model77,mdl177_valuemomemtummodel_financialstatementmodule,MATRIX,"Module containing factors or signals derived from financial statements such as balance sheet, income statement, and cash flow statement",1.0,105,45,165.77759792356613
+news12,nws12_mainz_tonlast,VECTOR,Price at the time of news,0.9733,118,61,165.75690685634078
+analyst4,sales_estimate_standard_deviation,MATRIX,Sales - standard deviation of estimations,0.7259,574,373,165.75497939504615
+model77,mdl77_earningsmomemtummodel_pge_cf,MATRIX,Estimates on the next 1 year average earnings scaled by company's prospects on growth and its stock price.,1.0,101,48,165.70882962339584
+analyst4,anl4_fs_detail_estimates_basic_af_v4_nd_currency,MATRIX,Home currency of the instrument,1.0,83,71,165.6914985835134
+analyst4,anl4_cfo_number,MATRIX,Cash Flow From Operations - number of estimations,0.6232,1067,833,165.68659720699515
+earnings4,ern4_30div,VECTOR,"Interpolated implied volatility over 30 calendar days, annualized percent",0.9692,136,49,165.67992428542198
+model77,mdl177_2_sensitivityfactor400_impvol,MATRIX,"Implied volatility estimate derived from options markets for the stock, reflecting expected future market volatility",0.9411,166,58,165.67762534369615
+pv13,pv13_hierarchy_min51_f4_sector,GROUP,grouping fields,1.0,84,69,165.66898877514996
+pv13,pv13_hierarchy_min52_sector,GROUP,grouping fields,1.0,82,72,165.64070328370792

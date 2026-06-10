@@ -1,0 +1,90 @@
+1.
+Alpha: rank(ts_std_dev(stddev_reported_eps_quarterly_estimate,252))
+Sharpe: 0.624
+Fitness: 0.658
+Turnover: 0.300
+Score: 1.226
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+2.
+Alpha: rank(ts_delta(anl4_epsa_flag,63))
+Sharpe: 0.800
+Fitness: 0.750
+Turnover: 0.500
+Score: 1.172
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+3.
+Alpha: rank(ts_mean(stddev_reported_eps_quarterly_estimate,252))
+Sharpe: 0.624
+Fitness: 0.658
+Turnover: 0.300
+Score: 1.153
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+4.
+Alpha: rank(ts_rank(sales_estimate_stddev_quarterly,20)-ts_zscore(pcr_oi_1080,20))
+Sharpe: 0.527
+Fitness: 0.283
+Turnover: 0.081
+Score: 1.065
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+5.
+Alpha: rank(ts_mean(anl4_cff_flag,126))
+Sharpe: 0.624
+Fitness: 0.658
+Turnover: 0.300
+Score: 0.943
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+6.
+Alpha: rank(ts_rank(anl4_epsa_flag,63))
+Sharpe: 0.800
+Fitness: 0.750
+Turnover: 0.500
+Score: 0.917
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+7.
+Alpha: rank(ts_mean(stddev_reported_eps_quarterly_estimate,126))
+Sharpe: 0.624
+Fitness: 0.658
+Turnover: 0.300
+Score: 0.907
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+8.
+Alpha: rank(ts_mean(anl4_cff_flag,63))
+Sharpe: 0.624
+Fitness: 0.658
+Turnover: 0.300
+Score: 0.901
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+9.
+Alpha: rank(ts_mean(anl4_cff_flag,252))
+Sharpe: 0.624
+Fitness: 0.658
+Turnover: 0.300
+Score: 0.881
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+10.
+Alpha: rank(ts_zscore(actual_eps_value_quarterly,252)-ts_zscore(anl4_adjusted_netincome_ft,252))
+Sharpe: 0.800
+Fitness: 0.750
+Turnover: 0.500
+Score: 0.855
+Confidence Score: 0.00
+Parent Alpha: nan
+---
