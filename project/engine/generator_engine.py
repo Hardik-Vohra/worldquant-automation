@@ -1,4 +1,5 @@
 import itertools
+import random
 from collections import Counter
 from project.data.fields import FieldCatalog
 from project.engine.learning_engine import LearningEngine
@@ -7,10 +8,8 @@ from project.worldquant.parser import AlphaExpression
 from project.engine.data_manager import AlphaDatabase
 from typing import List, Dict
 import sys
-sys.path.insert(0, '/'.join(__file__.split('/')[:-3]))  # Add root to path
-from operators import (
-    TS_OPERATORS, ARITHMETIC_OPERATORS, CROSS_SECTIONAL_OPERATORS, WINDOWS
-)
+sys.path.insert(0, '/'.join(__file__.split('/')[:-3]))
+from operators import WINDOWS
 
 
 class GeneratorEngine:
@@ -23,12 +22,17 @@ class GeneratorEngine:
         self.catalog = catalog
         self.learning = learning
         self.db = db
-        self.windows = WINDOWS  # [20, 63, 126, 252] from operators
+        self.windows = WINDOWS
         self.max_family_share = 0.30
-        self.max_primary_operator_share = 0.35
+        self.max_primary_operator_share = 0.25 # Allows diverse inner logics
         self.max_field_share = 0.25
 
     def generate_candidates(self, limit=200) -> List[Dict]:
+        self.entropy_stats = self.learning.calculate_entropy()
+        self.cat_stats = self.learning.category_stats()
+        self.op_stats = self.learning.operator_stats()
+        self.field_stats = self.learning.field_stats()
+        
         candidates = []
         candidates.extend(self._generate_fundamental())
         candidates.extend(self._generate_options())
@@ -36,23 +40,33 @@ class GeneratorEngine:
         candidates.extend(self._generate_hybrid())
         candidates.extend(self._generate_regime())
 
-        # If there are strong winners, propose mutations around them.
         parents = self.db.get_successful_alphas(limit=20)
         for parent in parents:
             candidates.extend(self._generate_mutations(parent["alpha"]))
 
         unique = {}
         seen_canonicals = set()
+        seen_core_fields = set() 
+        
         for candidate in candidates:
             if not candidate:
                 continue
             alpha = candidate["alpha"]
             if self.db.alpha_exists(alpha):
                 continue
+                
             signature = candidate.get("signature")
             if signature in seen_canonicals:
                 continue
+                
             expr = AlphaExpression(alpha)
+            fields = tuple(sorted(expr.field_set()))
+            
+            if len(fields) <= 2:
+                if fields in seen_core_fields:
+                    continue
+                seen_core_fields.add(fields)
+
             duplicate = False
             for other in unique.values():
                 if other.get("category") != candidate.get("category"):
@@ -71,8 +85,10 @@ class GeneratorEngine:
                             break
             if duplicate:
                 continue
+                
             seen_canonicals.add(signature)
             unique[alpha] = candidate
+            
         ranked = sorted(unique.values(), key=self._ranking_key, reverse=True)
         return self._apply_diversity_controls(ranked, limit)
 
@@ -137,9 +153,13 @@ class GeneratorEngine:
 
     def _primary_operator(self, candidate: Dict) -> str:
         operators = candidate.get("operator_set") or []
-        for operator in operators:
-            if operator not in {"rank", "+", "-", "*", "/", "<", ">"}:
-                return operator
+        # NEW: Ignore 'rank' and 'zscore' to find the actual core inner mathematical driver
+        for op in ["ts_zscore", "ts_delta", "trade_when", "ts_mean", "ts_std_dev"]:
+            if op in operators:
+                return op
+        for op in operators:
+            if op not in {"rank", "zscore", "group_neutralize", "+", "-", "*", "/", "<", ">"}:
+                return op
         return operators[0] if operators else "none"
 
     def _ranking_key(self, candidate: Dict):
@@ -147,50 +167,43 @@ class GeneratorEngine:
         score = candidate.get("predicted_score") or 0.0
         confidence = candidate.get("confidence") or 0.0
         family = candidate.get("family") or candidate.get("category") or ""
+        
+        penalty = 0.0
+        if getattr(self, "entropy_stats", None):
+            if self.entropy_stats.get("family_entropy", 1.5) < 1.4:
+                if family in self.cat_stats.index:
+                    total = self.cat_stats["count"].sum()
+                    if total > 0:
+                        penalty += (self.cat_stats.loc[family, "count"] / total) * 0.15
+                        
+            if self.entropy_stats.get("operator_entropy", 2.5) < 2.5:
+                op = self._primary_operator(candidate)
+                if op in self.op_stats.index:
+                    total = self.op_stats["count"].sum()
+                    if total > 0:
+                        penalty += (self.op_stats.loc[op, "count"] / total) * 0.10
+                        
+            if self.entropy_stats.get("field_entropy", 4.5) < 4.0:
+                fields = candidate.get("field_set", [])
+                max_field_penalty = 0.0
+                total = self.field_stats["count"].sum()
+                if total > 0:
+                    for f in fields:
+                        if f in self.field_stats.index:
+                            f_penalty = (self.field_stats.loc[f, "count"] / total) * 0.15
+                            max_field_penalty = max(max_field_penalty, f_penalty)
+                penalty += max_field_penalty
+
         family_bonus = 0.03 if family in {"options_regime_trade_when", "iv_hv_spread", "pcr", "options_simple"} else 0.0
         novelty = (sum(ord(ch) for ch in alpha) % 997) / 100000.0
-        return (score + family_bonus, confidence, -len(candidate.get("field_set") or []), novelty)
+        return (score + family_bonus - penalty, confidence, -len(candidate.get("field_set") or []), novelty)
 
     def _apply_diversity_controls(self, ranked: List[Dict], limit: int) -> List[Dict]:
         if not ranked:
             return []
-        family_cap = max(1, int(limit * self.max_family_share))
-        operator_cap = max(1, int(limit * self.max_primary_operator_share))
-        field_cap = max(1, int(limit * self.max_field_share))
-        selected = []
-        seen = set()
-        family_counts = Counter()
-        operator_counts = Counter()
-        field_counts = Counter()
-
-        def can_add(candidate, strict=True):
-            family = candidate.get("family") or candidate.get("category") or "unknown"
-            primary_operator = self._primary_operator(candidate)
-            fields = candidate.get("field_set") or []
-            if not strict:
-                return True
-            if family_counts[family] >= family_cap:
-                return False
-            if operator_counts[primary_operator] >= operator_cap:
-                return False
-            if any(field_counts[field] >= field_cap for field in fields):
-                return False
-            return True
-
-        for strict in [True, False]:
-            for candidate in ranked:
-                alpha = candidate["alpha"]
-                if alpha in seen or not can_add(candidate, strict=strict):
-                    continue
-                selected.append(candidate)
-                seen.add(alpha)
-                family_counts[candidate.get("family") or candidate.get("category") or "unknown"] += 1
-                operator_counts[self._primary_operator(candidate)] += 1
-                for field in candidate.get("field_set") or []:
-                    field_counts[field] += 1
-                if len(selected) >= limit:
-                    return self._interleave_by_family(selected)
-        return self._interleave_by_family(selected)
+        # Replaced hard bans with weighted diversity pressure in _ranking_key.
+        # Just interleave the top ranked candidates up to the limit.
+        return self._interleave_by_family(ranked[:limit])
 
     def _interleave_by_family(self, candidates: List[Dict]) -> List[Dict]:
         grouped = {}
@@ -198,235 +211,93 @@ class GeneratorEngine:
             grouped.setdefault(candidate.get("family") or candidate.get("category") or "unknown", []).append(candidate)
         ordered = []
         while grouped:
-            family_order = sorted(
-                grouped,
-                key=lambda family: grouped[family][0].get("predicted_score") or 0.0,
-                reverse=True,
-            )
+            family_order = sorted(grouped, key=lambda f: grouped[f][0].get("predicted_score") or 0.0, reverse=True)
             for family in family_order:
                 ordered.append(grouped[family].pop(0))
-                if not grouped[family]:
-                    del grouped[family]
-            if len(ordered) >= len(candidates):
-                break
+                if not grouped[family]: del grouped[family]
+            if len(ordered) >= len(candidates): break
         return ordered
 
     def _build_reason(self, expression: AlphaExpression, predicted: dict, category: str = None) -> str:
         reasons = []
-        if category:
-            reasons.append(f"Category={category}")
-        top_fields = set(self.learning.top_fields(limit=20))
-        if expression.field_set() and top_fields.intersection(expression.field_set()):
-            reasons.append("Uses historically strong field")
-        top_ops = set(self.learning.top_operators(limit=20))
-        if expression.operator_set() and top_ops.intersection(expression.operator_set()):
-            reasons.append("Uses strong historical operator")
-        if predicted["predicted_sharpe"] >= 1.2:
-            reasons.append("High predicted Sharpe")
-        if predicted["confidence"] >= 0.75:
-            reasons.append("High confidence")
-        if not reasons:
-            reasons.append("Predicted strong candidate")
+        if category: reasons.append(f"Category={category}")
+        if predicted["predicted_sharpe"] >= 1.2: reasons.append("High predicted Sharpe ceiling")
+        if not reasons: reasons.append("Predicted strong candidate")
         return "; ".join(reasons)
 
     def _generate_fundamental(self) -> List[Dict]:
-        fields = self.learning.top_fields(limit=8) or self.catalog.get_fields_by_category("Fundamental", min_alpha_count=50, limit=8)
+        proven_fields = self.learning.top_fields(limit=4)
+        explore_fields = self.catalog.sample_exploration_fields("Fundamental", min_coverage=0.80, sample_size=6)
+        fields = list(set(proven_fields + explore_fields))
+        
         candidates = []
-        # Core time-series operators
-        core_ts_ops = ["ts_delta", "ts_rank", "ts_zscore", "ts_mean", "ts_std_dev", "ts_scale"]
         for field in fields:
             for w in self.windows:
-                for op in core_ts_ops:
-                    candidates.append(self._build_candidate(f"rank({op}({field},{w}))", category="Fundamental"))
-        
-        # Two-field combinations
-        for f1, f2 in itertools.permutations(fields, 2):
-            if f1 == f2:
-                continue
-            for w in self.windows:
-                candidates.append(self._build_candidate(f"rank(ts_rank({f1},{w})-ts_rank({f2},{w}))", category="Fundamental"))
-                candidates.append(self._build_candidate(f"rank(ts_zscore({f1},{w})-ts_zscore({f2},{w}))", category="Fundamental"))
-                candidates.append(self._build_candidate(f"rank(ts_delta({f1},{w})-ts_delta({f2},{w}))", category="Fundamental"))
-        
-        # Three-field aggregates
-        if len(fields) >= 3:
-            candidates.append(self._build_candidate(
-                f"rank(ts_rank({fields[0]},{self.windows[-1]})+ts_rank({fields[1]},{self.windows[-1]})-ts_rank({fields[2]},{self.windows[-1]}))",
-                category="Fundamental",
-            ))
+                # Safely ranked to pass Web GUI constraints
+                candidates.append(self._build_candidate(f"rank(ts_zscore({field}, {w}))", category="Fundamental"))
+                candidates.append(self._build_candidate(f"rank(ts_delta({field}, {w}))", category="Fundamental"))
         return [c for c in candidates if c]
 
     def _generate_options(self) -> List[Dict]:
-        pcr_fields = self.catalog.get_pcr_fields(min_alpha_count=0, limit=6) or ["pcr_oi_270"]
-        iv_fields = self.catalog.get_implied_volatility_fields(min_alpha_count=0, limit=8) or [
-            "implied_volatility_mean_30",
-            "implied_volatility_mean_90",
-            "implied_volatility_mean_270",
-        ]
-        hv_fields = self.catalog.get_historical_volatility_fields(min_alpha_count=0, limit=6) or [
-            "historical_volatility_30",
-            "historical_volatility_90",
-            "historical_volatility_150",
-        ]
-        oi_fields = self.catalog.get_open_interest_fields(min_alpha_count=0, limit=8) or [
-            "call_open_interest_270",
-            "put_open_interest_270",
-        ]
-        fields = list(dict.fromkeys(pcr_fields + iv_fields + hv_fields + oi_fields))[:24]
-        pcr = pcr_fields[0]
-        iv_short = iv_fields[0]
-        iv_mid = iv_fields[min(1, len(iv_fields) - 1)]
-        iv_long = iv_fields[-1]
-        hv_short = hv_fields[0]
-        hv_mid = hv_fields[min(1, len(hv_fields) - 1)]
-        call_oi = next((field for field in oi_fields if "call" in field.lower()), oi_fields[0] if oi_fields else "call_open_interest_270")
-        put_oi = next((field for field in oi_fields if "put" in field.lower()), oi_fields[-1] if oi_fields else "put_open_interest_270")
+        proven_pcr = self.catalog.get_pcr_fields(limit=2)
+        explore_pcr = self.catalog.sample_exploration_fields("Options", min_coverage=0.60, sample_size=4)
+        pcr_fields = list(set(proven_pcr + explore_pcr))
+        
+        iv_fields = self.catalog.get_implied_volatility_fields(limit=4) or ["implied_volatility_mean_90"]
+        hv_fields = self.catalog.get_historical_volatility_fields(limit=4) or ["historical_volatility_90"]
+        
         candidates = []
-        signals = [
-            f"({iv_short}-{iv_long})",
-            f"({iv_mid}-{hv_mid})",
-            f"({hv_short}-{hv_mid})",
-            f"({call_oi}-{put_oi})",
-            f"({pcr}*({iv_mid}-{hv_mid}))",
-        ]
-        conditions = [
-            f"{pcr}<1",
-            f"{pcr}>1",
-            f"ts_rank({pcr},252)>0.8",
-            f"ts_rank({pcr},252)<0.2",
-            f"ts_zscore({pcr},126)>0",
-        ]
-        # Simple rank signals
-        for signal in signals:
-            candidates.append(self._build_candidate(f"rank{signal}", category="Options"))
-            candidates.append(self._build_candidate(f"zscore({signal})", category="Options"))
-        
-        # Trade-when conditions
-        for cond in conditions:
-            for signal in signals:
-                candidates.append(self._build_candidate(f"trade_when({cond},{signal},-1)", category="Options"))
-        
-        # Field-based operators
-        core_ts_ops = ["ts_delta", "ts_rank", "ts_zscore", "ts_mean"]
-        for field in fields:
-            for w in self.windows:
-                for op in core_ts_ops:
-                    candidates.append(self._build_candidate(f"rank({op}({field},{w}))", category="Options"))
+        if len(iv_fields) >= 2:
+            candidates.append(self._build_candidate(f"rank(({iv_fields[0]}-{iv_fields[1]})/{iv_fields[1]})", category="Options"))
+            candidates.append(self._build_candidate(f"rank(ts_zscore(({iv_fields[0]}-{iv_fields[1]})/{iv_fields[1]}, 63))", category="Options"))
+
+        if iv_fields and hv_fields:
+            vrp = f"({iv_fields[0]}-{hv_fields[0]})"
+            candidates.append(self._build_candidate(f"rank(ts_zscore({vrp}, 63))", category="Options"))
+            
+        for pcr in pcr_fields:
+            for w in [20, 63, 126]:
+                candidates.append(self._build_candidate(f"rank(ts_zscore({pcr}, {w}))", category="Options"))
+                candidates.append(self._build_candidate(f"rank(trade_when({pcr}>1.2, -ts_zscore(returns,{w}), ts_zscore(returns,{w})))", category="Options"))
+                
         return [c for c in candidates if c]
 
     def _generate_volatility(self) -> List[Dict]:
-        fields = list(dict.fromkeys(
-            self.catalog.get_historical_volatility_fields(min_alpha_count=0, limit=8)
-            + self.catalog.get_implied_volatility_fields(min_alpha_count=0, limit=8)
-            + self.catalog.get_fields_by_category("Volatility", min_alpha_count=20, limit=8)
-        ))[:16]
+        fields = self.catalog.sample_exploration_fields("Volatility", min_coverage=0.70, sample_size=6)
         candidates = []
-        core_ts_ops = ["ts_rank", "ts_delta", "ts_zscore", "ts_mean", "ts_std_dev"]
-        
-        if fields:
-            for field in fields:
-                for w in self.windows:
-                    for op in core_ts_ops:
-                        candidates.append(self._build_candidate(f"rank({op}({field},{w}))", category="Volatility"))
-        
-        # Volatility spread signals
-        vol_signals = [
-            "(implied_volatility_mean_30-implied_volatility_mean_270)",
-            "(implied_volatility_mean_90-implied_volatility_mean_270)",
-            "(historical_volatility_30-historical_volatility_90)",
-            "(historical_volatility_30-historical_volatility_150)",
-        ]
-        for sig in vol_signals:
-            candidates.append(self._build_candidate(f"rank{sig}", category="Volatility"))
-            candidates.append(self._build_candidate(f"zscore({sig})", category="Volatility"))
-        
+        for field in fields:
+            for w in [63, 126, 252]:
+                candidates.append(self._build_candidate(f"rank(ts_zscore({field},{w}))", category="Volatility"))
+                candidates.append(self._build_candidate(f"rank(ts_delta({field},{w})/{field})", category="Volatility"))
         return [c for c in candidates if c]
 
     def _generate_hybrid(self) -> List[Dict]:
-        fund_fields = self.learning.top_fields(limit=6) or self.catalog.get_fields_by_category("Fundamental", min_alpha_count=50, limit=6)
-        option_fields = list(dict.fromkeys(
-            self.catalog.get_pcr_fields(min_alpha_count=0, limit=4)
-            + self.catalog.get_implied_volatility_fields(min_alpha_count=0, limit=4)
-            + self.catalog.get_historical_volatility_fields(min_alpha_count=0, limit=4)
-            + self.catalog.get_open_interest_fields(min_alpha_count=0, limit=4)
-        )) or self.catalog.get_fields_by_category("Options", min_alpha_count=20, limit=6)
+        fund_fields = self.catalog.sample_exploration_fields("Fundamental", min_coverage=0.85, sample_size=3)
+        option_fields = self.catalog.get_implied_volatility_fields(limit=3)
         candidates = []
-        
-        hybrid_ops = ["ts_delta", "ts_zscore", "ts_rank", "ts_mean"]
-        
         for f, o in itertools.product(fund_fields, option_fields):
-            for w in self.windows:
-                for op in hybrid_ops:
-                    candidates.append(self._build_candidate(
-                        f"rank({op}({f},{w})-ts_zscore({o},{w}))",
-                        category="Hybrid",
-                    ))
-                candidates.append(self._build_candidate(
-                    f"trade_when(ts_rank({o},{w})>0.6,ts_delta({f},{w}),-1)",
-                    category="Hybrid",
-                ))
-                candidates.append(self._build_candidate(
-                    f"rank(ts_zscore({f},{w})*rank({o}))",
-                    category="Hybrid",
-                ))
+            for w in [63, 252]:
+                candidates.append(self._build_candidate(f"rank(ts_zscore({f},{w}) * (1/ts_rank({o},{w})))", category="Hybrid"))
+                candidates.append(self._build_candidate(f"rank(trade_when(ts_zscore({o},63)<0, ts_zscore({f},{w}), 0))", category="Hybrid"))
         return [c for c in candidates if c]
 
     def _generate_regime(self) -> List[Dict]:
         candidates = []
-        pcr_fields = self.catalog.get_pcr_fields(min_alpha_count=0, limit=3) or ["pcr_oi_270"]
-        iv_fields = self.catalog.get_implied_volatility_fields(min_alpha_count=0, limit=4) or ["implied_volatility_mean_30", "implied_volatility_mean_90", "implied_volatility_mean_270"]
-        hv_fields = self.catalog.get_historical_volatility_fields(min_alpha_count=0, limit=3) or ["historical_volatility_30", "historical_volatility_90"]
-        oi_fields = self.catalog.get_open_interest_fields(min_alpha_count=0, limit=4) or ["call_open_interest_270", "put_open_interest_270"]
-        pcr = pcr_fields[0]
-        iv_short = iv_fields[0]
-        iv_mid = iv_fields[min(1, len(iv_fields) - 1)]
-        iv_long = iv_fields[-1]
-        hv_mid = hv_fields[min(1, len(hv_fields) - 1)]
-        call_oi = next((field for field in oi_fields if "call" in field.lower()), oi_fields[0] if oi_fields else "call_open_interest_270")
-        put_oi = next((field for field in oi_fields if "put" in field.lower()), oi_fields[-1] if oi_fields else "put_open_interest_270")
-        conditions = [
-            f"{pcr}<1",
-            f"{pcr}>1",
-            f"ts_rank({pcr},252)>0.8",
-            f"ts_rank({pcr},252)<0.2",
-            f"ts_zscore({iv_mid},126)>0",
-        ]
-        signals = [
-            f"({iv_short}-{iv_long})",
-            f"({iv_mid}-{hv_mid})",
-            f"({call_oi}-{put_oi})",
-            f"({pcr}*({iv_mid}-{hv_mid}))",
-        ]
+        pcr = "pcr_oi_270"
+        iv_mid = "implied_volatility_mean_90"
+        conditions = [f"ts_zscore({pcr},63)>1.5", f"ts_delta({iv_mid},20)>0"]
+        signals = ["ts_zscore(returns, 20)", f"ts_zscore({pcr}, 20)"]
         
-        # Trade-when regime shifts
         for cond in conditions:
             for signal in signals:
-                candidates.append(self._build_candidate(f"trade_when({cond},{signal},-1)", category="Regime"))
-        
-        # Conditional normalization (zscore applied only in certain regimes)
-        for cond in conditions:
-            for signal in signals:
-                candidates.append(self._build_candidate(f"if_else({cond},zscore({signal}),0)", category="Regime"))
-        
+                candidates.append(self._build_candidate(f"rank(trade_when({cond}, -{signal}, {signal}))", category="Regime"))
         return [c for c in candidates if c]
 
     def _generate_mutations(self, parent_alpha: str) -> List[Dict]:
         from project.engine.mutation_engine import MutationEngine
-
         mutator = MutationEngine(self.catalog, self.learning)
         mutants = []
         for candidate in mutator.mutate_alpha(parent_alpha, max_mutations=10):
             built = self._build_candidate(candidate, generation=1, parent_alpha=parent_alpha, category="Mutation")
-            if built:
-                mutants.append(built)
+            if built: mutants.append(built)
         return mutants
-
-
-if __name__ == "__main__":
-    from project.engine.data_manager import AlphaDatabase
-
-    db = AlphaDatabase()
-    catalog = FieldCatalog()
-    learner = LearningEngine(db)
-    generator = GeneratorEngine(catalog, learner, db)
-    print(len(generator.generate_candidates(limit=50)))

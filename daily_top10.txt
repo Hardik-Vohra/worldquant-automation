@@ -1,90 +1,450 @@
 1.
-Alpha: rank(ts_std_dev(stddev_reported_eps_quarterly_estimate,252))
-Sharpe: 0.624
-Fitness: 0.658
-Turnover: 0.300
-Score: 1.226
+Alpha: trade_when(ts_zscore(month_one_at_the_money_implied_volatility,63)<0, ts_zscore(five_hundred_day_intraday_historical_volatility,252), 0)
+Sharpe: 1.006
+Fitness: 0.950
+Turnover: 0.157
+Score: 1.737
 Confidence Score: 0.00
 Parent Alpha: nan
 ---
 2.
-Alpha: rank(ts_delta(anl4_epsa_flag,63))
-Sharpe: 0.800
-Fitness: 0.750
-Turnover: 0.500
-Score: 1.172
+Alpha: trade_when(ts_zscore(infinite_maturity_ex_announcement_implied_volatility,63)<0, ts_zscore(five_hundred_day_intraday_historical_volatility,63), 0)
+Sharpe: 0.901
+Fitness: 0.787
+Turnover: 0.162
+Score: 1.609
 Confidence Score: 0.00
 Parent Alpha: nan
 ---
 3.
-Alpha: rank(ts_mean(stddev_reported_eps_quarterly_estimate,252))
-Sharpe: 0.624
-Fitness: 0.658
-Turnover: 0.300
-Score: 1.153
+Alpha: trade_when(ts_zscore(infinite_maturity_ex_announcement_implied_volatility,63)<0, ts_zscore(ebit_stddev,252), 0)
+Sharpe: 0.680
+Fitness: 0.500
+Turnover: 0.134
+Score: 1.449
 Confidence Score: 0.00
 Parent Alpha: nan
 ---
 4.
-Alpha: rank(ts_rank(sales_estimate_stddev_quarterly,20)-ts_zscore(pcr_oi_1080,20))
-Sharpe: 0.527
-Fitness: 0.283
-Turnover: 0.081
-Score: 1.065
+Alpha: trade_when(ts_zscore(fourth_month_at_the_money_implied_volatility,63)<0, ts_zscore(five_hundred_day_intraday_historical_volatility,252), 0)
+Sharpe: 0.976
+Fitness: 0.937
+Turnover: 0.150
+Score: 1.442
 Confidence Score: 0.00
 Parent Alpha: nan
 ---
 5.
-Alpha: rank(ts_mean(anl4_cff_flag,126))
-Sharpe: 0.624
-Fitness: 0.658
-Turnover: 0.300
-Score: 0.943
+Alpha: ts_zscore(five_hundred_day_intraday_historical_volatility,126)
+Sharpe: 0.509
+Fitness: 0.324
+Turnover: 0.105
+Score: 1.438
 Confidence Score: 0.00
 Parent Alpha: nan
 ---
 6.
-Alpha: rank(ts_rank(anl4_epsa_flag,63))
-Sharpe: 0.800
-Fitness: 0.750
-Turnover: 0.500
-Score: 0.917
+Alpha: trade_when(ts_zscore(infinite_maturity_ex_announcement_implied_volatility,63)<0, ts_zscore(ebit_stddev,63), 0)
+Sharpe: 0.559
+Fitness: 0.379
+Turnover: 0.133
+Score: 1.341
 Confidence Score: 0.00
 Parent Alpha: nan
 ---
 7.
-Alpha: rank(ts_mean(stddev_reported_eps_quarterly_estimate,126))
-Sharpe: 0.624
-Fitness: 0.658
-Turnover: 0.300
-Score: 0.907
+Alpha: trade_when(ts_zscore(month_one_at_the_money_implied_volatility,63)<0, ts_zscore(five_hundred_day_intraday_historical_volatility,63), 0)
+Sharpe: 0.962
+Fitness: 0.820
+Turnover: 0.165
+Score: 1.315
 Confidence Score: 0.00
 Parent Alpha: nan
 ---
 8.
-Alpha: rank(ts_mean(anl4_cff_flag,63))
-Sharpe: 0.624
-Fitness: 0.658
-Turnover: 0.300
-Score: 0.901
+Alpha: ts_zscore(five_hundred_day_intraday_historical_volatility,252) * (1/ts_rank(month_one_at_the_money_implied_volatility,252))
+Sharpe: 0.962
+Fitness: 0.889
+Turnover: 0.199
+Score: 1.272
 Confidence Score: 0.00
 Parent Alpha: nan
 ---
 9.
-Alpha: rank(ts_mean(anl4_cff_flag,252))
+Alpha: rank(ts_std_dev(stddev_reported_eps_quarterly_estimate,252))
 Sharpe: 0.624
 Fitness: 0.658
 Turnover: 0.300
-Score: 0.881
+Score: 1.271
 Confidence Score: 0.00
 Parent Alpha: nan
 ---
 10.
+Alpha: rank(ts_mean(stddev_reported_eps_quarterly_estimate,252))
+Sharpe: 0.624
+Fitness: 0.658
+Turnover: 0.300
+Score: 1.161
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+11.
+Alpha: trade_when(ts_zscore(infinite_maturity_ex_announcement_implied_volatility,63)<0, ts_zscore(sales_estimate_stddev_quarterly,252), 0)
+Sharpe: 0.604
+Fitness: 0.405
+Turnover: 0.152
+Score: 1.130
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+12.
+Alpha: trade_when(ts_zscore(month_one_at_the_money_implied_volatility,63)<0, ts_zscore(ebit_stddev,252), 0)
+Sharpe: 0.877
+Fitness: 0.746
+Turnover: 0.144
+Score: 1.124
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+13.
+Alpha: trade_when(ts_zscore(month_four_at_the_money_implied_volatility,63)<0, ts_zscore(sales_estimate_stddev_quarterly,252), 0)
+Sharpe: 0.629
+Fitness: 0.427
+Turnover: 0.156
+Score: 1.118
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+14.
+Alpha: trade_when(ts_zscore(month_one_at_the_money_implied_volatility,63)<0, ts_zscore(sales_estimate_stddev_quarterly,252), 0)
+Sharpe: 0.665
+Fitness: 0.438
+Turnover: 0.170
+Score: 1.109
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+15.
+Alpha: trade_when(ts_zscore(fourth_month_at_the_money_implied_volatility,63)<0, ts_zscore(five_hundred_day_intraday_historical_volatility,63), 0)
+Sharpe: 0.935
+Fitness: 0.775
+Turnover: 0.156
+Score: 1.096
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+16.
+Alpha: trade_when(ts_zscore(month_four_at_the_money_implied_volatility,63)<0, ts_zscore(five_hundred_day_intraday_historical_volatility,63), 0)
+Sharpe: 0.935
+Fitness: 0.801
+Turnover: 0.154
+Score: 1.075
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+17.
+Alpha: rank(ts_zscore(mdl77_ohistoricalgrowthfactor_chg3yepsast,63) * (1/ts_rank(implied_volatility_call_120,63)))
+Sharpe: 0.850
+Fitness: 0.631
+Turnover: 0.162
+Score: 1.049
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+18.
+Alpha: rank(ts_zscore(anl4_fs_detail_estimates_basic_qf_v4_nd_sales_low,63) * (1/ts_rank(implied_volatility_call_120,63)))
+Sharpe: 0.967
+Fitness: 1.080
+Turnover: 0.200
+Score: 1.023
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+19.
+Alpha: rank(ts_zscore(mdl77_historicalgrowthfactor_pfcfghc,63) * (1/ts_rank(implied_volatility_call_120,63)))
+Sharpe: 0.911
+Fitness: 1.079
+Turnover: 0.179
+Score: 0.991
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+20.
+Alpha: rank(ts_zscore(mdl177_valueanalystmodel_qva_earnquality,63) * (1/ts_rank(implied_volatility_call_1080,63)))
+Sharpe: 0.850
+Fitness: 0.631
+Turnover: 0.162
+Score: 0.981
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+21.
+Alpha: rank(ts_zscore(mdl77_2valueanalystmodel_qva_alertrank,63) * (1/ts_rank(implied_volatility_call_120,63)))
+Sharpe: 0.911
+Fitness: 1.079
+Turnover: 0.179
+Score: 0.975
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+22.
+Alpha: rank(ts_zscore(anl4_fs_guidances_advanced_af_nd_epsr_maxguidance,63) * (1/ts_rank(implied_volatility_call_120,63)))
+Sharpe: 0.967
+Fitness: 1.080
+Turnover: 0.200
+Score: 0.971
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+23.
+Alpha: rank(ts_rank(sales_estimate_stddev_quarterly,20)-ts_zscore(pcr_oi_1080,20))
+Sharpe: 0.527
+Fitness: 0.283
+Turnover: 0.081
+Score: 0.950
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+24.
+Alpha: rank(ts_zscore(anl4_fs_detail_estimates_basic_qf_delay1_v4_nd_sales_number,63) * (1/ts_rank(implied_volatility_call_120,63)))
+Sharpe: 0.911
+Fitness: 1.079
+Turnover: 0.179
+Score: 0.946
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+25.
+Alpha: rank(ts_zscore(mdl177_fa_ebitdaev,63) * (1/ts_rank(implied_volatility_call_120,63)))
+Sharpe: 0.911
+Fitness: 1.079
+Turnover: 0.179
+Score: 0.943
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+26.
+Alpha: rank(ts_mean(anl4_cff_flag,126))
+Sharpe: 0.624
+Fitness: 0.658
+Turnover: 0.300
+Score: 0.904
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+27.
+Alpha: trade_when(ts_zscore(fourth_month_at_the_money_implied_volatility,63)<0, ts_zscore(ebit_stddev,252), 0)
+Sharpe: 0.723
+Fitness: 0.486
+Turnover: 0.135
+Score: 0.899
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+28.
+Alpha: trade_when(ts_zscore(month_four_at_the_money_implied_volatility,63)<0, ts_zscore(ebit_stddev,252), 0)
+Sharpe: 0.727
+Fitness: 0.501
+Turnover: 0.135
+Score: 0.896
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+29.
+Alpha: trade_when(ts_zscore(fourth_month_at_the_money_implied_volatility,63)<0, ts_zscore(sales_estimate_stddev_quarterly,252), 0)
+Sharpe: 0.634
+Fitness: 0.394
+Turnover: 0.156
+Score: 0.886
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+30.
+Alpha: rank(ts_mean(stddev_reported_eps_quarterly_estimate,126))
+Sharpe: 0.624
+Fitness: 0.658
+Turnover: 0.300
+Score: 0.879
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+31.
+Alpha: ts_zscore(five_hundred_day_intraday_historical_volatility,252) * (1/ts_rank(month_four_at_the_money_implied_volatility,252))
+Sharpe: 0.931
+Fitness: 0.866
+Turnover: 0.189
+Score: 0.876
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+32.
+Alpha: rank(ts_mean(anl4_cff_flag,63))
+Sharpe: 0.624
+Fitness: 0.658
+Turnover: 0.300
+Score: 0.868
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+33.
+Alpha: rank(ts_mean(anl4_cff_flag,252))
+Sharpe: 0.624
+Fitness: 0.658
+Turnover: 0.300
+Score: 0.857
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+34.
+Alpha: rank(ts_rank(anl4_afv4_eps_high,252)-ts_rank(actuals_value_currency_code,252))
+Sharpe: 0.742
+Fitness: 0.463
+Turnover: 0.084
+Score: 0.845
+Confidence Score: 0.00
+Parent Alpha: rank(ts_rank(anl4_afv4_eps_high,252)-ts_rank(anl4_cff_flag,252))
+---
+35.
+Alpha: rank(ts_rank(anl4_epsa_flag,63))
+Sharpe: 0.800
+Fitness: 0.750
+Turnover: 0.500
+Score: 0.845
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+36.
+Alpha: rank(ts_rank(anl4_afv4_eps_high,252)-ts_rank(anl4_cff_flag,252))
+Sharpe: 0.666
+Fitness: 0.456
+Turnover: 0.086
+Score: 0.832
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+37.
 Alpha: rank(ts_zscore(actual_eps_value_quarterly,252)-ts_zscore(anl4_adjusted_netincome_ft,252))
 Sharpe: 0.800
 Fitness: 0.750
 Turnover: 0.500
-Score: 0.855
+Score: 0.806
 Confidence Score: 0.00
 Parent Alpha: nan
+---
+38.
+Alpha: rank(ts_rank(anl4_afv4_eps_high,126)-ts_rank(anl4_cff_flag,126))
+Sharpe: 0.767
+Fitness: 0.523
+Turnover: 0.094
+Score: 0.794
+Confidence Score: 0.00
+Parent Alpha: rank(ts_rank(anl4_afv4_eps_high,252)-ts_rank(anl4_cff_flag,252))
+---
+39.
+Alpha: trade_when(ts_zscore(month_one_at_the_money_implied_volatility,63)<0, ts_zscore(ebit_stddev,63), 0)
+Sharpe: 0.621
+Fitness: 0.412
+Turnover: 0.151
+Score: 0.791
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+40.
+Alpha: ts_zscore(five_hundred_day_intraday_historical_volatility,252) * (1/ts_rank(fourth_month_at_the_money_implied_volatility,252))
+Sharpe: 0.932
+Fitness: 0.876
+Turnover: 0.191
+Score: 0.777
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+41.
+Alpha: ts_zscore(five_hundred_day_intraday_historical_volatility,252) * (1/ts_rank(infinite_maturity_ex_announcement_implied_volatility,252))
+Sharpe: 0.933
+Fitness: 0.889
+Turnover: 0.197
+Score: 0.777
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+42.
+Alpha: ts_zscore(ts_delta(anl4_ebit_value, 126), 252)
+Sharpe: 0.445
+Fitness: 0.230
+Turnover: 0.088
+Score: 0.777
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+43.
+Alpha: rank(ts_delta(five_hundred_day_intraday_historical_volatility, 252))
+Sharpe: 0.867
+Fitness: 0.731
+Turnover: 0.095
+Score: 0.776
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+44.
+Alpha: rank(ts_delta(anl4_afv4_eps_high,126))
+Sharpe: 0.800
+Fitness: 0.750
+Turnover: 0.500
+Score: 0.772
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+45.
+Alpha: trade_when(ts_zscore(fourth_month_at_the_money_implied_volatility,126)<0, ts_zscore(five_hundred_day_intraday_historical_volatility,126), 0)
+Sharpe: 0.930
+Fitness: 0.821
+Turnover: 0.130
+Score: 0.770
+Confidence Score: 0.00
+Parent Alpha: trade_when(ts_zscore(fourth_month_at_the_money_implied_volatility,63)<0, ts_zscore(five_hundred_day_intraday_historical_volatility,252), 0)
+---
+46.
+Alpha: rank(ts_rank(anl4_afv4_eps_high,126)-ts_rank(actual_sales_value_quarterly,126))
+Sharpe: 0.800
+Fitness: 0.750
+Turnover: 0.500
+Score: 0.769
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+47.
+Alpha: rank(ts_mean(stddev_reported_eps_quarterly_estimate,63))
+Sharpe: 0.624
+Fitness: 0.658
+Turnover: 0.300
+Score: 0.768
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+48.
+Alpha: rank(ts_zscore(adj_net_income_avg,252)-ts_zscore(anl4_adjusted_netincome_ft,252))
+Sharpe: 0.800
+Fitness: 0.750
+Turnover: 0.500
+Score: 0.766
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+49.
+Alpha: rank(ts_std_dev(sales_estimate_stddev_quarterly,252))
+Sharpe: 0.624
+Fitness: 0.658
+Turnover: 0.300
+Score: 0.765
+Confidence Score: 0.00
+Parent Alpha: nan
+---
+50.
+Alpha: trade_when(ts_delta(fourth_month_at_the_money_implied_volatility,63)<0, ts_delta(five_hundred_day_intraday_historical_volatility,252), 0)
+Sharpe: 0.917
+Fitness: 0.801
+Turnover: 0.129
+Score: 0.759
+Confidence Score: 0.00
+Parent Alpha: trade_when(ts_zscore(fourth_month_at_the_money_implied_volatility,63)<0, ts_zscore(five_hundred_day_intraday_historical_volatility,252), 0)
 ---

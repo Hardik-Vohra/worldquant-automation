@@ -31,6 +31,8 @@ from project.reports.summary import (
     export_elite_alphas,
 )
 
+from settings_optimizer import get_exploration_settings, mutate_settings, get_near_elite_simulations
+
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s %(levelname)s %(message)s",
@@ -40,31 +42,30 @@ logger = logging.getLogger(__name__)
 
 def select_settings_for_category(db: AlphaDatabase, category: str) -> dict:
     usage = db.get_simulation_budget_usage()
-    settings_summary = db.settings_summary()
-    tested_settings = len(settings_summary) if not settings_summary.empty else 0
-    if tested_settings < 4:
-        exploration_grid = [
-            {"universe": "TOP3000", "neutralization": "SUBINDUSTRY", "decay": 4, "testPeriod": "P1Y"},
-            {"universe": "TOP2000", "neutralization": "INDUSTRY", "decay": 8, "testPeriod": "P3Y"},
-            {"universe": "TOP1000", "neutralization": "INDUSTRY", "decay": 10, "testPeriod": "P3Y"},
-            {"universe": "TOP3000", "neutralization": "SECTOR", "decay": 2, "testPeriod": "P1Y"},
-        ]
-        fallback = SUBMISSION_SETTINGS.copy()
-        fallback.update(exploration_grid[usage["total_used"] % len(exploration_grid)])
-        return fallback
-
+    
+    # 1. Dedicated Exploration Phase logic
+    phase = current_phase(db)
+    if phase == "exploration" and (usage["total_used"] % 3 == 0):
+        return get_exploration_settings(category)
+        
+    # 2. Exploitation / Historical Best
     settings_candidates = db.best_settings_by_category(category, limit=2)
     if settings_candidates:
-        return settings_candidates[0]
+        import random
+        best = settings_candidates[0]
+        # 20% chance to mutate the best known settings slightly
+        if random.random() < 0.20:
+            return mutate_settings(best)
+        return best
+
+    # 3. Fallbacks
     fallback = SUBMISSION_SETTINGS.copy()
     if category == "Options":
-        fallback.update({"universe": "TOP2000", "neutralization": "INDUSTRY", "decay": 8, "testPeriod": "P3Y"})
+        fallback.update({"universe": "TOP2000", "neutralization": "INDUSTRY", "decay": 8})
     elif category == "Fundamental":
-        fallback.update({"universe": "TOP2000", "neutralization": "INDUSTRY", "decay": 8, "testPeriod": "P3Y"})
-    elif category == "Volatility":
-        fallback.update({"universe": "TOP3000", "neutralization": "SUBINDUSTRY", "decay": 4, "testPeriod": "P1Y"})
+        fallback.update({"universe": "TOP2000", "neutralization": "SUBINDUSTRY", "decay": 4})
     else:
-        fallback.update({"universe": "TOP3000", "neutralization": "SUBINDUSTRY", "decay": 4, "testPeriod": "P1Y"})
+        fallback.update({"universe": "TOP3000", "neutralization": "SUBINDUSTRY", "decay": 4})
     return fallback
 
 
@@ -236,7 +237,7 @@ def build_report_summary(db: AlphaDatabase, submitted: int, final_candidates: Li
         "Top Settings": top_settings,
         "Top Fields": top_fields,
         "Top Operators": top_ops,
-        "Top 10 Daily Recommendations": [
+        "Top 50 Daily Recommendations": [
             {
                 "alpha": candidate["alpha"],
                 "score": candidate.get("predicted_score", candidate.get("realized_score", candidate.get("score", 0))),
@@ -296,24 +297,48 @@ def main(submit: bool = True, poll: bool = True, dry_run: bool = False, submit_l
         if submit_limit <= 0:
             logger.info("No remaining simulation budget. Skipping submission.")
         else:
-            batch = prioritize_candidates(db, submit_limit)
-            logger.info(f"Submitting {len(batch)} candidates under budget allocation.")
-            for row in batch:
-                settings = select_settings_for_category(db, row.get("category", "Unknown"))
+            # --- NEW: Settings Mutation Pipeline for Near-Elite Alphas ---
+            mutation_limit = int(submit_limit * 0.30)
+            near_elites = get_near_elite_simulations(db, limit=mutation_limit)
+            
+            logger.info(f"Submitting {len(near_elites)} near-elite alphas for Settings Optimization.")
+            for ne in near_elites:
                 try:
-                    sim_id = client.submit_alpha(row["alpha"], settings=settings)
-                    db.insert_simulation(row["alpha"], settings, sim_id, status="RUNNING")
-                    db.update_metrics(alpha_text=row["alpha"], sim_id=sim_id, status="RUNNING")
+                    base_settings = json.loads(ne["settings"]) if pd.notna(ne["settings"]) else SUBMISSION_SETTINGS
+                    new_settings = mutate_settings(base_settings)
+                    sim_id = client.submit_alpha(ne["alpha"], settings=new_settings)
+                    db.insert_simulation(ne["alpha"], new_settings, sim_id, status="RUNNING")
                     submitted += 1
-                    logger.info(f"Submitted {row['alpha'][:80]} under settings {settings} -> sim {sim_id}")
+                    logger.info(f"Settings Mutated: {ne['alpha'][:60]} -> {new_settings}")
                 except AuthenticationError as exc:
                     logger.error("Authentication failed during submission: %s", exc)
                     return
                 except Exception as exc:
-                    logger.warning(f"Failed to submit alpha: {exc}")
-            logger.info(f"Submitted {submitted} alphas.")
+                    logger.warning(f"Failed to submit settings-mutated alpha: {exc}")
+
+            # --- ORIGINAL: Regular Generation Pipeline ---
+            remaining_limit = submit_limit - submitted
+            if remaining_limit > 0:
+                batch = prioritize_candidates(db, remaining_limit)
+                logger.info(f"Submitting {len(batch)} newly generated candidates under budget allocation.")
+                for row in batch:
+                    settings = select_settings_for_category(db, row.get("category", "Unknown"))
+                    try:
+                        sim_id = client.submit_alpha(row["alpha"], settings=settings)
+                        db.insert_simulation(row["alpha"], settings, sim_id, status="RUNNING")
+                        db.update_metrics(alpha_text=row["alpha"], sim_id=sim_id, status="RUNNING")
+                        submitted += 1
+                        logger.info(f"Submitted {row['alpha'][:80]} under settings {settings} -> sim {sim_id}")
+                    except AuthenticationError as exc:
+                        logger.error("Authentication failed during submission: %s", exc)
+                        return
+                    except Exception as exc:
+                        logger.warning(f"Failed to submit alpha: {exc}")
+                        
+            logger.info(f"Submitted {submitted} alphas total in this cycle.")
     else:
         logger.info("Skipping submission phase.")
+    
 
     if poll and not dry_run:
         logger.info("Polling WorldQuant simulation results...")
@@ -323,14 +348,16 @@ def main(submit: bool = True, poll: bool = True, dry_run: bool = False, submit_l
         logger.info("Skipping polling phase.")
 
     learner.refresh()
-    final_candidates = db.get_top_scored(limit=10)
+    
+    # --- EXPANDED VISIBILITY FUNNEL (Top 50 instead of Top 10) ---
+    final_candidates = db.get_top_scored(limit=50)
     if not final_candidates:
         logger.info("No completed alphas found; using highest predicted candidates.")
         final_candidates = sorted(
             [c for c in candidates if c.get("predicted_score") is not None],
             key=lambda x: x["predicted_score"],
             reverse=True,
-        )[:10]
+        )[:50]
 
     summary = build_report_summary(db, submitted, final_candidates)
     report_path = write_report_summary(summary, path="project/reports/daily_report_summary.txt")
@@ -342,9 +369,9 @@ def main(submit: bool = True, poll: bool = True, dry_run: bool = False, submit_l
     elite_path = export_elite_alphas(db, path="project/reports/elite_alphas.csv")
     logger.info(f"Wrote elite alphas to {elite_path}")
 
-    logger.info("Writing daily top 10 alphas.")
+    logger.info("Writing daily top 50 alphas.")
     write_daily_top10(final_candidates, path=DAILY_TOP10_PATH)
-    logger.info(f"Saved daily top 10 to {DAILY_TOP10_PATH}")
+    logger.info(f"Saved daily top 50 to {DAILY_TOP10_PATH}")
 
     logger.info("Run complete.")
 

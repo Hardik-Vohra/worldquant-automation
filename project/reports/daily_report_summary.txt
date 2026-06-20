@@ -1,67 +1,108 @@
 ## Simulation Budget Remaining
-501
+8250
 
 ## Total Simulations Used
-999
+1750
 
 ## Simulations Running
-230
+366
 
 ## Simulations Completed
 0
 
 ## Learning Phase
-learning
+exploitation
 
 ## Budget Used Today
-20
+0
 
 ## Top Alpha Families
-- category: pcr; tested: 60; success_rate: 0.03333333333333333; avg_sharpe: 0.33766666666666667; avg_fitness: 0.17216666666666666
-- category: iv_hv_spread; tested: 11; success_rate: 0.0; avg_sharpe: 0.1709090909090909; avg_fitness: 0.08090909090909092
-- category: options_simple; tested: 51; success_rate: 0.0; avg_sharpe: 0.10176470588235294; avg_fitness: 0.09666666666666666
-- category: fundamental_single_ts; tested: 235; success_rate: 0.00851063829787234; avg_sharpe: 0.06480851063829787; avg_fitness: 0.042851063829787234
-- category: Volatility; tested: 2; success_rate: 0.0; avg_sharpe: 0.055; avg_fitness: 0.015
+- category: iv_hv_spread; tested: 55; success_rate: 0.05454545454545454; avg_sharpe: 0.24418181818181817; avg_fitness: 0.21654545454545454
+- category: options_regime_trade_when; tested: 366; success_rate: 0.23224043715846995; avg_sharpe: 1.8624590163934425; avg_fitness: 6.597070707070706
+- category: Mutation; tested: 1; success_rate: 0.0; avg_sharpe: 0.66; avg_fitness: 0.39
+- category: trade_when_other; tested: 4; success_rate: 0.0; avg_sharpe: 0.645; avg_fitness: 0.3425
+- category: Fundamental; tested: 7; success_rate: 0.0; avg_sharpe: 0.4228571428571429; avg_fitness: 0.35714285714285715
 
 ## Top Settings
-- decay: 4; delay: 1; instrumentType: EQUITY; language: FASTEXPR; nanHandling: OFF; neutralization: SUBINDUSTRY; pasteurization: ON; region: USA; testPeriod: P1Y; truncation: 0.08; unitHandling: VERIFY; universe: TOP3000; visualization: False; tested: 197; average_sharpe: 0.24359999999999998; average_fitness: 0.12146666666666665; average_turnover: 0.11556
-- decay: 10; delay: 1; instrumentType: EQUITY; language: FASTEXPR; nanHandling: OFF; neutralization: INDUSTRY; pasteurization: ON; region: USA; testPeriod: P3Y; truncation: 0.08; unitHandling: VERIFY; universe: TOP1000; visualization: False; tested: 188; average_sharpe: 0.15721804511278195; average_fitness: 0.11150375939849624; average_turnover: 0.1503593984962406
-- decay: 8; delay: 1; instrumentType: EQUITY; language: FASTEXPR; nanHandling: OFF; neutralization: INDUSTRY; pasteurization: ON; region: USA; testPeriod: P3Y; truncation: 0.08; unitHandling: VERIFY; universe: TOP2000; visualization: False; tested: 608; average_sharpe: -0.027953321364452426; average_fitness: -0.01229802513464991; average_turnover: 0.06590538599640933
-- decay: 2; delay: 1; instrumentType: EQUITY; language: FASTEXPR; nanHandling: OFF; neutralization: SECTOR; pasteurization: ON; region: USA; testPeriod: P1Y; truncation: 0.08; unitHandling: VERIFY; universe: TOP3000; visualization: False; tested: 6; average_sharpe: -0.06250000000000001; average_fitness: -0.05; average_turnover: 0.08855
+- decay: 2; delay: 1; instrumentType: EQUITY; language: FASTEXPR; nanHandling: OFF; neutralization: INDUSTRY; pasteurization: ON; region: USA; testPeriod: P1Y; truncation: 0.01; unitHandling: VERIFY; universe: TOP3000; visualization: False; tested: 5; average_sharpe: 7.840000000000001; average_fitness: 23.81; average_turnover: 0.2857
+- decay: 8; delay: 1; instrumentType: EQUITY; language: FASTEXPR; nanHandling: OFF; neutralization: INDUSTRY; pasteurization: ON; region: USA; testPeriod: P1Y; truncation: 0.08; unitHandling: VERIFY; universe: TOP3000; visualization: False; tested: 5; average_sharpe: 7.840000000000001; average_fitness: 23.81; average_turnover: 0.2857
+- decay: 16; delay: 1; instrumentType: EQUITY; language: FASTEXPR; nanHandling: OFF; neutralization: SECTOR; pasteurization: ON; region: USA; testPeriod: P1Y; truncation: 0.08; unitHandling: VERIFY; universe: TOP3000; visualization: False; tested: 5; average_sharpe: 7.840000000000001; average_fitness: 23.81; average_turnover: 0.2857
+- decay: 0; delay: 1; instrumentType: EQUITY; language: FASTEXPR; nanHandling: OFF; neutralization: INDUSTRY; pasteurization: ON; region: USA; testPeriod: P1Y; truncation: 0.01; unitHandling: VERIFY; universe: TOP3000; visualization: False; tested: 4; average_sharpe: 7.84; average_fitness: 23.81; average_turnover: 0.2857
+- decay: 8; delay: 1; instrumentType: EQUITY; language: FASTEXPR; nanHandling: OFF; neutralization: INDUSTRY; pasteurization: ON; region: USA; testPeriod: P1Y; truncation: 0.01; unitHandling: VERIFY; universe: TOP3000; visualization: False; tested: 4; average_sharpe: 7.84; average_fitness: 23.81; average_turnover: 0.2857
 
 ## Top Fields
-- field: ninety_day_adjusted_implied_volatility; average_sharpe: 0.82; average_fitness: 0.32; average_turnover: 0.3773; count: 1.0; quality_score: 0.34072476190476186
-- field: pcr_oi_1080; average_sharpe: 0.486875; average_fitness: 0.25875; average_turnover: 0.15945625; count: 16.0; quality_score: 0.3281726785714286
-- field: pcr_oi_150; average_sharpe: 0.42699999999999994; average_fitness: 0.258; average_turnover: 0.14394; count: 10.0; quality_score: 0.31564171428571425
-- field: ninety_day_ex_announcement_implied_volatility; average_sharpe: 0.54; average_fitness: 0.23600000000000004; average_turnover: 0.21606; count: 5.0; quality_score: 0.30466876190476194
-- field: month_three_at_the_money_implied_volatility; average_sharpe: 0.51; average_fitness: 0.23; average_turnover: 0.195725; count: 4.0; quality_score: 0.30378404761904765
-- field: pcr_oi_120; average_sharpe: 0.4093333333333333; average_fitness: 0.206; average_turnover: 0.12011333333333334; count: 15.0; quality_score: 0.30376819047619047
-- field: ebit_stddev; average_sharpe: 0.3506666666666666; average_fitness: 0.17333333333333334; average_turnover: 0.06540666666666667; count: 15.0; quality_score: 0.303027746031746
-- field: anl4_cff_flag; average_sharpe: 0.17444444444444443; average_fitness: 0.20777777777777778; average_turnover: 0.05017777777777778; count: 9.0; quality_score: 0.2618467724867725
-- field: month_two_at_the_money_implied_volatility; average_sharpe: 0.46; average_fitness: 0.18; average_turnover: 0.2559; count: 1.0; quality_score: 0.23063142857142854
-- field: ninety_day_intraday_historical_volatility; average_sharpe: 0.165; average_fitness: 0.18000000000000002; average_turnover: 0.1084; count: 2.0; quality_score: 0.21293142857142855
+- field: anl4_fs_detail_estimates_basic_qf_v4_nd_sales_low; average_sharpe: 0.93; p90_sharpe: 0.93; average_fitness: 1.45; p90_fitness: 1.45; average_turnover: 0.1717; count: 1.0; quality_score: 0.7406333333333333
+- field: implied_volatility_call_120; average_sharpe: 0.8220000000000001; p90_sharpe: 0.956; average_fitness: 1.036; p90_fitness: 1.454; average_turnover: 0.20559; count: 10.0; quality_score: 0.7158766666666667
+- field: anl4_fs_guidances_advanced_af_nd_epsr_maxguidance; average_sharpe: 0.89; p90_sharpe: 0.89; average_fitness: 1.33; p90_fitness: 1.33; average_turnover: 0.1758; count: 1.0; quality_score: 0.6845333333333333
+- field: mdl177_fa_ebitdaev; average_sharpe: 0.81; p90_sharpe: 0.81; average_fitness: 1.24; p90_fitness: 1.24; average_turnover: 0.1587; count: 1.0; quality_score: 0.6476333333333334
+- field: five_hundred_day_intraday_historical_volatility; average_sharpe: 0.3926717557251908; p90_sharpe: 1.09; average_fitness: 0.29829268292682926; p90_fitness: 0.9199999999999999; average_turnover: 0.16341755725190837; count: 131.0; quality_score: 0.6202491094147582
+- field: implied_volatility_call_1080; average_sharpe: 0.94; p90_sharpe: 1.244; average_fitness: 0.6666666666666666; p90_fitness: 1.1460000000000001; average_turnover: 0.3191; count: 3.0; quality_score: 0.6052000000000001
+- field: mdl77_ohistoricalgrowthfactor_chg3yepsast; average_sharpe: 0.3833333333333333; p90_sharpe: 0.8140000000000001; average_fitness: 0.5166666666666667; p90_fitness: 1.21; average_turnover: 0.24450000000000002; count: 3.0; quality_score: 0.5530333333333333
+- field: anl4_cff_flag; average_sharpe: 0.10816666666666666; p90_sharpe: 0.942; average_fitness: 0.09983333333333334; p90_fitness: 0.6850000000000002; average_turnover: 0.127545; count: 60.0; quality_score: 0.5333883333333335
+- field: ebit_stddev; average_sharpe: 0.33135135135135135; p90_sharpe: 0.9000000000000004; average_fitness: 0.20680555555555558; p90_fitness: 0.5999999999999999; average_turnover: 0.09431891891891893; count: 74.0; quality_score: 0.5256810810810811
+- field: month_one_at_the_money_implied_volatility; average_sharpe: 0.2035294117647059; p90_sharpe: 1.0500000000000005; average_fitness: 0.17463414634146343; p90_fitness: 0.8280000000000012; average_turnover: 0.24024823529411762; count: 85.0; quality_score: 0.5007517647058829
 
 ## Top Operators
-- operator: ts_std_dev; average_sharpe: 0.7988888888888889; average_fitness: 0.45222222222222225; average_turnover: 0.03752222222222222; count: 9.0; quality_score: 0.5873617989417989
-- operator: ts_scale; average_sharpe: 0.735; average_fitness: 0.28; average_turnover: 0.26339999999999997; count: 2.0; quality_score: 0.3632266666666667
-- operator: *; average_sharpe: 0.2485; average_fitness: 0.146; average_turnover: 0.12801500000000002; count: 20.0; quality_score: 0.2182700476190476
-- operator: ts_mean; average_sharpe: 0.132; average_fitness: 0.09292307692307693; average_turnover: 0.03071230769230769; count: 65.0; quality_score: 0.21449188278388276
-- operator: ts_delta; average_sharpe: 0.09380000000000001; average_fitness: 0.05193333333333333; average_turnover: 0.090732; count: 150.0; quality_score: 0.149112926984127
-- operator: >; average_sharpe: 0.09405405405405405; average_fitness: 0.0927027027027027; average_turnover: 0.13258108108108108; count: 37.0; quality_score: 0.13962612612612613
-- operator: rank; average_sharpe: 0.036051560379918586; average_fitness: 0.02219810040705563; average_turnover: 0.08144151967435549; count: 737.0; quality_score: 0.12257006913484525
-- operator: trade_when; average_sharpe: 0.03; average_fitness: 0.040943396226415095; average_turnover: 0.09911509433962264; count: 53.0; quality_score: 0.116928427672956
-- operator: ts_rank; average_sharpe: 0.008619402985074626; average_fitness: 0.009291044776119401; average_turnover: 0.07880111940298508; count: 268.0; quality_score: 0.1093617590618337
-- operator: -; average_sharpe: -0.0010040983606557383; average_fitness: 0.0047336065573770495; average_turnover: 0.10004118852459017; count: 488.0; quality_score: 0.09141709016393443
+- operator: ts_std_dev; average_sharpe: 0.741111111111111; p90_sharpe: 0.904; average_fitness: 0.5266666666666667; p90_fitness: 0.7940000000000002; average_turnover: 0.036055555555555556; count: 9.0; quality_score: 0.6498111111111111
+- operator: /; average_sharpe: 0.33808510638297873; p90_sharpe: 1.0970000000000002; average_fitness: 0.28829787234042553; p90_fitness: 1.3070000000000002; average_turnover: 0.41430957446808514; count: 94.0; quality_score: 0.6147666666666668
+- operator: *; average_sharpe: 0.3332673267326733; p90_sharpe: 1.09; average_fitness: 0.28653465346534657; p90_fitness: 1.3; average_turnover: 0.3695633663366336; count: 101.0; quality_score: 0.6103333333333334
+- operator: <; average_sharpe: 0.24802139037433157; p90_sharpe: 0.94; average_fitness: 0.16565714285714284; p90_fitness: 0.7059999999999998; average_turnover: 0.08818663101604278; count: 187.0; quality_score: 0.5791467023172905
+- operator: trade_when; average_sharpe: 0.22026666666666667; p90_sharpe: 0.8819999999999999; average_fitness: 0.15406698564593302; p90_fitness: 0.6720000000000003; average_turnover: 0.09506844444444444; count: 225.0; quality_score: 0.5435315555555557
+- operator: ts_zscore; average_sharpe: 0.12528682170542635; p90_sharpe: 0.83; average_fitness: 0.09670846394984327; p90_fitness: 0.53; average_turnover: 0.15720992248062016; count: 645.0; quality_score: 0.4184567441860465
+- operator: ts_mean; average_sharpe: 0.0875; p90_sharpe: 0.625; average_fitness: 0.07528571428571428; p90_fitness: 0.36200000000000004; average_turnover: 0.06094868421052632; count: 76.0; quality_score: 0.3972179824561404
+- operator: rank; average_sharpe: 0.05917960088691796; p90_sharpe: 0.7; average_fitness: 0.043126385809312634; p90_fitness: 0.36; average_turnover: 0.09306962305986696; count: 902.0; quality_score: 0.386930376940133
+- operator: ts_delta; average_sharpe: 0.15544117647058825; p90_sharpe: 0.74; average_fitness: 0.08259803921568629; p90_fitness: 0.39400000000000035; average_turnover: 0.12331127450980392; count: 204.0; quality_score: 0.3800220588235296
+- operator: ts_rank; average_sharpe: 0.0808405172413793; p90_sharpe: 0.7569999999999999; average_fitness: 0.07183585313174945; p90_fitness: 0.3880000000000001; average_turnover: 0.1551625; count: 464.0; quality_score: 0.35127083333333337
 
-## Top 10 Daily Recommendations
-- alpha: rank(ts_std_dev(stddev_reported_eps_quarterly_estimate,252)); score: 1.226195238095238; category: Volatility; family: None
-- alpha: rank(ts_delta(anl4_epsa_flag,63)); score: 1.1715866666666668; category: Options; family: None
-- alpha: rank(ts_mean(stddev_reported_eps_quarterly_estimate,252)); score: 1.1530295238095238; category: Volatility; family: None
-- alpha: rank(ts_rank(sales_estimate_stddev_quarterly,20)-ts_zscore(pcr_oi_1080,20)); score: 1.0645942857142856; category: Hybrid; family: None
-- alpha: rank(ts_mean(anl4_cff_flag,126)); score: 0.9434457142857143; category: Options; family: None
-- alpha: rank(ts_rank(anl4_epsa_flag,63)); score: 0.9167752380952381; category: Options; family: None
-- alpha: rank(ts_mean(stddev_reported_eps_quarterly_estimate,126)); score: 0.9065257142857142; category: Volatility; family: None
-- alpha: rank(ts_mean(anl4_cff_flag,63)); score: 0.9009085714285714; category: Options; family: None
-- alpha: rank(ts_mean(anl4_cff_flag,252)); score: 0.8814104761904762; category: Options; family: None
-- alpha: rank(ts_zscore(actual_eps_value_quarterly,252)-ts_zscore(anl4_adjusted_netincome_ft,252)); score: 0.8545333333333334; category: Fundamental; family: None
+## Top 50 Daily Recommendations
+- alpha: trade_when(ts_zscore(month_one_at_the_money_implied_volatility,63)<0, ts_zscore(five_hundred_day_intraday_historical_volatility,252), 0); score: 1.7371333333333334; category: Hybrid; family: None
+- alpha: trade_when(ts_zscore(infinite_maturity_ex_announcement_implied_volatility,63)<0, ts_zscore(five_hundred_day_intraday_historical_volatility,63), 0); score: 1.6095; category: Hybrid; family: None
+- alpha: trade_when(ts_zscore(infinite_maturity_ex_announcement_implied_volatility,63)<0, ts_zscore(ebit_stddev,252), 0); score: 1.4491500000000002; category: Hybrid; family: None
+- alpha: trade_when(ts_zscore(fourth_month_at_the_money_implied_volatility,63)<0, ts_zscore(five_hundred_day_intraday_historical_volatility,252), 0); score: 1.4421499999999998; category: Hybrid; family: None
+- alpha: ts_zscore(five_hundred_day_intraday_historical_volatility,126); score: 1.4383833333333333; category: Volatility; family: None
+- alpha: trade_when(ts_zscore(infinite_maturity_ex_announcement_implied_volatility,63)<0, ts_zscore(ebit_stddev,63), 0); score: 1.3413833333333334; category: Hybrid; family: None
+- alpha: trade_when(ts_zscore(month_one_at_the_money_implied_volatility,63)<0, ts_zscore(five_hundred_day_intraday_historical_volatility,63), 0); score: 1.3148499999999999; category: Hybrid; family: None
+- alpha: ts_zscore(five_hundred_day_intraday_historical_volatility,252) * (1/ts_rank(month_one_at_the_money_implied_volatility,252)); score: 1.2717166666666668; category: Hybrid; family: None
+- alpha: rank(ts_std_dev(stddev_reported_eps_quarterly_estimate,252)); score: 1.27085; category: Volatility; family: None
+- alpha: rank(ts_mean(stddev_reported_eps_quarterly_estimate,252)); score: 1.1611833333333332; category: Volatility; family: None
+- alpha: trade_when(ts_zscore(infinite_maturity_ex_announcement_implied_volatility,63)<0, ts_zscore(sales_estimate_stddev_quarterly,252), 0); score: 1.1303333333333336; category: Hybrid; family: None
+- alpha: trade_when(ts_zscore(month_one_at_the_money_implied_volatility,63)<0, ts_zscore(ebit_stddev,252), 0); score: 1.1244333333333334; category: Hybrid; family: None
+- alpha: trade_when(ts_zscore(month_four_at_the_money_implied_volatility,63)<0, ts_zscore(sales_estimate_stddev_quarterly,252), 0); score: 1.1176166666666667; category: Hybrid; family: None
+- alpha: trade_when(ts_zscore(month_one_at_the_money_implied_volatility,63)<0, ts_zscore(sales_estimate_stddev_quarterly,252), 0); score: 1.1091333333333333; category: Hybrid; family: None
+- alpha: trade_when(ts_zscore(fourth_month_at_the_money_implied_volatility,63)<0, ts_zscore(five_hundred_day_intraday_historical_volatility,63), 0); score: 1.0964333333333331; category: Hybrid; family: None
+- alpha: trade_when(ts_zscore(month_four_at_the_money_implied_volatility,63)<0, ts_zscore(five_hundred_day_intraday_historical_volatility,63), 0); score: 1.0753; category: Hybrid; family: None
+- alpha: rank(ts_zscore(mdl77_ohistoricalgrowthfactor_chg3yepsast,63) * (1/ts_rank(implied_volatility_call_120,63))); score: 1.04925; category: Hybrid; family: None
+- alpha: rank(ts_zscore(anl4_fs_detail_estimates_basic_qf_v4_nd_sales_low,63) * (1/ts_rank(implied_volatility_call_120,63))); score: 1.0229833333333334; category: Hybrid; family: None
+- alpha: rank(ts_zscore(mdl77_historicalgrowthfactor_pfcfghc,63) * (1/ts_rank(implied_volatility_call_120,63))); score: 0.99115; category: Hybrid; family: None
+- alpha: rank(ts_zscore(mdl177_valueanalystmodel_qva_earnquality,63) * (1/ts_rank(implied_volatility_call_1080,63))); score: 0.9808833333333333; category: Hybrid; family: None
+- alpha: rank(ts_zscore(mdl77_2valueanalystmodel_qva_alertrank,63) * (1/ts_rank(implied_volatility_call_120,63))); score: 0.9753999999999999; category: Hybrid; family: None
+- alpha: rank(ts_zscore(anl4_fs_guidances_advanced_af_nd_epsr_maxguidance,63) * (1/ts_rank(implied_volatility_call_120,63))); score: 0.9705166666666667; category: Hybrid; family: None
+- alpha: rank(ts_rank(sales_estimate_stddev_quarterly,20)-ts_zscore(pcr_oi_1080,20)); score: 0.95015; category: Hybrid; family: None
+- alpha: rank(ts_zscore(anl4_fs_detail_estimates_basic_qf_delay1_v4_nd_sales_number,63) * (1/ts_rank(implied_volatility_call_120,63))); score: 0.9462333333333333; category: Hybrid; family: None
+- alpha: rank(ts_zscore(mdl177_fa_ebitdaev,63) * (1/ts_rank(implied_volatility_call_120,63))); score: 0.9430666666666666; category: Hybrid; family: None
+- alpha: rank(ts_mean(anl4_cff_flag,126)); score: 0.9043833333333333; category: Options; family: None
+- alpha: trade_when(ts_zscore(fourth_month_at_the_money_implied_volatility,63)<0, ts_zscore(ebit_stddev,252), 0); score: 0.8991; category: Hybrid; family: None
+- alpha: trade_when(ts_zscore(month_four_at_the_money_implied_volatility,63)<0, ts_zscore(ebit_stddev,252), 0); score: 0.8955166666666666; category: Hybrid; family: None
+- alpha: trade_when(ts_zscore(fourth_month_at_the_money_implied_volatility,63)<0, ts_zscore(sales_estimate_stddev_quarterly,252), 0); score: 0.8859166666666666; category: Hybrid; family: None
+- alpha: rank(ts_mean(stddev_reported_eps_quarterly_estimate,126)); score: 0.8788666666666666; category: Volatility; family: None
+- alpha: ts_zscore(five_hundred_day_intraday_historical_volatility,252) * (1/ts_rank(month_four_at_the_money_implied_volatility,252)); score: 0.8763666666666667; category: Hybrid; family: None
+- alpha: rank(ts_mean(anl4_cff_flag,63)); score: 0.86815; category: Options; family: None
+- alpha: rank(ts_mean(anl4_cff_flag,252)); score: 0.8570166666666666; category: Options; family: None
+- alpha: rank(ts_rank(anl4_afv4_eps_high,252)-ts_rank(actuals_value_currency_code,252)); score: 0.8446166666666668; category: Mutation; family: None
+- alpha: rank(ts_rank(anl4_epsa_flag,63)); score: 0.8445666666666668; category: Options; family: None
+- alpha: rank(ts_rank(anl4_afv4_eps_high,252)-ts_rank(anl4_cff_flag,252)); score: 0.8318833333333334; category: Fundamental; family: None
+- alpha: rank(ts_zscore(actual_eps_value_quarterly,252)-ts_zscore(anl4_adjusted_netincome_ft,252)); score: 0.8055833333333333; category: Fundamental; family: None
+- alpha: rank(ts_rank(anl4_afv4_eps_high,126)-ts_rank(anl4_cff_flag,126)); score: 0.7935333333333333; category: Mutation; family: None
+- alpha: trade_when(ts_zscore(month_one_at_the_money_implied_volatility,63)<0, ts_zscore(ebit_stddev,63), 0); score: 0.7907166666666666; category: Hybrid; family: None
+- alpha: ts_zscore(five_hundred_day_intraday_historical_volatility,252) * (1/ts_rank(fourth_month_at_the_money_implied_volatility,252)); score: 0.77725; category: Hybrid; family: None
+- alpha: ts_zscore(five_hundred_day_intraday_historical_volatility,252) * (1/ts_rank(infinite_maturity_ex_announcement_implied_volatility,252)); score: 0.7771666666666666; category: Hybrid; family: None
+- alpha: ts_zscore(ts_delta(anl4_ebit_value, 126), 252); score: 0.7769166666666667; category: Fundamental; family: None
+- alpha: rank(ts_delta(five_hundred_day_intraday_historical_volatility, 252)); score: 0.7756; category: Fundamental; family: None
+- alpha: rank(ts_delta(anl4_afv4_eps_high,126)); score: 0.7723333333333334; category: Fundamental; family: None
+- alpha: trade_when(ts_zscore(fourth_month_at_the_money_implied_volatility,126)<0, ts_zscore(five_hundred_day_intraday_historical_volatility,126), 0); score: 0.7703333333333334; category: Mutation; family: None
+- alpha: rank(ts_rank(anl4_afv4_eps_high,126)-ts_rank(actual_sales_value_quarterly,126)); score: 0.7687333333333334; category: Fundamental; family: None
+- alpha: rank(ts_mean(stddev_reported_eps_quarterly_estimate,63)); score: 0.7679333333333334; category: Volatility; family: None
+- alpha: rank(ts_zscore(adj_net_income_avg,252)-ts_zscore(anl4_adjusted_netincome_ft,252)); score: 0.7656166666666667; category: Fundamental; family: None
+- alpha: rank(ts_std_dev(sales_estimate_stddev_quarterly,252)); score: 0.7646833333333333; category: Volatility; family: None
+- alpha: trade_when(ts_delta(fourth_month_at_the_money_implied_volatility,63)<0, ts_delta(five_hundred_day_intraday_historical_volatility,252), 0); score: 0.7591666666666667; category: Mutation; family: None
 

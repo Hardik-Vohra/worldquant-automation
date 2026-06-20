@@ -159,7 +159,8 @@ class AlphaDatabase:
         # Add columns dynamically
         for col_name, col_value in metrics.items():
             if col_name and col_value is not None:
-                self.add_column_if_missing("alphas", col_name, "REAL")
+                col_type = "TEXT" if isinstance(col_value, str) else "REAL"
+                self.add_column_if_missing("alphas", col_name, col_type)
         
         assignments = []
         values = []
@@ -230,7 +231,8 @@ class AlphaDatabase:
         # Add columns dynamically
         for col_name, col_value in metrics.items():
             if col_name and col_value is not None:
-                self.add_column_if_missing("simulations", col_name, "REAL")
+                col_type = "TEXT" if isinstance(col_value, str) else "REAL"
+                self.add_column_if_missing("simulations", col_name, col_type)
         
         assignments = []
         values = []

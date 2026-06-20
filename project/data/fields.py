@@ -1,5 +1,6 @@
 import pandas as pd
 import re
+import random
 from pathlib import Path
 from project.config import MASTER_FIELDS_CSV
 
@@ -26,6 +27,11 @@ class FieldCatalog:
         df = pd.read_csv(self.path, dtype=str)
         df = df.fillna("")
         df["field_id"] = df["field_id"].astype(str)
+        
+        # Convert metrics to numeric for robust sorting
+        df["coverage"] = pd.to_numeric(df.get("coverage", 0), errors="coerce").fillna(0.0)
+        df["alphaCount"] = pd.to_numeric(df.get("alphaCount", 0), errors="coerce").fillna(0)
+        
         df["field_category"] = df.apply(self._tag_category, axis=1)
         df["field_tags"] = df.apply(self._tag_list, axis=1)
         return df
@@ -51,36 +57,46 @@ class FieldCatalog:
             tags.add(row["type"])
         return sorted(tags)
 
-    def get_fields_by_category(self, category, min_alpha_count=0, limit=None):
+    def get_fields_by_category(self, category, min_alpha_count=0, min_coverage=0.0, limit=None):
         df = self.fields
         if category:
             df = df[df["field_category"] == category]
+        
+        df = df[df["coverage"] >= min_coverage]
         if min_alpha_count:
-            df = df[pd.to_numeric(df.get("alphaCount", 0), errors="coerce").fillna(0) >= min_alpha_count]
+            df = df[df["alphaCount"] >= min_alpha_count]
+            
+        # Always sort by Coverage first to prevent concentration
+        df = df.sort_values(by=["coverage", "alphaCount"], ascending=[False, False])
+        
         fields = df["field_id"].tolist()
         if limit:
             fields = fields[:limit]
         return fields
 
-    def get_fields_matching(self, keywords, min_alpha_count=0, limit=None):
-        """Return fields matching explicit alpha-data keywords."""
+    def get_fields_matching(self, keywords, min_alpha_count=0, min_coverage=0.0, limit=None):
         keywords = [keyword.lower() for keyword in keywords]
         df = self.fields.copy()
+        
         description = df["description"] if "description" in df.columns else pd.Series("", index=df.index)
         dataset = df["dataset"] if "dataset" in df.columns else pd.Series("", index=df.index)
         text = (
-            df["field_id"].str.lower()
-            + " "
-            + description.astype(str).str.lower()
-            + " "
-            + dataset.astype(str).str.lower()
+            df["field_id"].str.lower() + " " + 
+            description.astype(str).str.lower() + " " + 
+            dataset.astype(str).str.lower()
         )
+        
         mask = pd.Series(False, index=df.index)
         for keyword in keywords:
             mask = mask | text.str.contains(re.escape(keyword), regex=True)
         df = df[mask]
+        
+        df = df[df["coverage"] >= min_coverage]
         if min_alpha_count:
-            df = df[pd.to_numeric(df.get("alphaCount", 0), errors="coerce").fillna(0) >= min_alpha_count]
+            df = df[df["alphaCount"] >= min_alpha_count]
+            
+        df = df.sort_values(by=["coverage", "alphaCount"], ascending=[False, False])
+        
         fields = df["field_id"].tolist()
         if limit:
             fields = fields[:limit]
@@ -107,14 +123,18 @@ class FieldCatalog:
             return None
         return row.iloc[0].to_dict()
 
-    def recommend_fields(self, categories=None, limit=40):
-        categories = categories or ["Fundamental", "Options", "Volatility"]
-        candidates = self.fields[self.fields["field_category"].isin(categories)]
-        candidates = candidates.sort_values(by=["alphaCount", "coverage"], ascending=[False, False])
-        return candidates["field_id"].head(limit).tolist()
-
-
-if __name__ == "__main__":
-    catalog = FieldCatalog()
-    print(catalog.get_all_categories())
-    print(catalog.get_fields_by_category("Fundamental", min_alpha_count=100)[:20])
+    def sample_exploration_fields(self, category=None, min_coverage=0.70, sample_size=4):
+        """Randomly samples from high-coverage fields to force the generator to explore new data."""
+        df = self.fields
+        if category:
+            df = df[df["field_category"] == category]
+            
+        df = df[df["coverage"] >= min_coverage]
+        pool = df["field_id"].tolist()
+        
+        if not pool:
+            return []
+        if len(pool) <= sample_size:
+            return pool
+            
+        return random.sample(pool, sample_size)

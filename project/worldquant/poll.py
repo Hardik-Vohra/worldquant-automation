@@ -40,9 +40,19 @@ class WorldQuantPoller:
                 # Extract all metrics from API response dynamically
                 metrics = {}
                 for key, value in is_data.items():
+                    if key == "checks":
+                        continue
                     float_val = self._to_float(value)
                     if float_val is not None:
                         metrics[key] = float_val
+                
+                # Extract specific failure reasons
+                checks = is_data.get("checks", [])
+                unpassed = [c["name"] for c in checks if c.get("result") == "FAIL"]
+                if "unpassedChecks" in alpha_data:
+                    unpassed.extend(alpha_data["unpassedChecks"])
+                if unpassed:
+                    metrics["rejection_reason"] = ",".join(set(unpassed))
                 
                 self.db.update_metrics(
                     alpha_text=row["alpha"],
