@@ -1,3 +1,4 @@
+import json
 import pandas as pd
 from typing import List
 from project.worldquant.parser import AlphaExpression
@@ -98,6 +99,279 @@ class LearningEngine:
             "field_entropy": float(field_ent),
             "family_entropy": float(family_ent),
         }
+
+    # ------------------------------------------------------------------ #
+    #  PAIRING-LEVEL LEARNING                                             #
+    # ------------------------------------------------------------------ #
+
+    _FILTER_KEYWORDS = {
+        "trade_when": ["trade_when"],
+        "implied_volatility": ["implied_volatility"],
+        "pcr": ["pcr"],
+        "historical_volatility": ["historical_volatility", "returns_std"],
+    }
+
+    def _detect_filters(self, alpha_text: str):
+        """Return the set of structural filter names present in *alpha_text*."""
+        lowered = alpha_text.lower()
+        return {
+            filt
+            for filt, keywords in self._FILTER_KEYWORDS.items()
+            if any(kw in lowered for kw in keywords)
+        }
+
+    def _extract_neutralization(self, settings_str):
+        """Parse neutralization from a JSON settings string."""
+        if not settings_str or (isinstance(settings_str, float) and pd.isna(settings_str)):
+            return "UNKNOWN"
+        try:
+            return json.loads(settings_str).get("neutralization", "UNKNOWN")
+        except Exception:
+            return "UNKNOWN"
+
+    def pairing_stats(self):
+        """Compute (field, filter) tuple performance with neutralization awareness.
+
+        Returns a DataFrame indexed by (field, filter) with columns:
+          count, p90_sharpe, p90_fitness, elite_count, elite_discovery_rate,
+          rejection_rate, sub_universe_fail_rate, weight_concentration_fail_rate,
+          neutralization_distribution  (JSON string of {neut: count} map)
+        """
+        if "pairing_stats" in self._stats_cache:
+            return self._stats_cache["pairing_stats"]
+
+        sim_df = self._simulation_df()
+        if sim_df.empty:
+            empty = pd.DataFrame(
+                columns=[
+                    "field", "filter", "count", "p90_sharpe", "p90_fitness",
+                    "elite_count", "elite_discovery_rate", "rejection_rate",
+                    "sub_universe_fail_rate", "weight_concentration_fail_rate",
+                    "neutralization_distribution",
+                ]
+            )
+            self._stats_cache["pairing_stats"] = empty
+            return empty
+
+        # Pre-compute per-alpha helpers
+        rows = []
+        for _, row in sim_df.iterrows():
+            alpha = row.get("alpha") or ""
+            filters_present = self._detect_filters(alpha)
+            if not filters_present:
+                continue  # Only track alphas that use at least one filter
+
+            # Parse fields from the joined alphas table
+            field_set_str = ""
+            try:
+                alpha_row = self.db.conn.execute(
+                    "SELECT field_set FROM alphas WHERE alpha = ? LIMIT 1", [alpha]
+                ).fetchone()
+                if alpha_row:
+                    field_set_str = alpha_row[0] or ""
+            except Exception:
+                pass
+            if not field_set_str:
+                try:
+                    fields = sorted(AlphaExpression(alpha).field_set())
+                    field_set_str = ",".join(fields)
+                except Exception:
+                    continue
+
+            fields = [f.strip() for f in field_set_str.split(",") if f.strip()]
+            neut = self._extract_neutralization(row.get("settings"))
+
+            sharpe = row.get("sharpe")
+            fitness = row.get("fitness")
+            turnover = row.get("turnover")
+            rej = str(row.get("rejection_reason") or "")
+
+            is_elite = (
+                sharpe is not None and fitness is not None and turnover is not None
+                and not pd.isna(sharpe) and not pd.isna(fitness) and not pd.isna(turnover)
+                and sharpe >= 1.25 and fitness >= 1.05 and turnover < 0.25
+            )
+            has_rejection = bool(rej.strip())
+            sub_fail = "LOW_SUB_UNIVERSE_SHARPE" in rej
+            weight_fail = "CONCENTRATED_WEIGHT" in rej
+
+            for field in fields:
+                # Skip filter fields themselves (we want signal fields)
+                if any(kw in field.lower() for kws in self._FILTER_KEYWORDS.values() for kw in kws):
+                    continue
+                for filt in filters_present:
+                    rows.append({
+                        "field": field,
+                        "filter": filt,
+                        "sharpe": sharpe if sharpe is not None and not pd.isna(sharpe) else None,
+                        "fitness": fitness if fitness is not None and not pd.isna(fitness) else None,
+                        "is_elite": is_elite,
+                        "has_rejection": has_rejection,
+                        "sub_fail": sub_fail,
+                        "weight_fail": weight_fail,
+                        "neutralization": neut,
+                    })
+
+        if not rows:
+            empty = pd.DataFrame(
+                columns=[
+                    "field", "filter", "count", "p90_sharpe", "p90_fitness",
+                    "elite_count", "elite_discovery_rate", "rejection_rate",
+                    "sub_universe_fail_rate", "weight_concentration_fail_rate",
+                    "neutralization_distribution",
+                ]
+            )
+            self._stats_cache["pairing_stats"] = empty
+            return empty
+
+        pdf = pd.DataFrame(rows)
+
+        # Build neutralization distribution per pairing
+        neut_dist = (
+            pdf.groupby(["field", "filter", "neutralization"])
+            .size()
+            .reset_index(name="n")
+        )
+        neut_json = (
+            neut_dist.groupby(["field", "filter"])
+            .apply(lambda g: json.dumps(dict(zip(g["neutralization"], g["n"]))))
+            .rename("neutralization_distribution")
+        )
+
+        grouped = pdf.groupby(["field", "filter"]).agg(
+            count=("sharpe", "size"),
+            p90_sharpe=("sharpe", lambda x: float(x.dropna().quantile(0.90)) if len(x.dropna()) >= 3 else float(x.dropna().mean()) if len(x.dropna()) > 0 else 0.0),
+            p90_fitness=("fitness", lambda x: float(x.dropna().quantile(0.90)) if len(x.dropna()) >= 3 else float(x.dropna().mean()) if len(x.dropna()) > 0 else 0.0),
+            elite_count=("is_elite", "sum"),
+            rejection_rate=("has_rejection", "mean"),
+            sub_universe_fail_rate=("sub_fail", "mean"),
+            weight_concentration_fail_rate=("weight_fail", "mean"),
+        )
+        grouped["elite_discovery_rate"] = grouped["elite_count"] / grouped["count"].replace(0, 1)
+        grouped = grouped.join(neut_json)
+        grouped = grouped.reset_index()
+        grouped = grouped.sort_values(
+            ["elite_discovery_rate", "p90_sharpe", "count"],
+            ascending=[False, False, False],
+        )
+
+        self._stats_cache["pairing_stats"] = grouped
+        return grouped
+
+    def pairing_entropy(self):
+        """Compute Shannon entropy over observed (field, filter) pairings.
+
+        Returns a dict with pairing_entropy, field_diversity, filter_diversity.
+        """
+        import numpy as np
+        from collections import Counter
+
+        ps = self.pairing_stats()
+        if ps.empty:
+            return {"pairing_entropy": 3.0, "field_diversity": 2.0, "filter_diversity": 2.0}
+
+        # Pairing-level entropy
+        counts = ps["count"].values
+        total = counts.sum()
+        if total == 0:
+            return {"pairing_entropy": 3.0, "field_diversity": 2.0, "filter_diversity": 2.0}
+        probs = counts / total
+        pairing_ent = -float(np.sum(probs * np.log2(probs + 1e-12)))
+
+        # Field diversity within pairings
+        field_counts = ps.groupby("field")["count"].sum()
+        ft = field_counts.sum()
+        fp = (field_counts / ft).values if ft > 0 else [1]
+        field_ent = -float(np.sum(fp * np.log2(fp + 1e-12)))
+
+        # Filter diversity within pairings
+        filt_counts = ps.groupby("filter")["count"].sum()
+        filt_t = filt_counts.sum()
+        filt_p = (filt_counts / filt_t).values if filt_t > 0 else [1]
+        filter_ent = -float(np.sum(filt_p * np.log2(filt_p + 1e-12)))
+
+        return {
+            "pairing_entropy": pairing_ent,
+            "field_diversity": field_ent,
+            "filter_diversity": filter_ent,
+        }
+
+    def unexplored_pairings(self, signal_fields: list, limit: int = 30):
+        """Return high-potential (field, filter) pairings sorted by pairing_score.
+
+        pairing_score = field_quality * filter_quality * coverage_score
+                        * under_exploration_bonus - rejection_penalty
+
+        The under_exploration_bonus is capped at MAX_EXPLORATION_BONUS (0.15)
+        so it can never dominate overall scoring.
+        """
+        MAX_EXPLORATION_BONUS = 0.15
+
+        ps = self.pairing_stats()
+        fs = self.field_stats()
+        existing_pairs = set()
+        if not ps.empty:
+            existing_pairs = set(zip(ps["field"], ps["filter"]))
+
+        results = []
+        for field in signal_fields:
+            # Field quality from the learning engine
+            if not fs.empty and field in fs.index:
+                fq = max(0.01, float(fs.loc[field, "quality_score"]))
+                field_rej = float(fs.loc[field].get("rejection_rate", 0.0) or 0.0)
+            else:
+                fq = 0.10  # Unknown fields get a low but nonzero quality
+                field_rej = 0.0
+
+            # Coverage score from the field catalog (higher coverage = more robust)
+            field_info = self.db._parse_field_set({"field_set": field, "alpha": ""})
+            # We approximate coverage by normalizing the field count
+            field_count = float(fs.loc[field, "count"]) if (not fs.empty and field in fs.index) else 0
+            coverage_score = min(1.0, field_count / 100.0) if field_count > 0 else 0.05
+
+            for filt in self._FILTER_KEYWORDS:
+                # Filter quality: average quality of all existing pairings using this filter
+                if not ps.empty:
+                    filt_rows = ps[ps["filter"] == filt]
+                    filter_quality = float(filt_rows["p90_sharpe"].mean()) if not filt_rows.empty else 0.15
+                else:
+                    filter_quality = 0.15
+
+                pair_key = (field, filt)
+                if pair_key in existing_pairs:
+                    # Existing pairing — bonus is based on how under-explored it is
+                    pair_row = ps[(ps["field"] == field) & (ps["filter"] == filt)]
+                    pair_count = int(pair_row["count"].values[0]) if not pair_row.empty else 0
+                    pair_rej = float(pair_row["rejection_rate"].values[0]) if not pair_row.empty else 0.0
+                    # Under-exploration bonus: inversely proportional to count, capped
+                    exploration_bonus = min(MAX_EXPLORATION_BONUS, MAX_EXPLORATION_BONUS / max(1, pair_count))
+                    rejection_penalty = pair_rej * 0.30
+                else:
+                    # Never-explored pairing — gets a meaningful but capped bonus
+                    pair_count = 0
+                    exploration_bonus = MAX_EXPLORATION_BONUS
+                    rejection_penalty = field_rej * 0.20  # Use field-level rejection as proxy
+
+                pairing_score = (
+                    fq * filter_quality * max(0.05, coverage_score)
+                    * (1.0 + exploration_bonus)
+                    - rejection_penalty
+                )
+
+                results.append({
+                    "field": field,
+                    "filter": filt,
+                    "pairing_score": round(pairing_score, 4),
+                    "field_quality": round(fq, 4),
+                    "filter_quality": round(filter_quality, 4),
+                    "coverage_score": round(coverage_score, 4),
+                    "exploration_bonus": round(exploration_bonus, 4),
+                    "rejection_penalty": round(rejection_penalty, 4),
+                    "existing_count": pair_count,
+                })
+
+        results.sort(key=lambda x: x["pairing_score"], reverse=True)
+        return results[:limit]
 
     def _get_agg_funcs(self, df):
         funcs = {

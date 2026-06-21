@@ -25,7 +25,6 @@ from project.auth import AuthenticationError
 from project.worldquant.submit import WorldQuantClient
 from project.worldquant.poll import WorldQuantPoller
 from project.reports.summary import (
-    write_daily_top10,
     write_report_summary,
     write_alpha_history,
     export_elite_alphas,
@@ -368,10 +367,6 @@ def main(submit: bool = True, poll: bool = True, dry_run: bool = False, submit_l
 
     elite_path = export_elite_alphas(db, path="project/reports/elite_alphas.csv")
     logger.info(f"Wrote elite alphas to {elite_path}")
-
-    logger.info("Writing daily top 50 alphas.")
-    write_daily_top10(final_candidates, path=DAILY_TOP10_PATH)
-    logger.info(f"Saved daily top 50 to {DAILY_TOP10_PATH}")
 
     logger.info("Run complete.")
 

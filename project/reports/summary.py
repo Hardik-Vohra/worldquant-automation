@@ -100,12 +100,14 @@ def write_alpha_history(db, top_candidates: List[Dict], path: str = None):
         else:
             pd.DataFrame([]).to_excel(writer, sheet_name="Best Operators", index=False)
         
-        # Sheet 6: Daily Top 10
+        # Sheet 6: Daily Top 10 and Top 50
         recommendations = pd.DataFrame(top_candidates)
         if not recommendations.empty:
-            recommendations.to_excel(writer, sheet_name="Top 10 Daily", index=False)
+            recommendations.head(10).to_excel(writer, sheet_name="Top 10 Daily", index=False)
+            recommendations.to_excel(writer, sheet_name="Top 50 Daily", index=False)
         else:
             pd.DataFrame([]).to_excel(writer, sheet_name="Top 10 Daily", index=False)
+            pd.DataFrame([]).to_excel(writer, sheet_name="Top 50 Daily", index=False)
         
         # Sheet 7: Simulation Budget
         budget_info = db.get_simulation_budget_usage()
@@ -126,6 +128,15 @@ def write_alpha_history(db, top_candidates: List[Dict], path: str = None):
         settings_df.to_excel(writer, sheet_name="Settings Performance", index=False)
         _elite_funnel(all_results).to_excel(writer, sheet_name="Elite Candidate Funnel", index=False)
         _budget_efficiency(db, all_results).to_excel(writer, sheet_name="Budget Efficiency", index=False)
+
+        # Sheet: Pairing Performance (field × filter robustness report)
+        from project.engine.learning_engine import LearningEngine
+        learner = LearningEngine(db)
+        pairing_df = learner.pairing_stats()
+        if not pairing_df.empty:
+            pairing_df.to_excel(writer, sheet_name="Pairing Performance", index=False)
+        else:
+            pd.DataFrame([]).to_excel(writer, sheet_name="Pairing Performance", index=False)
     
     return path
 

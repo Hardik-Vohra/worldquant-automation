@@ -196,7 +196,18 @@ class GeneratorEngine:
 
         family_bonus = 0.03 if family in {"options_regime_trade_when", "iv_hv_spread", "pcr", "options_simple"} else 0.0
         novelty = (sum(ord(ch) for ch in alpha) % 997) / 100000.0
-        return (score + family_bonus - penalty, confidence, -len(candidate.get("field_set") or []), novelty)
+
+        # Capped pairing exploration bonus (max 0.04, cannot dominate scoring)
+        pairing_bonus = 0.0
+        MAX_PAIRING_BONUS = 0.04
+        if getattr(self, "_pairing_scores", None):
+            fields = candidate.get("field_set", [])
+            for f in fields:
+                if f in self._pairing_scores:
+                    pairing_bonus = max(pairing_bonus, self._pairing_scores[f])
+        pairing_bonus = min(MAX_PAIRING_BONUS, pairing_bonus)
+
+        return (score + family_bonus + pairing_bonus - penalty, confidence, -len(candidate.get("field_set") or []), novelty)
 
     def _apply_diversity_controls(self, ranked: List[Dict], limit: int) -> List[Dict]:
         if not ranked:
@@ -272,13 +283,111 @@ class GeneratorEngine:
         return [c for c in candidates if c]
 
     def _generate_hybrid(self) -> List[Dict]:
+        """Generate hybrid alphas by injecting high-value signal fields into
+        proven elite frameworks (trade_when, IV, PCR, HV filters).
+
+        Uses pairing-level learning to prioritise high-quality, high-coverage,
+        under-explored (field, filter) combinations.
+        """
+        # Prioritised signal fields — ordered by strategic value
+        priority_fields = [
+            "anl4_af_eps_value",
+            "anl4_afv4_eps_high",
+            "anl4_afv4_eps_low",
+            "actual_eps_value_quarterly",
+            "actual_sales_value_quarterly",
+            "adj_net_income_avg",
+            "anl4_adjusted_netincome_ft",
+            "anl4_cfo_number",
+            "anl4_fcf_flag",
+            "anl4_netprofit_flag",
+            "actual_cashflow_per_share_value_quarterly",
+            "anl4_basicdetailrec_ratingvalue",
+            "anl4_eaz2lrec_ratingvalue",
+            "anl4_cff_flag",
+            "anl4_afv4_div_std",
+            "anl4_afv4_div_low",
+            "anl4_afv4_div_median",
+        ]
+
+        # Ask learning engine for the best unexplored pairings
+        top_pairings = self.learning.unexplored_pairings(priority_fields, limit=30)
+
+        # Build a lookup of pairing_score by field for _ranking_key bonus
+        self._pairing_scores = {}
+        for p in top_pairings:
+            existing = self._pairing_scores.get(p["field"], 0.0)
+            self._pairing_scores[p["field"]] = max(existing, p["pairing_score"])
+
+        # Retrieve available filter fields from the catalog
+        iv_fields = self.catalog.get_implied_volatility_fields(limit=3) or ["implied_volatility_mean_90"]
+        pcr_fields = self.catalog.get_pcr_fields(limit=2) or ["pcr_oi_270"]
+        hv_fields = self.catalog.get_historical_volatility_fields(limit=2) or ["historical_volatility_63"]
+
+        candidates = []
+        seen_pairings = set()
+
+        for pairing in top_pairings:
+            field = pairing["field"]
+            filt = pairing["filter"]
+            pair_key = (field, filt)
+            if pair_key in seen_pairings:
+                continue
+            seen_pairings.add(pair_key)
+
+            for w in [63, 126, 252]:
+                if filt == "trade_when":
+                    # Inject into IV regime framework
+                    for iv in iv_fields[:2]:
+                        candidates.append(self._build_candidate(
+                            f"rank(trade_when(ts_zscore({iv},63)<0, ts_zscore({field},{w}), 0))",
+                            category="Hybrid",
+                        ))
+                    # Inject into PCR regime framework
+                    for pcr in pcr_fields[:1]:
+                        candidates.append(self._build_candidate(
+                            f"rank(trade_when({pcr}>1.2, -ts_zscore({field},{w}), ts_zscore({field},{w})))",
+                            category="Hybrid",
+                        ))
+                elif filt == "implied_volatility":
+                    for iv in iv_fields[:2]:
+                        candidates.append(self._build_candidate(
+                            f"rank(ts_zscore({field},{w}) * (1/ts_rank({iv},{w})))",
+                            category="Hybrid",
+                        ))
+                        candidates.append(self._build_candidate(
+                            f"rank(trade_when(ts_zscore({iv},63)<0, ts_zscore({field},{w}), 0))",
+                            category="Hybrid",
+                        ))
+                elif filt == "pcr":
+                    for pcr in pcr_fields[:1]:
+                        candidates.append(self._build_candidate(
+                            f"rank(trade_when(ts_zscore({pcr},63)>1.5, -ts_zscore({field},{w}), ts_zscore({field},{w})))",
+                            category="Hybrid",
+                        ))
+                        candidates.append(self._build_candidate(
+                            f"rank(ts_zscore({field},{w}) * ts_zscore({pcr},{w}))",
+                            category="Hybrid",
+                        ))
+                elif filt == "historical_volatility":
+                    for hv in hv_fields[:2]:
+                        candidates.append(self._build_candidate(
+                            f"rank(ts_zscore({field},{w}) * (1/ts_rank({hv},{w})))",
+                            category="Hybrid",
+                        ))
+                        candidates.append(self._build_candidate(
+                            f"rank(trade_when(ts_delta({hv},20)<0, ts_zscore({field},{w}), 0))",
+                            category="Hybrid",
+                        ))
+
+        # Preserve the original simple hybrid generation as fallback
         fund_fields = self.catalog.sample_exploration_fields("Fundamental", min_coverage=0.85, sample_size=3)
         option_fields = self.catalog.get_implied_volatility_fields(limit=3)
-        candidates = []
         for f, o in itertools.product(fund_fields, option_fields):
             for w in [63, 252]:
                 candidates.append(self._build_candidate(f"rank(ts_zscore({f},{w}) * (1/ts_rank({o},{w})))", category="Hybrid"))
                 candidates.append(self._build_candidate(f"rank(trade_when(ts_zscore({o},63)<0, ts_zscore({f},{w}), 0))", category="Hybrid"))
+
         return [c for c in candidates if c]
 
     def _generate_regime(self) -> List[Dict]:
