@@ -583,6 +583,45 @@ class LearningEngine:
             "categories": self.category_stats().head(10).to_dict(orient="index") if not self.df.empty else {},
         }
 
+    def get_settings_queue(self, min_score=None, limit=20):
+        """Retrieve alphas that exceed quality threshold but haven't been optimized.
+        
+        Args:
+            min_score: Minimum selection_score to qualify (defaults to config.SETTINGS_QUALITY_THRESHOLD)
+            limit: Maximum number of alphas to return
+        """
+        from project.config import SETTINGS_QUALITY_THRESHOLD
+        min_score = min_score if min_score is not None else SETTINGS_QUALITY_THRESHOLD
+        
+        # Get pending candidates from data manager
+        candidates = self.db.get_candidates(limit=1000, min_score=min_score)
+        if not candidates:
+            return []
+            
+        # Filter out candidates that have already been run through settings optimization
+        # (We assume an alpha has been optimized if it has more than 1 simulation record)
+        queue = []
+        for c in candidates:
+            alpha_text = c.get("alpha")
+            if not alpha_text:
+                continue
+                
+            try:
+                sim_count = self.db.conn.execute(
+                    "SELECT COUNT(*) FROM simulations WHERE alpha = ?", 
+                    [alpha_text]
+                ).fetchone()[0]
+                
+                # If 0 or 1, it's eligible (1 means it was just tested with default settings)
+                if sim_count <= 1:
+                    queue.append(c)
+                    if len(queue) >= limit:
+                        break
+            except Exception:
+                continue
+                
+        return queue
+
 
 if __name__ == "__main__":
     from project.engine.data_manager import AlphaDatabase

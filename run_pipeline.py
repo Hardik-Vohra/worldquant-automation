@@ -30,7 +30,12 @@ from project.reports.summary import (
     export_elite_alphas,
 )
 
-from settings_optimizer import get_exploration_settings, mutate_settings, get_near_elite_simulations
+from settings_optimizer import (
+    get_exploration_settings,
+    mutate_settings,
+    get_near_elite_simulations,
+    get_settings_variants,
+)
 
 logging.basicConfig(
     level=logging.INFO,
@@ -296,26 +301,61 @@ def main(submit: bool = True, poll: bool = True, dry_run: bool = False, submit_l
         if submit_limit <= 0:
             logger.info("No remaining simulation budget. Skipping submission.")
         else:
-            # --- NEW: Settings Mutation Pipeline for Near-Elite Alphas ---
-            mutation_limit = int(submit_limit * 0.30)
-            near_elites = get_near_elite_simulations(db, limit=mutation_limit)
+            # --- PHASE 1: Settings Optimization Pipeline (40% budget) ---
+            grid_limit = int(submit_limit * 0.40)
+            queued_alphas = generator.learning.get_settings_queue(limit=grid_limit)
             
-            logger.info(f"Submitting {len(near_elites)} near-elite alphas for Settings Optimization.")
-            for ne in near_elites:
-                try:
-                    base_settings = json.loads(ne["settings"]) if pd.notna(ne["settings"]) else SUBMISSION_SETTINGS
-                    new_settings = mutate_settings(base_settings)
-                    sim_id = client.submit_alpha(ne["alpha"], settings=new_settings)
-                    db.insert_simulation(ne["alpha"], new_settings, sim_id, status="RUNNING")
-                    submitted += 1
-                    logger.info(f"Settings Mutated: {ne['alpha'][:60]} -> {new_settings}")
-                except AuthenticationError as exc:
-                    logger.error("Authentication failed during submission: %s", exc)
-                    return
-                except Exception as exc:
-                    logger.warning(f"Failed to submit settings-mutated alpha: {exc}")
+            if queued_alphas:
+                logger.info(f"Submitting up to {grid_limit} simulations from the Settings Optimization Queue.")
+                for alpha_record in queued_alphas:
+                    if submitted >= submit_limit:
+                        break
+                    # We might submit multiple variants per alpha if budget allows
+                    variants_to_test = max(1, (grid_limit - submitted) // len(queued_alphas))
+                    variants = get_settings_variants(alpha_record["alpha"], db, limit=variants_to_test)
+                    
+                    for settings in variants:
+                        if submitted >= submit_limit:
+                            break
+                        try:
+                            sim_id = client.submit_alpha(alpha_record["alpha"], settings=settings)
+                            db.insert_simulation(alpha_record["alpha"], settings, sim_id, status="RUNNING")
+                            # Mark in the alphas table so we know it has been generated
+                            db.update_metrics(alpha_text=alpha_record["alpha"], sim_id=sim_id, status="RUNNING")
+                            submitted += 1
+                            logger.info(f"Settings Grid: {alpha_record['alpha'][:50]} -> {settings}")
+                        except AuthenticationError as exc:
+                            logger.error("Authentication failed during submission: %s", exc)
+                            return
+                        except Exception as exc:
+                            logger.warning(f"Failed to submit settings-variant alpha: {exc}")
 
-            # --- ORIGINAL: Regular Generation Pipeline ---
+            # --- PHASE 2: Settings Mutation Pipeline for Near-Elite Alphas (30% budget) ---
+            remaining_limit = submit_limit - submitted
+            mutation_limit = int(submit_limit * 0.30)
+            mutation_limit = min(mutation_limit, remaining_limit)
+            
+            if mutation_limit > 0:
+                near_elites = get_near_elite_simulations(db, limit=mutation_limit)
+                if near_elites:
+                    logger.info(f"Submitting {len(near_elites)} near-elite alphas for Settings Mutation.")
+                    for ne in near_elites:
+                        if submitted >= submit_limit:
+                            break
+                        try:
+                            base_settings = json.loads(ne["settings"]) if pd.notna(ne["settings"]) else SUBMISSION_SETTINGS
+                            new_settings = mutate_settings(base_settings)
+                            sim_id = client.submit_alpha(ne["alpha"], settings=new_settings)
+                            db.insert_simulation(ne["alpha"], new_settings, sim_id, status="RUNNING")
+                            submitted += 1
+                            logger.info(f"Settings Mutated: {ne['alpha'][:50]} -> {new_settings}")
+                        except AuthenticationError as exc:
+                            logger.error("Authentication failed during submission: %s", exc)
+                            return
+                        except Exception as exc:
+                            logger.warning(f"Failed to submit settings-mutated alpha: {exc}")
+
+            # --- PHASE 3: Regular Generation Pipeline (Remaining budget) ---
             remaining_limit = submit_limit - submitted
             if remaining_limit > 0:
                 batch = prioritize_candidates(db, remaining_limit)

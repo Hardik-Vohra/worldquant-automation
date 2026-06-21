@@ -79,6 +79,28 @@ def write_alpha_history(db, top_candidates: List[Dict], path: str = None):
             elite = pd.DataFrame()
         elite.to_excel(writer, sheet_name="Elite Results", index=False)
         
+        # Sheet 2.5: Submit Ready Alphas (Passed all WQ checks)
+        if not elite.empty:
+            submit_ready = elite.copy()
+            # Filter out alphas with any rejection reasons (e.g. weight concentration, sub-universe Sharpe)
+            if "rejection_reason" in submit_ready.columns:
+                submit_ready = submit_ready[submit_ready["rejection_reason"].isna() | (submit_ready["rejection_reason"].astype(str).str.strip() == "")]
+            
+            # Calculate a composite submission score for ranking
+            if not submit_ready.empty:
+                max_sharpe = submit_ready["sharpe"].max() or 1
+                max_fitness = submit_ready["fitness"].max() or 1
+                submit_ready["submission_score"] = (
+                    (submit_ready["sharpe"] / max_sharpe) * 0.45 +
+                    (submit_ready["fitness"] / max_fitness) * 0.35 +
+                    (1 - submit_ready["turnover"]) * 0.20
+                )
+                submit_ready = submit_ready.sort_values("submission_score", ascending=False)
+            
+            submit_ready.to_excel(writer, sheet_name="Submit Ready Alphas", index=False)
+        else:
+            pd.DataFrame([]).to_excel(writer, sheet_name="Submit Ready Alphas", index=False)
+        
         # Sheet 3: Best Settings
         settings_df = db.settings_summary()
         if not settings_df.empty:
